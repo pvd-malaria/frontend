@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Plataforma de Visualização de Dados de Malária
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para auxiliar gestores, pesquisadores e público em geral a entender melhor sobre a contaminação pela malária no Brasil.
 
-## Available Scripts
+Serviço interativo de análise de indicadores por meio de inteligência artificial.
 
-In the project directory, you can run:
+Diversas visualizações e criação de novas baseado em suas necessidades.
 
-### `yarn start`
+## Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Desenvolvido em **ReactJS**, tecnologia frontend estável e popular, podendo ser facilmente mantida por maior parte da comunidade de desenvolvimento web.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Projeto contendo: imagens, textos e importação de componentes de visualização de dados.
 
-### `yarn test`
+Responsivo, se adaptando a variados tamanhos de tela sem comprometer seu funcionamento em diferentes dispositivos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Fluxo de desenvolvimento
 
-### `yarn build`
+Utilzando GitFlow, possui 2 branchs fixas: master e develop.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Master: ambiente de produção, estável com funcionalidades concluídas e aprovadas.
+- Develop: ambiente instável com funcionalidades em andamentos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Novas versões são definidas quando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Novos pacotes são enviados da branch develop para master. Através de uma branch release.
+- Quando uma correção é feita na master. Através de uma branch hotfix.
 
-### `yarn eject`
+## Deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Automático através do Git Actions que monitora branchs: develop e master.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A cada novo commit o projeto é compilado e publicado no Firebase Hosting (GCP) e seu respectivo destino.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ambientes:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **master:**
+  [pvd-malaria.web.app](pvd-malaria.web.app)
+- **develop:**
+  [pvd-malaria-develop-w4.web.app](https://pvd-malaria-develop-w4.web.app)
 
-## Learn More
+## Arquitetura
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Yarn
+- Firebase
+  - Hosting
+- ReactJS
+  - Hooks
+  - Context
+- Typescript
+- Sass
+- Env
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Executando o projeto
+
+Basta baixar o projeto, instalar as dependências e executar o projeto usando yarn:
+
+```
+  $ git clone https://github.com/pvd-malaria/frontend
+  $ yarn
+  $ yarn start
+```
