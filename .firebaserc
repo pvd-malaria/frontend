@@ -5,14 +5,11 @@
   "targets": {
     "pvd-malaria": {
       "hosting": {
-        "production": [
-          "pvd-malaria"
-        ],
-        "release": [
-          "pvd-malaria-release-w4"
-        ],
         "develop": [
           "pvd-malaria-develop-w4"
+        ],
+        "production": [
+          "pvd-malaria"
         ]
       }
     }
