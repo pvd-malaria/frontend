@@ -1,12 +1,25 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Inicial from '../pages/Inicial';
+
+// import layout temporary
+import Layout from '../components/Layout';
 
 
 function App() {
   return (
-    <>
-      <h1>PVD Malária</h1>
-      <p>TODO: routes here</p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Inicial/>} />
+        <Route path="/sobre" element={<Layout><h1>Sobre</h1></Layout>} />
+        <Route path="/dashboard" element={<Layout><h1>Dashboard</h1></Layout>} />
+        <Route path="/modelos" element={<Layout><h1>Modelos</h1></Layout>} />
+        <Route path="/producoes" element={<Layout><h1>Producoes</h1></Layout>} />
+        <Route path="/visualizacoes" element={<Layout><h1>Visualizacoes</h1></Layout>} />
+        <Route path="*" element={<Layout><h1>Page not found</h1></Layout>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
