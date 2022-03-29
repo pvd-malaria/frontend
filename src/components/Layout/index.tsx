@@ -1,5 +1,9 @@
-import React, { ReactNode } from 'react';
-import Navigation from './Navigation';
+import { ReactNode } from 'react';
+
+import Footer from './Footer';
+import Header from './Header';
+import Main from './Main';
+import Wrapper from './Wrapper';
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,12 +12,11 @@ interface LayoutProps {
 
 function Layout(props: LayoutProps){
   return (
-    <div>
-      <Navigation />
-      <main>
-        {props.children}
-      </main>
-    </div>
+    <Wrapper>
+      <Header />
+      <Main>{props.children}</Main>
+      <Footer />
+    </Wrapper>
   );
 }
 
