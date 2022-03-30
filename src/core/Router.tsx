@@ -9,7 +9,7 @@ import UiGuide from '../pages/UiGuide';
 import Layout from '../components/Layout';
 
 
-function App() {
+function Router() {
   return (
     <BrowserRouter>
       <Routes>
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;
