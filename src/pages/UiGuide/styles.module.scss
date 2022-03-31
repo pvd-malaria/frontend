@@ -1,0 +1,20 @@
+.typograph {
+  margin: 1rem;
+}
+
+.colorList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    flex: 25%;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+}
