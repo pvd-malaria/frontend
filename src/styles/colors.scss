@@ -1,0 +1,95 @@
+body {
+  // Vars
+  $primary-color-red: #be1724;
+  $primary-color-blue: #1674b9;
+  $primary-color-yellow: #f9b233;
+  $primary-color-black: #333333;
+
+  $color-red-light: lighten($primary-color-red, 35%);
+  $color-red-lighter: lighten($primary-color-red, 50%);
+
+  $color-blue-light: lighten($primary-color-blue, 30%);
+  $color-blue-lighter: lighten($primary-color-blue, 50%);
+
+  $color-yellow-light: lighten($primary-color-yellow, 20%);
+  $color-yellow-lighter: lighten($primary-color-yellow, 30%);
+
+  $color-black-light: lighten($primary-color-black, 20%);
+  $color-black-lighter: lighten($primary-color-black, 50%);
+
+  // Colors
+  .primary-color-red {
+    color: $primary-color-red;
+  }
+  .primary-color-blue {
+    color: $primary-color-blue;
+  }
+  .primary-color-yellow {
+    color: $primary-color-yellow;
+  }
+  .primary-color-black {
+    color: $primary-color-black;
+  }
+  .color-red-light {
+    color: $color-red-light;
+  }
+  .color-red-lighter {
+    color: $color-red-lighter;
+  }
+  .color-blue-light {
+    color: $color-blue-light;
+  }
+  .color-blue-lighter {
+    color: $color-blue-lighter;
+  }
+  .color-yellow-light {
+    color: $color-yellow-light;
+  }
+  .color-yellow-lighter {
+    color: $color-yellow-lighter;
+  }
+  .color-black-light {
+    color: $color-black-light;
+  }
+  .color-black-lighter {
+    color: $color-black-lighter;
+  }
+
+  // Backgrounds
+  .bg-primary-color-red {
+    background-color: $primary-color-red;
+  }
+  .bg-primary-color-blue {
+    background-color: $primary-color-blue;
+  }
+  .bg-primary-color-yellow {
+    background-color: $primary-color-yellow;
+  }
+  .bg-primary-color-black {
+    background-color: $primary-color-black;
+  }
+  .bg-color-red-light {
+    background-color: $color-red-light;
+  }
+  .bg-color-red-lighter {
+    background-color: $color-red-lighter;
+  }
+  .bg-color-blue-light {
+    background-color: $color-blue-light;
+  }
+  .bg-color-blue-lighter {
+    background-color: $color-blue-lighter;
+  }
+  .bg-color-yellow-light {
+    background-color: $color-yellow-light;
+  }
+  .bg-color-yellow-lighter {
+    background-color: $color-yellow-lighter;
+  }
+  .bg-color-black-light {
+    background-color: $color-black-light;
+  }
+  .bg-color-black-lighter {
+    background-color: $color-black-lighter;
+  }
+}
