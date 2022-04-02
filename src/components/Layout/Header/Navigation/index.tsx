@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
 import styles from './styles.module.scss';
 
@@ -7,12 +7,36 @@ function Navigation() {
   return (
     <nav className={styles.navigation}>
       <ul>
-        <li><Link to="/">Inicial</Link></li>
-        <li><Link to="/sobre">Sobre</Link></li>
-        <li><Link to="/dashboard">Dashboard</Link></li>
-        <li><Link to="/modelos">Modelos</Link></li>
-        <li><Link to="/producoes">Produções</Link></li>
-        <li><Link to="/visualizacoes">Visualizações</Link></li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/">
+            Inicial
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/sobre">
+            Sobre
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/dashboard">
+            Dashboard
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/modelos">
+            Modelos
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/producoes">
+            Produções
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink activeClassName={styles.active} to="/visualizacoes">
+            Visualizações
+          </CustomLink>
+        </li>
       </ul>
     </nav>
   );

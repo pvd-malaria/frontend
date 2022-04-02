@@ -1,6 +1,4 @@
 .navigation {
-  outline: 1px solid green;
-
   ul {
     display: flex;
     flex-direction: row;
@@ -9,9 +7,24 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: #7c0f17;
 
     li {
-      padding: 1rem 0.7rem;
+      a {
+        display: block;
+        padding: 20px 2vw;
+        font-size: inherit;
+        color: #fff;
+        text-decoration: none;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 4px 0;
+      }
+      
+      a.active {
+        font-weight: bold;
+        border-bottom-color: var(--primary-color-yellow);
+      }
     }
   }
 }

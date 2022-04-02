@@ -1,24 +1,42 @@
 .header {
-  outline: 1px solid orange;
-
   display: flex;
   flex-direction: column;
   margin: 0;
 }
 
 .headerContent {
-  outline: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .projectBrand {
-  outline: 1px solid blue;
+  width: 12rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 }
 
 .projectSupport {
-  outline: 1px solid green;
+  width: 9rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
+
+// TODO: media query for big screens
+// TODO: add mobile menu and logos in left with division
