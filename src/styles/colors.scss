@@ -1,22 +1,35 @@
-body {
-  // Vars
-  $primary-color-red: #be1724;
-  $primary-color-blue: #1674b9;
-  $primary-color-yellow: #f9b233;
-  $primary-color-black: #333333;
+$primary-color-red: #be1724;
+$primary-color-blue: #1674b9;
+$primary-color-yellow: #f9b233;
+$primary-color-black: #333333;
 
-  $color-red-light: lighten($primary-color-red, 35%);
-  $color-red-lighter: lighten($primary-color-red, 50%);
+$color-red-light: lighten($primary-color-red, 35%);
+$color-red-lighter: lighten($primary-color-red, 50%);
 
-  $color-blue-light: lighten($primary-color-blue, 30%);
-  $color-blue-lighter: lighten($primary-color-blue, 50%);
+$color-blue-light: lighten($primary-color-blue, 30%);
+$color-blue-lighter: lighten($primary-color-blue, 50%);
 
-  $color-yellow-light: lighten($primary-color-yellow, 20%);
-  $color-yellow-lighter: lighten($primary-color-yellow, 30%);
+$color-yellow-light: lighten($primary-color-yellow, 20%);
+$color-yellow-lighter: lighten($primary-color-yellow, 30%);
 
-  $color-black-light: lighten($primary-color-black, 20%);
-  $color-black-lighter: lighten($primary-color-black, 50%);
+$color-black-light: lighten($primary-color-black, 20%);
+$color-black-lighter: lighten($primary-color-black, 50%);
 
+:root {
+  --primary-color-red: #{$primary-color-red};
+  --primary-color-blue: #{$primary-color-blue};
+  --primary-color-yellow: #{$primary-color-yellow};
+  --primary-color-black: #{$primary-color-black};
+
+  --color-red-light: #{$color-red-light};
+  --color-red-lighter: #{$color-red-lighter};
+  --color-blue-light: #{$color-blue-light};
+  --color-blue-lighter: #{$color-blue-lighter};
+  --color-yellow-light: #{$color-yellow-light};
+  --color-yellow-lighter: #{$color-yellow-lighter};
+  --color-black-light: #{$color-black-light};
+  --color-black-lighter: #{$color-black-lighter};
+  
   // Colors
   .primary-color-red {
     color: $primary-color-red;
