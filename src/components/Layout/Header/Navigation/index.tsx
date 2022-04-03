@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 function Navigation() {
   return (
     <nav className={styles.navigation}>
-      <ul>
+      <ul className="container">
         <li>
           <CustomLink activeClassName={styles.active} to="/">
             Inicial

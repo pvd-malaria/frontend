@@ -1,4 +1,6 @@
 .navigation {
+  background-color: #7c0f17;
+
   ul {
     display: flex;
     flex-direction: row;
@@ -6,8 +8,6 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
-    background-color: #7c0f17;
 
     li {
       a {

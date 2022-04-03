@@ -11,7 +11,7 @@ import LogoLaddem from '../../../images/logo-laddem.png';
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.headerContent}>
+      <div className={styles.container}>
         <div className={styles.projectBrand}>
           <Link to="/">
             <img

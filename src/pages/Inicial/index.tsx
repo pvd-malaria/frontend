@@ -13,21 +13,21 @@ function Inicial() {
         <p>Diversas visualizações e criação de novas baseado em suas necessidades.</p>
       </section>
 
-      <section className="destaque taxas">
+      <section className="container destaque taxas">
         <h4>Taxas</h4>
         <h3>Lorem ipsum dolor</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
         <Link to={'/'}>Veja mais</Link>
       </section>
 
-      <section className="destaque taxas">
+      <section className="container destaque taxas">
         <h4>Importados</h4>
         <h3>Lorem ipsum dolor</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
         <Link to={'/'}>Veja mais</Link>
       </section>
 
-      <section className="visualizacoes">
+      <section className="container visualizacoes">
         <h4>Visualizações</h4>
         <p>Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
