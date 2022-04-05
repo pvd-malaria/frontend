@@ -17,7 +17,7 @@
         color: #fff;
 
         >* {
-          font-size: var(--h4-font-size);
+          font-size: var(--h5-font-size);
           font-weight: 300;
         }
         >:first-child {
@@ -30,7 +30,34 @@
         }
       }
     }
-} 
+}
+
+.highlight {
+  padding: 3rem 2rem !important;
+
+  h4, h3 {
+    margin: 0;
+    color: var(--primary-color-blue);
+  }
+
+  &:nth-of-type(3) {
+    background-color: #f7f7f7;
+  }
+
+}
+
+.visualizations {
+  outline: 1px solid red;
+}
+
+.quality {
+  outline: 1px solid green;
+}
+
+.publications {
+  outline: 1px solid blue;
+}
+
 
 
 // Small screens
