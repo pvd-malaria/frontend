@@ -106,3 +106,7 @@ $color-black-lighter: lighten($primary-color-black, 50%);
     background-color: $color-black-lighter;
   }
 }
+
+body {
+  color: var(--color-black-light);
+}
