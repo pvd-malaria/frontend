@@ -1,16 +1,23 @@
 import { Link } from 'react-router-dom';
+import classnames from 'classnames';
 
 import Layout from '../../components/Layout';
+
+import styles from './styles.module.scss';
 
 
 function Inicial() {
   return (
     <Layout>
-      <section className="banner">
-        <h2>Plataforma de Visualização de Dados</h2>
-        <p>Para auxiliar gestores, pesquisadores e público em geral a entender melhor sobre a contaminação pela malária no Brasil.</p>
-        <p>Serviço interativo de análise de indicadores por meio de inteligência artificial.</p>
-        <p>Diversas visualizações e criação de novas baseado em suas necessidades.</p>
+      <section className={styles.banner}>
+        <div className={classnames("container", styles.container)}>
+          <div className={styles.info}>
+            <h4>Plataforma de <br/>Visualização de Dados</h4>
+            <h1>Para auxiliar gestores, pesquisadores e público em geral a entender melhor sobre a contaminação pela malária no Brasil.</h1>
+            <h2>Serviço interativo de análise de indicadores por meio de inteligência artificial.</h2>
+            <h4>Diversas visualizações e criação de novas baseado em suas necessidades.</h4>
+          </div>
+        </div>
       </section>
 
       <section className="container destaque taxas">
