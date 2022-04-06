@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 
 import styles from './styles.module.scss';
 
+import imageTaxas from './images/taxas.png';
 
 function Inicial() {
   return (
@@ -21,10 +22,15 @@ function Inicial() {
       </section>
 
       <section className={classnames("container", styles.highlight)}>
-        <h4>Taxas</h4>
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-        <Link to={'/'}>Veja mais</Link>
+        <div className={styles.image}>
+          <img src={imageTaxas} alt="Taxas"/>
+        </div>
+        <div className={styles.info}>
+          <h4>Taxas</h4>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+          <Link to={'/'}>Veja mais</Link>
+        </div>
       </section>
 
       <section className={classnames("container", styles.highlight)}>

@@ -14,8 +14,12 @@ body {
   font-weight: 300;
 }
 
-* {
-  box-sizing: border-box;
+p {
+  line-height: 140%;
+}
+
+a {
+  color: var(--primary-color-blue);
 }
 
 // Mobile first

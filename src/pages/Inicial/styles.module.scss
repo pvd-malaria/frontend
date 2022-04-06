@@ -33,17 +33,35 @@
 }
 
 .highlight {
-  padding: 3rem 2rem !important;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2rem;
 
-  h4, h3 {
-    margin: 0;
-    color: var(--primary-color-blue);
-  }
+  padding: 3rem 2rem !important;
 
   &:nth-of-type(3) {
     background-color: #f7f7f7;
   }
 
+  .info {
+    flex: 1;
+
+    h4, h3 {
+      margin: 0;
+      color: var(--primary-color-blue);
+    }
+  }
+
+  .image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .visualizations {
