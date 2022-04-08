@@ -152,13 +152,27 @@
   #pageInicial .banner .container {
     background: none;
   }
+
+  #pageInicial .banner .container .info > * {
+    width: initial;
+  }
   
   #pageInicial .banner .container .info {
     width: 100%;
   }
   
-  #pageInicial .highlight {
+  #pageInicial .highlight .container {
     flex-flow: column nowrap;
     gap: 2rem;
+  }
+
+  #pageInicial .visualizations .container .items {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  #pageInicial .publications .container .items {
+    flex-flow: column;
   }
 }
