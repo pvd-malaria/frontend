@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import Navigation from './Navigation';
 
-import styles from './styles.module.scss';
+import './styles.css';
 
 import LogoPvdMalaria from '../../../images/logo-pvd-malaria.svg';
 import LogoLaddem from '../../../images/logo-laddem.png';
@@ -10,9 +10,9 @@ import LogoLaddem from '../../../images/logo-laddem.png';
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.projectBrand}>
+    <header id="header">
+      <div className="container">
+        <div className="projectBrand">
           <Link to="/">
             <img
               src={LogoPvdMalaria}
@@ -22,7 +22,7 @@ function Header() {
           </Link>
         </div>
 
-        <div className={styles.projectSupport}>
+        <div className="projectSupport">
           <Link to="/">
             <img
               src={LogoLaddem}
