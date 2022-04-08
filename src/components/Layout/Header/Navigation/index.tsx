@@ -1,39 +1,39 @@
 import CustomLink from './CustomLink';
 
-import styles from './styles.module.scss';
+import './styles.css';
 
 
 function Navigation() {
   return (
-    <nav className={styles.navigation}>
-      <ul className="container">
+    <nav className="navigation">
+      <ul>
         <li>
-          <CustomLink activeClassName={styles.active} to="/">
+          <CustomLink activeClassName="active" to="/">
             Inicial
           </CustomLink>
         </li>
         <li>
-          <CustomLink activeClassName={styles.active} to="/sobre">
+          <CustomLink activeClassName="active" to="/sobre">
             Sobre
           </CustomLink>
         </li>
         <li>
-          <CustomLink activeClassName={styles.active} to="/dashboard">
+          <CustomLink activeClassName="active" to="/dashboard">
             Dashboard
           </CustomLink>
         </li>
         <li>
-          <CustomLink activeClassName={styles.active} to="/modelos">
+          <CustomLink activeClassName="active" to="/modelos">
             Modelos
           </CustomLink>
         </li>
         <li>
-          <CustomLink activeClassName={styles.active} to="/producoes">
+          <CustomLink activeClassName="active" to="/producoes">
             Produções
           </CustomLink>
         </li>
         <li>
-          <CustomLink activeClassName={styles.active} to="/visualizacoes">
+          <CustomLink activeClassName="active" to="/visualizacoes">
             Visualizações
           </CustomLink>
         </li>
