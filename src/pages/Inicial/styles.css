@@ -1,3 +1,7 @@
+#pageInicial .container .LinkButton {
+  margin-top: 0.5rem;
+}
+
 /* --- Banner --- */
 
 #pageInicial .banner .container {
