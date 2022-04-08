@@ -68,7 +68,12 @@ $color-black-lighter: lighten($primary-color-black, 50%);
     color: $color-black-lighter;
   }
 
-  // Backgrounds
+  // Backgrounds 
+  .bg-primary-gradient {
+    background: #a81824;
+    background: linear-gradient(155deg, #a81824 0%, $primary-color-blue 100%);
+  }
+
   .bg-primary-color-red {
     background-color: $primary-color-red;
   }
