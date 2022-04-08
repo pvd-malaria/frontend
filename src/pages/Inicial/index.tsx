@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Layout from '../../components/Layout';
+import LinkButton from '../../components/LinkButton';
 
 import './styles.css';
 
@@ -35,7 +36,7 @@ function Inicial() {
             <h4>Taxas</h4>
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            <Link to={'/'}>Veja mais</Link>
+            <LinkButton to="/">Veja mais</LinkButton>
           </div>
         </div>
       </section>
@@ -49,7 +50,7 @@ function Inicial() {
             <h4>Importados</h4>
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            <Link to={'/'}>Veja mais</Link>
+            <LinkButton to="/">Veja mais</LinkButton>
           </div>
         </div>
       </section>
@@ -72,7 +73,7 @@ function Inicial() {
               <small>Ut enim ad minim veniam, quis nostrud exercitationullamco laboris commodo consequat.</small>
             </article>
           </div>
-          <Link to="/">Mais visualizações</Link>
+          <LinkButton to="/">Mais visualizações</LinkButton>
         </div>
       </section>
 
@@ -102,7 +103,7 @@ function Inicial() {
               </Link>
             </article>
           </div>
-          <Link to="/">Mais publicações</Link>
+          <LinkButton to="/">Mais publicações</LinkButton>
         </div>
       </section>
 
