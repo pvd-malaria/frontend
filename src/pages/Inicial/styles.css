@@ -1,0 +1,164 @@
+/* --- Banner --- */
+
+#pageInicial .banner .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5rem 2rem;
+  background-image: url(./images/banner-bg.svg);
+  background-position: 50% center;
+  background-size: auto 91%;
+  background-repeat: no-repeat;
+}
+
+#pageInicial .banner .container .info > * {
+  width: 50%;
+  color: #fff;
+  font-size: var(--h5-font-size);
+  font-weight: 300;
+}
+
+#pageInicial .banner .container .info > :first-child {
+  margin-top: 0;
+  font-size: var(--h2-font-size);
+  font-weight: 400;
+}
+
+/* --- Highlight --- */
+
+#pageInicial .highlight .container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+}
+
+#pageInicial .highlight.gray .container {
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+}
+
+#pageInicial .highlight .container .info {
+  flex: 1;
+}
+
+#pageInicial .highlight .container .info h4,
+#pageInicial .highlight .container .info h3 {
+  margin: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageInicial .highlight .container .image {
+  flex: 1;
+}
+
+#pageInicial .highlight .container .image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Visualizations --- */
+
+#pageInicial .visualizations .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  padding: 5rem 2rem;
+}
+
+#pageInicial .visualizations .container h4 {
+  margin: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageInicial .visualizations .container .items {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 2rem;
+  margin: 1rem 0 3rem;
+}
+
+#pageInicial .visualizations .container .items article {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  text-align: center;
+}
+
+#pageInicial .visualizations .container .items article img {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Quality --- */
+
+#pageInicial .quality {
+  color: #fff;
+  text-align: center;
+}
+
+#pageInicial .quality .quality-bg {
+  background-image: url(./images/quality-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pageInicial .quality .container {
+  padding: 5rem 10vw;
+}
+
+#pageInicial .quality .container p {
+  font-size: var(--h5-font-size);
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+#pageInicial .quality .container a {
+  color: var(--color-blue-light);
+  text-decoration: none;
+}
+
+/* --- Publications --- */
+
+#pageInicial .publications .container {
+  gap: 2rem;
+  padding: 5rem 2rem;
+}
+
+#pageInicial .publications .container h4 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageInicial .publications .container .items {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#pageInicial .publications .container article h2 {
+  font-size: var(--h5-font-size);
+  color: var(--primary-color-blue);
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 768px) {
+  #pageInicial .banner .container {
+    background: none;
+  }
+  
+  #pageInicial .banner .container .info {
+    width: 100%;
+  }
+  
+  #pageInicial .highlight {
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+}
