@@ -141,7 +141,12 @@
   margin-bottom: 2rem;
 }
 
-#pageInicial .publications .container article h2 {
+#pageInicial .publications .container .items article a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#pageInicial .publications .container .items article a h2 {
   font-size: var(--h5-font-size);
   color: var(--primary-color-blue);
 }

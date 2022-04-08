@@ -90,12 +90,16 @@ function Inicial() {
           <h4>Publicações</h4>
           <div className="items">
             <article>
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.</p>
+              <Link to="/">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.</p>
+              </Link>
             </article>
             <article>
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.</p>
+              <Link to="/">
+                <h2>Lorem ipsum dolor sit amet consectetur do eiusmo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.</p>
+              </Link>
             </article>
           </div>
           <Link to="/">Mais publicações</Link>
