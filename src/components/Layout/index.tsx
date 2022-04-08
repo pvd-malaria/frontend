@@ -7,14 +7,15 @@ import Wrapper from './Wrapper';
 
 interface LayoutProps {
   children: ReactNode;
+  id?: string;
 }
 
 
 function Layout(props: LayoutProps){
   return (
-    <Wrapper>
+    <Wrapper id={'wrapper_'+props.id}>
       <Header />
-      <Main>{props.children}</Main>
+      <Main id={props.id}>{props.children}</Main>
       <Footer />
     </Wrapper>
   );

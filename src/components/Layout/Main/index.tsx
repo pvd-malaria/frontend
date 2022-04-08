@@ -1,15 +1,16 @@
 import { ReactNode } from 'react';
 
-import styles from './styles.module.scss';
+import './styles.css';
 
 interface MainProps {
   children: ReactNode;
+  id?: string;
 }
 
 
 function Main(props: MainProps) {
   return (
-    <main className={styles.main}>
+    <main id={props.id} className="main">
       {props.children}
     </main>
   );
