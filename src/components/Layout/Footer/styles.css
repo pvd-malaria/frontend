@@ -54,7 +54,8 @@
   filter: grayscale(0);
 }
 
-/* Mobile */
+/* --- Mobile --- */
+
 @media screen and (max-width: 768px) {
   #footer section {
     flex-direction: column;

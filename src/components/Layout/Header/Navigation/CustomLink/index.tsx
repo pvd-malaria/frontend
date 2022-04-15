@@ -1,5 +1,8 @@
-import { useCallback } from 'react';
+import { useCallback, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+
+import { AppContext } from '../../../../../contexts/AppContext';
+
 
 interface CustomLinkProps {
   children: React.ReactNode;
@@ -10,6 +13,8 @@ interface CustomLinkProps {
 
 function CustomLink(props: CustomLinkProps) {
 
+  const appContext = useContext(AppContext);
+
   const isActiveClass = useCallback((params) => {
     return (params.isActive) ? props.activeClassName : '';
   }, [props.activeClassName]);
@@ -17,7 +22,8 @@ function CustomLink(props: CustomLinkProps) {
   return (
     <NavLink
       className={isActiveClass}
-      to={props.to}>
+      to={props.to}
+      onClick={appContext.navigationClose}>
       {props.children}
     </NavLink>
   );

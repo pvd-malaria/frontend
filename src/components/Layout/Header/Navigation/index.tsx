@@ -1,11 +1,20 @@
+import { useContext } from 'react';
+
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+
+import { AppContext } from '../../../../contexts/AppContext';
 import CustomLink from './CustomLink';
 
 import './styles.css';
 
 
 function Navigation() {
+
+  const appContext = useContext(AppContext);
+
   return (
-    <nav className="navigation">
+    <nav id="navigation">
       <ul>
         <li>
           <CustomLink activeClassName="active" to="/">
@@ -38,6 +47,10 @@ function Navigation() {
           </CustomLink>
         </li>
       </ul>
+      
+      <IconButton id="closeIconButton" onClick={appContext.navigationClose}>
+        <CloseIcon fontSize="large"/>
+      </IconButton>
     </nav>
   );
 }
