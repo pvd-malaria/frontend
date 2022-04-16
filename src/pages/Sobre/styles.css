@@ -1,0 +1,109 @@
+#pageSobre .container {
+  padding: 5rem 2rem 0;
+}
+
+#pageSobre .container:last-of-type {
+  padding-bottom: 5rem;
+}
+
+#pageSobre .container h1,
+#pageSobre .container h2,
+#pageSobre .container h3 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+/* --- Resumo --- */
+
+#pageSobre .resumo .container {
+  padding-bottom: 0;
+}
+
+#pageSobre .resumo .container h1 {
+  font-size: var(--h3-font-size);
+}
+
+#pageSobre .resumo .container .info {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+#pageSobre .resumo .container .info p:first-of-type {
+  margin-top: 0;
+}
+
+/* --- Equipe --- */
+
+#pageSobre .equipe .container h2 {
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+}
+
+#pageSobre .equipe .container h4 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageSobre .equipe .container .listMembros {
+  display: flex;
+  flex: 1;
+  flex-flow: wrap;
+}
+
+#pageSobre .equipe .container .membro {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem;
+  width: 25%;
+}
+
+#pageSobre .equipe .container .membro .foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem;
+  width: 12rem;
+  height: 12rem;
+  background-color: #eee;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#pageSobre .equipe .container .membro p {
+  margin: 0;
+  text-align: center;
+}
+
+#pageSobre .equipe .container .membro p.nome {
+  font-weight: 700;
+}
+
+#pageSobre .equipe .container .membro p.email {
+  font-size: var(--small-font-size);
+}
+
+#pageSobre .equipe .container .membro p.bio {
+  opacity: 0.5;
+  font-size: var(--small-font-size);
+}
+
+/* --- Convite --- */
+
+#pageSobre .convite .container {
+  padding-top: 0;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 768px) {
+  #pageSobre .resumo .container .info {
+    column-count: initial;
+    column-gap: initial;
+  }
+
+  #pageSobre .equipe .container .membro {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
