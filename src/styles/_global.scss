@@ -32,6 +32,10 @@ html {
   font-size: 3.5vmin;
 }
 
+ul, li, a {
+  font-size: inherit;
+}
+
 // Medium screens
 @media (min-width: 768px) {
 // @media (min-width: 768px), (min-height: 400px) {
