@@ -4,19 +4,22 @@
 
 /* --- Banner --- */
 
+#pageInicial .banner .banner-bg-image {
+  background-image: url(./images/banner-bg.svg);
+  background-position: 60% center;
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+}
+
 #pageInicial .banner .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 5rem 2rem;
-  background-image: url(./images/banner-bg.svg);
-  background-position: 50% center;
-  background-size: auto 91%;
-  background-repeat: no-repeat;
 }
 
 #pageInicial .banner .container .info > * {
-  width: 50%;
+  width: 60%;
   color: #fff;
   font-size: var(--h5-font-size);
   font-weight: 300;
