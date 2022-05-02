@@ -83,7 +83,7 @@
 #pageInicial .visualizations .container .items {
   display: flex;
   flex-flow: row nowrap;
-  column-gap: 2rem;
+  column-gap: 3rem;
   margin: 1rem 0 3rem;
 }
 
@@ -91,7 +91,8 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  text-align: center;
+  flex: 1;
+  text-align: left;
 }
 
 #pageInicial .visualizations .container .items article img {
@@ -116,7 +117,7 @@
 }
 
 #pageInicial .quality .container {
-  padding: 5rem 10vw;
+  padding: 8rem 10vw;
 }
 
 #pageInicial .quality .container p {
@@ -146,6 +147,10 @@
   flex-flow: row nowrap;
   column-gap: 2rem;
   margin-bottom: 2rem;
+}
+
+#pageInicial .publications .container .items article {
+  flex: 1px;
 }
 
 #pageInicial .publications .container .items article a {
