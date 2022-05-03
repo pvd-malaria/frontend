@@ -56,10 +56,17 @@
 
 /* --- Mobile --- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1050px){
+
+  #header .container {
+    display: flex;
+    flex-direction: row;
+  }
 
   #header .container .mobileMenu {
     display: block;
+    flex:1;
+    text-align: right;
   }
 
   #header .container .projectSupport {

@@ -16,7 +16,7 @@ function Navigation() {
 
   return (
     <nav id="navigation">
-      <ul>
+      <ul className="container">
         <li>
           <CustomLink activeClassName="active" to="/">
             Inicial
