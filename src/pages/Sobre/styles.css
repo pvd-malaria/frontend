@@ -24,8 +24,8 @@
 }
 
 #pageSobre .resumo .container .info {
-  column-count: 2;
-  column-gap: 2rem;
+  /* column-count: 2; */
+  /* column-gap: 2rem; */
 }
 
 #pageSobre .resumo .container .info p:first-of-type {
