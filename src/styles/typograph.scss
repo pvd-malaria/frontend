@@ -3,7 +3,7 @@ $h2-font-size: 200%;
 $h3-font-size: 200%;
 $h4-font-size: 160%;
 $h5-font-size: 140%;
-$p-font-size: 115%;
+$p-font-size: 110%;
 $small-font-size: 95%;
 
 :root {
@@ -14,42 +14,82 @@ $small-font-size: 95%;
   --h5-font-size: #{$h5-font-size};
   --p-font-size: #{$p-font-size};
   --small-font-size: #{$small-font-size};
+
+  h1 {
+    font-size: $h1-font-size;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: $h2-font-size;
+    font-weight: 400;
+  }
+  
+  h3 {
+    font-size: $h3-font-size;
+    font-weight: 300;
+  }
+  
+  h4 {
+    font-size: $h4-font-size;
+    font-weight: 500;
+  }
+  
+  h5 {
+    font-size: $h5-font-size;
+    font-weight: 300;
+  }
+  
+  section,
+  li,
+  a,
+  button,
+  span,
+  p {
+    font-size: $p-font-size;
+    font-weight: 400;
+  }
+  
+  small {
+    font-size: $small-font-size;
+    font-weight: 300;
+  }
+  
+  strong {
+    font-weight: 500;
+  }
+  
+  li, p {
+    line-height: 140%;
+  }
+  
+  a {
+    // font-size: inherit;
+    color: var(--primary-color-blue);
+  }
+  
+  // Mobile first
+  html {
+    font-size: 3.5vmin;
+  }
 }
 
-h1 {
-  font-size: $h1-font-size;
-  font-weight: 700;
+// Medium screens
+@media (min-width: 768px) {
+
+  // @media (min-width: 768px), (min-height: 400px) {
+  html {
+    font-size: 100%;
+  }
 }
-h2 {
-  font-size: $h2-font-size;
-  font-weight: 400;
-}
-h3 {
-  font-size: $h3-font-size;
-  font-weight: 300;
-}
-h4 {
-  font-size: $h4-font-size;
-  font-weight: 500;
-}
-h5 {
-  font-size: $h5-font-size;
-  font-weight: 300;
-}
-li,
-a,
-button,
-span,
-p {
-  font-size: $p-font-size;
-  font-weight: 400;
-}
-small {
-  font-size: $small-font-size;
-  font-weight: 300;
-}
-strong {
-  font-weight: 500;
+
+// Large screens
+@media (min-width: 1600px) {
+
+  // @media (min-width: 1400px), (min-height: 800px) {
+  html {
+    font-size: 115%;
+  }
 }
 
 // TODO: add vars to root for below refs
