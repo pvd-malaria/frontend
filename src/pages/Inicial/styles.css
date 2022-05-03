@@ -6,8 +6,8 @@
 
 #pageInicial .banner .banner-bg-image {
   background-image: url(./images/banner-bg.svg);
-  background-position: 60% center;
-  background-size: auto 70%;
+  background-position: calc(50% + 100px) center;
+  background-size: auto 75%;
   background-repeat: no-repeat;
 }
 
@@ -21,7 +21,7 @@
 #pageInicial .banner .container .info > * {
   width: 60%;
   color: #fff;
-  font-size: var(--h5-font-size);
+  font-size: var(--p-font-size);
   font-weight: 300;
 }
 
@@ -83,7 +83,7 @@
 #pageInicial .visualizations .container .items {
   display: flex;
   flex-flow: row nowrap;
-  column-gap: 3rem;
+  column-gap: 4rem;
   margin: 1rem 0 3rem;
 }
 
@@ -91,16 +91,15 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  flex: 1;
+  width: 33%;
   text-align: left;
 }
 
 #pageInicial .visualizations .container .items article img {
-  padding: 0.5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
   background-color: #fff;
   border-radius: 0.3rem;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
 }
 
 /* --- Quality --- */
@@ -166,7 +165,7 @@
 /* --- Mobile --- */
 
 @media screen and (max-width: 768px) {
-  #pageInicial .banner .container {
+  #pageInicial .banner .banner-bg-image {
     background: none;
   }
 
@@ -189,7 +188,15 @@
     width: 100%;
   }
 
+  #pageInicial .visualizations .container .items article {
+    min-width: 300px;
+  }
+
   #pageInicial .publications .container .items {
     flex-flow: column;
+  }
+
+  #pageInicial .visualizations .container .items article span {
+    display: none;
   }
 }

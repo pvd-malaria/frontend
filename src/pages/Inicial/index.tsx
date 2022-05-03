@@ -69,17 +69,17 @@ function Inicial() {
             <article>
               <img src={imageVisualization0} alt="Visualização" />
               <strong>{getItemFromContents('pagina_inicial_visualizacoes_1a', 'title')}</strong>
-              <small>{getItemFromContents('pagina_inicial_visualizacoes_1a', 'short')}</small>
+              <span>{getItemFromContents('pagina_inicial_visualizacoes_1a', 'short')}</span>
             </article>
             <article>
               <img src={imageVisualization1} alt="Visualização" />
               <strong>{getItemFromContents('pagina_inicial_visualizacoes_2a', 'title')}</strong>
-              <small>{getItemFromContents('pagina_inicial_visualizacoes_2a', 'short')}</small>
+              <span>{getItemFromContents('pagina_inicial_visualizacoes_2a', 'short')}</span>
             </article>
             <article>
               <img src={imageVisualization2} alt="Visualização" />
               <strong>{getItemFromContents('pagina_inicial_visualizacoes_3a', 'title')}</strong>
-              <small>{getItemFromContents('pagina_inicial_visualizacoes_3a', 'short')}</small>
+              <span>{getItemFromContents('pagina_inicial_visualizacoes_3a', 'short')}</span>
             </article>
           </div>
           <LinkButton to={getItemFromContents('pagina_inicial_visualizacoes', 'url')}>Mais visualizações</LinkButton>
