@@ -1,9 +1,5 @@
 #pageSobre .container {
-  padding: 5rem 2rem 0;
-}
-
-#pageSobre .container:last-of-type {
-  padding-bottom: 5rem;
+  padding: 5rem 2rem;
 }
 
 #pageSobre .container h1,
@@ -15,21 +11,16 @@
 
 /* --- Resumo --- */
 
-#pageSobre .resumo .container {
-  padding-bottom: 0;
+#pageSobre .resumo {
+  background-color: #eee;
 }
 
 #pageSobre .resumo .container h1 {
   font-size: var(--h3-font-size);
 }
 
-#pageSobre .resumo .container .info {
-  /* column-count: 2; */
-  /* column-gap: 2rem; */
-}
-
-#pageSobre .resumo .container .info p:first-of-type {
-  margin-top: 0;
+#pageSobre .resumo .container .info p:last-of-type {
+  margin-bottom: 0;
 }
 
 /* --- Equipe --- */
@@ -90,8 +81,8 @@
 
 /* --- Convite --- */
 
-#pageSobre .convite .container {
-  padding-top: 0;
+#pageSobre .convite {
+  background-color: #eee;
 }
 
 /* --- Mobile --- */
