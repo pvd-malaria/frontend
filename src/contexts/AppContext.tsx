@@ -29,13 +29,29 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 export function AppContextProvider(props: IAppContextProviderProps) {
 
   const getHtmlFromContents = useCallback((id: string, property: ContentsProperty, tag?: string): JSX.Element => {
-    const filteredItem = contentsJson.filter(item => item.id === id)[0];   
-    return <Interweave noWrap content={filteredItem[property]} />;
+    let output: JSX.Element;
+    const filteredItem = contentsJson.filter(item => item.id === id);   
+
+    if (filteredItem.length === 0) {
+      output = <>Item "{id}.{property}" nao encontrado em contents.json</>;
+    } else {
+      output = <Interweave noWrap content={filteredItem[0][property]} />;
+    }
+
+    return output;
   }, []);
 
   const getItemFromContents = useCallback((id: string, property: ContentsProperty): string => {
-    const filteredItem = contentsJson.filter(item => item.id === id)[0];   
-    return filteredItem[property];
+    let output: string;
+    const filteredItem = contentsJson.filter(item => item.id === id);   
+
+    if (filteredItem.length === 0) {
+      output = `Item "${id}.${property}" nao encontrado em contents.json`;
+    } else {
+      output = filteredItem[0][property];
+    }
+
+    return output;
   }, []);
 
   const navigationOpen = useCallback(() => {
