@@ -125,7 +125,7 @@
     }
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1000px) {
     #navigation {
       display: none;
       position: fixed;
