@@ -1,0 +1,40 @@
+#pageVisualizacoesLista .container {
+  padding: 5rem 2rem;
+}
+
+#pageVisualizacoesLista .container h1,
+#pageVisualizacoesLista .container h2,
+#pageVisualizacoesLista .container h3 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+/* --- Info --- */
+
+#pageVisualizacoesLista .infoWrapper .container {
+  padding-bottom: 0;
+}
+
+#pageVisualizacoesLista .infoWrapper .container h1 {
+  font-size: var(--h3-font-size);
+}
+
+#pageVisualizacoesLista .infoWrapper .container .info p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* --- Lista --- */
+
+#pageVisualizacoesLista .listWrapper .container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 768px) {
+  #pageVisualizacoesLista .container {  }
+}
