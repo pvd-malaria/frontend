@@ -29,12 +29,23 @@
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+  gap: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+#pageVisualizacoesLista .listWrapper .container .listItem {
+  width: 25%;
 }
 
 /* --- Mobile --- */
 
 @media screen and (max-width: 768px) {
   #pageVisualizacoesLista .container {  }
+
+  /* --- Lista --- */
+  
+  #pageVisualizacoesLista .listWrapper .container {
+    gap: 1rem;
+  }
 }
