@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 // TODO: fetch method inside component.
-import barsFilledFull from '../../images/bars-filled-full.svg';
-import barsHorizontal from '../../images/bars-horizontal.svg';
-import bubbles from '../../images/bubbles.svg';
-import donuts from '../../images/donuts.svg';
-import lines from '../../images/lines.svg';
-import linesFilled from '../../images/lines-filled.svg';
-import linesFilledFull from '../../images/lines-filled-full.svg';
-import mapNetwork from '../../images/map-network.svg';
-import mountain from '../../images/mountain.svg';
+import barsFilledFull from './images/bars-filled-full.svg';
+import barsHorizontal from './images/bars-horizontal.svg';
+import bubbles from './images/bubbles.svg';
+import donuts from './images/donuts.svg';
+import lines from './images/lines.svg';
+import linesFilled from './images/lines-filled.svg';
+import linesFilledFull from './images/lines-filled-full.svg';
+import mapNetwork from './images/map-network.svg';
+import mountain from './images/mountain.svg';
 
 
 export type visualizationType = 'barsFilledFull' 
