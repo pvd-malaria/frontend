@@ -1,7 +1,7 @@
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Interweave } from 'interweave';
 
-import { AppContext } from '../../contexts/AppContext';
+import jsonInicial from '../../contents/inicial.json';
 
 import Layout from '../../components/Layout';
 import LinkButton from '../../components/LinkButton';
@@ -16,9 +16,6 @@ import imageVisualization2 from './images/visualization-2.png';
 
 
 function Inicial() {
-
-  const { getHtmlFromContents, getItemFromContents } = useContext(AppContext);
-  
   return (
     <Layout id="pageInicial">
 
@@ -26,8 +23,8 @@ function Inicial() {
         <div className="banner-bg-image">
           <div className="container">
             <div className="info">
-              <h2>{getHtmlFromContents('pagina_inicial_banner', 'title')}</h2>
-              {getHtmlFromContents('pagina_inicial_banner', 'description')}
+              <h2>{jsonInicial.banner.title}</h2>
+              <Interweave noWrap content={jsonInicial.banner.description} />
             </div>
           </div>
         </div>
@@ -39,13 +36,14 @@ function Inicial() {
             <img src={imageTaxas} alt="Taxas"/>
           </div>
           <div className="info">
-            <h4>{getItemFromContents('pagina_inicial_taxas', 'title')}</h4>
-            <h3>{getItemFromContents('pagina_inicial_taxas', 'short')}</h3>
-            <p>{getItemFromContents('pagina_inicial_taxas', 'description')}</p>
-            <LinkButton to={getItemFromContents('pagina_inicial_taxas', 'url')}>Veja mais</LinkButton>
+            <h4>{jsonInicial.taxas.title}</h4>
+            <h3>{jsonInicial.taxas.short}</h3>
+            <p>{jsonInicial.taxas.description}</p>
+            <LinkButton to={jsonInicial.taxas.url}>Veja mais</LinkButton>
           </div>
         </div>
       </section>
+
 
       <section className="highlight gray">
         <div className="container">
@@ -53,69 +51,68 @@ function Inicial() {
             <img src={imageImportados} alt="Importados"/>
           </div>
           <div className="info">
-            <h4>{getItemFromContents('pagina_inicial_importados', 'title')}</h4>
-            <h3>{getItemFromContents('pagina_inicial_importados', 'short')}</h3>
-            <p>{getItemFromContents('pagina_inicial_importados', 'description')}</p>
-            <LinkButton to={getItemFromContents('pagina_inicial_importados', 'url')}>Veja mais</LinkButton>
+            <h4>{jsonInicial.importados.title}</h4>
+            <h3>{jsonInicial.importados.short}</h3>
+            <p>{jsonInicial.importados.description}</p>
+            <LinkButton to={jsonInicial.importados.url}>Veja mais</LinkButton>
           </div>
         </div>
       </section>
 
       <section className="visualizations">
         <div className="container">
-          <h4>{getItemFromContents('pagina_inicial_visualizacoes', 'title')}</h4>
-          <p>{getItemFromContents('pagina_inicial_visualizacoes', 'description')}</p>
+          <h4>{jsonInicial.visualizacoes.title}</h4>
+          <p>{jsonInicial.visualizacoes.description}</p>
           <div className="items">
             <article>
               <img src={imageVisualization0} alt="Visualização" />
-              <strong>{getItemFromContents('pagina_inicial_visualizacoes_1a', 'title')}</strong>
-              <span>{getItemFromContents('pagina_inicial_visualizacoes_1a', 'short')}</span>
+              <strong>{jsonInicial.visualizacoes.items[0].title}</strong>
+              <span>{jsonInicial.visualizacoes.items[0].short}</span>
             </article>
             <article>
               <img src={imageVisualization1} alt="Visualização" />
-              <strong>{getItemFromContents('pagina_inicial_visualizacoes_2a', 'title')}</strong>
-              <span>{getItemFromContents('pagina_inicial_visualizacoes_2a', 'short')}</span>
+              <strong>{jsonInicial.visualizacoes.items[1].title}</strong>
+              <span>{jsonInicial.visualizacoes.items[1].short}</span>
             </article>
             <article>
               <img src={imageVisualization2} alt="Visualização" />
-              <strong>{getItemFromContents('pagina_inicial_visualizacoes_3a', 'title')}</strong>
-              <span>{getItemFromContents('pagina_inicial_visualizacoes_3a', 'short')}</span>
+              <strong>{jsonInicial.visualizacoes.items[2].title}</strong>
+              <span>{jsonInicial.visualizacoes.items[2].short}</span>
             </article>
           </div>
-          <LinkButton to={getItemFromContents('pagina_inicial_visualizacoes', 'url')}>Mais visualizações</LinkButton>
+          <LinkButton to={jsonInicial.visualizacoes.url}>Mais visualizações</LinkButton>
         </div>
       </section>
 
       <section className="quality bg-primary-gradient">
         <div className="quality-bg">
           <div className="container">
-            <h4>{getItemFromContents('pagina_inicial_qualidade_da_informacao', 'title')}</h4>
-            <p>{getItemFromContents('pagina_inicial_qualidade_da_informacao', 'description')}</p>
+            <h4>{jsonInicial.qualidade_da_informacao.title}</h4>
+            <p>{jsonInicial.qualidade_da_informacao.description}</p>
           </div>
         </div>
       </section>
 
       <section className="publications">
         <div className="container">
-          <h4>{getItemFromContents('pagina_inicial_publicacoes', 'title')}</h4>
+          <h4>{jsonInicial.publicacoes.title}</h4>
           <div className="items">
             <article>
-              <Link to="{getItemFromContents('pagina_inicial_publicacoes_1', 'url')}">
-                <h2>{getItemFromContents('pagina_inicial_publicacoes_1', 'title')}</h2>
-                <p>{getItemFromContents('pagina_inicial_publicacoes_1', 'short')}</p>
+              <Link to={jsonInicial.publicacoes.items[1].url}>
+                <h2>{jsonInicial.publicacoes.items[1].title}</h2>
+                <p>{jsonInicial.publicacoes.items[1].short}</p>
               </Link>
             </article>
             <article>
-              <Link to="{getItemFromContents('pagina_inicial_publicacoes_2', 'url')}">
-                <h2>{getItemFromContents('pagina_inicial_publicacoes_2', 'title')}</h2>
-                <p>{getItemFromContents('pagina_inicial_publicacoes_2', 'short')}</p>
+              <Link to={jsonInicial.publicacoes.items[2].url}>
+                <h2>{jsonInicial.publicacoes.items[2].title}</h2>
+                <p>{jsonInicial.publicacoes.items[2].short}</p>
               </Link>
             </article>
           </div>
-          <LinkButton to={getItemFromContents('pagina_inicial_publicacoes', 'url')}>Mais publicações</LinkButton>
+          <LinkButton to={jsonInicial.publicacoes.url}>Mais publicações</LinkButton>
         </div>
       </section>
-
     </Layout>
   );
 }
