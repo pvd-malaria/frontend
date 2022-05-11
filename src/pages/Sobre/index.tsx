@@ -1,33 +1,32 @@
-import { useContext } from 'react';
+// import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Interweave } from 'interweave';
 
-import { AppContext } from '../../contexts/AppContext';
+import jsonSobre from '../../contents/sobre.json';
+
 import Layout from '../../components/Layout';
 
 import './styles.css';
 
 
 function Sobre() {
-
-  const { getHtmlFromContents, getItemFromContents } = useContext(AppContext);
-
   return (
     <Layout id="pageSobre">
 
       <section className="resumo">
         <div className="container">
-          <h1>{getItemFromContents('pagina_sobre', 'title')}</h1>
+          <h1>{jsonSobre.page.title}</h1>
           <div className="info">
-            {getHtmlFromContents('pagina_sobre', 'description')}
+            <Interweave noWrap content={jsonSobre.page.description} />
           </div>
         </div>
       </section>
 
       <section className="equipe">
         <div className="container">
-          <h2>{getItemFromContents('pagina_sobre_equipe', 'title')}</h2>
+          <h2>{jsonSobre.equipe.title}</h2>
           <div className="info">
-            <p>{getItemFromContents('pagina_sobre_equipe', 'description')}</p>
+            <p>{jsonSobre.equipe.description}</p>
           </div>
         </div>
 
@@ -127,13 +126,11 @@ function Sobre() {
 
       <section className="convite">
         <div className="container">
-          <h1>{getItemFromContents('pagina_sobre_projeto', 'title')}</h1>
+          <h1>{jsonSobre.projeto.title}</h1>
           <div className="info">
-            {getHtmlFromContents('pagina_sobre_projeto', 'description')}
+            <Interweave noWrap content={jsonSobre.projeto.description} />
             <p>
-              <Link to={getItemFromContents('pagina_sobre_projeto', 'url')}>
-                Lorem ipsum dolor
-              </Link>
+              <Link to={jsonSobre.projeto.url}>Lorem ipsum dolor</Link>
             </p>
           </div>
         </div>
