@@ -8,7 +8,7 @@ interface LinkButtonProps {
   children: ReactNode;
   id?: string;
   to?: string;
-  style?: 'outlined' | 'filled';
+  className?: string;
 }
 
 
@@ -16,7 +16,7 @@ function LinkButton(props: LinkButtonProps){
   return (
     <Link 
       to={props.to || 'javscript:;'}
-      className={`LinkButton ${props.style || 'filled'}`}>
+      className={`LinkButton ${props.className || 'filled'}`}>
       {props.children}
     </Link>
   );

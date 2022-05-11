@@ -27,3 +27,8 @@
 .LinkButton.outlined:hover {
   border-color: var(--primary-color-blue);
 }
+
+.LinkButton.outlined.white {
+  border-color: #fff;
+  color: #fff;
+}
