@@ -38,6 +38,33 @@
   width: 25%;
 }
 
+/* --- Lista --- */
+
+#pageVisualizacoesLista .wrapperQuality {
+  background-image: 
+    linear-gradient(155deg, #a81824 0%, var(--primary-color-blue) 100%),
+    url(images/visualizacoes_quality.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center top;
+}
+
+#pageVisualizacoesLista .wrapperQuality .container {
+  
+}
+#pageVisualizacoesLista .wrapperQuality .container h2 {
+  max-width: 300px;
+  font-size: var(--h1-font-size);
+  color: #fff;
+}
+
+#pageVisualizacoesLista .wrapperQuality .container p {
+  max-width: 300px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+
 /* --- Mobile --- */
 
 @media screen and (max-width: 768px) {

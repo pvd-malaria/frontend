@@ -3,6 +3,7 @@
     "title": "Galeria de visualizações",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
   },
+
   "gallery": [
     {
       "id": "casos_de_malaria_bubble",
@@ -130,5 +131,11 @@
       "description": "",
       "file": "mobilidade.html"
     }
-  ]
+  ],
+
+  "quality": {
+    "title": "Qualidade da informação",
+    "description": "Porcentagem de informações ausentes segundo variável do SIVEP e UF, 2007-2019",
+    "url": "/qualidade-da-informacao"
+  }
 }

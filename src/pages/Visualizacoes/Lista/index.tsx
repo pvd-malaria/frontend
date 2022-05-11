@@ -1,3 +1,5 @@
+import LinkButton from '../../../components/LinkButton';
+
 import Layout from '../../../components/Layout';
 import Item from './Item';
 
@@ -18,10 +20,9 @@ function VisualizacoesLista() {
 
       <section className="wrapperList">
         <div className="container">
-
           {
             jsonVisualizacoes.gallery
-              .map((item) => (
+              .map((item) =>
                 <Item
                   // @ts-ignore
                   type={item.type}
@@ -29,13 +30,20 @@ function VisualizacoesLista() {
                   title={item.title}
                 />
               )
-              )
           }
 
           {/* Hack para space-between */}
           <article className="listItem"></article>
           <article className="listItem"></article>
           <article className="listItem"></article>
+        </div>
+      </section>
+
+      <section className="wrapperQuality bg-primary-gradient">
+        <div className="container">
+          <h2>{jsonVisualizacoes.quality.title}</h2>
+          <p>{jsonVisualizacoes.quality.description}</p>
+          <LinkButton to={jsonVisualizacoes.quality.url} className="outlined white">Veja mais</LinkButton>
         </div>
       </section>
     </Layout>
