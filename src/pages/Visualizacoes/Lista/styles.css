@@ -11,21 +11,21 @@
 
 /* --- Info --- */
 
-#pageVisualizacoesLista .infoWrapper .container {
+#pageVisualizacoesLista .wrapperInfo .container {
   padding-bottom: 0;
 }
 
-#pageVisualizacoesLista .infoWrapper .container h1 {
+#pageVisualizacoesLista .wrapperInfo .container h1 {
   font-size: var(--h3-font-size);
 }
 
-#pageVisualizacoesLista .infoWrapper .container .info p:last-of-type {
+#pageVisualizacoesLista .wrapperInfo .container .info p:last-of-type {
   margin-bottom: 0;
 }
 
 /* --- Lista --- */
 
-#pageVisualizacoesLista .listWrapper .container {
+#pageVisualizacoesLista .wrapperList .container {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
@@ -34,7 +34,7 @@
   padding-bottom: 2rem;
 }
 
-#pageVisualizacoesLista .listWrapper .container .listItem {
+#pageVisualizacoesLista .wrapperList .container .listItem {
   width: 25%;
 }
 
@@ -45,7 +45,7 @@
 
   /* --- Lista --- */
   
-  #pageVisualizacoesLista .listWrapper .container {
+  #pageVisualizacoesLista .wrapperList .container {
     gap: 1rem;
   }
 }
