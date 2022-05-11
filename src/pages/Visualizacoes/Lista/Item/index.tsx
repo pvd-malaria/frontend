@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
+// TODO: fetch method inside component.
 import barsFilledFull from '../../images/bars-filled-full.svg';
 import barsHorizontal from '../../images/bars-horizontal.svg';
 import bubbles from '../../images/bubbles.svg';
@@ -15,7 +16,7 @@ import mapNetwork from '../../images/map-network.svg';
 import mountain from '../../images/mountain.svg';
 
 
-type graph = 'barsFilledFull' 
+export type visualizationType = 'barsFilledFull' 
   | 'barsHorizontal' 
   | 'bubbles' 
   | 'donuts' 
@@ -28,23 +29,23 @@ type graph = 'barsFilledFull'
 interface ItemProps {
   label: string;
   title: string;
-  type: graph;
+  type: visualizationType;
 }
 
 
 function Item(props: ItemProps) {
 
-  const getSource = useCallback((type: graph) => {
+  const getSource = useCallback((type: visualizationType) => {
     switch (type) {
-      case 'barsFilledFull':return barsFilledFull;
-      case 'barsHorizontal':return barsHorizontal;
-      case 'bubbles':return bubbles;
-      case 'donuts':return donuts;
-      case 'lines':return lines;
-      case 'linesFilled':return linesFilled;
-      case 'linesFilledFull':return linesFilledFull;
-      case 'mapNetwork':return mapNetwork;
-      case 'mountain':return mountain;
+      case 'barsFilledFull': return barsFilledFull;
+      case 'barsHorizontal': return barsHorizontal;
+      case 'bubbles': return bubbles;
+      case 'donuts': return donuts;
+      case 'lines': return lines;
+      case 'linesFilled': return linesFilled;
+      case 'linesFilledFull': return linesFilledFull;
+      case 'mapNetwork': return mapNetwork;
+      case 'mountain': return mountain;
     } 
   }, []);
   

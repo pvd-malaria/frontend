@@ -1,0 +1,134 @@
+{
+  "page": {
+    "title": "Galeria de visualizações",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
+  },
+  "gallery": [
+    {
+      "id": "casos_de_malaria_bubble",
+      "url": "/visualizacoes/casos_de_malaria_bubble",
+      "type": "bubbles",
+      "label": "Relação",
+      "title": "Casos de Malária - Bubble",
+      "description": "Casos positivos de Malária entre os estados da Amazônia Legal período de 2007 à 2019. Dentro deste período pode-se perceber uma diminuiço dos números de casos para todos estados. Houve oscilaçes importantes nos números de casos de Malaria para os Estados do Pará e Amazonas no período, sendo que no ano de 2011, o Pará ultrapassa o estado do Amazonas em número de casos no ano todo.",
+      "file": "casos_de_malaria_bubble.html"
+    },
+    {
+      "id": "casos_de_malaria_line",
+      "url": "/visualizacoes/casos_de_malaria_line",
+      "type": "lines",
+      "label": "Relação",
+      "title": "Casos de Malária - Line",
+      "description": "Casos positivos de Malária entre os estados da Amazônia Legal período de 2007 à 2019. Dentro deste período pode-se perceber uma diminuiço dos números de casos para todos estados. Houve oscilaçes importantes nos números de casos de Malaria para os Estados do Pará e Amazonas no período, sendo que no ano de 2011, o Pará ultrapassa o estado do Amazonas em número de casos no ano todo.",
+      "file": "casos_de_malaria_line.html"
+    },
+    {
+      "id": "nível_de_escolaridade_testados_positivos",
+      "url": "/visualizacoes/nível_de_escolaridade_testados_positivos",
+      "type": "barsFilledFull",
+      "label": "Relação",
+      "title": "Nível de Escolaridade Testados Positivos",
+      "description": "Proporção entre os níveis de escolaridade (Analfabeto, 1ª a 4ª série incompleta do EF, 4ª série completa do EF, 5ª a 8ª série incompleta do EF, Ensino fundamental completo, Ensino médio incompleto, Ensino médio completo, Educação superior incompleto, Educação superior completa e Não se aplica) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2011 à 2019.",
+      "file": "nível_de_escolaridade_testados_positivos.html"
+    },
+    {
+      "id": "grupos_de_anos_de_estudo",
+      "url": "/visualizacoes/grupos_de_anos_de_estudo",
+      "type": "linesFilledFull",
+      "label": "Relação",
+      "title": "Grupos de Anos de Estudo",
+      "description": "Proporção entre os níveis de escolaridade (Analfabeto, 1ª a 4ª série incompleta do EF, 4ª série completa do EF, 5ª a 8ª série incompleta do EF, Ensino fundamental completo, Ensino médio incompleto, Ensino médio completo, Educação superior incompleto, Educação superior completa e Não se aplica) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2011 à 2019.",
+      "file": "grupos_de_anos_de_estudo.html"
+    },
+    {
+      "id": "gestantes",
+      "url": "/visualizacoes/gestantes",
+      "type": "barsFilledFull",
+      "label": "Relação",
+      "title": "Gestantes",
+      "description": "",
+      "file": "gestantes.html"
+    },
+    {
+      "id": "ocupacao",
+      "url": "/visualizacoes/ocupacao",
+      "type": "donuts",
+      "label": "Relação",
+      "title": "Ocupação",
+      "description": "Proporção entre as atividades exercidas: Agricultura, Pecuária,Doméstica, Turismo,Garimpagem, Exploração Vegetal, Caça/Pesca, Consts. Estrada e Barragens, Mineração, Viajante, Outros e Ignorado) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2007 à 2019. Chama à atenção o aumento da participação da atividade de Garimpagem entre os testados positivo no estado do Pará, entre os anos de 2013 e 2017 chegando a 30% dos casos em 2013, sendo que no ano anterior foi de 11% dos casos. A mesma atividade de Garimpagem, no estado do Mato Grosso, chega a 40% dos casos em 2019, sendo que no ano anterior não chegava a 2% dos casos.",
+      "file": "ocupacao.html"
+    },
+    {
+      "id": "número_de_mortes",
+      "url": "/visualizacoes/número_de_mortes",
+      "type": "linesFilled",
+      "label": "Relação",
+      "title": "Número de Mortes",
+      "description": "Número de mortes por Malária em número absoluto, podendo ser mudado para proporção do estado naquele ano. O gráfico indica uma mudança de tendência no número de mortes por estado, além da maior participação do estado do Amazonas no número de mortes em relação a outros estados.",
+      "file": "número_de_mortes.html"
+    },
+    {
+      "id": "quantidade_de_cruzes",
+      "url": "/visualizacoes/quantidade_de_cruzes",
+      "type": "barsFilledFull",
+      "label": "Relação",
+      "title": "Quantidade de Cruzes",
+      "description": "A quantidade de cruzes permite avaliar o nível de gravidade e atraso no tratamento da Malária. A maior parte dos casos de malária nos estados da Amazônia Legal no período analisado é idenficada no estágio de duas cruzes, não havendo grandes variações nos anos analisados. Cabe ressaltar que, considera-se casos mais gravez quando a parasitemia apresenta mais de três cruzes.",
+      "file": "quantidade_de_cruzes.html"
+    },
+    {
+      "id": "estrutura_etaria_e_por_sexo",
+      "url": "/visualizacoes/estrutura_etaria_e_por_sexo",
+      "type": "barsHorizontal",
+      "label": "Relação",
+      "title": "Estrutura Etária e por Sexo",
+      "description": "",
+      "file": "estrutura_etaria_e_por_sexo.html"
+    },
+    {
+      "id": "taxa_de_incidência",
+      "url": "/visualizacoes/taxa_de_incidência",
+      "type": "bubbles",
+      "label": "Relação",
+      "title": "Taxa de Incidência",
+      "description": "Taxa de incidência de malária entre os municipios de infecção dos estados da Amazônia Legal período de 2007 à 2019. O município de Anajás no estado do Pará, apresenta uma taxa de incidência de 1200 casos por mil habitantes nos anos de 2009 e 2010, assim como o municipio de Mâncio Lima do estado do Acre em 2017.",
+      "file": "taxa_de_incidência.html"
+    },
+    {
+      "id": "proporcao_de_casos_positivos",
+      "url": "/visualizacoes/proporcao_de_casos_positivos",
+      "type": "mountain",
+      "label": "Relação",
+      "title": "Proporção de casos positivos",
+      "description": "",
+      "file": "proporcao_de_casos_positivos.html"
+    },
+    {
+      "id": "rendimento",
+      "url": "/visualizacoes/rendimento",
+      "type": "lines",
+      "label": "Relação",
+      "title": "Rendimento",
+      "description": "",
+      "file": "rendimento.html"
+    },
+    {
+      "id": "rendimento_gini",
+      "url": "/visualizacoes/rendimento_gini",
+      "type": "lines",
+      "label": "Relação",
+      "title": "Rendimento Gini",
+      "description": "",
+      "file": "rendimento_gini.html"
+    },
+    {
+      "id": "mobilidade",
+      "url": "/visualizacoes/mobilidade",
+      "type": "mapNetwork",
+      "label": "Relação",
+      "title": "Mobilidade",
+      "description": "",
+      "file": "mobilidade.html"
+    }
+  ]
+}
