@@ -26,8 +26,9 @@ function VisualizacoesLista() {
                 <Item
                   // @ts-ignore
                   type={item.type}
-                  label={item.label}
                   title={item.title}
+                  label={item.label}
+                  linkTo={item.url}
                 />
               )
           }

@@ -3,6 +3,13 @@
   min-width: 150px;
 }
 
+#pageVisualizacoesLista article.listItem > a {
+  display: block;
+  text-decoration: none;
+  border-top: 4px solid transparent;
+  transition: all 300ms;
+}
+
 #pageVisualizacoesLista article.listItem figure {
   margin: 0;
 }
@@ -14,11 +21,24 @@
 #pageVisualizacoesLista article.listItem p {
   margin-bottom: 0.2rem;
   font-size: var(--p-font-size);
+  color: var(--color-black-light);
 }
 
 #pageVisualizacoesLista article.listItem h2 {
   font-size: var(--h4-font-size);
   color: var(--primary-color-blue);
+  transition: all 300ms;
+}
+
+/* --- MouseOver --- */
+
+#pageVisualizacoesLista article.listItem > a:hover {
+  transform: scale(1.05);
+  border-top-color: var(--primary-color-yellow);
+}
+
+#pageVisualizacoesLista article.listItem > a:hover h2 {
+  text-shadow: 0 0 1px var(--primary-color-blue);
 }
 
 /* --- Mobile --- */

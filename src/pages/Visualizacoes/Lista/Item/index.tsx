@@ -28,6 +28,7 @@ export type visualizationType = 'barsFilledFull'
 
 interface ItemProps {
   label: string;
+  linkTo: string;
   title: string;
   type: visualizationType;
 }
@@ -51,14 +52,16 @@ function Item(props: ItemProps) {
   
   return (
     <article className="listItem">
-      <figure>
-        <img 
-          src={getSource(props.type)} 
-          alt={`Imagem que representa gráfico ${props.title}`}
-        />
-      </figure>
-      <p>{props.label}</p>
-      <h2>{props.title}</h2>
+      <Link to={props.linkTo}>
+        <figure>
+          <img 
+            src={getSource(props.type)} 
+            alt={`Imagem que representa gráfico ${props.title}`}
+          />
+        </figure>
+        <p>{props.label}</p>
+        <h2>{props.title}</h2>
+      </Link>
     </article>
   );
 }
