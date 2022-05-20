@@ -71,7 +71,7 @@
 #pageInicial .visualizations .container {
   display: flex;
   flex-flow: column wrap;
-  align-items: start;
+  align-items: flex-start;
   padding: 5rem 2rem;
 }
 
