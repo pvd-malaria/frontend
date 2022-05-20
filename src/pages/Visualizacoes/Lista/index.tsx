@@ -29,6 +29,7 @@ function VisualizacoesLista() {
                   title={item.title}
                   label={item.label}
                   linkTo={item.url}
+                  key={item.id}
                 />
               )
           }
