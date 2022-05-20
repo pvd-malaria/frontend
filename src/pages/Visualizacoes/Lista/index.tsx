@@ -45,7 +45,9 @@ function VisualizacoesLista() {
         <div className="container">
           <h2>{jsonVisualizacoes.quality.title}</h2>
           <p>{jsonVisualizacoes.quality.description}</p>
-          <LinkButton to={jsonVisualizacoes.quality.url} className="outlined white">Veja mais</LinkButton>
+          <LinkButton to={jsonVisualizacoes.quality.url} className="white" style="outlined">
+            Veja mais
+          </LinkButton>
         </div>
       </section>
     </Layout>
