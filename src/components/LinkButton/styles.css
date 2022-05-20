@@ -7,14 +7,14 @@
   transition: all 300ms;
 }
 
-.LinkButton.filled {
+.LinkButton.contained {
   color: #fff;
   background-color: var(--primary-color-blue);
   border: 0;
   transition: all 300ms;
 }
 
-.LinkButton.filled:hover {
+.LinkButton.contained:hover {
   background-color: var(--color-blue-dark);
 }
 
@@ -31,4 +31,15 @@
 .LinkButton.outlined.white {
   border-color: #fff;
   color: #fff;
+}
+
+/* Icon */
+
+.LinkButton svg {
+  margin-right: 0.5rem;
+  font-size: inherit;
+  vertical-align: middle;
+}
+.LinkButton span {
+  vertical-align: middle;
 }
