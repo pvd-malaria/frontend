@@ -34,11 +34,15 @@
   padding-bottom: 2rem;
 }
 
+#pageVisualizacoesLista .wrapperList .container h2 {
+  font-size: var(--h5-font-size);
+}
+
 #pageVisualizacoesLista .wrapperList .container .listItem {
   width: 25%;
 }
 
-/* --- Lista --- */
+/* --- Quality --- */
 
 #pageVisualizacoesLista .wrapperQuality {
   background-image: 
