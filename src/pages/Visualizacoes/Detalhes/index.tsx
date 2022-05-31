@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import Layout from '../../../components/Layout';
 
@@ -41,6 +42,7 @@ function VisualizacoesDetalhes() {
       <Layout id="pageVisualizacoesDetalhes">
         <section className="wrapperInfo">
           <div className="container">
+            <Link to="/visualizacoes">Galeria de visualizações</Link>
             <h1>{visualization.title}</h1>
             <p>{visualization.description}</p>
           </div>
@@ -48,17 +50,24 @@ function VisualizacoesDetalhes() {
 
         <section className="wrapperVisualization">
           <div className="container">
-            <iframe 
-              title={visualization.title}
-              src={`/visualizations/${visualization.file}`}
-              width="100%"  
-              height="700px"
-              frameBorder="0"
-            ></iframe>
+            <div className="visualization">
+              <CircularProgress />
+
+              <iframe 
+                title={visualization.title}
+                src={`/visualizations/${visualization.file}`}
+                width="100%"  
+                height="700px"
+                frameBorder="0"
+                scrolling="no"
+                sandbox="allow-forms allow-scripts"
+              >
+              </iframe>
+            </div>
 
             <LinkButton
               style="none"
-              to="/visualizacoes#header"
+              to="/visualizacoes"
               icon={<ArrowBackIosIcon/>}
             >
               Voltar para visualizações
@@ -72,7 +81,7 @@ function VisualizacoesDetalhes() {
       <Layout id="pageVisualizacoesDetalhes">
         {/* <section className="wrapperInfo"> */}
           <div className="container">
-            <p>Nenhum registro encontrado.</p>
+            <p>Visualização não encontrada.</p>
           </div>
         {/* </section> */}
       </Layout>
