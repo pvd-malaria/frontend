@@ -1,0 +1,41 @@
+{
+  "page": {
+    "title": "Boletins",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
+  },
+
+  "list": [
+    {
+      "id": "atlas_geo",
+      "url": "/producoes/boletins/atlas_geo",
+      "date": "4 de abril de 2022",
+      "title": "Title of first boletim",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "atlas_geo.html"
+    },
+    {
+      "id": "atlas_pop",
+      "url": "/producoes/boletins/atlas_pop",
+      "date": "21 de maio de 2021",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
+      "file": "atlas_pop.html"
+    },
+    {
+      "id": "atlas_geo",
+      "url": "/producoes/boletins/atlas_geo",
+      "date": "4 de abril de 2022",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
+      "file": "atlas_geo.html"
+    },
+    {
+      "id": "atlas_pop",
+      "url": "/producoes/boletins/atlas_pop",
+      "date": "21 de maio de 2021",
+      "title": "Title of first boletim",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "atlas_pop.html"
+    }
+  ]
+}
