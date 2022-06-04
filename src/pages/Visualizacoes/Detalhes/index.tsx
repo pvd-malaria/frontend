@@ -81,7 +81,17 @@ function VisualizacoesDetalhes() {
       <Layout id="pageVisualizacoesDetalhes">
         {/* <section className="wrapperInfo"> */}
           <div className="container">
-            <p>Visualização não encontrada.</p>
+            <h2>Ops... :(</h2>
+            <p>A visualização solicitada não foi encontrada.</p>
+            <br />
+
+            <LinkButton
+              style="none"
+              to="/visualizacoes"
+              icon={<ArrowBackIosIcon/>}
+            >
+              Voltar para visualizações
+            </LinkButton>
           </div>
         {/* </section> */}
       </Layout>
