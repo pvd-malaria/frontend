@@ -1,5 +1,3 @@
-import React, { useCallback } from 'react';
-
 import { Link } from 'react-router-dom';
 
 import './styles.css';
