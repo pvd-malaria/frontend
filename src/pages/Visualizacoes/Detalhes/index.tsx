@@ -79,7 +79,6 @@ function VisualizacoesDetalhes() {
   } else {
     return (
       <Layout id="pageVisualizacoesDetalhes">
-        {/* <section className="wrapperInfo"> */}
           <div className="container">
             <h2>Ops... :(</h2>
             <p>A visualização solicitada não foi encontrada.</p>
@@ -93,7 +92,6 @@ function VisualizacoesDetalhes() {
               Voltar para visualizações
             </LinkButton>
           </div>
-        {/* </section> */}
       </Layout>
     );
   }
