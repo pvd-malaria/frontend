@@ -33,8 +33,6 @@ function BoletinsLista() {
 
           {/* Hack para space-between */}
           <article className="listItem"></article>
-          <article className="listItem"></article>
-          <article className="listItem"></article>
         </div>
       </section>
 
