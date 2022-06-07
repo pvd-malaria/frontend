@@ -12,7 +12,7 @@ function BoletinsLista() {
       <section className="wrapperInfo">
         <div className="container">
           <h1>{jsonBoletins.page.title}</h1>
-          {jsonBoletins.page.description}
+          <p>{jsonBoletins.page.description}</p>
         </div>
       </section>
 
