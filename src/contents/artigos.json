@@ -1,0 +1,39 @@
+{
+  "page": {
+    "title": "Artigos",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
+  },
+
+  "list": [
+    {
+      "id": "artigo_modelo",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "4 de abril de 2022",
+      "title": "Modelo de Artigo Importando Arquivo HTML",
+      "short": "Este é um artigo foi montado em HTML localizado na pasta /public/artigos.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/artigo_modelo.pdf",
+      "urlExternal": "http://www.google.com.br"
+    },
+    {
+      "id": "artigo_modelo",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "21 de maio de 2021",
+      "title": "Modelo de Artigo Importando Arquivo HTML",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "",
+      "urlExternal": ""
+    },
+    {
+      "id": "artigo_fail",
+      "url": "/producoes/artigos/artigo_not_found",
+      "date": "4 de abril de 2022",
+      "title": "Artigo sem Arquivo de Conteúdo",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
+      "file": "/artigos/artigo_not_found.html",
+      "urlPdf": "",
+      "urlExternal": ""
+    }
+  ]
+}
