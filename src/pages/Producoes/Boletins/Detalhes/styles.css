@@ -44,12 +44,6 @@
   left: 50%;
 }
 
-
-#pageBoletinsDetalhes .wrapperBoletim .container .boletim iframe {
-  position: relative;
-  z-index: 1;
-}
-
 /* --- Mobile --- */
 
 @media screen and (max-width: 768px) {
