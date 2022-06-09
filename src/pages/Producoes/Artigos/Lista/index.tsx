@@ -1,25 +1,25 @@
 import Layout from '../../../../components/Layout';
 import Item from './Item';
 
-import jsonBoletins from '../../../../contents/boletins.json';
+import jsonArtigos from '../../../../contents/artigos.json';
 
 import './styles.css';
 
 
-function BoletinsLista() {
+function ArtigosLista() {
   return (
-    <Layout id="pageBoletinsLista">
+    <Layout id="pageArtigosLista">
       <section className="wrapperInfo">
         <div className="container">
-          <h1>{jsonBoletins.page.title}</h1>
-          <p>{jsonBoletins.page.description}</p>
+          <h1>{jsonArtigos.page.title}</h1>
+          <p>{jsonArtigos.page.description}</p>
         </div>
       </section>
 
       <section className="wrapperList">
         <div className="container">
           {
-            jsonBoletins.list
+            jsonArtigos.list
               .map((item) =>
                 <Item
                   date={item.date}
@@ -40,4 +40,4 @@ function BoletinsLista() {
   );
 }
 
-export default BoletinsLista;
+export default ArtigosLista;
