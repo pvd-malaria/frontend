@@ -66,7 +66,7 @@
       "label": "Relação",
       "title": "Número de Mortes",
       "description": "Número de mortes por Malária em número absoluto, podendo ser mudado para proporção do estado naquele ano. O gráfico indica uma mudança de tendência no número de mortes por estado, além da maior participação do estado do Amazonas no número de mortes em relação a outros estados.",
-      "file": "número_de_mortes.html"
+      "file": "Mortes/deaths.html"
     },
     {
       "id": "quantidade_de_cruzes",
@@ -75,7 +75,7 @@
       "label": "Relação",
       "title": "Quantidade de Cruzes",
       "description": "A quantidade de cruzes permite avaliar o nível de gravidade e atraso no tratamento da Malária. A maior parte dos casos de malária nos estados da Amazônia Legal no período analisado é idenficada no estágio de duas cruzes, não havendo grandes variações nos anos analisados. Cabe ressaltar que, considera-se casos mais gravez quando a parasitemia apresenta mais de três cruzes.",
-      "file": "quantidade_de_cruzes.html"
+      "file": "Parasitemia em Cruzes/cruzes.html"
     },
     {
       "id": "estrutura_etaria_e_por_sexo",
@@ -84,7 +84,7 @@
       "label": "Relação",
       "title": "Estrutura Etária e por Sexo",
       "description": "",
-      "file": "estrutura_etaria_e_por_sexo.html"
+      "file": "População/pyramid.html"
     },
     {
       "id": "taxa_de_incidência",
@@ -93,7 +93,7 @@
       "label": "Relação",
       "title": "Taxa de Incidência",
       "description": "Taxa de incidência de malária entre os municipios de infecção dos estados da Amazônia Legal período de 2007 à 2019. O município de Anajás no estado do Pará, apresenta uma taxa de incidência de 1200 casos por mil habitantes nos anos de 2009 e 2010, assim como o municipio de Mâncio Lima do estado do Acre em 2017.",
-      "file": "taxa_de_incidência.html"
+      "file": "Taxa Incidencia/incidence.html"
     },
     {
       "id": "proporcao_de_casos_positivos",
@@ -111,7 +111,7 @@
       "label": "Relação",
       "title": "Rendimento",
       "description": "",
-      "file": "rendimento.html"
+      "file": "Rendimento/income.html"
     },
     {
       "id": "rendimento_gini",
@@ -120,7 +120,7 @@
       "label": "Relação",
       "title": "Rendimento Gini",
       "description": "",
-      "file": "rendimento_gini.html"
+      "file": "Rendimento/gini.html"
     },
     {
       "id": "mobilidade",
