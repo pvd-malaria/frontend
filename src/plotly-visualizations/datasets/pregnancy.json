@@ -1,0 +1,2949 @@
+[
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 56,
+   "perc": "0.606323083585968"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 183,
+   "perc": "1.98137721957557"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 78,
+   "perc": "0.844521437851884"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 178,
+   "perc": "1.92724122996968"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 7993,
+   "perc": "86.5417929839758"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 748,
+   "perc": "8.09874404504114"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 83,
+   "perc": "1.1226836196402"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 164,
+   "perc": "2.21831462193967"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 93,
+   "perc": "1.25794670634384"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 26,
+   "perc": "0.35168402542946"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 6353,
+   "perc": "85.9326389828216"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 674,
+   "perc": "9.11673204382524"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 43,
+   "perc": "0.967161493477283"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 74,
+   "perc": "1.66441745389114"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 61,
+   "perc": "1.37201979307242"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 25,
+   "perc": "0.562303193882141"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 3803,
+   "perc": "85.5375618533513"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 440,
+   "perc": "9.89653621232569"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 22,
+   "perc": "0.73775989268947"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 46,
+   "perc": "1.54258886653253"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 47,
+   "perc": "1.57612340710932"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 14,
+   "perc": "0.469483568075117"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 2555,
+   "perc": "85.6807511737089"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 298,
+   "perc": "9.99329309188464"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 20,
+   "perc": "0.909090909090909"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 32,
+   "perc": "1.45454545454545"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 33,
+   "perc": "1.5"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 14,
+   "perc": "0.636363636363636"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 1879,
+   "perc": "85.4090909090909"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 222,
+   "perc": "10.0909090909091"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 22,
+   "perc": "1.03724658180104"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 43,
+   "perc": "2.02734559170203"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 44,
+   "perc": "2.07449316360207"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 10,
+   "perc": "0.471475719000472"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 1761,
+   "perc": "83.026874115983"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 241,
+   "perc": "11.3625648279114"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 14,
+   "perc": "0.640146319158665"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 30,
+   "perc": "1.37174211248285"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 34,
+   "perc": "1.5546410608139"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 6,
+   "perc": "0.274348422496571"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 1784,
+   "perc": "81.572930955647"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 319,
+   "perc": "14.586191129401"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 22,
+   "perc": "0.936967632027257"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 32,
+   "perc": "1.36286201022147"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 44,
+   "perc": "1.87393526405451"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 8,
+   "perc": "0.340715502555366"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 1940,
+   "perc": "82.6235093696763"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 302,
+   "perc": "12.8620102214651"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 33,
+   "perc": "1.11675126903553"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 34,
+   "perc": "1.15059221658206"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 37,
+   "perc": "1.25211505922166"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 8,
+   "perc": "0.27072758037225"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 2393,
+   "perc": "80.9813874788494"
+ },
+ {
+   "uf": "Rondônia",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 450,
+   "perc": "15.2284263959391"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 9,
+   "perc": "0.14710689767898"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 7,
+   "perc": "0.11441647597254"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 10,
+   "perc": "0.1634521085322"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 440,
+   "perc": "7.1918927754168"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 5346,
+   "perc": "87.3814972213141"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 306,
+   "perc": "5.00163452108532"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 75,
+   "perc": "1.05723146320835"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 145,
+   "perc": "2.04398082886947"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 129,
+   "perc": "1.81843811671835"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 141,
+   "perc": "1.98759515083169"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 6072,
+   "perc": "85.5934592613476"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 532,
+   "perc": "7.49929517902453"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 133,
+   "perc": "1.46234194612424"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 169,
+   "perc": "1.85816382627817"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 229,
+   "perc": "2.51786695986806"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 31,
+   "perc": "0.34084661902144"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 7803,
+   "perc": "85.7943925233645"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 730,
+   "perc": "8.02638812534359"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 137,
+   "perc": "1.61976826672972"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 168,
+   "perc": "1.98628517379995"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 185,
+   "perc": "2.18727831638685"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 43,
+   "perc": "0.508394419484512"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 7240,
+   "perc": "85.5994324899503"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 685,
+   "perc": "8.09884133364862"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 98,
+   "perc": "1.36928880815984"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 114,
+   "perc": "1.5928461645941"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 145,
+   "perc": "2.02598854268548"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 23,
+   "perc": "0.321363699874249"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 6233,
+   "perc": "87.0895626659215"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 544,
+   "perc": "7.60095011876485"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 139,
+   "perc": "1.42754441819862"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 138,
+   "perc": "1.41727431447058"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 153,
+   "perc": "1.57132587039129"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 31,
+   "perc": "0.318373215569477"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 8448,
+   "perc": "86.7618362945466"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 828,
+   "perc": "8.50364588682346"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 144,
+   "perc": "1.25130344108446"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 173,
+   "perc": "1.50330205074731"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 182,
+   "perc": "1.58150851581509"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 29,
+   "perc": "0.251998609662843"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 10048,
+   "perc": "87.3131734445603"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 932,
+   "perc": "8.09871393813"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 132,
+   "perc": "1.62842339008142"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 178,
+   "perc": "2.19590426844313"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 173,
+   "perc": "2.13422156427338"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 11,
+   "perc": "0.135701949173452"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 6900,
+   "perc": "85.1221317542561"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 712,
+   "perc": "8.78361707377251"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 70,
+   "perc": "1.79902338730403"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 81,
+   "perc": "2.08172706245181"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 101,
+   "perc": "2.59573374453868"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 6,
+   "perc": "0.15420200462606"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 3260,
+   "perc": "83.7830891801593"
+ },
+ {
+   "uf": "Acre",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 373,
+   "perc": "9.58622462092007"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 67,
+   "perc": "0.44426762151051"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 110,
+   "perc": "0.729394602479942"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 53,
+   "perc": "0.351435581194881"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 800,
+   "perc": "5.30468801803594"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 13307,
+   "perc": "88.2368543200053"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 744,
+   "perc": "4.93335985677342"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 463,
+   "perc": "2.27932850883671"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 578,
+   "perc": "2.84546841923891"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 542,
+   "perc": "2.66824201250431"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 243,
+   "perc": "1.19627824545857"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 16801,
+   "perc": "82.7105794318909"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 1686,
+   "perc": "8.3001033820706"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 368,
+   "perc": "1.90357955721084"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 495,
+   "perc": "2.56052141527002"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 687,
+   "perc": "3.55369335816263"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 136,
+   "perc": "0.703496792882268"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 15938,
+   "perc": "82.4436168011587"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 1708,
+   "perc": "8.83509207531554"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 305,
+   "perc": "1.79803100866592"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 438,
+   "perc": "2.58209043211696"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 525,
+   "perc": "3.09497140835937"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 137,
+   "perc": "0.807640157990921"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 14204,
+   "perc": "83.7351883511171"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 1354,
+   "perc": "7.98207864174969"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 355,
+   "perc": "1.82060618493256"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 479,
+   "perc": "2.45653623262731"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 551,
+   "perc": "2.8257859377404"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 146,
+   "perc": "0.748756346479307"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 16286,
+   "perc": "83.5222319093287"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 1682,
+   "perc": "8.62608338889174"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 214,
+   "perc": "1.60805530507965"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 294,
+   "perc": "2.20919747520289"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 336,
+   "perc": "2.52479711451758"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 79,
+   "perc": "0.593627892996694"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 11080,
+   "perc": "83.2581905620679"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 1305,
+   "perc": "9.80613165013526"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 345,
+   "perc": "1.53784434340733"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 512,
+   "perc": "2.28225015601319"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 515,
+   "perc": "2.29562271552108"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 134,
+   "perc": "0.597307658019078"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 18621,
+   "perc": "83.0034768654721"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 2307,
+   "perc": "10.2834982615673"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 332,
+   "perc": "1.67820856290755"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 427,
+   "perc": "2.15841884446242"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 480,
+   "perc": "2.42632563311934"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 111,
+   "perc": "0.561087802658849"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 16491,
+   "perc": "83.3594500328565"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 1942,
+   "perc": "9.81650912399535"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 281,
+   "perc": "1.66301710362786"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 345,
+   "perc": "2.04178256495236"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 373,
+   "perc": "2.20749245428183"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 69,
+   "perc": "0.408356512990472"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 14225,
+   "perc": "84.1865419897023"
+ },
+ {
+   "uf": "Amazonas",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 1604,
+   "perc": "9.49280937444517"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 4,
+   "perc": "0.14986886474335"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 13,
+   "perc": "0.487073810415886"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 5,
+   "perc": "0.187336080929187"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 92,
+   "perc": "3.44698388909704"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 2371,
+   "perc": "88.8347695766205"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 184,
+   "perc": "6.89396777819408"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 14,
+   "perc": "0.938967136150235"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 32,
+   "perc": "2.14621059691482"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 30,
+   "perc": "2.01207243460765"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 36,
+   "perc": "2.41448692152917"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 1262,
+   "perc": "84.6411804158283"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 117,
+   "perc": "7.84708249496982"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 20,
+   "perc": "1.64068908941756"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 28,
+   "perc": "2.29696472518458"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 17,
+   "perc": "1.39458572600492"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 16,
+   "perc": "1.31255127153404"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 993,
+   "perc": "81.4602132895816"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 145,
+   "perc": "11.8949958982773"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 27,
+   "perc": "1.92307692307692"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 29,
+   "perc": "2.06552706552707"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 29,
+   "perc": "2.06552706552707"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 11,
+   "perc": "0.783475783475784"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 1161,
+   "perc": "82.6923076923077"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 147,
+   "perc": "10.4700854700855"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 23,
+   "perc": "1.38304269392664"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 52,
+   "perc": "3.12687913409501"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 39,
+   "perc": "2.34515935057126"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 9,
+   "perc": "0.541190619362598"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 1345,
+   "perc": "80.8779314491882"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 195,
+   "perc": "11.7257967528563"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 17,
+   "perc": "1.20738636363636"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 24,
+   "perc": "1.70454545454545"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 27,
+   "perc": "1.91761363636364"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 17,
+   "perc": "1.20738636363636"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 1173,
+   "perc": "83.3096590909091"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 150,
+   "perc": "10.6534090909091"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 36,
+   "perc": "1.15421609490221"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 59,
+   "perc": "1.89163193331196"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 72,
+   "perc": "2.30843218980442"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 12,
+   "perc": "0.384738698300737"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 2534,
+   "perc": "81.2439884578391"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 406,
+   "perc": "13.0169926258416"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 96,
+   "perc": "1.92423331328924"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 101,
+   "perc": "2.02445379835638"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 109,
+   "perc": "2.18480657446382"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 26,
+   "perc": "0.521146522349168"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 4079,
+   "perc": "81.7598717177791"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 578,
+   "perc": "11.5854880737623"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 103,
+   "perc": "1.87238683875659"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 129,
+   "perc": "2.34502817669515"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 134,
+   "perc": "2.43592074168333"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 36,
+   "perc": "0.654426467914925"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 4631,
+   "perc": "84.184693692056"
+ },
+ {
+   "uf": "Roraima",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 468,
+   "perc": "8.50754408289402"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 412,
+   "perc": "1.37004522479383"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 648,
+   "perc": "2.15482841181165"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 514,
+   "perc": "1.70923117850492"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 1123,
+   "perc": "3.73437084330939"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 25263,
+   "perc": "84.0083798882682"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 2112,
+   "perc": "7.02314445331205"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 541,
+   "perc": "2.82920196632151"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 520,
+   "perc": "2.71938081790608"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 364,
+   "perc": "1.90356657253425"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 203,
+   "perc": "1.06160443468256"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 16258,
+   "perc": "85.0224871875327"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 1236,
+   "perc": "6.4637590210229"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 127,
+   "perc": "1.96108709079679"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 135,
+   "perc": "2.08462013588635"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 132,
+   "perc": "2.03829524397776"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 29,
+   "perc": "0.44780728844966"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 5676,
+   "perc": "87.6466954910439"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 377,
+   "perc": "5.82149474984558"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 52,
+   "perc": "1.77353342428377"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 75,
+   "perc": "2.55798090040928"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 68,
+   "perc": "2.31923601637108"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 8,
+   "perc": "0.272851296043656"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 2569,
+   "perc": "87.6193724420191"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 160,
+   "perc": "5.45702592087312"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 59,
+   "perc": "2.55854293148309"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 72,
+   "perc": "3.12228967909801"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 70,
+   "perc": "3.03555941023417"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 7,
+   "perc": "0.303555941023417"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 1951,
+   "perc": "84.6053772766696"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 147,
+   "perc": "6.37467476149176"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 75,
+   "perc": "1.97420373782574"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 125,
+   "perc": "3.29033956304291"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 98,
+   "perc": "2.57962621742564"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 13,
+   "perc": "0.342195314556462"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 3199,
+   "perc": "84.2063700973941"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 289,
+   "perc": "7.6072650697552"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 243,
+   "perc": "2.16365417148963"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 329,
+   "perc": "2.92939186181106"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 278,
+   "perc": "2.47529160359719"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 33,
+   "perc": "0.29382957884427"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 9507,
+   "perc": "84.6496304870448"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 841,
+   "perc": "7.48820229721307"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 271,
+   "perc": "1.78771686786727"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 332,
+   "perc": "2.19011808166766"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 335,
+   "perc": "2.20990830529718"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 50,
+   "perc": "0.329837060492117"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 12920,
+   "perc": "85.229896431163"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 1251,
+   "perc": "8.25252325351276"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 161,
+   "perc": "1.76013993659123"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 219,
+   "perc": "2.39422761561168"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 218,
+   "perc": "2.38329506942167"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 31,
+   "perc": "0.338908931890237"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 7773,
+   "perc": "84.9786815349295"
+ },
+ {
+   "uf": "Pará",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 745,
+   "perc": "8.1447469115557"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 69,
+   "perc": "1.49577281595491"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 109,
+   "perc": "2.3628874918708"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 116,
+   "perc": "2.51463256015608"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 89,
+   "perc": "1.92933015391285"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 3931,
+   "perc": "85.2156947756341"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 299,
+   "perc": "6.48168220247128"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 59,
+   "perc": "1.69199885288213"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 104,
+   "perc": "2.982506452538"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 122,
+   "perc": "3.49870949240034"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 14,
+   "perc": "0.401491253226269"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 2918,
+   "perc": "83.6822483510181"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 270,
+   "perc": "7.74304559793519"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 75,
+   "perc": "1.97941409342835"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 116,
+   "perc": "3.06149379783584"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 116,
+   "perc": "3.06149379783584"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 9,
+   "perc": "0.237529691211401"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 3148,
+   "perc": "83.0826075481657"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 325,
+   "perc": "8.57746107152283"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 59,
+   "perc": "1.58389261744966"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 112,
+   "perc": "3.00671140939597"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 86,
+   "perc": "2.30872483221476"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 13,
+   "perc": "0.348993288590604"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 3076,
+   "perc": "82.5771812080537"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 379,
+   "perc": "10.1744966442953"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 69,
+   "perc": "1.7503805175038"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 116,
+   "perc": "2.94266869609335"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 89,
+   "perc": "2.25773718924404"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "Idade gestacional ignorada",
+   "count": 23,
+   "perc": "0.583460172501268"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 3304,
+   "perc": "83.8153221714866"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 341,
+   "perc": "8.65043125317098"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 61,
+   "perc": "1.80740740740741"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 97,
+   "perc": "2.87407407407407"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 79,
+   "perc": "2.34074074074074"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "Idade gestacional ignorada",
+   "count": 12,
+   "perc": "0.355555555555556"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 2809,
+   "perc": "83.2296296296296"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 317,
+   "perc": "9.39259259259259"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 86,
+   "perc": "2.05152671755725"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 132,
+   "perc": "3.14885496183206"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 94,
+   "perc": "2.24236641221374"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "Idade gestacional ignorada",
+   "count": 12,
+   "perc": "0.286259541984733"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 3505,
+   "perc": "83.611641221374"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 363,
+   "perc": "8.65935114503817"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 69,
+   "perc": "1.61516853932584"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 126,
+   "perc": "2.94943820224719"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 114,
+   "perc": "2.6685393258427"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "Idade gestacional ignorada",
+   "count": 15,
+   "perc": "0.351123595505618"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 3535,
+   "perc": "82.748127340824"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 413,
+   "perc": "9.66760299625468"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 54,
+   "perc": "1.79342411159083"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 88,
+   "perc": "2.92261707074062"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 68,
+   "perc": "2.25838591829957"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 13,
+   "perc": "0.431750249086682"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 2504,
+   "perc": "83.1617402856194"
+ },
+ {
+   "uf": "Amapá",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 284,
+   "perc": "9.4320823646629"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "50"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 1,
+   "perc": "50"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 5,
+   "perc": "83.3333333333333"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 1,
+   "perc": "16.6666666666667"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 1,
+   "perc": "100"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 1,
+   "perc": "6.25"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 10,
+   "perc": "62.5"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 5,
+   "perc": "31.25"
+ },
+ {
+   "uf": "Tocantins",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 2,
+   "perc": "100"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 18,
+   "perc": "2.92682926829268"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 27,
+   "perc": "4.39024390243902"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 17,
+   "perc": "2.76422764227642"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 4,
+   "perc": "0.650406504065041"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 482,
+   "perc": "78.3739837398374"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 67,
+   "perc": "10.8943089430894"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 2,
+   "perc": "0.836820083682008"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 9,
+   "perc": "3.76569037656904"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 6,
+   "perc": "2.51046025104602"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 2,
+   "perc": "0.836820083682008"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 195,
+   "perc": "81.5899581589958"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 25,
+   "perc": "10.4602510460251"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 3,
+   "perc": "2.4"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 9,
+   "perc": "7.2"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 2,
+   "perc": "1.6"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 95,
+   "perc": "76"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 16,
+   "perc": "12.8"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "0.645161290322581"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 3,
+   "perc": "1.93548387096774"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "3o Trimestre",
+   "count": 2,
+   "perc": "1.29032258064516"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 1,
+   "perc": "0.645161290322581"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 128,
+   "perc": "82.5806451612903"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 20,
+   "perc": "12.9032258064516"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 2,
+   "perc": "3.57142857142857"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 1,
+   "perc": "1.78571428571429"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 47,
+   "perc": "83.9285714285714"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 6,
+   "perc": "10.7142857142857"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 1,
+   "perc": "2"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2016,
+   "gestante": "3o Trimestre",
+   "count": 1,
+   "perc": "2"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 42,
+   "perc": "84"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 6,
+   "perc": "12"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2017,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "1.31578947368421"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 2,
+   "perc": "2.63157894736842"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2017,
+   "gestante": "3o Trimestre",
+   "count": 5,
+   "perc": "6.57894736842105"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 59,
+   "perc": "77.6315789473684"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 9,
+   "perc": "11.8421052631579"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 2,
+   "perc": "2.89855072463768"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 3,
+   "perc": "4.34782608695652"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 59,
+   "perc": "85.5072463768116"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 5,
+   "perc": "7.2463768115942"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 23,
+   "perc": "95.8333333333333"
+ },
+ {
+   "uf": "Maranhão",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 1,
+   "perc": "4.16666666666667"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "1o Trimestre",
+   "count": 2,
+   "perc": "0.485436893203883"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "2o Trimestre",
+   "count": 7,
+   "perc": "1.69902912621359"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "3o Trimestre",
+   "count": 2,
+   "perc": "0.485436893203883"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "Idade gestacional ignorada",
+   "count": 9,
+   "perc": "2.18446601941748"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "Não",
+   "count": 353,
+   "perc": "85.6796116504854"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2011,
+   "gestante": "Não se aplica",
+   "count": 39,
+   "perc": "9.46601941747573"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "1o Trimestre",
+   "count": 6,
+   "perc": "2.13523131672598"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "2o Trimestre",
+   "count": 8,
+   "perc": "2.84697508896797"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "3o Trimestre",
+   "count": 4,
+   "perc": "1.42348754448399"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "Idade gestacional ignorada",
+   "count": 1,
+   "perc": "0.355871886120996"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "Não",
+   "count": 242,
+   "perc": "86.1209964412811"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2012,
+   "gestante": "Não se aplica",
+   "count": 20,
+   "perc": "7.11743772241993"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "1o Trimestre",
+   "count": 6,
+   "perc": "2.75229357798165"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "2o Trimestre",
+   "count": 6,
+   "perc": "2.75229357798165"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "3o Trimestre",
+   "count": 4,
+   "perc": "1.8348623853211"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "Idade gestacional ignorada",
+   "count": 2,
+   "perc": "0.917431192660551"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "Não",
+   "count": 184,
+   "perc": "84.4036697247707"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2013,
+   "gestante": "Não se aplica",
+   "count": 16,
+   "perc": "7.3394495412844"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2014,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "0.769230769230769"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2014,
+   "gestante": "2o Trimestre",
+   "count": 3,
+   "perc": "2.30769230769231"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2014,
+   "gestante": "Idade gestacional ignorada",
+   "count": 1,
+   "perc": "0.769230769230769"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2014,
+   "gestante": "Não",
+   "count": 108,
+   "perc": "83.0769230769231"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2014,
+   "gestante": "Não se aplica",
+   "count": 17,
+   "perc": "13.0769230769231"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2015,
+   "gestante": "1o Trimestre",
+   "count": 2,
+   "perc": "0.858369098712446"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2015,
+   "gestante": "2o Trimestre",
+   "count": 1,
+   "perc": "0.429184549356223"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2015,
+   "gestante": "3o Trimestre",
+   "count": 4,
+   "perc": "1.71673819742489"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2015,
+   "gestante": "Não",
+   "count": 200,
+   "perc": "85.8369098712446"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2015,
+   "gestante": "Não se aplica",
+   "count": 26,
+   "perc": "11.1587982832618"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2016,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "0.72992700729927"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2016,
+   "gestante": "2o Trimestre",
+   "count": 1,
+   "perc": "0.72992700729927"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2016,
+   "gestante": "Não",
+   "count": 127,
+   "perc": "92.7007299270073"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2016,
+   "gestante": "Não se aplica",
+   "count": 8,
+   "perc": "5.83941605839416"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2017,
+   "gestante": "2o Trimestre",
+   "count": 1,
+   "perc": "0.943396226415094"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2017,
+   "gestante": "Não",
+   "count": 94,
+   "perc": "88.6792452830189"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2017,
+   "gestante": "Não se aplica",
+   "count": 11,
+   "perc": "10.377358490566"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2018,
+   "gestante": "1o Trimestre",
+   "count": 3,
+   "perc": "1.52284263959391"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2018,
+   "gestante": "2o Trimestre",
+   "count": 2,
+   "perc": "1.01522842639594"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2018,
+   "gestante": "3o Trimestre",
+   "count": 5,
+   "perc": "2.53807106598985"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2018,
+   "gestante": "Não",
+   "count": 159,
+   "perc": "80.7106598984772"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2018,
+   "gestante": "Não se aplica",
+   "count": 28,
+   "perc": "14.2131979695431"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "1o Trimestre",
+   "count": 1,
+   "perc": "0.221729490022173"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "2o Trimestre",
+   "count": 8,
+   "perc": "1.77383592017738"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "3o Trimestre",
+   "count": 2,
+   "perc": "0.443458980044346"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "Idade gestacional ignorada",
+   "count": 7,
+   "perc": "1.55210643015521"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "Não",
+   "count": 377,
+   "perc": "83.5920177383592"
+ },
+ {
+   "uf": "Mato Grosso",
+   "year_notif": 2019,
+   "gestante": "Não se aplica",
+   "count": 56,
+   "perc": "12.4168514412417"
+ }
+]
