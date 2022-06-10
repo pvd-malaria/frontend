@@ -60,7 +60,7 @@ function VisualizacoesDetalhes() {
                 height="700px"
                 frameBorder="0"
                 scrolling="no"
-                sandbox="allow-forms allow-scripts"
+                sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
               >
               </iframe>
             </div>
