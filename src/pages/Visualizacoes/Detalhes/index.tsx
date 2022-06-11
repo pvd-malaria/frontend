@@ -55,7 +55,7 @@ function VisualizacoesDetalhes() {
 
               <iframe 
                 title={visualization.title}
-                src={`/visualizations/${visualization.file}`}
+                src={`/visualizacoes/${visualization.file}`}
                 width="100%"  
                 height="700px"
                 frameBorder="0"
