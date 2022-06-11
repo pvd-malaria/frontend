@@ -6,8 +6,8 @@
 
   "list": [
     {
-      "id": "atlas_geo",
-      "url": "/producoes/boletins/atlas_geo",
+      "id": "amazonia-legal",
+      "url": "/producoes/boletins/amazonia-legal",
       "title": "A Amazônia Legal",
       "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
       "file": "/boletins/amazonia_legal/00_atlas_geo.html"
