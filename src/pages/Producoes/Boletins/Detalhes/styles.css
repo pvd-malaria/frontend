@@ -37,6 +37,11 @@
   padding-bottom: 4rem;
 }
 
+#pageBoletinsDetalhes .wrapperBoletim .container .boletim p {
+  text-indent: 3rem;
+  text-align: justify;
+}
+
 #pageBoletinsDetalhes .wrapperBoletim .container .boletim .MuiCircularProgress-root {
   position: absolute;
   z-index: 0;

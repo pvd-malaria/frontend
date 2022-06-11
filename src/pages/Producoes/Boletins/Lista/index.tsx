@@ -22,7 +22,6 @@ function BoletinsLista() {
             jsonBoletins.list
               .map((item) =>
                 <Item
-                  date={item.date}
                   key={item.id}
                   linkTo={item.url}
                   short={item.short}

@@ -15,7 +15,6 @@
     {
       "id": "atlas_pop",
       "url": "/producoes/boletins/atlas_pop",
-      "date": "21 de maio de 2021",
       "title": "Boletim nomeado Atlas Pop",
       "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS desnecessários para exibição do conteudo.",
       "file": "/boletins/01_atlas_pop.html"
@@ -23,7 +22,6 @@
     {
       "id": "atlas_comp",
       "url": "/producoes/boletins/atlas_comp",
-      "date": "4 de abril de 2022",
       "title": "Boletim nomeado Atlas Comp",
       "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS desnecessários para exibição do conteudo.",
       "file": "/boletins/02_atlas_comp.html"
@@ -31,7 +29,6 @@
     {
       "id": "atlas_mig",
       "url": "/producoes/boletins/atlas_mig",
-      "date": "11 de agosto de 2021",
       "title": "Boletim nomeado Atlas Mig",
       "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS. Todos arquivos de boletins ficam em /public/boletins/*",
       "file": "/boletins/03_atlas_mig.html"
@@ -39,7 +36,6 @@
     {
       "id": "atlas_metodologia",
       "url": "/producoes/boletins/atlas_metodologia",
-      "date": "11 de agosto de 2021",
       "title": "Boletim nomeado Atlas Metodologia",
       "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS. Todos arquivos de boletins ficam em /public/boletins/*",
       "file": "/boletins/03_atlas_metodologia.html"

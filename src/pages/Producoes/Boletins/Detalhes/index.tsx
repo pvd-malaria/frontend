@@ -16,7 +16,6 @@ import './styles.css';
 interface IBoletim {
   id: string,
   url: string,
-  date: string,
   title: string,
   short: string,
 }
@@ -68,14 +67,13 @@ function BoletinsDetalhes() {
         <section className="wrapperHeader">
           <div className="container">
             <h1>{boletim.title}</h1>
-            <p>{boletim.date}</p>
           </div>
         </section>      
 
         <section className="wrapperBoletim">
           <div className="container">
             <div className="boletim">
-              <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(htmlContent)}}></div>
+              <div dangerouslySetInnerHTML={{__html: htmlContent}}></div>
             </div>
 
             <LinkButton

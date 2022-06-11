@@ -32,10 +32,6 @@
   background-color: var(--primary-color-blue);
 }
 
-#pageBoletinsLista article.listItem p.date {
-  color: var(--color-black-lighter);
-}
-
 #pageBoletinsLista article.listItem p {
   margin-bottom: 0.2rem;
   font-size: var(--p-font-size);
