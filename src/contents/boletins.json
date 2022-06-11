@@ -8,10 +8,9 @@
     {
       "id": "atlas_geo",
       "url": "/producoes/boletins/atlas_geo",
-      "date": "4 de abril de 2022",
-      "title": "Boletim nomeado Atlas Geo Refatorado parcialmente",
-      "short": "Este é o unico boletim que foi refatorado, removido codigos CSS desnecessários para exibição do conteudo.",
-      "file": "/boletins/00_atlas_geo.html"
+      "title": "A Amazônia Legal",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "/boletins/amazonia_legal/00_atlas_geo.html"
     },
     {
       "id": "atlas_pop",
