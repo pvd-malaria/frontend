@@ -40,6 +40,7 @@
 
 #pageVisualizacoesDetalhes .wrapperVisualization .container .visualization {
   position: relative;
+  padding: 1rem;
   width: 100%;
   height: 100%;
   border-radius: 10px;

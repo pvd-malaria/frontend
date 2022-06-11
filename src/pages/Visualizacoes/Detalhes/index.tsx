@@ -57,7 +57,7 @@ function VisualizacoesDetalhes() {
                 title={visualization.title}
                 src={`/visualizacoes/${visualization.file}`}
                 width="100%"  
-                height="700px"
+                height="700"
                 frameBorder="0"
                 scrolling="no"
                 sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
