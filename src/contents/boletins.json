@@ -13,11 +13,11 @@
       "file": "/boletins/amazonia_legal/00_atlas_geo.html"
     },
     {
-      "id": "atlas_pop",
-      "url": "/producoes/boletins/atlas_pop",
-      "title": "Boletim nomeado Atlas Pop",
-      "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS desnecessários para exibição do conteudo.",
-      "file": "/boletins/01_atlas_pop.html"
+      "id": "populacao",
+      "url": "/producoes/boletins/populacao",
+      "title": "População",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "/boletins/populacao/01_atlas_pop.html"
     },
     {
       "id": "atlas_comp",
