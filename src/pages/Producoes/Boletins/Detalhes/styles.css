@@ -53,8 +53,6 @@
 
 @media screen and (max-width: 768px) {
   
-  #pageBoletinsDetalhes .wrapperBoletim .container {
-    padding: 0;
-  }
+  #pageBoletinsDetalhes .wrapperBoletim .container { }
 
 }

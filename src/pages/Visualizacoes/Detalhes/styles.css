@@ -64,8 +64,6 @@
 
 @media screen and (max-width: 768px) {
   
-  #pageVisualizacoesDetalhes .wrapperVisualization .container {
-    padding: 0;
-  }
+  #pageVisualizacoesDetalhes .wrapperVisualization .container { }
 
 }
