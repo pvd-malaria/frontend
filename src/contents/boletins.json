@@ -27,11 +27,11 @@
       "file": "/boletins/composicao_da_populacao/02_atlas_comp.html"
     },
     {
-      "id": "atlas_mig",
-      "url": "/producoes/boletins/atlas_mig",
-      "title": "Boletim nomeado Atlas Mig",
-      "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS. Todos arquivos de boletins ficam em /public/boletins/*",
-      "file": "/boletins/03_atlas_mig.html"
+      "id": "migracao",
+      "url": "/producoes/boletins/migracao",
+      "title": "Migração",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "/boletins/migracao/03_atlas_mig.html"
     },
     {
       "id": "atlas_metodologia",
