@@ -42,6 +42,15 @@
   text-align: justify;
 }
 
+#pageBoletinsDetalhes .wrapperBoletim .container .boletim figure {
+  text-align: center;
+}
+
+#pageBoletinsDetalhes .wrapperBoletim .container .boletim figure img {
+  width: 100%;
+  max-width: 800px;
+}
+
 #pageBoletinsDetalhes .wrapperBoletim .container .boletim .MuiCircularProgress-root {
   position: absolute;
   z-index: 0;
