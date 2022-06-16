@@ -28,17 +28,17 @@ function Navigation() {
           </CustomLink>
         </li>
         <li className="hasSubmenu">
-          <CustomLink activeClassName="active" to="/dashboard">
-            Dashboard <KeyboardArrowDownIcon/>
+          <CustomLink activeClassName="active" to="/dashboards">
+            Dashboards <KeyboardArrowDownIcon/>
           </CustomLink>
           <ul className="submenu">
             <li>
-              <CustomLink activeClassName="active" to="/dashboard/importados">
+              <CustomLink activeClassName="active" to="/dashboards/importados">
                 Importados
               </CustomLink>
               </li>
             <li>
-              <CustomLink activeClassName="active" to="/dashboard/taxas">
+              <CustomLink activeClassName="active" to="/dashboards/taxas">
                 Taxas
               </CustomLink>
             </li>
