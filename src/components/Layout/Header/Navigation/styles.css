@@ -151,7 +151,7 @@
     }
     
     #navigation ul li a {
-      padding: 1rem 3rem;
+      padding: 0.2rem 3rem;
       font-size: var(--p-font-size);
     }
 
