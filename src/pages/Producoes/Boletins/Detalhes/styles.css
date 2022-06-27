@@ -41,6 +41,10 @@
   text-indent: 3rem;
   text-align: justify;
 }
+#pageBoletinsDetalhes .wrapperBoletim .container .boletim code {
+  font-size: 90%;
+  color: var(--color-red-dark);
+}
 
 #pageBoletinsDetalhes .wrapperBoletim .container .boletim figure {
   text-align: center;

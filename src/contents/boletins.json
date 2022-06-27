@@ -36,9 +36,9 @@
     {
       "id": "atlas_metodologia",
       "url": "/producoes/boletins/atlas_metodologia",
-      "title": "Boletim nomeado Atlas Metodologia",
-      "short": "Este boletim precisa ser refatorado, removido todo codigo HTML e CSS. Todos arquivos de boletins ficam em /public/boletins/*",
-      "file": "/boletins/03_atlas_metodologia.html"
+      "title": "Metodologia",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "file": "/boletins/metodologia/04_atlas_metodologia.html"
     }
   ]
 }
