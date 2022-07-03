@@ -6,6 +6,7 @@ import ArtigosDetalhes from '../pages/Producoes/Artigos/Detalhes';
 import ArtigosLista from '../pages/Producoes/Artigos/Lista';
 import BoletinsDetalhes from '../pages/Producoes/Boletins/Detalhes';
 import BoletinsLista from '../pages/Producoes/Boletins/Lista';
+import CursosLista from '../pages/Producoes/Cursos/Lista';
 import Inicial from '../pages/Inicial';
 import Sobre from '../pages/Sobre';
 import UiGuide from '../pages/UiGuide';
@@ -29,10 +30,11 @@ function Router() {
         <Route path="/producoes" element={<Layout><h1>Producoes</h1></Layout>} />
         <Route path="/visualizacoes/:id" element={<VisualizacoesDetalhes/>} />
         <Route path="/visualizacoes" element={<VisualizacoesLista/>} />
-        <Route path="/producoes/boletins/:id" element={<BoletinsDetalhes/>} />
-        <Route path="/producoes/boletins" element={<BoletinsLista/>} />
         <Route path="/producoes/artigos/:id" element={<ArtigosDetalhes/>} />
         <Route path="/producoes/artigos" element={<ArtigosLista/>} />
+        <Route path="/producoes/boletins/:id" element={<BoletinsDetalhes/>} />
+        <Route path="/producoes/boletins" element={<BoletinsLista/>} />
+        <Route path="/producoes/cursos" element={<CursosLista/>} />
         <Route path="/ui-guide" element={<UiGuide/>} />
         <Route path="*" element={<Layout><h1>Page not found</h1></Layout>} />
       </Routes>

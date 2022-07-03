@@ -1,0 +1,21 @@
+{
+  "page": {
+    "title": "Cursos",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
+  },
+
+  "list": [
+    {
+      "id": "basico-linguagem-r",
+      "title": "Básico da Linguagem R",
+      "short": "<ul><li>Conceitos chave no uso do software R, como objetos, tipos, vetores, data.frames, matrizes, funções e fórmulas.</li><li>Importação, manipulação, e visualização básica.</li><li>Computar estatísticas descritivas e produzir visualizações simples.</li><li>Básico de programação, testes lógicos, controle de fluxo e iteração.</li></ul>",
+      "url": "https://laddem.github.io/courses/rbase/dia1/"
+    },
+    {
+      "id": "aprenda-a-utilizar-o-tidyverse",
+      "title": "Aprenda a utilizar o tidyverse",
+      "short": "<ul><li>A filosofia de design por trás de um dos pacotes mais populares no R.</li><li>Importação, Manipulação e Visualização de dados na prática.</li><li>tidyr, dplyr, ggplot2 e vários outros pacotes para simplificar sua rotina de análise de dados</li></ul>",
+      "url": "https://laddem.github.io/courses/tidyverse/dia1/"
+    }
+  ]
+}
