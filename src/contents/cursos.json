@@ -14,7 +14,7 @@
     {
       "id": "aprenda-a-utilizar-o-tidyverse",
       "title": "Aprenda a utilizar o tidyverse",
-      "short": "<ul><li>A filosofia de design por trás de um dos pacotes mais populares no R.</li><li>Importação, Manipulação e Visualização de dados na prática.</li><li>tidyr, dplyr, ggplot2 e vários outros pacotes para simplificar sua rotina de análise de dados</li></ul>",
+      "short": "<ul><li>A filosofia de design por trás de um dos pacotes mais populares no R.</li><li>Importação, Manipulação e Visualização de dados na prática.</li><li>tidyr, dplyr, ggplot2 e vários outros pacotes para simplificar sua rotina de análise de dados.</li></ul>",
       "url": "https://laddem.github.io/courses/tidyverse/dia1/"
     }
   ]

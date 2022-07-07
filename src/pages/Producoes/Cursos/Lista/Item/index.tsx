@@ -1,22 +1,34 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { Interweave } from 'interweave';
 import { Link } from 'react-router-dom';
 
+import Modal from '../../../../../components/Modal';
+
 import './styles.css';
 
-import logoR from './images/r.png'
-import logoTidyverse from'./images/tidyverse.png'
+import logoR from './images/r.png';
+import logoTidyverse from'./images/tidyverse.png';
 
 
 interface ItemProps {
   id: string;
-  linkTo: string;
+  url: string;
   short: string;
   title: string;
 }
 
 
 function Item(props: ItemProps) {
+  const [open, setOpen] = useState(false);
+
+  const onClickHandle = useCallback(() => {
+    setOpen(true);
+  }, [setOpen]);
+  
+  const onCloseHandle = useCallback(() => {
+    setOpen(false);
+  }, [setOpen]);
+
   const getLogoById = useCallback((id) => {
     switch(id) {
       case 'basico-linguagem-r': return logoR;
@@ -26,15 +38,29 @@ function Item(props: ItemProps) {
   
   return (
     <article className="listItem">
-      <Link to={props.linkTo}>
+      <div className="listItemContent" onClick={onClickHandle}>
         <figure>
           <img src={getLogoById(props.id)} alt="Logo" />
         </figure>
         <div className="listItemInfo">
           <h2>{props.title}</h2>
-          <p><Interweave noWrap content={props.short} /></p>
+          <div><Interweave noWrap content={props.short} /></div>
         </div>
-      </Link>
+      </div>
+
+      <Modal
+        onClose={onCloseHandle}
+        open={open}
+        title={props.title}
+        iframe={true}
+      >
+        <iframe
+          src={props.url}
+          title={props.title}
+          style={{ maxWidth: '1400px', width: '95vw', height:'95vh', border: 'none' }}
+        >
+        </iframe>
+      </Modal>
     </article>
   );
 }

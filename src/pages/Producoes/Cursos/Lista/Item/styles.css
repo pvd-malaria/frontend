@@ -2,7 +2,7 @@
   padding: 0;
 }
 
-#pageCursosLista article.listItem > a {
+#pageCursosLista article.listItem > .listItemContent {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -13,9 +13,10 @@
   border-top: 1px solid transparent;
   border-radius: 5px;
   transition: all 300ms;
+  cursor: pointer;
 }
 
-#pageCursosLista article.listItem a figure {
+#pageCursosLista article.listItem .listItemContent figure {
   position: relative;
   margin: 0;
   padding: 2rem 3rem;
@@ -23,25 +24,25 @@
   background-color: #fff;
 }
 
-#pageCursosLista article.listItem a figure img { 
+#pageCursosLista article.listItem .listItemContent figure img { 
   box-sizing: border-box;
   display: block;
   width: 100%;
 }
 
-#pageCursosLista article.listItem a .listItemInfo {
+#pageCursosLista article.listItem .listItemContent .listItemInfo {
   position: relative;
   padding: 2rem;
   width: 80%;
 }
 
-#pageCursosLista article.listItem a .listItemInfo h2 {
+#pageCursosLista article.listItem .listItemContent .listItemInfo h2 {
   font-size: var(--h4-font-size);
   color: var(--primary-color-blue);
   transition: all 300ms;
 }
 
-#pageCursosLista article.listItem a .listItemInfo h2::before {
+#pageCursosLista article.listItem .listItemContent .listItemInfo h2::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -50,29 +51,29 @@
   background-color: var(--primary-color-blue);
 }
 
-#pageCursosLista article.listItem a .listItemInfo p {
+#pageCursosLista article.listItem .listItemContent .listItemInfo div {
   margin-bottom: 0.2rem;
   font-size: var(--p-font-size);
   color: var(--color-black-light);
 }
 
-#pageCursosLista article.listItem a .listItemInfo p ul {
+#pageCursosLista article.listItem .listItemContent .listItemInfo div ul {
   padding-left: 1rem;
 }
-#pageCursosLista article.listItem a .listItemInfo p ul li {
+#pageCursosLista article.listItem .listItemContent .listItemInfo div ul li {
   margin-bottom: 0.3rem;
 }
 
 /* --- MouseOver --- */
 
-#pageCursosLista article.listItem > a:hover {
+#pageCursosLista article.listItem > .listItemContent:hover {
   background-color: #fff;
   border-top: 4px solid var(--primary-color-yellow);
   box-shadow: 0 0 15px #eee;
   transform: scale(1.05);
 }
 
-#pageCursosLista article.listItem > a:hover h2 {
+#pageCursosLista article.listItem > .listItemContent:hover h2 {
   text-shadow: 0 0 1px var(--primary-color-blue);
 }
 
@@ -81,15 +82,15 @@
 @media screen and (max-width: 768px) {
   #pageCursosLista article.listItem { }
 
-  #pageCursosLista article.listItem a {
+  #pageCursosLista article.listItem .listItemContent {
     flex-flow: column;
   }
 
-  #pageCursosLista article.listItem a figure {
+  #pageCursosLista article.listItem .listItemContent figure {
     width: initial;
   }
 
-  #pageCursosLista article.listItem a figure img {
+  #pageCursosLista article.listItem .listItemContent figure img {
     margin: auto;
     max-width: 30vw;
   }

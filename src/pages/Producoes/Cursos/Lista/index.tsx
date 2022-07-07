@@ -1,3 +1,5 @@
+import { useCallback, useState } from 'react';
+
 import Layout from '../../../../components/Layout';
 import Item from './Item';
 
@@ -23,7 +25,7 @@ function CursosLista() {
                 <Item
                   key={item.id}
                   id={item.id}
-                  linkTo={item.url}
+                  url={item.url}
                   short={item.short}
                   title={item.title}
                 />
