@@ -35,25 +35,21 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Luciana Alves</p>
               <p className="email">lcalves@synapse.org</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Carlos Eduardo Beluzo</p>
               <p className="email">cbeluzo@synapse.org</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Bianca</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Jaime</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
@@ -66,31 +62,26 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Alvaro</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Everton</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Tiago</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Natalia</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Vinicius</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
@@ -103,21 +94,13 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
-              <div className="foto"></div>
               <p className="nome">Adriano</p>
               <p className="email">endereco@mail.com</p>
               <p className="bio">Informação complementar</p>
             </div>
             <div className="membro">
-              <div className="foto"></div>
-              <p className="nome">Raquel</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
-            </div>
-            <div className="membro">
-              <div className="foto"></div>
-              <p className="nome">Rogério</p>
-              <p className="email">endereco@mail.com</p>
+              <p className="nome">Willianson</p>
+              <p className="email">contato@willianson.com.br</p>
               <p className="bio">Informação complementar</p>
             </div>
           </div>
