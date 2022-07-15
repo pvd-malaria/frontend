@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CircularProgress from '@mui/material/CircularProgress';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
 
 import Layout from '../../components/Layout';
 
@@ -10,6 +11,7 @@ import jsonDashboards from '../../contents/dashboards.json';
 import LinkButton from '../../components/LinkButton';
 
 import './styles.css';
+import Button from '@mui/material/Button';
 
 
 interface IDashboard {
@@ -17,6 +19,7 @@ interface IDashboard {
   title: string,
   description: string,
   file: string,
+  url: string,
 }
 
 
@@ -36,10 +39,13 @@ function Dashboards() {
 
   if (dashboard) {
     return (
-      <Layout id="pageDashboard">
+      <Layout id="pageDashboards">
         <section className="wrapperInfo">
           <div className="container">
-            <h1>{dashboard.title}</h1>
+            <h1>
+              <span>Dashboards</span><br />
+              {dashboard.title}
+            </h1>
             <p>{dashboard.description}</p>
           </div>
         </section>      
@@ -51,15 +57,21 @@ function Dashboards() {
 
               <iframe 
                 title={dashboard.title}
-                src={`/visualizacoes/${dashboard.file}`}
+                src={dashboard.url}
+                // src={`/visualizacoes/${dashboard.file}`}
                 width="100%"  
-                height="700"
+                height="800"
                 frameBorder="0"
                 scrolling="no"
                 sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
               >
               </iframe>
             </div>
+
+            <Button variant="contained">
+              <FullscreenIcon/> &nbsp; 
+              Exibir em tela cheia
+            </Button>
           </div>
         </section>
       </Layout>

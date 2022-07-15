@@ -7,6 +7,7 @@ import ArtigosLista from '../pages/Producoes/Artigos/Lista';
 import BoletinsDetalhes from '../pages/Producoes/Boletins/Detalhes';
 import BoletinsLista from '../pages/Producoes/Boletins/Lista';
 import CursosLista from '../pages/Producoes/Cursos/Lista';
+import Dashboards from '../pages/Dashboards';
 import Inicial from '../pages/Inicial';
 import Sobre from '../pages/Sobre';
 import UiGuide from '../pages/UiGuide';
@@ -25,7 +26,8 @@ function Router() {
       <Routes >
         <Route path="/" element={<Inicial/>} />
         <Route path="/sobre" element={<Sobre/>} />
-        <Route path="/dashboard" element={<Layout><h1>Dashboard</h1></Layout>} />
+        <Route path="/dashboards" element={<Layout><h1>Dashboard</h1></Layout>} />
+        <Route path="/dashboards/:id" element={<Dashboards/>} />
         <Route path="/modelos" element={<Layout><h1>Modelos</h1></Layout>} />
         <Route path="/producoes" element={<Layout><h1>Producoes</h1></Layout>} />
         <Route path="/visualizacoes/:id" element={<VisualizacoesDetalhes/>} />

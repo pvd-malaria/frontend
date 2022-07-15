@@ -66,4 +66,8 @@
   
   #pageDashboards .wrapperDashboard .container { }
 
+  #pageDashboards .wrapperDashboard .container .dashboard iframe {
+    height: 1550px;
+  }
+
 }

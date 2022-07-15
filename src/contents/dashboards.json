@@ -9,13 +9,15 @@
       "id": "importados",
       "title": "Importados",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
-      "file": "http://promalaria.nepo.unicamp.br:8038/importados"
+      "file": "",
+      "url": "https://vinicius-maia.shinyapps.io/importadosdash/"
     },
     {
       "id": "taxas",
       "title": "Taxas",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
-      "file": "http://promalaria.nepo.unicamp.br:8038/taxas"
+      "file": "",
+      "url": "https://arrudanat.shinyapps.io/taxasMalaria"
     }
   ]
 }
