@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useCallback, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -9,6 +9,7 @@ import Layout from '../../components/Layout';
 
 import jsonDashboards from '../../contents/dashboards.json';
 import LinkButton from '../../components/LinkButton';
+import Fullscreen from '../../components/Fullscreen';
 
 import './styles.css';
 import Button from '@mui/material/Button';
@@ -27,6 +28,12 @@ function Dashboards() {
 
   const [ dashboard, setDashboard ] = useState<IDashboard>();
   const { id } = useParams<"id">();
+
+
+  const fullscreenHandle = useCallback(() => {
+    const elementToOpen = document.querySelector('#iframeDashboard');
+    Fullscreen(elementToOpen)
+  }, []);
 
 
   useEffect(() => {
@@ -56,9 +63,10 @@ function Dashboards() {
               <CircularProgress />
 
               <iframe 
+                id="iframeDashboard"
                 title={dashboard.title}
                 src={dashboard.url}
-                // src={`/visualizacoes/${dashboard.file}`}
+                // TODO: src={`/visualizacoes/${dashboard.file}`}
                 width="100%"  
                 height="800"
                 frameBorder="0"
@@ -68,10 +76,11 @@ function Dashboards() {
               </iframe>
             </div>
 
-            <Button variant="contained">
+            <Button variant="contained" onClick={fullscreenHandle}>
               <FullscreenIcon/> &nbsp; 
               Exibir em tela cheia
             </Button>
+            <p><i>Em modo tela cheira, pressione ESC para voltar.</i></p>
           </div>
         </section>
       </Layout>
