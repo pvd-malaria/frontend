@@ -77,7 +77,7 @@ const ChartEducationGroups = React.memo(() => {
 				customdata: percentages.map(x => x * 100),
 				hovertemplate: '%{text} %{x}: %{customdata:.2f}%',
 				xaxis: 'x' + colNum,
-				yaxis: 'y' + rowNum
+				yaxis: 'y' + rowNum,
 			};
 	
 			traces.push(trace);
@@ -97,13 +97,8 @@ const ChartEducationGroups = React.memo(() => {
 		},
 		'legend.orientation': 'h',
 		autosize: true,
-		title:
-			'Proporção de grupos' +
-			(ww <= 500 ? '<br>' : ' ') +
-			'de anos de estudo' +
-			(ww <= 500 ? '<br>' : ' - ') +
-			minYear + ' a ' + maxYear,
-		showlegend: ww > 500
+		title: 'Proporções de Casos por Anos de Estudo',
+		showlegend: ww > 500,
 	};
 
 

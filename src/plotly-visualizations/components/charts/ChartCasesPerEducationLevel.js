@@ -104,16 +104,19 @@ const ChartCasesPerEducationLevel = React.memo(() => {
 	const divId = 'chart-education-level';
 
 	const layout = makePlotLayout({
-		xtitle: 'Unidade Federativa',
-		ytitle: 'Porcentagem',
+		xtitle: 'UF',
+		ytitle: 'Proporção',
 		extra: {
 			'yaxis.range': [0, parseInt(maxValue * 1.15)],
 			'yaxis.ticksuffix': '%',
 			'yaxis.hoverformat': '.2f',
 			'barmode': 'stack',
+			'xaxis.tickangle': 45,
+			'xaxis.title.standoff': 10,
 			autosize: true,
-			title: 'Casos por Nível Educacional' + (ww <= 500 ? '<br>' : ' - ') + minYear + ' a ' + maxYear,
-			showlegend: ww > 500
+			title: 'Proporção de Casos por Níveis de Escolaridade',
+			showlegend: ww > 500,
+			
 		}
 	});
 
@@ -128,7 +131,7 @@ const ChartCasesPerEducationLevel = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{width: '100%', height: 550, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={frame}

@@ -121,7 +121,7 @@ const ChartCasesPerMonth = React.memo(({ hasLines }) => {
 		extra: {
 			'yaxis.range': [0, parseInt(maxValue * 1.15)],
 			autosize: true,
-			title: 'Casos de Malária' + (ww <= 500 ? '<br>' : ' - ') + minYear + ' a ' + maxYear,
+			title: 'Casos de Malária',
 			showlegend: ww > 500
 		}
 	});
@@ -137,7 +137,7 @@ const ChartCasesPerMonth = React.memo(({ hasLines }) => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{width: '100%', height: 550, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={frame}
