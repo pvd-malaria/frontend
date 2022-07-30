@@ -50,7 +50,7 @@
 
 /* Mobile */
 
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 1043px) {
   .MuiModalContentHeader {
     height: 50px;
   }
