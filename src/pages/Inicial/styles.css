@@ -76,7 +76,6 @@
 }
 
 #pageInicial .visualizations .container h4 {
-  margin: 0;
   color: var(--primary-color-blue);
 }
 
@@ -100,6 +99,18 @@
   width: 100%;
   background-color: #fff;
   border-radius: 0.3rem;
+}
+
+#pageInicial .visualizations .container .items article a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#pageInicial .visualizations .container .items article h3 {
+  margin: 8px 0 15px;
+  font-weight: 500;
+  font-size: var(--h5-font-size);
+  color: var(--primary-color-blue);
 }
 
 /* --- Quality --- */
@@ -185,11 +196,11 @@
   #pageInicial .visualizations .container .items {
     overflow-x: auto;
     padding-bottom: 1rem;
-    width: 100%;
+    width: calc(100% + 2rem);
   }
 
   #pageInicial .visualizations .container .items article {
-    min-width: 300px;
+    min-width: 200px;
   }
 
   #pageInicial .publications .container .items {

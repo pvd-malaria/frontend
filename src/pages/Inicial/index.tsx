@@ -67,21 +67,21 @@ function Inicial() {
             <article>
               <Link to={jsonInicial.visualizacoes.items[0].url}>
                 <img src={imageVisualizationFirst} alt="Visualização" />
-                <strong>{jsonInicial.visualizacoes.items[0].title}</strong>
+                <h3>{jsonInicial.visualizacoes.items[0].title}</h3>
                 <span>{jsonInicial.visualizacoes.items[0].short}</span>
               </Link>
             </article>
             <article>
               <Link to={jsonInicial.visualizacoes.items[1].url}>
                 <img src={imageVisualizationSecond} alt="Visualização" />
-                <strong>{jsonInicial.visualizacoes.items[1].title}</strong>
+                <h3>{jsonInicial.visualizacoes.items[1].title}</h3>
                 <span>{jsonInicial.visualizacoes.items[1].short}</span>
               </Link>
             </article>
             <article>
               <Link to={jsonInicial.visualizacoes.items[2].url}>
                 <img src={imageVisualizationThird} alt="Visualização" />
-                <strong>{jsonInicial.visualizacoes.items[2].title}</strong>
+                <h3>{jsonInicial.visualizacoes.items[2].title}</h3>
                 <span>{jsonInicial.visualizacoes.items[2].short}</span>
               </Link>
             </article>
