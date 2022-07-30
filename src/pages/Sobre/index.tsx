@@ -1,6 +1,7 @@
 // import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Interweave } from 'interweave';
+import { AccordionDetails, AccordionSummary, Accordion, AccordionActions } from '@mui/material';
 
 import jsonSobre from '../../contents/sobre.json';
 
@@ -17,7 +18,13 @@ function Sobre() {
         <div className="container">
           <h1>{jsonSobre.page.title}</h1>
           <div className="info">
-            <Interweave noWrap content={jsonSobre.page.description} />
+            <Interweave noWrap content={jsonSobre.page.description[0]} />
+            <Accordion>
+              <AccordionSummary>Ler mais</AccordionSummary>
+              <AccordionDetails>
+                  <Interweave noWrap content={jsonSobre.page.description[1]} />
+              </AccordionDetails>
+            </Accordion>
           </div>
         </div>
       </section>
