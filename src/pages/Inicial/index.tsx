@@ -10,9 +10,9 @@ import './styles.css';
 
 import imageTaxas from './images/taxas.png';
 import imageImportados from './images/importados.png';
-import imageVisualization0 from './images/visualization-0.png';
-import imageVisualization1 from './images/visualization-1.png';
-import imageVisualization2 from './images/visualization-2.png';
+import imageVisualizationFirst from '../Visualizacoes/Lista/Item/images/bubbles.svg';
+import imageVisualizationSecond from '../Visualizacoes/Lista/Item/images/bars-filled-full.svg';
+import imageVisualizationThird from '../Visualizacoes/Lista/Item/images/map-network.svg';
 
 
 function Inicial() {
@@ -65,22 +65,28 @@ function Inicial() {
           <p>{jsonInicial.visualizacoes.description}</p>
           <div className="items">
             <article>
-              <img src={imageVisualization0} alt="Visualização" />
-              <strong>{jsonInicial.visualizacoes.items[0].title}</strong>
-              <span>{jsonInicial.visualizacoes.items[0].short}</span>
+              <Link to={jsonInicial.visualizacoes.items[0].url}>
+                <img src={imageVisualizationFirst} alt="Visualização" />
+                <strong>{jsonInicial.visualizacoes.items[0].title}</strong>
+                <span>{jsonInicial.visualizacoes.items[0].short}</span>
+              </Link>
             </article>
             <article>
-              <img src={imageVisualization1} alt="Visualização" />
-              <strong>{jsonInicial.visualizacoes.items[1].title}</strong>
-              <span>{jsonInicial.visualizacoes.items[1].short}</span>
+              <Link to={jsonInicial.visualizacoes.items[1].url}>
+                <img src={imageVisualizationSecond} alt="Visualização" />
+                <strong>{jsonInicial.visualizacoes.items[1].title}</strong>
+                <span>{jsonInicial.visualizacoes.items[1].short}</span>
+              </Link>
             </article>
             <article>
-              <img src={imageVisualization2} alt="Visualização" />
-              <strong>{jsonInicial.visualizacoes.items[2].title}</strong>
-              <span>{jsonInicial.visualizacoes.items[2].short}</span>
+              <Link to={jsonInicial.visualizacoes.items[2].url}>
+                <img src={imageVisualizationThird} alt="Visualização" />
+                <strong>{jsonInicial.visualizacoes.items[2].title}</strong>
+                <span>{jsonInicial.visualizacoes.items[2].short}</span>
+              </Link>
             </article>
           </div>
-          <LinkButton to={jsonInicial.visualizacoes.url}>Mais visualizações</LinkButton>
+          <LinkButton to={jsonInicial.visualizacoes.url}>Veja todas visualizações</LinkButton>
         </div>
       </section>
 
@@ -110,7 +116,7 @@ function Inicial() {
               </Link>
             </article>
           </div>
-          <LinkButton to={jsonInicial.publicacoes.url}>Mais publicações</LinkButton>
+          <LinkButton to={jsonInicial.publicacoes.url}>Veja todas publicações</LinkButton>
         </div>
       </section>
     </Layout>
