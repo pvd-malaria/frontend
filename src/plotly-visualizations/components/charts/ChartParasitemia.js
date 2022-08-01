@@ -104,17 +104,16 @@ const ChartParasitemia = React.memo(() => {
 	const divId = 'chart-parasitemia';
 
 	const layout = makePlotLayout({
-		xtitle: 'Unidade Federativa',
-		ytitle: 'Porcentagem',
+		xtitle: 'UF',
+		ytitle: 'Proporção',
 		extra: {
 			'yaxis.range': [0, parseInt(maxValue * 1.15)],
 			'yaxis.ticksuffix': '%',
 			'yaxis.hoverformat': '.2f',
+			'xaxis.tickangle': 45,
+			'xaxis.title.standoff': 10,
 			'barmode': 'stack',
-			title:
-				'Quantidade de Cruzes' +
-				(ww <= 500 ? '<br>' : ' - ') +
-				minYear + ' a ' + maxYear,
+			title: 'Quantidade de Cruzes',
 			autosize: true,
 			showlegend: ww > 500
 		}
@@ -130,7 +129,7 @@ const ChartParasitemia = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{width: '100%', height: 550, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={frame}

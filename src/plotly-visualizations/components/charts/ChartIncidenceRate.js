@@ -102,12 +102,7 @@ const ChartIncidenceRate = React.memo(() => {
 			'xaxis.dtick': 1,
 			'xaxis.range': [minYear - 0.5, maxYear + 0.5],
 			'xaxis.tickangle': -45,
-			title:
-				'Relação Taxa de' +
-				(ww <= 500 ? '<br>' : ' ') +
-				'Incidência de Malária' +
-				(ww <= 500 ? '<br>' : ' - ') +
-				minYear + ' a ' + maxYear,
+			title: 'Taxa de Incidência de Malária',
 			autosize: true,
 			showlegend: ww > 500
 		},
@@ -119,7 +114,7 @@ const ChartIncidenceRate = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{width: '100%', height: 550, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={traces}
