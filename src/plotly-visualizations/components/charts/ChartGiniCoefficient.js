@@ -107,7 +107,8 @@ const ChartGiniCoefficient = React.memo(() => {
 			'xaxis.range': [minYear - 0.5, maxYear + 0.5],
 			'xaxis.dtick': 1,
 			'xaxis.tickangle': -45,
-			'yaxis.hoverformat': '.2f',
+			'yaxis.tickformat': '.3f',
+			'yaxis.hoverformat': '.3f',
 			title:
 				'Índice de Gini' +
 				(ww <= 500 ? '<br>' : ' ') +
