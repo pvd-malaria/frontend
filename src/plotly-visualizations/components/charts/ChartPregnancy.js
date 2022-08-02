@@ -102,20 +102,17 @@ const ChartPregnancy = React.memo(() => {
 	let frame = frames[year - minYear];
 
 	let layout = makePlotLayout({
-		xtitle: 'Unidade Federativa',
-		ytitle: 'Porcentagem',
+		xtitle: 'UF',
+		ytitle: 'Proporção',
 		extra: {
 			'yaxis.range': [0, parseInt(maxValue * 1.15)],
 			barmode: 'stack',
 			'yaxis.ticksuffix': '%',
 			'yaxis.hoverformat': '.2f',
+			'xaxis.tickangle': 45,
+			'xaxis.title.standoff': 10,
 			autosize: true,
-			title:
-				'Gestantes entre' +
-				(ww <= 500 ? '<br>' : ' ') +
-				'14 e 59 anos' +
-				(ww <= 500 ? '<br>' : ' - ') +
-				minYear + ' a ' + maxYear,
+			title: 'Proporções de Casos por Idade Gestacional',
 			showlegend: ww > 500
 		}
 	});
@@ -131,7 +128,7 @@ const ChartPregnancy = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{width: '100%', height: 550, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={frame}

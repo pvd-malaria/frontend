@@ -80,9 +80,9 @@ const ChartOccupation = React.memo(() => {
 	}
 
 	let colorMap = {};
-	for(let i = 0; i < occupations.length; i++) {
-		colorMap[occupations[i]] = ColorWay[i];
-	}
+    for(let i = occupations.length - 1; i >= 0; i--) {
+        colorMap[occupations[occupations.length - i]] = ColorWay[i];
+    }
 
 	let rowNum = 0;
 	let colNum = 0;
@@ -192,7 +192,7 @@ const ChartOccupation = React.memo(() => {
 		'legend.orientation': 'h',
 		showlegend: ww > 500,
 		autosize: true,
-		title: 'Ocupação - Testados Positivos' + (ww <= 500 ? '<br>' : ' - ') + minYear + ' a ' + maxYear,
+		title: 'Proporções de Casos por Ocupação',
 		annotations: anno
 	};
 

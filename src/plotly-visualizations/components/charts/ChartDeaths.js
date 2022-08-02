@@ -51,7 +51,7 @@ const ChartDeaths = React.memo(() => {
 			name: uf,
 			hovertemplate: '%{x} ' + ': %{y} mortes',
 			line: { shape: 'spline' },
-			//fill: 'tozeroy',
+			fill: 'tonexty',
 			connectgaps: true,
 		};
 
@@ -74,12 +74,7 @@ const ChartDeaths = React.memo(() => {
 			'xaxis.dtick': 1,
 			'xaxis.range': [minYear - 0.5, maxYear + 0.5],
 			'xaxis.tickangle': -45,
-			title:
-				'Número de mortes por' +
-				(ww <= 500 ? '<br>' : ' ') +
-				'malária - Amazônia Legal' +
-				(ww <= 500 ? '<br>' : ' - ') +
-				minYear + ' a ' + maxYear,
+			title: 'Número de Mortes por Malária',
 			showlegend: ww > 500,
 			autosize: true
 		}
