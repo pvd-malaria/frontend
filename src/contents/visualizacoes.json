@@ -63,7 +63,7 @@
       "title": "Número de Mortes",
       "description": "Número de mortes por Malária em número absoluto, podendo ser mudado para proporção do estado naquele ano. O gráfico indica uma mudança de tendência no número de mortes por estado, além da maior participação do estado do Amazonas no número de mortes em relação a outros estados.",
       "file": "Mortes/deaths.html",
-      "height": 600
+      "height": 650
     },
     {
       "id": "quantidade_de_cruzes",
