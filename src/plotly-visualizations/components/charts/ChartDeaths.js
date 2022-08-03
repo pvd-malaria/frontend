@@ -51,7 +51,7 @@ const ChartDeaths = React.memo(() => {
 			name: uf,
 			hovertemplate: '%{x} ' + ': %{y} mortes',
 			line: { shape: 'spline' },
-			fill: 'tonexty',
+			fill: 'tozeroy',
 			connectgaps: true,
 		};
 
