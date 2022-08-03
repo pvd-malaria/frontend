@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ChartCasesPerMonth } from '../../components/charts';
+import { ChartEducationGroups } from '../../components/charts';
+import { ChartCasesPerEducationLevel } from '../../components/charts';
 import { Tabs, Tab, Box } from '@mui/material';
 
 function a11yProps(index) {
@@ -10,7 +11,7 @@ function a11yProps(index) {
 	};
 }
 
-const VisCasesPerMonth = () => {
+const VisEducationEscolaridade = () => {
 	const [tab, setTab] = React.useState(0);
 
 	return (
@@ -21,16 +22,16 @@ const VisCasesPerMonth = () => {
 				justifyContent: 'center',
 				alignItems: 'center'
 			}}>
-				<Tabs value={tab} onChange={(e, nv) => setTab(nv)} aria-label="casos tabs">
-					<Tab label="Lines" {...a11yProps(0)} />
-					<Tab label="Bubbles" {...a11yProps(1)} />
+				<Tabs value={tab} onChange={(e, nv) => setTab(nv)} aria-label="escolaridade tabs">
+					<Tab label="Grupos" {...a11yProps(0)} />
+					<Tab label="Níveis" {...a11yProps(1)} />
 				</Tabs>
 			</Box>
-			<ChartCasesPerMonth hasLines={tab === 0}/>
+			{ tab === 0 ? <ChartEducationGroups/> : <ChartCasesPerEducationLevel/> }
 		</div>
 	);
 };
 
 const div = document.getElementById('root');
 const root = createRoot(div);
-root.render(<VisCasesPerMonth/>);
+root.render(<VisEducationEscolaridade/>);

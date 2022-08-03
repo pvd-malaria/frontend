@@ -134,7 +134,7 @@ const ChartEducationGroups = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 600, display: 'flex'}}>
+			<div style={{width: '100%', height: 2000, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={traces}
