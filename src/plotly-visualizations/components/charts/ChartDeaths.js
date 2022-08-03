@@ -5,6 +5,9 @@ import {
 	Typography,
 	Box,
 	Button,
+	Select,
+	MenuItem,
+	FormControl,
 }
 	from '@mui/material';
 
@@ -29,6 +32,7 @@ const hex2rgb = hex => {
 
 const ChartDeaths = React.memo(() => {
 	const [ww, setWw] = useState(null);
+	const [relative, setRelative] = useState(false);
 
 	if(ww === null) setWw(window.innerWidth);
 
@@ -45,12 +49,18 @@ const ChartDeaths = React.memo(() => {
 
 	for(let uf of uniqueUFs) {
 		let traceData = {};
+
 		for(let i = 0; i < years.length; i++) {
 			traceData[i] = data.filter(
 				row => row.uf === uf && row.year_notif === years[i]
 			);
 			if (traceData[i].length !== 0) {
-				traceData[i] = traceData[i][0].deaths;
+				if(relative) {
+					traceData[i] = traceData[i][0].percM;
+				}
+				else {
+					traceData[i] = traceData[i][0].deaths;
+				}
 			}
 			else traceData[i] = 0;
 		}
@@ -61,23 +71,34 @@ const ChartDeaths = React.memo(() => {
 			type: 'scatter',
 			mode: 'lines+markers',
 			name: uf,
-			hovertemplate: '%{x} ' + ': %{y} mortes',
 			line: { shape: 'spline' },
 			fill: 'tonexty',
 			connectgaps: true,
 			stackgroup: 'one'
 		};
 
+		if(relative) {
+			trace.hovertemplate = '%{x}' + ': %{y}%';
+		}
+		else {
+			trace.hovertemplate = '%{x}' + ': %{y} mortes';
+		}
+
 		traces.push(trace);
 	};
 
 	let maxSum = 0;
-	for(let year of years) {
-		let sum = 0;
-		for(let t of traces) {
-			sum += t.y[year - minYear];
+	if(relative) {
+		maxSum = 100;
+	}
+	else {
+		for(let year of years) {
+			let sum = 0;
+			for(let t of traces) {
+				sum += t.y[year - minYear];
+			}
+			maxSum = Math.max(sum, maxSum);
 		}
-		maxSum = Math.max(sum, maxSum);
 	}
 
 	const divId = 'chart-deaths';
@@ -93,7 +114,8 @@ const ChartDeaths = React.memo(() => {
 			'xaxis.tickangle': -45,
 			title: 'Número de Mortes por Malária',
 			showlegend: ww > 500,
-			autosize: true
+			autosize: true,
+			transition: null
 		}
 	});
 	
@@ -113,6 +135,23 @@ const ChartDeaths = React.memo(() => {
 					style={{width: '100%', height: '100%'}}
 				/>
 			</div>
+			<Box sx={{
+				width: '100%',
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+				mb: 1
+			}}>
+				<FormControl size="small">
+					<Select
+						value={relative}
+						onChange={e => setRelative(e.target.value)}
+					>
+						<MenuItem value={false}>Absoluto</MenuItem>
+						<MenuItem value={true}>Relativo</MenuItem>
+					</Select>
+				</FormControl>
+			</Box>
 			<center>
 				<Typography variant="caption">
 					Fonte: Sistema de Informação de Mortalidade (SIM) - Datasus
