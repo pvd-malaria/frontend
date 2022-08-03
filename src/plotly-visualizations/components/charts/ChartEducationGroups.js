@@ -96,6 +96,8 @@ const ChartEducationGroups = React.memo(() => {
 			rows: rowNum - 1, columns: 2
 		},
 		'legend.orientation': 'h',
+		'legend.x': 0,
+		'legend.y': -0.03,
 		autosize: true,
 		title: 'Proporções de Casos por Anos de Estudo',
 		showlegend: ww > 500,
@@ -134,7 +136,7 @@ const ChartEducationGroups = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 2000, display: 'flex'}}>
+			<div style={{width: '100%', height: 1800, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={traces}
