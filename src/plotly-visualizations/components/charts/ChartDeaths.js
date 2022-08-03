@@ -14,9 +14,18 @@ import DataObjectIcon from '@mui/icons-material/DataObject';
 import TableChartIcon from '@mui/icons-material/TableChart';
 
 import { saveSvgAsPng } from 'save-svg-as-png';
-import { makeSvgObject, makePlotLayout } from '../../utils/utils';
+import { makeSvgObject, makePlotLayout, ColorWay } from '../../utils/utils';
 
 import data from '../../datasets/deaths.json';
+
+const hex2rgb = hex => {
+	let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+	return result ? {
+		r: parseInt(result[1], 16),
+		g: parseInt(result[2], 16),
+		b: parseInt(result[3], 16)
+	} : null;
+}
 
 const ChartDeaths = React.memo(() => {
 	const [ww, setWw] = useState(null);
@@ -28,6 +37,9 @@ const ChartDeaths = React.memo(() => {
 
 	const years = Array.from(new Set(data.map(row => row.year_notif)));
 	const uniqueUFs = Array.from(new Set(data.map(row => row.uf)));
+
+	let colorWay = [...ColorWay];
+	colorWay = colorWay.reverse();
 
 	let traces = [];
 
@@ -51,17 +63,21 @@ const ChartDeaths = React.memo(() => {
 			name: uf,
 			hovertemplate: '%{x} ' + ': %{y} mortes',
 			line: { shape: 'spline' },
-			fill: 'tozeroy',
+			fill: 'tonexty',
 			connectgaps: true,
+			stackgroup: 'one'
 		};
 
 		traces.push(trace);
 	};
 
-	let maxValue = 0;
-	for (let t of traces) {
-		let traceMax = Math.max(...t.y);
-		maxValue = Math.max(traceMax, maxValue);
+	let maxSum = 0;
+	for(let year of years) {
+		let sum = 0;
+		for(let t of traces) {
+			sum += t.y[year - minYear];
+		}
+		maxSum = Math.max(sum, maxSum);
 	}
 
 	const divId = 'chart-deaths';
@@ -69,10 +85,11 @@ const ChartDeaths = React.memo(() => {
 	let layout = makePlotLayout({
 		xtitle: 'Ano',
 		ytitle: 'Número de mortes por malária',
+		colorway: colorWay,
 		extra: {
-			'yaxis.range': [0, parseInt(maxValue * 1.15)],
+			'yaxis.range': [0, parseInt(maxSum * 1.05)],
 			'xaxis.dtick': 1,
-			'xaxis.range': [minYear - 0.5, maxYear + 0.5],
+			'xaxis.range': [minYear - 0.25, maxYear + 0.25],
 			'xaxis.tickangle': -45,
 			title: 'Número de Mortes por Malária',
 			showlegend: ww > 500,
