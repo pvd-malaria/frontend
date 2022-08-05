@@ -8,22 +8,22 @@
     {
       "id": "artigo_data_viz_malaria",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "4 de abril de 2022",
-      "title": "Data Visualization for Epidemiological and Demographic Data for Malaria Surveillance in the Brazilian Amazon, 2007-2019",
-      "short": ". The objective of this study is to propose the design of interactive visualizations of data related to Malaria Surveillance in the Brazilian Amazon, between the years of 2007-2019. Data came from SIVEP Malaria. We used data visualization techniques to explore epidemiological and demographic aspects of Malaria Surveillance. We hope tools of this kind can reduce the burden of data extraction and analysis on health staff and local policy makers.",
+      "date": "14 de setembro de 2021",
+      "title": "Painéis de dados Epidemiológicos e Demográficos para Vigilância da Malária na Amazônia Brasileira, 2007-2019",
+      "short": "O objetivo deste trabalho é propor visualizações interativas de dados relacionados à Vigilância da Malária na Amazônia brasileira, entre os anos de 2007-2019. Os dados são oriundos SIVEP-Malária. Usamos técnicas de visualização de dados para explorar aspectos epidemiológicos e demográficos da Vigilância da Malária. Esperamos que ferramentas desse tipo possam reduzir a carga de extração e análise de dados sobre a equipe de saúde e os formuladores de políticas locais.",
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019.pdf",
       "urlExternal": "https://www.longdom.org/abstract/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019-90332.html"
     },
     {
-      "id": "artigo_modelo",
+      "id": "artigo_fatores_tempo_tratamento",
       "url": "/producoes/artigos/artigo_modelo",
       "date": "21 de maio de 2021",
-      "title": "Modelo de Artigo Importando Arquivo HTML",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "title": "Fatores no tempo para o tratamento da malária na Amazônia brasileira: uma análise de sobrevivência",
+      "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de P. vivax e metas de eliminação de P. falciparum, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
       "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "",
-      "urlExternal": ""
+      "urlPdf": "/artigos/osf-preprint-bmc-factors-time-to-treatment.pdf",
+      "urlExternal": "https://osf.io/zec7y/"
     },
     {
       "id": "artigo_fail",
