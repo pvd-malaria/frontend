@@ -6,6 +6,16 @@
 
   "list": [
     {
+      "id": "congresso_acuns_2022",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "25 de junho de 2022",
+      "title": "Avanços, Perspectivas e Limitações da Vigilância Epidemiológica da Malária na Amazônia Brasileira.",
+      "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi 'Soluções baseadas em evidências para intensificar os desafios globais'",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon.pdf",
+      "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
+    },
+    {
       "id": "artigo_data_viz_malaria",
       "url": "/producoes/artigos/artigo_modelo",
       "date": "14 de setembro de 2021",
@@ -18,12 +28,42 @@
     {
       "id": "artigo_fatores_tempo_tratamento",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "21 de maio de 2021",
+      "date": "19 de abril de 2021",
       "title": "Fatores no tempo para o tratamento da malária na Amazônia brasileira: uma análise de sobrevivência",
       "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de P. vivax e metas de eliminação de P. falciparum, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/osf-preprint-bmc-factors-time-to-treatment.pdf",
       "urlExternal": "https://osf.io/zec7y/"
+    },
+    {
+      "id": "congresso_ipc_2021_ml",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "10 de dezembro 2021",
+      "title": "Machine Learning para recomendação de esquema de tratamento da malária usando dados de vigilância epdemiológica.",
+      "short": "Trabalho apresentado no IPC 2021 (International Population Conference) na sessão 'Uso e uso indevido de tratamentos preventivos e curativos: o papel dos fatores socioeconômicos.'",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/IPC-2021-machine-learning-malaria-treatmente.pdf",
+      "urlExternal": "https://ipc2021.popconf.org/sessions/130"
+    },
+    {
+      "id": "congresso_ipc_2021_estrutura_etaria",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "10 de dezembro 2021",
+      "title": "Estrutura etária e taxas de malária na Amazônia Legal: uma perspectiva demográfica.",
+      "short": "Trabalho apresentado no IPC 2021 (International Population Conference) na sessão 'Communicable Diseases in the Americas.'",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/Age-structure-and-malaria-rates-in-the-Legal-Amazon-a-demographic-perspective.pdf",
+      "urlExternal": "https://ipc2021.popconf.org/sessions/87"
+    },
+    {
+      "id": "congresso_paa_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "10 de dezembro 2021",
+      "title": "PAA 2021",
+      "short": "PAA 2021",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/paa_2021.pdf",
+      "urlExternal": "paa_2021"
     },
     {
       "id": "artigo_fail",
