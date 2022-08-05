@@ -6,14 +6,14 @@
 
   "list": [
     {
-      "id": "artigo_modelo",
+      "id": "artigo_data_viz_malaria",
       "url": "/producoes/artigos/artigo_modelo",
       "date": "4 de abril de 2022",
-      "title": "Modelo de Artigo Importando Arquivo HTML",
-      "short": "Este é um artigo foi montado em HTML localizado na pasta /public/artigos.",
+      "title": "Data Visualization for Epidemiological and Demographic Data for Malaria Surveillance in the Brazilian Amazon, 2007-2019",
+      "short": ". The objective of this study is to propose the design of interactive visualizations of data related to Malaria Surveillance in the Brazilian Amazon, between the years of 2007-2019. Data came from SIVEP Malaria. We used data visualization techniques to explore epidemiological and demographic aspects of Malaria Surveillance. We hope tools of this kind can reduce the burden of data extraction and analysis on health staff and local policy makers.",
       "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/artigo_modelo.pdf",
-      "urlExternal": "http://www.google.com.br"
+      "urlPdf": "/artigos/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019.pdf",
+      "urlExternal": "https://www.longdom.org/abstract/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019-90332.html"
     },
     {
       "id": "artigo_modelo",
