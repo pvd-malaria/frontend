@@ -7,7 +7,7 @@
   "taxas": {
     "title": "Taxas",
     "short": "Taxas de Incidência e de Mortalidade por Malária",
-    "description": "Explore as taxas de incidência e de mortalidade de acordo com os grupos de idade, estados e ano de notificação na Amazônia Legal Brasileira. ",
+    "description": "Explore as taxas de incidência e de mortalidade de acordo com os grupos de idade, estados e ano de notificação na Amazônia Legal Brasileira.",
     "url": "/dashboards/taxas"
   },
 
@@ -26,19 +26,19 @@
       {
         "id": "visualizacoes_1",
         "title": "Casos de Malária",
-        "short": "Casos positivos de Malária entre os estados da Amazônia Legal período de 2007 à 2019.",
-        "url": "/visualizacoes/casos_de_malaria_bubble"
+        "short": "Casos positivos de malária entre os estados da Amazônia Legal brasileira no período...",
+        "url": "/visualizacoes/casos_de_malaria"
       },
       {
         "id": "visualizacoes_2",
-        "title": "Nível de Escolaridade Testados Positivos",
-        "short": "Proporção entre os níveis de escolaridade (Analfabeto, 1ª a 4ª série incompleta do EF...",
-        "url": "/visualizacoes/nível_de_escolaridade_testados_positivos"
+        "title": "Casos por Níveis de Escolaridade",
+        "short": "Proporção de casos positivos para malária no período de 2011 a 2019 segundo níveis...",
+        "url": "/visualizacoes/grupos_de_anos_de_estudo"
       },
       {
         "id": "visualizacoes_3",
-        "title": "Mobilidade",
-        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.",
+        "title": "Proporção de Casos segundo Idade Gestacional",
+        "short": "Proporção de casos positivos para malária no período de 2011 a 2019 entre gestantes...",
         "url": "/visualizacoes/mobilidade"
       }
     ]
