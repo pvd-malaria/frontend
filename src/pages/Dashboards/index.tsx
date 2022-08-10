@@ -19,6 +19,7 @@ interface IDashboard {
   id: string,
   title: string,
   description: string,
+  height: number;
   file: string,
   url: string,
 }
@@ -68,7 +69,7 @@ function Dashboards() {
                 src={dashboard.url}
                 // TODO: src={`/visualizacoes/${dashboard.file}`}
                 width="100%"  
-                height="800"
+                height={dashboard.height}
                 frameBorder="0"
                 scrolling="no"
                 sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
