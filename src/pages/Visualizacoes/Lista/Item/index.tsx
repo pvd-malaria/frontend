@@ -59,7 +59,7 @@ function Item(props: ItemProps) {
             alt={`Imagem que representa gráfico ${props.title}`}
           />
         </figure>
-        <p>{props.label}</p>
+        {/* <p></p> */}
         <h2>{props.title}</h2>
       </Link>
     </article>

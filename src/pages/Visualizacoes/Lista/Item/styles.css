@@ -19,14 +19,15 @@
 }
 
 #pageVisualizacoesLista article.listItem p {
-  margin-bottom: 0.2rem;
   font-size: var(--p-font-size);
   color: var(--color-black-light);
 }
 
 #pageVisualizacoesLista article.listItem h2 {
+  margin-top: 0.2rem;
   font-size: var(--h4-font-size);
   color: var(--primary-color-blue);
+  text-align: center;
   transition: all 300ms;
 }
 
