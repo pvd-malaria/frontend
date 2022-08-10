@@ -11,8 +11,8 @@ import './styles.css';
 import imageTaxas from './images/taxas.png';
 import imageImportados from './images/importados.png';
 import imageVisualizationFirst from '../Visualizacoes/Lista/Item/images/bubbles.svg';
-import imageVisualizationSecond from '../Visualizacoes/Lista/Item/images/bars-filled-full.svg';
-import imageVisualizationThird from '../Visualizacoes/Lista/Item/images/map-network.svg';
+import imageVisualizationSecond from '../Visualizacoes/Lista/Item/images/lines-filled-full.svg';
+import imageVisualizationThird from '../Visualizacoes/Lista/Item/images/bars-filled-full.svg';
 
 
 function Inicial() {
