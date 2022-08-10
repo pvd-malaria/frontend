@@ -7,16 +7,56 @@
   "gallery": [
     {
       "id": "importados",
-      "title": "Importados",
+      "title": "Distribuição entre Casos Importados e Autóctones",
+      "navigation_label": "Importados",
+      "description": "<p>A distribuição entre casos de malária importados e autóctones é uma relevante informação para a vigilância epidemiológica. Essa visualização permite que o usuário selecione de forma interativa e dinâmica o município, o período (ano) e a variável de interesse, que são as variáveis oriundas do Sistema de Vigilância Epidemiológica da Malária (SIVEP - Malária) dentro da Amazônia Legal..A partir dessa seleção, o painel fornece informações sobre o número total de casos naquele município ao longo do ano, uma visualização espacial das fontes de casos importantes (tanto nacional como internacional) e uma seleção de gráficos que comparam proporções de autóctones (casos adquiridos no próprio município) e casos importados (casos adquiridos em outros locais) de acordo com algumas características, como sexo, idade, raça/cor da pele, profissões, tratamento, mês de infecção, tipo de parasita, contagem de parasitas e regime de tratamento prescrito ao paciente. A linha superior apresenta o total de casos e dentro deles quantos casos são importados ou autóctones. O número de casos importados sempre aparece em amarelo/laranja e os autóctones em  azul escuro. Você pode selecionar algumas variáveis e observar o número de casos autóctones e importados por meio de um gráfico de barras. Se posicionar o cursor em cima das barras do gráfico é possível verificar a proporção de casos segundo a variável selecionada. É possível também visualizar os resultados em tela cheia. Esse recurso facilita a observação do mapa, onde você é capaz de ampliar e reduzir o tamanho do mesmo. O cursor permite você identificar o número absoluto de casos na região e ano desejado. A graduação de cores do mapa se refere a quantidade de casos, sendo que as cores mais escuras significam o maior número de casos. A cor vermelha representa acima de 1000 casos de malária na região pesquisada.<p/><p>O objetivo é permitir que a pessoa que não seja da área técnica entenda rapidamente o perfil da malária, a distribuição de casos na área selecionada e facilitar o manejo das ações de controle. Todo indivíduo que acessar essa ferramenta será capaz de verificar a evolução das características selecionadas ao longo do tempo para uma determinada área. O conjunto de dados usado para a construção dessa visualização foi o subconjunto de casos positivos com dados geoespaciais válidos do município (geocódigos de IBGE). As informações foram resumidas em nível municipal, onde foram utilizadas contagens de casos brutos e proporções dos casos totais, divididos por categorias de variáveis de interesse, quando aplicável.<p/>",
+      "file": "",
+      "height": 800,
+      "url": "https://vinicius-maia.shinyapps.io/importadosdash"
+    },
+    {
+      "id": "indicadores",
+      "title": "Casos que Iniciaram o Tratamento em até 48 horas e Porcentagem de Infecções por Tipo de Malária",
+      "navigation_label": "Indicadores",
+      "description": "É importante para a recuperação dos pacientes iniciar o tratamento dentro de 48 horas a partir do início dos sintomas. Além disso, é necessário identificar regiões com alta proporção de infecções por Plasmodium falciparum (onde a letalidade é maior) e regiões com alta proporção de infecções por Plasmodium vivax (onde a morbidade é maior). Nessa visualização o usuário pode (1) escolher um ano para a sua análise (o ano é o de notificação de casos); e (2) selecionar no menu da barra lateral se pretende avaliar o tratamento, proporção de malária por P. falciparum ou proporção de malária por P. vivax. Pode-se observar dois grupos diferentes de visualizações neste painel a partir de cada seleção: tratamento, P. falciparum ou P. vivax. No primeiro grupo de visualizações (tratamento), nota-se um mapa (à esquerda) que foi colorido pela proporção de casos positivos que iniciaram o tratamento em até 48 horas dos primeiros sintomas por município e por ano selecionado na barra lateral e um gráfico de linhas (à direita) que mostra a proporção de casos que começaram o tratamento dentro de 48 horas dos sintomas em relação ao total de casos por ano e estado da Amazônia legal. O segundo grupo de visualizações (proporção de malária por P. falciparum) mostra à esquerda um mapa de municípios coloridos por porcentagem de infecções por P. falciparum (responsável pelos mais graves e letais formas da doença) e um gráfico de linhas à direita que compara a porcentagem de casos por P. falciparum, segundo ano de notificação e estado. O terceiro grupo de visualizações é um mapa à esquerda de municípios coloridos por porcentagem de infecções por P. vivax (é a causa mais comum e generalizada de malária recorrente) e um gráfico de linha à direita, que compara  a porcentagem de casos por P. vivax, segundo ano de notificação e estado da Amazônia legal brasileira. O banco de dados usado nesta visualização foi um subconjunto de casos positivos agrupados por ano de notificação, estado, municípios, categoria P. falciparum no resultado do exame, categoria de P. vivax no resultado do exame, data do início dos sintomas e do tratamento, extraídos do Sistema de Vigilância Epidemiológica da Malária (SIVEP - Malária).",
+      "file": "",
+      "height": 920,
+      "url": "https://arrudanat.shinyapps.io/IndicadoresProcesso_eng"
+    },
+    {
+      "id": "pca",
+      "title": "PCA",
+      "navigation_label": "PCA",
+      "description": "Dashboards em descrição... esse item demora bastante para carregar.",
+      "file": "",
+      "height": 850,
+      "url": "http://promalaria.nepo.unicamp.br:8008/PCA_Dashboard"
+    },
+    {
+      "id": "qualidade",
+      "title": "Qualidade de Dados",
+      "navigation_label": "Qualidade",
+      "description": "No conjunto de dados do Sistema de Vigilância Epidemiológica da Malária (SIVEP - Malária), o preenchimento ou completude de informações de cada variável  pode ser muito discrepante entre os anos e mesmo dentro de cada ano particular. Essa visualização tem como finalidade avaliar o preenchimento de cada variável no SIVEP-Malária para cada ano analisado e estado da Amazônia Legal. Por meio dessa visualização interativa é possível identificar a proporção de dados faltantes das variáveis e avaliar a qualidade da informação do SIVEP-Malária. Dados faltantes são comuns na maioria dos sistemas de informação. Com esse painel, pode-se identificar de maneira bastante fácil onde e quando ocorrem os dados faltantes e avaliar em quais regiões e anos eles são mais predominantes. Uma outra função importante dessa aplicação é visualizar quando uma variável passou a ser coletada ou modificada ou descontinuada na ficha de notificação que alimenta o banco de dados.",
+      "file": "",
+      "height": 550,
+      "url": "https://lcalves.shinyapps.io/quality"
+    },
+    {
+      "id": "serie-temporal",
+      "title": "Série Temporal",
+      "navigation_label": "Série Temporal",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
       "file": "",
-      "url": "https://vinicius-maia.shinyapps.io/importadosdash/"
+      "height": 900,
+      "url": "https://vinicius-maia.shinyapps.io/forecasts"
     },
     {
       "id": "taxas",
-      "title": "Taxas",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
+      "title": "Taxas de Incidência e de Mortalidade por Malária",
+      "navigation_label": "Taxas",
+      "description": "A primeira visualização (posição à esquerda) permite explorar de forma interativa as taxas de incidência e mortalidade separadas por estado, faixa etária e por ano de notificação na Amazônia legal. A taxa de incidência é calculada pela divisão do número de casos novos de malária e a população do determinado ano multiplicado por 1.000. Essa taxa estima o risco de casos anuais para cada 1.000 indivíduos. Essa visualização auxilia na análise das variações temporais da taxa de incidência de casos laboratoriais positivos em áreas endêmicas, de acordo com graus de risco. A segunda visualização (posição à direita) compara as taxas de mortalidade padronizadas para cada 100.000 indivíduos, segundo faixa etária, ano de notificação e estado selecionado. Aplicamos as taxas específicas de mortalidade por idade de cada estado a uma população padrão selecionada. Essa taxa padronizada permite comparações entre os estados e ao longo do tempo, controlando os efeitos de possíveis mudanças na distribuição etária que as populações experimentam ao longo do tempo e espaço nas respectivas taxas. Essa visualização nos ajuda a verificar quais são as faixas etárias com maior risco de mortalidade em uma determinada região (estado) e possibilita comparar o risco de morte entre os estados. Para calcular as taxas de incidência e mortalidade também foram utilizados os dados do Instituto Brasileiro de Geografia e Estatística (Instituto Brasileiro de Geografia e Estatística - IBGE) e as projeções da população por ano, estado e idade (IBGE, 2020). As duas visualizações nos auxiliam na identificação das faixas etárias com maior risco de infecção e morte em uma determinada região, facilitando as comparações de ambas as taxas de forma simultânea.",
       "file": "",
+      "height": 800,
       "url": "https://arrudanat.shinyapps.io/taxasMalaria"
     }
   ]

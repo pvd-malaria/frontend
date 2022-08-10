@@ -6,6 +6,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import { AppContext } from '../../../../contexts/AppContext';
 import CustomLink from './CustomLink';
+import jsonDashboards from '../../../../contents/dashboards.json';
 
 import './styles.css';
 
@@ -32,16 +33,16 @@ function Navigation() {
             Dashboards <KeyboardArrowDownIcon/>
           </CustomLink>
           <ul className="submenu">
-            <li>
-              <CustomLink activeClassName="active" to="/dashboards/importados">
-                Importados
-              </CustomLink>
-              </li>
-            <li>
-              <CustomLink activeClassName="active" to="/dashboards/taxas">
-                Taxas
-              </CustomLink>
-            </li>
+            {
+              jsonDashboards.gallery.length > 0 
+                && jsonDashboards.gallery.map((item) => (
+                  <li>
+                  <CustomLink activeClassName="active" to={'/dashboards/'+item.id}>
+                    {item.navigation_label}
+                  </CustomLink>
+                  </li>
+                ))
+            }
           </ul>
         </li>
         <li>
@@ -54,17 +55,17 @@ function Navigation() {
             Modelos <KeyboardArrowDownIcon/>
           </CustomLink>
           <ul className="submenu">
-              <li>
-                <CustomLink activeClassName="active" to="/modelos/classificacao">
-                  Classificação
-                </CustomLink>
-                </li>
-              <li>
-                <CustomLink activeClassName="active" to="/modelos/preditivos">
-                  Preditivos
-                </CustomLink>
-              </li>
-            </ul>
+            <li>
+              <CustomLink activeClassName="active" to="/modelos/classificacao">
+                Classificação
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink activeClassName="active" to="/modelos/preditivos">
+                Preditivos
+              </CustomLink>
+            </li>
+          </ul>
         </li>
         <li className="hasSubmenu">
           <CustomLink activeClassName="active" to="/producoes">
