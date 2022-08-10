@@ -1,7 +1,7 @@
 {
   "page": {
     "title": "Boletins",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam."
+    "description": "Os boletins fornecem uma apresentação da Amazônia legal brasileira, que é a região analisada neste projeto, sob o ponto de vista das características geográficas, demográficas e socioeconômicas. Além disso, apresentamos um boletim com a metodologia utilizada na construção do banco de dados sobre vetores (“banco vetores”)."
   },
 
   "list": [
@@ -9,35 +9,35 @@
       "id": "amazonia-legal",
       "url": "/producoes/boletins/amazonia-legal",
       "title": "A Amazônia Legal",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "short": "Segundo o IBGE, “a Amazônia Legal corresponde a área de atuação da SUDAM, delimitada atualmente pela Lei Complementar...",
       "file": "/boletins/amazonia_legal/00_atlas_geo.html"
     },
     {
       "id": "populacao",
       "url": "/producoes/boletins/populacao",
       "title": "População",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "short": "A população total da Amazônia legal é estimada em 28.990.627 para o ano de 2019, o que representa 13,80% da população estimada...",
       "file": "/boletins/populacao/01_atlas_pop.html"
     },
     {
       "id": "composicao-da-populacao",
       "url": "/producoes/boletins/composicao-da-populacao",
       "title": "Composição da população",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "short": "A Amazônia Legal compreende a região norte (7 estados) e mais um estado da região nordeste (Maranhão) e outro do centro-oeste (Mato Grosso)...",
       "file": "/boletins/composicao_da_populacao/02_atlas_comp.html"
     },
     {
       "id": "migracao",
       "url": "/producoes/boletins/migracao",
       "title": "Migração",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "short": "No Brasil como um todo, a intensidade dos fluxos migratórios nos últimos 30 anos diminuiu bastante, se comparado com o período mais intenso...",
       "file": "/boletins/migracao/03_atlas_mig.html"
     },
     {
       "id": "atlas_metodologia",
       "url": "/producoes/boletins/atlas_metodologia",
       "title": "Metodologia",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      "short": "Este documento explicita aspectos técnicos da produção dos boletins sobre a amazônia, em especial a extração dos dados, a seleção das variáveis...",
       "file": "/boletins/metodologia/04_atlas_metodologia.html"
     }
   ]
