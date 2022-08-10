@@ -11,16 +11,20 @@ import LinkButton from '../../../components/LinkButton';
 
 import './styles.css';
 
+interface IFile {
+  title: string;
+  file: string;
+  height: number;
+}
 
 interface IVisualization {
-  id: string,
-  url: string,
-  type: string,
-  label: string,
-  title: string,
-  description: string,
-  file: string,
-  height: number
+  id: string;
+  url: string;
+  type: string;
+  label: string;
+  title: string;
+  description: string;
+  files: IFile[];
 }
 
 
@@ -43,7 +47,7 @@ function VisualizacoesDetalhes() {
       <Layout id="pageVisualizacoesDetalhes">
         <section className="wrapperInfo">
           <div className="container">
-            <Link to="/visualizacoes">Galeria de visualizações</Link>
+            {/* <Link to="/visualizacoes">Galeria de visualizações</Link> */}
             <h1>{visualization.title}</h1>
             <p>{visualization.description}</p>
           </div>
@@ -51,20 +55,24 @@ function VisualizacoesDetalhes() {
 
         <section className="wrapperVisualization">
           <div className="container">
-            <div className="visualization">
-              <CircularProgress />
+            {
+              visualization.files && visualization.files.map(filesItem => (
+                  <div className="visualization">
+                    <CircularProgress />
 
-              <iframe 
-                title={visualization.title}
-                src={`/visualizacoes/${visualization.file}`}
-                width="100%"  
-                height={visualization.height}
-                frameBorder="0"
-                scrolling="no"
-                sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
-              >
-              </iframe>
-            </div>
+                    <iframe 
+                      title={filesItem.title}
+                      src={ filesItem.file.includes('http') ? filesItem.file : `/visualizacoes/${filesItem.file}`}
+                      width="100%"  
+                      height={filesItem.height}
+                      frameBorder="0"
+                      scrolling="no"
+                      sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
+                    >
+                    </iframe>
+                  </div>
+                ))
+            }
 
             <LinkButton
               style="none"

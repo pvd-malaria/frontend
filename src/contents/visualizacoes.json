@@ -8,112 +8,132 @@
     {
       "id": "casos_de_malaria",
       "url": "/visualizacoes/casos_de_malaria",
-      "type": "lines",
+      "type": "bubbles",
       "label": "Relação",
       "title": "Casos de Malária",
-      "description": "Casos positivos de Malária entre os estados da Amazônia Legal período de 2007 à 2019. Dentro deste período pode-se perceber uma diminuiço dos números de casos para todos estados. Houve oscilaçes importantes nos números de casos de Malaria para os Estados do Pará e Amazonas no período, sendo que no ano de 2011, o Pará ultrapassa o estado do Amazonas em número de casos no ano todo.",
-      "file": "Casos/cases.html",
-      "height": 850
-    },
-    {
-      "id": "nível_de_escolaridade_testados_positivos",
-      "url": "/visualizacoes/nível_de_escolaridade_testados_positivos",
-      "type": "barsFilledFull",
-      "label": "Relação",
-      "title": "Nível de Escolaridade Testados Positivos",
-      "description": "Proporção entre os níveis de escolaridade (Analfabeto, 1ª a 4ª série incompleta do EF, 4ª série completa do EF, 5ª a 8ª série incompleta do EF, Ensino fundamental completo, Ensino médio incompleto, Ensino médio completo, Educação superior incompleto, Educação superior completa e Não se aplica) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2011 à 2019.",
-      "file": "Escolaridade/levels.html",
-      "height": 800
+      "description": "Casos positivos de malária entre os estados da Amazônia Legal brasileira no período de 2007 a 2019. Dentro deste período, pode-se observar uma diminuição dos números de casos para todos estados. Houve oscilações importantes nos números de casos de malária para os Estados do Pará e Amazonas, sendo que no ano de 2011, o Pará ultrapassa o estado do Amazonas em número de casos no ano todo.",
+      "files": [
+        {
+          "title": "Bubbles",
+          "file": "Casos/bubbles.html",
+          "height": 800
+        },
+        {
+          "title": "Lines",
+          "file": "Casos/lines.html",
+          "height": 800
+        }
+      ]
     },
     {
       "id": "grupos_de_anos_de_estudo",
       "url": "/visualizacoes/grupos_de_anos_de_estudo",
       "type": "linesFilledFull",
       "label": "Relação",
-      "title": "Grupos de Anos de Estudo",
-      "description": "Proporção entre os níveis de escolaridade (Analfabeto, 1ª a 4ª série incompleta do EF, 4ª série completa do EF, 5ª a 8ª série incompleta do EF, Ensino fundamental completo, Ensino médio incompleto, Ensino médio completo, Educação superior incompleto, Educação superior completa e Não se aplica) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2011 à 2019.",
-      "file": "Escolaridade/groups.html",
-      "height": 2000
+      "title": "Casos por Níveis de Escolaridade",
+      "description": "Proporção de casos positivos para malária no período de 2011 a 2019 segundo níveis de escolaridade, anos de estudo e Unidades da Federação da Amazônia Legal brasileira.",
+      "files": [
+        {
+          "title": "Groups",
+          "file": "Escolaridade/groups.html",
+          "height": 1900
+        },
+        {
+          "title": "Levels",
+          "file": "Escolaridade/levels.html",
+          "height": 720
+        }
+      ]
     },
     {
       "id": "gestantes",
       "url": "/visualizacoes/gestantes",
       "type": "barsFilledFull",
       "label": "Relação",
-      "title": "Gestantes",
-      "description": "",
-      "file": "Gestante/pregnancy.html",
-      "height": 850
+      "title": "Proporção de Casos segundo Idade Gestacional",
+      "description": "Proporção de casos positivos para malária no período de 2011 a 2019 entre gestantes e não gestantes para as Unidades da Federação da Amazônia Legal brasileira.",
+      "files": [
+        {
+          "title": "Proporção de Casos segundo Idade Gestacional",
+          "file": "Gestante/pregnancy.html",
+          "height": 720
+        }
+      ]
     },
     {
       "id": "ocupacao",
       "url": "/visualizacoes/ocupacao",
       "type": "donuts",
       "label": "Relação",
-      "title": "Ocupação",
-      "description": "Proporção entre as atividades exercidas: Agricultura, Pecuária,Doméstica, Turismo,Garimpagem, Exploração Vegetal, Caça/Pesca, Consts. Estrada e Barragens, Mineração, Viajante, Outros e Ignorado) para os testados positivos para Malária por Estado da Amazônia Legal e por período de 2007 à 2019. Chama à atenção o aumento da participação da atividade de Garimpagem entre os testados positivo no estado do Pará, entre os anos de 2013 e 2017 chegando a 30% dos casos em 2013, sendo que no ano anterior foi de 11% dos casos. A mesma atividade de Garimpagem, no estado do Mato Grosso, chega a 40% dos casos em 2019, sendo que no ano anterior não chegava a 2% dos casos.",
-      "file": "Ocupação/occupation.html",
-      "height": 1000
+      "title": "Proporção de Casos Positivos segundo Atividades Ocupacionais",
+      "description": "Proporção entre as atividades ocupacionais exercidas para os casos positivos para Malária por Unidades da Federação da Amazônia Legal brasileira entre 2007 a 2019. Chama a atenção o aumento da participação da atividade de Garimpagem entre os testes positivos no estado do Pará, entre os anos de 2013 e 2017, chegando a 30% dos casos em 2013 comparativamente à 11% dos casos no ano anterior. A mesma atividade de Garimpagem, no estado do Mato Grosso, alcança 40% dos casos em 2019, sendo que no ano anterior não chegava a 2% dos casos.",
+      "files": [
+        {
+          "title": "Proporção de Casos Positivos segundo Atividades Ocupacionais",
+          "file": "Ocupação/occupation.html",
+          "height": 880
+        }
+      ]
     },
     {
       "id": "número_de_mortes",
       "url": "/visualizacoes/número_de_mortes",
       "type": "linesFilled",
       "label": "Relação",
-      "title": "Número de Mortes",
-      "description": "Número de mortes por Malária em número absoluto, podendo ser mudado para proporção do estado naquele ano. O gráfico indica uma mudança de tendência no número de mortes por estado, além da maior participação do estado do Amazonas no número de mortes em relação a outros estados.",
-      "file": "Mortes/deaths.html",
-      "height": 650
+      "title": "Relação Número de Mortes por Malária",
+      "description": "Número de mortes por malária em número absoluto, podendo ser mudado para proporção do estado naquele ano. O gráfico indica uma mudança de tendência no número de mortes por estado, além da maior participação do estado do Amazonas no número de mortes em relação aos outros estados.",
+      "files": [
+        {
+          "title": "Relação Número de Mortes por Malária",
+          "file": "Mortes/deaths.html",
+          "height": 550
+        }
+      ]
     },
     {
       "id": "quantidade_de_cruzes",
       "url": "/visualizacoes/quantidade_de_cruzes",
       "type": "barsFilledFull",
       "label": "Relação",
-      "title": "Quantidade de Cruzes",
-      "description": "A quantidade de cruzes permite avaliar o nível de gravidade e atraso no tratamento da Malária. A maior parte dos casos de malária nos estados da Amazônia Legal no período analisado é idenficada no estágio de duas cruzes, não havendo grandes variações nos anos analisados. Cabe ressaltar que, considera-se casos mais gravez quando a parasitemia apresenta mais de três cruzes.",
-      "file": "Parasitemia em Cruzes/cruzes.html",
-      "height": 850
-    },
-    {
-      "id": "estrutura_etaria_e_por_sexo",
-      "url": "/visualizacoes/estrutura_etaria_e_por_sexo",
-      "type": "barsHorizontal",
-      "label": "Relação",
-      "title": "Estrutura Etária e por Sexo",
-      "description": "",
-      "file": "População/pyramid.html",
-      "height": 850
+      "title": "Relação Quantidade de Cruzes",
+      "description": "A quantidade de cruzes permite avaliar o nível de gravidade e atraso no tratamento da malária. A maior parte dos casos de malária nos estados da Amazônia Legal no período analisado é identificada no estágio de duas cruzes, não havendo grandes variações nos anos analisados. Cabe ressaltar que se considera casos mais graves quando a parasitemia apresenta mais de três cruzes.",
+      "files": [
+        {
+          "title": "Relação Quantidade de Cruzes",
+          "file": "Parasitemia em Cruzes/cruzes.html",
+          "height": 720
+        }
+      ]
     },
     {
       "id": "taxa_de_incidência",
       "url": "/visualizacoes/taxa_de_incidência",
       "type": "bubbles",
       "label": "Relação",
-      "title": "Taxa de Incidência",
-      "description": "Taxa de incidência de malária entre os municipios de infecção dos estados da Amazônia Legal período de 2007 à 2019. O município de Anajás no estado do Pará, apresenta uma taxa de incidência de 1200 casos por mil habitantes nos anos de 2009 e 2010, assim como o municipio de Mâncio Lima do estado do Acre em 2017.",
-      "file": "Taxa Incidencia/incidence.html",
-      "height": 800
+      "title": "Taxa de Incidência de Malária",
+      "description": "O gráfico mostra a taxa de incidência de malária entre os municípios de infecção dos estados da Amazônia Legal no período de 2007 a 2019. Para visualizar os resultados para os municípios é necessário colocar o cursor em cima da bola. O município de Anajás no estado do Pará, apresentava uma taxa de incidência de 1.200 casos por mil habitantes nos anos de 2009 e 2010. A mesma taxa foi observada para o município de Mâncio Lima do estado do Acre em 2017.",
+      "files": [
+        {
+          "title": "Taxa de Incidência de Malária",
+          "file": "Taxa Incidencia/incidence.html",
+          "height": 660
+        }
+      ]
     },
     {
       "id": "proporcao_de_casos_positivos",
       "url": "/visualizacoes/proporcao_de_casos_positivos",
       "type": "mountain",
       "label": "Relação",
-      "title": "Proporção de casos positivos",
-      "description": "",
-      "file": "proporcao_de_casos_positivos.html",
-      "height": 700
-    },
-    {
-      "id": "rendimento",
-      "url": "/visualizacoes/rendimento",
-      "type": "lines",
-      "label": "Relação",
-      "title": "Rendimento",
-      "description": "",
-      "file": "Rendimento/income.html",
-      "height": 600
+      "title": "Proporção de Casos Positivos",
+      "description": "Proporção de casos positivos investigados por Unidade da Federação da Amazônia Legal brasileira entre 2007 a 2019. A proporção de casos positivos entre todas as notificações alcança mais de 30%, como pode ser observado no estado do Pará. Em outras regiões, como no estado do Maranhão, a mesma proporção está abaixo de 10%.",
+      "files": [
+        {
+          "title": "Proporção de Casos Positivos",
+          "file": "Proporcao/proporcao-de-casos-positivos.html",
+          "height": 1000
+        }
+      ]
     },
     {
       "id": "rendimento_gini",
@@ -122,8 +142,13 @@
       "label": "Relação",
       "title": "Rendimento Gini",
       "description": "",
-      "file": "Rendimento/gini.html",
-      "height": 600
+      "files": [
+        {
+          "title": "Rendimento Gini",
+          "file": "Rendimento/gini.html",
+          "height": 500
+        }
+      ]
     },
     {
       "id": "mobilidade",
@@ -131,15 +156,20 @@
       "type": "mapNetwork",
       "label": "Relação",
       "title": "Mobilidade",
-      "description": "",
-      "file": "Mobilidade/map_indiceef.html",
-      "height": 700
+      "description": "Visualizacao sem descrição... este grafico é bastante pesadoe e também precisa receber propriedade para usar espaço disponível na tela.",
+      "files": [
+        {
+          "title": "Mobilidade",
+          "file": "http://promalaria.nepo.unicamp.br:8079/static/website/img/Mobilidade/fluxos_infeccao_residencia.html",
+          "height": 650
+        }
+      ]
     }
   ],
 
   "quality": {
     "title": "Qualidade da informação",
     "description": "Porcentagem de informações ausentes segundo variável do SIVEP e UF, 2007-2019",
-    "url": "/qualidade-da-informacao"
+    "url": "/dashboards/qualidade"
   }
 }
