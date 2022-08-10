@@ -13,6 +13,7 @@ import Fullscreen from '../../components/Fullscreen';
 
 import './styles.css';
 import Button from '@mui/material/Button';
+import { Interweave } from 'interweave';
 
 
 interface IDashboard {
@@ -51,10 +52,10 @@ function Dashboards() {
         <section className="wrapperInfo">
           <div className="container">
             <h1>
-              <span>Dashboards</span><br />
+              {/* <span>Dashboards</span><br /> */}
               {dashboard.title}
             </h1>
-            <p>{dashboard.description}</p>
+            <p><Interweave noWrap content={dashboard.description} /></p>
           </div>
         </section>      
 
