@@ -73,8 +73,8 @@
   flex-flow: column;
   align-items: center;
   margin: 1rem;
-  width: calc(25% - 2rem);
-  padding: 2rem;
+  width: calc(50% - 2rem);
+  padding: 4rem;
   text-decoration: none;
   background-color: #f5f5f5;
   border: 1px solid #eee;
@@ -92,19 +92,16 @@
   font-weight: 700;
 }
 
-#pageSobre .equipe .container .membro p.email {
-  font-size: var(--small-font-size);
-}
+#pageSobre .equipe .container .membro p.email {}
 
 #pageSobre .equipe .container .membro p.bio {
   opacity: 0.5;
-  font-size: var(--small-font-size);
 }
 
 /* --- Convite --- */
 
 #pageSobre .convite {
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 
 /* --- Mobile --- */

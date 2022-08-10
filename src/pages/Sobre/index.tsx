@@ -42,56 +42,56 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
-              <p className="nome">Luciana Alves</p>
-              <p className="email">lcalves@synapse.org</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Luciana Correia Alves</p>
+              <p className="email">lcalves@unicamp.br</p>
+              <p className="bio">Unicamp</p>
             </div>
             <div className="membro">
               <p className="nome">Carlos Eduardo Beluzo</p>
               <p className="email">cbeluzo@synapse.org</p>
-              <p className="bio">Informação complementar</p>
+              <p className="bio">IFSP-Campinas | Unicamp</p>
             </div>
             <div className="membro">
-              <p className="nome">Bianca</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Bianca Cechetto Carlos</p>
+              <p className="email">---</p>
+              <p className="bio">UNESP</p>
             </div>
             <div className="membro">
-              <p className="nome">Jaime</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Jayme Augusto de Souza-Neto</p>
+              <p className="email">---</p>
+              <p className="bio">UNESP</p>
             </div>
           </div>
         </div>
 
         <div className="container">
-          <h4>Equipe científica</h4>
+          <h4>Pesquisadores</h4>
 
           <div className="listMembros">
             <div className="membro">
-              <p className="nome">Alvaro</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Álvaro de Oliveira D'Antona</p>
+              <p className="email">---</p>
+              <p className="bio">Unicamp</p>
             </div>
             <div className="membro">
-              <p className="nome">Everton</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Everton Josué da Silva</p>
+              <p className="email">---</p>
+              <p className="bio">IFSP-Campinas | Unicamp</p>
             </div>
             <div className="membro">
-              <p className="nome">Tiago</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Tiago José de Carvalho</p>
+              <p className="email">---</p>
+              <p className="bio">---</p>
             </div>
             <div className="membro">
-              <p className="nome">Natalia</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Natália Martins Arruda</p>
+              <p className="email">---</p>
+              <p className="bio">FIOCRUZ | Unicamp</p>
             </div>
             <div className="membro">
-              <p className="nome">Vinicius</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Vinícius de Souza Maia</p>
+              <p className="email">---</p>
+              <p className="bio">---</p>
             </div>
           </div>
         </div>
@@ -101,14 +101,14 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
-              <p className="nome">Adriano</p>
-              <p className="email">endereco@mail.com</p>
-              <p className="bio">Informação complementar</p>
+              <p className="nome">Adriano Souza</p>
+              <p className="email">---</p>
+              {/* <p className="bio">Analista de Desenvolvimento Web</p> */}
             </div>
             <div className="membro">
-              <p className="nome">Willianson</p>
+              <p className="nome">Willianson Araújo</p>
               <p className="email">contato@willianson.com.br</p>
-              <p className="bio">Informação complementar</p>
+              {/* <p className="bio">Cientista da Computação</p> */}
             </div>
           </div>
         </div>
@@ -119,9 +119,9 @@ function Sobre() {
           <h1>{jsonSobre.projeto.title}</h1>
           <div className="info">
             <Interweave noWrap content={jsonSobre.projeto.description} />
-            <p>
+            {/* <p>
               <Link to={jsonSobre.projeto.url}>Lorem ipsum dolor</Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
