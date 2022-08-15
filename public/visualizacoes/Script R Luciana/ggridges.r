@@ -46,7 +46,7 @@ viz2$uf <- sapply(viz2$uf, function(x) ufsExtenso[[x]])
 v <- ggplot(viz2, aes(x = propositivo, y = uf, fill = stat(x))) +
   geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
   scale_fill_gradient2(low = '#0D456E', mid='#1674b9', high = '#be1724')+
-  labs(title = 'Proporção de casos positivos por casos investigados, por UF (2007 - 2019)') +
+  labs(title = 'Proporção de Casos Positivos (2007 - 2019)') +
   labs(x = 'Proporção', y = NULL) +
   labs(caption = 'Fonte: Sistema de Informações de Vigilância Epidemológica (SIVEP) - Malária') +
   theme(text = element_text(family = 'Roboto'), plot.title = element_text(hjust = 0.5), plot.caption = element_text(hjust = 0.5))
