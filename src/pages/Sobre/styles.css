@@ -9,6 +9,10 @@
   color: var(--primary-color-blue);
 }
 
+#pageSobre .info p {
+  text-align: justify;
+}
+
 /* --- Resumo --- */
 
 #pageSobre .resumo {
