@@ -30,6 +30,33 @@
   margin-bottom: 0;
 }
 
+#pageDashboards .container .MuiPaper-root,
+#pageDashboards .container .MuiAccordionSummary-root,
+#pageDashboards .container .MuiAccordionDetails-root {
+  padding: 0;
+  margin: initial;
+  color: inherit;
+  background: initial;
+  box-shadow: initial;
+  border: initial;
+}
+
+#pageDashboards .container .MuiAccordionSummary-root {
+  transition: all 0.5s;
+}
+
+#pageDashboards .container .MuiAccordionSummary-root.Mui-expanded {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#pageDashboards .container .MuiAccordionSummary-root {
+  color: var(--primary-color-blue);
+  text-decoration: underline;
+}
+
 /* --- Dashboard --- */
 
 #pageDashboards .wrapperDashboard .container {

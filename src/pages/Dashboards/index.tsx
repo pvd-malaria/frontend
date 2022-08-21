@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CircularProgress from '@mui/material/CircularProgress';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import Button from '@mui/material/Button';
+import { Interweave } from 'interweave';
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 
 import Layout from '../../components/Layout';
 
@@ -12,14 +15,12 @@ import LinkButton from '../../components/LinkButton';
 import Fullscreen from '../../components/Fullscreen';
 
 import './styles.css';
-import Button from '@mui/material/Button';
-import { Interweave } from 'interweave';
 
 
 interface IDashboard {
   id: string,
   title: string,
-  description: string,
+  description: string[],
   height: number;
   file: string,
   url: string,
@@ -29,8 +30,9 @@ interface IDashboard {
 function Dashboards() {
 
   const [ dashboard, setDashboard ] = useState<IDashboard>();
+  const [ open, setOpen ] = useState<boolean>(false);
   const { id } = useParams<"id">();
-
+  const location = useLocation();
 
   const fullscreenHandle = useCallback(() => {
     const elementToOpen = document.querySelector('#iframeDashboard');
@@ -43,7 +45,11 @@ function Dashboards() {
     if (filteredItem.length > 0) {
       setDashboard(filteredItem[0]);
     }
-  }, [id, setDashboard]);
+  }, [id]);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location]);
 
 
   if (dashboard) {
@@ -55,7 +61,17 @@ function Dashboards() {
               {/* <span>Dashboards</span><br /> */}
               {dashboard.title}
             </h1>
-            <p><Interweave noWrap content={dashboard.description} /></p>
+            <Interweave noWrap content={dashboard.description[0]} />
+            {
+              dashboard.description.length > 1
+              &&
+                <Accordion expanded={open}>
+                  <AccordionSummary onClick={() => setOpen(true)}>Ler mais</AccordionSummary>
+                  <AccordionDetails>
+                      <Interweave noWrap content={dashboard.description[1]} />
+                  </AccordionDetails>
+                </Accordion>
+            }
           </div>
         </section>      
 
