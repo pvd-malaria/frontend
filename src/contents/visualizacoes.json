@@ -66,7 +66,7 @@
       "type": "donuts",
       "label": "Relação",
       "title": "Proporção de Casos Positivos segundo Atividades Ocupacionais",
-      "description": "Proporção entre as atividades ocupacionais exercidas para os casos positivos para Malária por Unidades da Federação da Amazônia Legal brasileira entre 2007 a 2019. Chama a atenção o aumento da participação da atividade de Garimpagem entre os testes positivos no estado do Pará, entre os anos de 2013 e 2017, chegando a 30% dos casos em 2013 comparativamente à 11% dos casos no ano anterior. A mesma atividade de Garimpagem, no estado do Mato Grosso, alcança 40% dos casos em 2019, sendo que no ano anterior não chegava a 2% dos casos.",
+      "description": "Proporção entre as atividades ocupacionais exercidas para os casos positivos para Malária por Unidades da Federação da Amazônia Legal brasileira entre 2007 a 2019. Chama a atenção o aumento da participação da atividade de Garimpagem entre os testes positivos no estado do Pará, entre os anos de 2013 e 2016, chegando a 30% dos casos em 2013 comparativamente à 11% dos casos no ano anterior. A mesma atividade de Garimpagem, no estado do Mato Grosso, alcança 40% dos casos em 2019, sendo que no ano anterior não chegava a 2% dos casos.",
       "files": [
         {
           "title": "Proporção de Casos Positivos segundo Atividades Ocupacionais",

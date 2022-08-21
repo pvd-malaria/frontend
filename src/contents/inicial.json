@@ -1,7 +1,7 @@
 {
   "banner": {
     "title": "Plataforma de Visualização de Dados",
-    "description": "<p>A Plataforma de Visualização de Dados Malária - PVD Malária - é uma página web que busca facilitar gestores, pesquisadores e público em geral a entender melhor sobre a contaminação e disseminação da Malária na Amazônia Legal Brasileira.</p><p>Por meio desta plataforma é possível explorar diversas visualizações tanto estáticas quanto interativas e criar outras de acordo com as suas necessidades e interesses.</p><p>A plataforma oferece também diversas informações demográficas, sociais e econômicas da região Amazônica e dos Estados que a compõem e um serviço interativo de análise de indicadores por meio de inteligência artificial. Além disso, um conjunto de projeções foram calculadas, o que possibilita uma antecipação do cenário futuro e serve como subsídio para a tomada de decisão.</p>"
+    "description": "<p>A Plataforma de Visualização de Dados Malária - PVD Malária - é uma página web que busca facilitar gestores, pesquisadores e público em geral a entender melhor sobre a infecção e disseminação da Malária na Amazônia Legal Brasileira.</p><p>Por meio desta plataforma é possível explorar diversas visualizações tanto estáticas quanto interativas e criar outras de acordo com as suas necessidades e interesses.</p><p>A plataforma oferece também diversas informações demográficas, sociais e econômicas da região Amazônica e dos Estados que a compõem e um serviço interativo de análise de indicadores por meio de inteligência artificial. Além disso, um conjunto de projeções foram calculadas, o que possibilita uma antecipação do cenário futuro e serve como subsídio para a tomada de decisão.</p>"
   },
 
   "taxas": {
