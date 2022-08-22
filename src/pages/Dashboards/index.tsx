@@ -29,14 +29,22 @@ interface IDashboard {
 
 function Dashboards() {
 
-  const [ dashboard, setDashboard ] = useState<IDashboard>();
-  const [ open, setOpen ] = useState<boolean>(false);
   const { id } = useParams<"id">();
   const location = useLocation();
+
+  const [ dashboard, setDashboard ] = useState<IDashboard | undefined>();
+  const [ open, setOpen ] = useState<boolean>(false);
+  const [ showIframe, setShowIframe ] = useState<boolean>(false);
+
 
   const fullscreenHandle = useCallback(() => {
     const elementToOpen = document.querySelector('#iframeDashboard');
     Fullscreen(elementToOpen)
+  }, []);
+
+
+  const onLoadDashboardFrame = useCallback((event) => {
+    setShowIframe(true);
   }, []);
 
 
@@ -47,20 +55,22 @@ function Dashboards() {
     }
   }, [id]);
 
+
   useEffect(() => {
     setOpen(false);
+    return () => {
+      console.log('unmount');
+      setShowIframe(false);
+    };
   }, [location]);
 
 
-  if (dashboard) {
+  if (dashboard){
     return (
       <Layout id="pageDashboards">
         <section className="wrapperInfo">
           <div className="container">
-            <h1>
-              {/* <span>Dashboards</span><br /> */}
-              {dashboard.title}
-            </h1>
+            <h1>{dashboard.title}</h1>
             <Interweave noWrap content={dashboard.description[0]} />
             {
               dashboard.description.length > 1
@@ -87,6 +97,8 @@ function Dashboards() {
                 // TODO: src={`/visualizacoes/${dashboard.file}`}
                 width="100%"  
                 height={dashboard.height}
+                style={{ opacity: showIframe ? 1 : 0 }}
+                onLoad={onLoadDashboardFrame}
                 frameBorder="0"
                 scrolling="no"
                 sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"

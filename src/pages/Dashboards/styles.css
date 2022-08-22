@@ -85,6 +85,7 @@
 #pageDashboards .wrapperDashboard .container .dashboard iframe {
   position: relative;
   z-index: 1;
+  transition: all 0.5s;
 }
 
 /* --- Mobile --- */
