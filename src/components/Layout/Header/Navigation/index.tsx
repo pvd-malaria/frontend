@@ -73,13 +73,13 @@ function Navigation() {
           </CustomLink>
           <ul className="submenu">
               <li>
-                <CustomLink activeClassName="active" to="/producoes/artigos">
-                  Artigos
-                </CustomLink>
-                </li>
-              <li>
                 <CustomLink activeClassName="active" to="/producoes/boletins">
                   Boletins
+                </CustomLink>
+              </li>
+              <li>
+                <CustomLink activeClassName="active" to="/producoes/cientificas">
+                  Científicas
                 </CustomLink>
               </li>
               <li>
