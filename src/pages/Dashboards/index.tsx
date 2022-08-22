@@ -105,10 +105,10 @@ function Dashboards() {
     );
   } else {
     return (
-      <Layout id="pageDashboard">
+      <Layout id="pageDashboards">
           <div className="container">
             <h2>Ops... :(</h2>
-            <p>O dashboard solicitado não foi encontrada.</p>
+            <p>O dashboard solicitado não foi encontrado.</p>
             <br />
 
             <LinkButton
