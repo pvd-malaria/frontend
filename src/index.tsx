@@ -1,18 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
 
 import Router from './core/Router';
-
 import { AppContextProvider } from './contexts/AppContext';
-
 import './styles/_global.scss';
 
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root')!);
+root.render(
   <React.StrictMode>
     <AppContextProvider>
       <Router />
     </AppContextProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
