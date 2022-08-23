@@ -53,17 +53,6 @@
       "url": "https://lcalves.shinyapps.io/quality"
     },
     {
-      "id": "serie-temporal",
-      "title": "Série Temporal",
-      "navigation_label": "Série Temporal",
-      "description": [
-        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.</p>"
-      ],
-      "file": "",
-      "height": 900,
-      "url": "https://vinicius-maia.shinyapps.io/forecasts"
-    },
-    {
       "id": "taxas",
       "title": "Taxas de Incidência e de Mortalidade por Malária",
       "navigation_label": "Taxas",
