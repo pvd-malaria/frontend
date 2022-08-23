@@ -25,14 +25,24 @@
       "url": "/visualizacoes/grupos_de_anos_de_estudo",
       "type": "linesFilledFull",
       "label": "Relação",
-      "title": "Casos por Níveis de Escolaridade",
+      "title": "Grupos de Anos de Estudo",
       "description": "Proporção de casos positivos para malária no período de 2011 a 2019 segundo níveis de escolaridade, anos de estudo e Unidades da Federação da Amazônia Legal brasileira.",
       "files": [
         {
           "title": "Groups",
           "file": "Escolaridade/groups.html",
           "height": 1900
-        },
+        }
+      ]
+    },
+    {
+      "id": "nível_de_escolaridade_testados_positivos",
+      "url": "/visualizacoes/nível_de_escolaridade_testados_positivos",
+      "type": "barsFilledFull",
+      "label": "Relação",
+      "title": "Casos por Níveis de Escolaridade",
+      "description": "Proporção de casos positivos para malária no período de 2011 a 2019 segundo níveis de escolaridade, anos de estudo e Unidades da Federação da Amazônia Legal brasileira.",
+      "files": [
         {
           "title": "Levels",
           "file": "Escolaridade/levels.html",
