@@ -1,0 +1,74 @@
+#pagePreditivos .container {
+  padding: 5rem 2rem;
+}
+
+/* --- Info --- */
+
+#pagePreditivos .wrapperInfo {
+  background-color: #f3f3f3;
+}
+
+#pagePreditivos .wrapperInfo .container {
+  padding-bottom: 8rem;
+}
+
+#pagePreditivos .wrapperInfo .container a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: var(--p-font-size);
+  color: var(--primary-color-blue);
+  text-decoration: none;
+}
+
+#pagePreditivos .wrapperInfo .container h1 {
+  margin-top: 0;
+  font-size: var(--h3-font-size);
+  color: var(--primary-color-blue);
+}
+
+#pagePreditivos .wrapperInfo .container .info p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* --- Dashboard --- */
+
+#pagePreditivos .wrapperDashboard .container {
+  padding-top: 0;
+  position: relative;
+  top: -6rem;
+}
+
+#pagePreditivos .wrapperDashboard .container .dashboard {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#pagePreditivos .wrapperDashboard .container .dashboard .MuiCircularProgress-root {
+  position: absolute;
+  z-index: 0;
+  top: 35%;
+  left: 50%;
+}
+
+
+#pagePreditivos .wrapperDashboard .container .dashboard iframe {
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 878px) {
+  
+  #pagePreditivos .wrapperDashboard .container { }
+
+  #pagePreditivos .wrapperDashboard .container .dashboard iframe {
+    height: 1250px;
+  }
+
+}

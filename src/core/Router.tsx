@@ -9,6 +9,7 @@ import BoletinsLista from '../pages/Producoes/Boletins/Lista';
 import CursosLista from '../pages/Producoes/Cursos/Lista';
 import Dashboards from '../pages/Dashboards';
 import Inicial from '../pages/Inicial';
+import Preditivos from '../pages/Preditivos';
 import Sobre from '../pages/Sobre';
 import UiGuide from '../pages/UiGuide';
 import VisualizacoesDetalhes from '../pages/Visualizacoes/Detalhes';
@@ -29,6 +30,7 @@ function Router() {
         <Route path="/dashboards" element={<Layout><h1>Dashboard</h1></Layout>} />
         <Route path="/dashboards/:id" element={<Dashboards/>} />
         <Route path="/modelos" element={<Layout><h1>Modelos</h1></Layout>} />
+        <Route path="/modelos/preditivos" element={<Preditivos/>} />
         <Route path="/producoes" element={<Layout><h1>Producoes</h1></Layout>} />
         <Route path="/visualizacoes/:id" element={<VisualizacoesDetalhes/>} />
         <Route path="/visualizacoes" element={<VisualizacoesLista/>} />
