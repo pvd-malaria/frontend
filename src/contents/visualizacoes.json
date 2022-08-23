@@ -136,21 +136,6 @@
       ]
     },
     {
-      "id": "rendimento_gini",
-      "url": "/visualizacoes/rendimento_gini",
-      "type": "lines",
-      "label": "Relação",
-      "title": "Rendimento Gini",
-      "description": "",
-      "files": [
-        {
-          "title": "Rendimento Gini",
-          "file": "Rendimento/gini.html",
-          "height": 500
-        }
-      ]
-    },
-    {
       "id": "mobilidade",
       "url": "/visualizacoes/mobilidade",
       "type": "mapNetwork",
