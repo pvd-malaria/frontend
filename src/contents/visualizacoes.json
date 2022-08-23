@@ -15,12 +15,7 @@
       "files": [
         {
           "title": "Bubbles",
-          "file": "Casos/bubbles.html",
-          "height": 800
-        },
-        {
-          "title": "Lines",
-          "file": "Casos/lines.html",
+          "file": "Casos/cases.html",
           "height": 800
         }
       ]
