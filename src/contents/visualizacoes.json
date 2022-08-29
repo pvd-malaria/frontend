@@ -146,7 +146,7 @@
       "type": "mapNetwork",
       "label": "Relação",
       "title": "Mobilidade",
-      "description": "Visualizacao sem descrição... este grafico é bastante pesadoe e também precisa receber propriedade para usar espaço disponível na tela.",
+      "description": "Esse gráfico mostra os fluxos entre o país ou município ou localidade provável de infecção e o município de residência da pessoa. Foi calculado a partir da diferença entre os dois e dá uma panorama da mobilidade da malária.",
       "files": [
         {
           "title": "Mobilidade",
