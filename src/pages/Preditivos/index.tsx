@@ -29,7 +29,7 @@ function Preditivos() {
     <Layout id="pagePreditivos">
       <section className="wrapperInfo">
         <div className="container">
-          <h1>Modelos Preditivos</h1>
+          <h1>Preditivos</h1>
           <p>
             Utilizamos modelos autoregressão integrada a média móvel (ARIMA) e rede 
             neural com autoregressão (NNETAR) nos dados do SIVEP para estimar o número 
