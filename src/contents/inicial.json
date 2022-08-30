@@ -25,9 +25,9 @@
     "items": [
       {
         "id": "visualizacoes_1",
-        "title": "Casos de Malária",
-        "short": "Casos positivos de malária entre os estados da Amazônia Legal brasileira no período...",
-        "url": "/visualizacoes/casos_de_malaria"
+        "title": "Relação Número de Mortes por Malária",
+        "short": "Número de mortes por malária em número absoluto, podendo ser mudado para proporção...",
+        "url": "/visualizacoes/número_de_mortes"
       },
       {
         "id": "visualizacoes_2",
@@ -37,9 +37,9 @@
       },
       {
         "id": "visualizacoes_3",
-        "title": "Proporção de Casos segundo Idade Gestacional",
-        "short": "Proporção de casos positivos para malária no período de 2011 a 2019 entre gestantes...",
-        "url": "/visualizacoes/mobilidade"
+        "title": "Casos de Malária",
+        "short": "Casos positivos de malária entre os estados da Amazônia Legal brasileira no período...",
+        "url": "/visualizacoes/casos_de_malaria"
       }
     ]
   },
