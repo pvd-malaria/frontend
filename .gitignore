@@ -23,4 +23,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# temp
+TODO.md
 .vscode/launch.json
+
+src/plotly-visualizations/node_modules
