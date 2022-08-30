@@ -21,7 +21,7 @@ import data from '../../datasets/pyramid-age-sex.json';
 const ChartAgeSex = React.memo(() => {
 	const [ww, setWw] = useState(null);
 
-	if(ww === null) setWw(window.innerWidth);
+	if (ww === null) setWw(window.innerWidth);
 
 	let ageRanges = Array.from(new Set(data.map(row => row.age_range)));
 	ageRanges.sort((a, b) => {
@@ -36,16 +36,16 @@ const ChartAgeSex = React.memo(() => {
 	]; // Amazônia legal, desconsidere: // Array.from(new Set(data.map(row => row.uf)));
 
 	let traces = [];
-	let sexes = {'-1': 'Masculino', 1: 'Feminino'}
+	let sexes = { '-1': 'Masculino', 1: 'Feminino' }
 	let col_n = 0;
 	let row_n = 0;
-	for(let uf of uniqueUFs) {
+	for (let uf of uniqueUFs) {
 		// Brasil
-		for(let sex_i of [-1, 1]) {
+		for (let sex_i of [-1, 1]) {
 			let sex = sexes[sex_i];
 			let xax = [];
 			let yax = [];
-			for(let rng of ageRanges) {
+			for (let rng of ageRanges) {
 				let row = data.find(row => row.uf_n === 'Brasil' && row.sex === sex && row.age_range === rng);
 				if (row) {
 					yax.push(rng);
@@ -70,12 +70,12 @@ const ChartAgeSex = React.memo(() => {
 			traces.push(trace);
 		}
 
-		for(let sex_i of [-1, 1]) {
+		for (let sex_i of [-1, 1]) {
 			let sex = sexes[sex_i];
 			let xax = [];
 			let yax = [];
 			let c_data = [];
-			for(let rng of ageRanges) {
+			for (let rng of ageRanges) {
 				let row = data.find(row => row.uf_n === uf && row.sex === sex && row.age_range === rng);
 				if (row) {
 					yax.push(rng);
@@ -102,7 +102,7 @@ const ChartAgeSex = React.memo(() => {
 		}
 
 		col_n++;
-		if(col_n > 2) {
+		if (col_n > 2) {
 			col_n = 0;
 			row_n++;
 		}
@@ -121,7 +121,7 @@ const ChartAgeSex = React.memo(() => {
 		annotations: []
 	};
 
-	for(let i = 1; i <= 3; i++) {
+	for (let i = 1; i <= 3; i++) {
 		let yax = 'yaxis' + (i === 1 ? '' : i);
 		let xax = 'xaxis' + (i === 1 ? '' : i);
 
@@ -137,9 +137,9 @@ const ChartAgeSex = React.memo(() => {
 		layoutExtra[xax + '.ticks'] = 'outside';
 	}
 
-	for(let i = 1; i <= 3; i++) {
+	for (let i = 1; i <= 3; i++) {
 		let xax = 'x' + (i === 1 ? '' : i) + ' domain';
-		for(let j = 1; j <= 3; j++) {
+		for (let j = 1; j <= 3; j++) {
 			let yax = 'y' + (j === 1 ? '' : j) + ' domain';
 			let pos = (i - 1) * 3 + j - 1;
 			let uf = uniqueUFs[pos];
@@ -166,21 +166,21 @@ const ChartAgeSex = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 750, display: 'flex'}}>
+			<div style={{ width: '100%', height: 750, display: 'flex' }}>
 				<Plot
 					divId={divId}
 					data={traces}
 					layout={layout}
-					config={{responsive: true}}
+					config={{ responsive: true }}
 					useResizeHandler={true}
-					style={{width: '100%', height: '100%'}}
+					style={{ width: '100%', height: '100%' }}
 				/>
 			</div>
-			<center>
+			{/* <center>
 				<Typography variant="caption">
 					Fonte: ?
 				</Typography>
-			</center>
+			</center> */}
 			<Box sx={{
 				width: '100%',
 				display: 'flex',

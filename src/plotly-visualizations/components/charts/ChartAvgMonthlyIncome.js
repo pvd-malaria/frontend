@@ -6,7 +6,7 @@ import {
 	Box,
 	Button,
 }
-from '@mui/material';
+	from '@mui/material';
 
 import DownloadIcon from '@mui/icons-material/Download';
 import ImageIcon from '@mui/icons-material/Image';
@@ -21,7 +21,7 @@ import data from '../../datasets/income.json';
 const ChartAvgMonthlyIncome = React.memo(() => {
 	const [ww, setWw] = useState(null);
 
-	if(ww === null) setWw(window.innerWidth);
+	if (ww === null) setWw(window.innerWidth);
 
 	let minYear = data.map(row => row.ano).reduce((a, b) => Math.min(a, b));
 	let maxYear = data.map(row => row.ano).reduce((a, b) => Math.max(a, b));
@@ -37,9 +37,9 @@ const ChartAvgMonthlyIncome = React.memo(() => {
 
 	let traces = [];
 
-	for(let uf of uniqueUFs) {
+	for (let uf of uniqueUFs) {
 		let traceData = {};
-		for(let i = 0; i < years.length; i++) {
+		for (let i = 0; i < years.length; i++) {
 			traceData[i] = data.filter(
 				row => row.uf_n === uf && row.ano === years[i]
 			);
@@ -59,9 +59,9 @@ const ChartAvgMonthlyIncome = React.memo(() => {
 			line: { shape: 'spline' },
 			connectgaps: true
 		};
-		
-		if(focused != null) {
-			if(focused === uf) {
+
+		if (focused != null) {
+			if (focused === uf) {
 				trace.opacity = 1;
 			}
 			else {
@@ -107,14 +107,14 @@ const ChartAvgMonthlyIncome = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 400, display: 'flex'}}>
+			<div style={{ width: '100%', height: 400, display: 'flex' }}>
 				<Plot
 					divId={divId}
 					data={traces}
 					layout={layout}
-					config={{responsive: true}}
+					config={{ responsive: true }}
 					useResizeHandler={true}
-					style={{width: '100%', height: '100%'}}
+					style={{ width: '100%', height: '100%' }}
 					onHover={e => {
 						setFocused(e.points[0].data.name);
 					}}
@@ -123,11 +123,11 @@ const ChartAvgMonthlyIncome = React.memo(() => {
 					}}
 				/>
 			</div>
-			<center>
+			{/* <center>
 				<Typography variant="caption">
 					Fonte: Sistema de Informação de Mortalidade (SIM) - Datasus
 				</Typography>
-			</center>
+			</center> */}
 			<Box sx={{
 				width: '100%',
 				display: 'flex',
