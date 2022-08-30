@@ -1,0 +1,386 @@
+import { useCallback, useEffect, useState } from 'react';
+
+import CircularProgress from '@mui/material/CircularProgress';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import {
+  FilledInput,
+  FormControl,
+  InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  Select,
+  SelectChangeEvent 
+} from '@mui/material';
+
+import Layout from '../../components/Layout';
+
+import Fullscreen from '../../components/Fullscreen';
+
+import './styles.css';
+
+
+interface IFormData {
+  idade: string;
+  idadeTipo: string;
+  sexo: string;
+  cor: string;
+  escolaridade: string;
+  ocupacaoProfissional: string;
+  gestante: string;
+  sintomas: string;
+  tratamentoVivax: string;
+  tratamentoFalciparum: string;
+  tipoLamina: string;
+  tipoExameRealizado: string;
+  resultadoExame: string;
+  quantidadeDeCruzesNoExame: string;
+  presencaDeHemoparasitas: string;
+}
+
+
+function Classificacao() {
+
+  const [formData, setFormData] = useState<IFormData>({
+    idade: '',
+    idadeTipo: 'anos',
+    sexo: '',
+    cor: '',
+    escolaridade: '',
+    ocupacaoProfissional: '',
+    gestante: '',
+    sintomas: '',
+    tratamentoVivax: '',
+    tratamentoFalciparum: '',
+    tipoLamina: '',
+    tipoExameRealizado: '',
+    resultadoExame: '',
+    quantidadeDeCruzesNoExame: '',
+    presencaDeHemoparasitas: '',
+  });
+
+  // TEMP
+  console.log('formData', formData);
+
+
+  const formChangeHandle = useCallback((prop: keyof IFormData, value: string) => {
+      setFormData({ 
+        ...formData,
+        [prop]: value
+      });
+  }, [formData]);
+
+
+  const idadeTipoClickHandle = useCallback(() => {
+    setFormData({
+      ...formData,
+      idadeTipo: formData.idadeTipo === 'anos' ? 'meses' : 'anos',
+    });
+  }, [formData]);
+
+
+  useEffect(() => {
+    console.log('init -> Classificacao.useEffect');
+  }, []);
+
+
+  return (
+    <Layout id="pageClassificacao">
+      <section className="wrapperInfo">
+        <div className="container">
+          <h1>Classificação</h1>
+          <h3>Classificador de esquemas de tratamento malaria usando IA</h3>
+          <h4>Esquemas de tratamento de malária</h4>
+          <p>
+            Em uma análise de dados realizadas no banco de dados SIVEP-Malária, foi identificado 
+            que o Esquema de Tratamento mais utilizado (82,8%) é o esquema **"Infecções pelo P. 
+            vivax, ou P. ovale com Cloroquina em 3 dias e Primaquina em 7 dias"** (aqui denominado 
+            **Esquema 11**). Os demais 17,2% dos indivíduos da base, foram tratados com algum 
+            outro esquema de tratamento. Atualmente existem 27 Esquemas de Tratamentos pré-definidos, 
+            além de uma opção "Outros Esquemas de Tratamentos".
+          </p>
+          <h4>Modelos de IA: Machine Learning</h4>
+          <p>
+            Utilizando algoritmos de aprendizado de máquina e dados SIVEP-Malária, foi criado um 
+            Sistema de IA para recomendação de esquema de tratamento de malária. Considerando a 
+            grande quantidade de indivíduos tratados com o **Esquema 11**, desenvolvemos um modelo 
+            de aprendizado de máquina que calcula a probalidade de um indivíduo (identificado 
+            conforme dados do formulário abaixo), receber indicação para o **Esquema 11**, ou não, 
+            e neste caso, o indivíduo deve receber indicação de um esquema de tratamento, diferente 
+            do **Esquema 11**.
+          </p>
+          <h4>Sistema de suporte decisão</h4>
+          <p>
+            Para realizar a recomendação, o modelo baseia-se em reconhimento de padrões que podem 
+            ser observados nos dados utilizados. A Figura 1 abaixo mostra a importância de cada 
+            variável para o modelo, ou seja, as variáveis mais relevantes utilizadas pelo modelo 
+            para a recomendação são nesta ordem: 1) "Resultado do Exame", 2) "Idade do paciente", 
+            e assim sucessivamente. A Figua 2 apresenta métricas de avaliação do modelo.
+          </p>
+        </div>
+      </section>      
+
+      <section className="wrapperForm">
+        <div className="container">
+          <div className="form">
+            <h1>Classificação de esquema de tratamento de malaria</h1>
+            <p>
+              Defina o perfil do paciente no formulário abaixo para obter recomendação se o Esquema 
+              de "Tratamento 11" é recomendado, ou se é recomendado "Outros Esquemas".
+            </p>
+
+
+            <form action="">
+              <h4>Informações Sociodemográficas</h4>
+
+              <div className="formElements">
+                <FormControl fullWidth>
+                  <InputLabel htmlFor="input-idade">Idade</InputLabel>
+                  <OutlinedInput
+                    id="input-idade"
+                    type="text"
+                    value={formData.idade}
+                    label="Idade"
+                    onChange={(event) => formChangeHandle('idade', event.target.value)}
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <Button onClick={idadeTipoClickHandle}>
+                          {formData.idadeTipo}
+                        </Button>
+                      </InputAdornment>
+                    }
+                  />
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-sexo">Sexo</InputLabel>
+                  <Select
+                    labelId="input-sexo"
+                    value={formData.sexo}
+                    label="Sexo"
+                    onChange={(event) => formChangeHandle('sexo', event.target.value)}
+                  >
+                    <MenuItem value="0">Masculino</MenuItem>
+                    <MenuItem value="1">Feminino</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-cor">Raça/Cor</InputLabel>
+                  <Select
+                    labelId="input-cor"
+                    value={formData.cor}
+                    label="Raça/Cor"
+                    onChange={(event) => formChangeHandle('cor', event.target.value)}
+                  >
+                    <MenuItem value="0">Amarela</MenuItem>
+                    <MenuItem value="1">Branca</MenuItem>
+                    <MenuItem value="2">Indígena</MenuItem>
+                    <MenuItem value="3">Parda</MenuItem>
+                    <MenuItem value="4">Preta</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-escolaridade">Escolaridade</InputLabel>
+                  <Select
+                    labelId="input-escolaridade"
+                    value={formData.escolaridade}
+                    label="Escolaridade"
+                    onChange={(event) => formChangeHandle('escolaridade', event.target.value)}
+                  >
+                    <MenuItem value="0">1ª a 4ª série incompleta do EF</MenuItem>
+                    <MenuItem value="1">4ª série completa do EF</MenuItem>
+                    <MenuItem value="2">5ª a 8ª série incompleta do EF</MenuItem>
+                    <MenuItem value="3">Analfabeto</MenuItem>
+                    <MenuItem value="4">Educação superior completa</MenuItem>
+                    <MenuItem value="5">Educação superior incompleto</MenuItem>
+                    <MenuItem value="6">Ensino fundamental completo</MenuItem>
+                    <MenuItem value="7">Ensino médio completo</MenuItem>
+                    <MenuItem value="8">Ensino médio incompleto</MenuItem>
+                    <MenuItem value="9">Não se aplica</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-ocupacaoProfissional">Tipo de ocupação profissional</InputLabel>
+                  <Select
+                    labelId="input-ocupacaoProfissional"
+                    value={formData.ocupacaoProfissional}
+                    label="Tipo de ocupação profissional"
+                    onChange={(event) => formChangeHandle('ocupacaoProfissional', event.target.value)}
+                  >
+                    <MenuItem value="0">Agricultura</MenuItem>
+                    <MenuItem value="1">Caça/Pesca</MenuItem>
+                    <MenuItem value="2">Construção de estradas/barragens</MenuItem>
+                    <MenuItem value="3">Doméstica</MenuItem>
+                    <MenuItem value="4">Exploração Vegetal</MenuItem>
+                    <MenuItem value="5">Garimpagem</MenuItem>
+                    <MenuItem value="6">Ignorado</MenuItem>
+                    <MenuItem value="7">Mineração</MenuItem>
+                    <MenuItem value="8">Outros</MenuItem>
+                    <MenuItem value="9">Pecuária</MenuItem>
+                    <MenuItem value="10">Turismo</MenuItem>
+                    <MenuItem value="11">Viajante</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-gestante">Está gestante?</InputLabel>
+                  <Select
+                    labelId="input-gestante"
+                    value={formData.gestante}
+                    label="Está gestante"
+                    onChange={(event) => formChangeHandle('gestante', event.target.value)}
+                  >
+                    <MenuItem value="0">1º Trimestre</MenuItem>
+                    <MenuItem value="1">2º Trimestre</MenuItem>
+                    <MenuItem value="2">3º Trimestre</MenuItem>
+                    <MenuItem value="3">Idade gestacional ignorada</MenuItem>
+                    <MenuItem value="4">Não</MenuItem>
+                    <MenuItem value="5">Não se aplica</MenuItem>
+                  </Select>
+                </FormControl>
+              </div>
+
+              <h4>Informações Epdemiológicas</h4>
+
+              <div className="formElements">
+                <FormControl fullWidth>
+                  <InputLabel id="input-sintomas">Paciente com ou sem sintomas?</InputLabel>
+                  <Select
+                    labelId="input-sintomas"
+                    value={formData.sintomas}
+                    label="Paciente com ou sem sintomas"
+                    onChange={(event) => formChangeHandle('sintomas', event.target.value)}
+                  >
+                    <MenuItem value="0">Com</MenuItem>
+                    <MenuItem value="1">Sem</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-tratamentoVivax">Realizou tratamento para vivax?</InputLabel>
+                  <Select
+                    labelId="input-tratamentoVivax"
+                    value={formData.tratamentoVivax}
+                    label="Realizou tratamento para vivax"
+                    onChange={(event) => formChangeHandle('tratamentoVivax', event.target.value)}
+                  >
+                    <MenuItem value="0">Não tratado p/ vivax &lt; 60 dias</MenuItem>
+                    <MenuItem value="1">Tratado p/ vivax &lt; 60 dias</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-tratamentoFalciparum">Realizou tratamento para falciparum?</InputLabel>
+                  <Select
+                    labelId="input-tratamentoFalciparum"
+                    value={formData.tratamentoFalciparum}
+                    label="Realizou tratamento para falciparum"
+                    onChange={(event) => formChangeHandle('tratamentoFalciparum', event.target.value)}
+                  >
+                    <MenuItem value="0">Não tratado p/ falciparum &lt; 40 dias</MenuItem>
+                    <MenuItem value="1">Tratado p/ falciparum &lt; 40 dias</MenuItem>
+                  </Select>
+                </FormControl>
+              </div>
+
+              <h4>Informações do Exame</h4>
+
+              <div className="formElements">
+                <FormControl fullWidth>
+                  <InputLabel id="input-tipoLamina">Tipo de lâmina</InputLabel>
+                  <Select
+                    labelId="input-tipoLamina"
+                    value={formData.tipoLamina}
+                    label="Tipo de lâmina"
+                    onChange={(event) => formChangeHandle('tipoLamina', event.target.value)}
+                  >
+                    <MenuItem value="0">Detecção Ativa</MenuItem>
+                    <MenuItem value="1">Detecção Passiva</MenuItem>
+                    <MenuItem value="2">LVC (ficha antiga)</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-tipoExameRealizado">Tipo do exame realizado</InputLabel>
+                  <Select
+                    labelId="input-tipoExameRealizado"
+                    value={formData.tipoExameRealizado}
+                    label="Tipo do exame realizado"
+                    onChange={(event) => formChangeHandle('tipoExameRealizado', event.target.value)}
+                  >
+                    <MenuItem value="0">Gota espessa</MenuItem>
+                    <MenuItem value="1">Teste rápido</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-resultadoExame">Resultado do exame</InputLabel>
+                  <Select
+                    labelId="input-resultadoExame"
+                    value={formData.resultadoExame}
+                    label="Resultado do exame"
+                    onChange={(event) => formChangeHandle('resultadoExame', event.target.value)}
+                  >
+                    <MenuItem value="0">F+Fg</MenuItem>
+                    <MenuItem value="1">F+M</MenuItem>
+                    <MenuItem value="2">F+V</MenuItem>
+                    <MenuItem value="3">Falciparum</MenuItem>
+                    <MenuItem value="4">Fg</MenuItem>
+                    <MenuItem value="5">Malariae</MenuItem>
+                    <MenuItem value="6">Não Falciparum</MenuItem>
+                    <MenuItem value="7">Ovale</MenuItem>
+                    <MenuItem value="8">V+Fg</MenuItem>
+                    <MenuItem value="9">Vivax</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-quantidadeDeCruzesNoExame">Quantidade de cruzes no exame</InputLabel>
+                  <Select
+                    labelId="input-quantidadeDeCruzesNoExame"
+                    value={formData.quantidadeDeCruzesNoExame}
+                    label="Quantidade de cruzes no exame"
+                    onChange={(event) => formChangeHandle('quantidadeDeCruzesNoExame', event.target.value)}
+                  >
+                    <MenuItem value="0">+</MenuItem>
+                    <MenuItem value="1">++</MenuItem>
+                    <MenuItem value="2">+++</MenuItem>
+                    <MenuItem value="3">++++</MenuItem>
+                    <MenuItem value="4">+/2</MenuItem>
+                    <MenuItem value="5">&lt; +/2</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth>
+                  <InputLabel id="input-presencaDeHemoparasitas">Quanto presença de Hemoparasitas</InputLabel>
+                  <Select
+                    labelId="input-presencaDeHemoparasitas"
+                    value={formData.presencaDeHemoparasitas}
+                    label="Quanto presença de Hemoparasitas"
+                    onChange={(event) => formChangeHandle('presencaDeHemoparasitas', event.target.value)}
+                  >
+                    <MenuItem value="0">Microfilária</MenuItem>
+                    <MenuItem value="1">Negativo</MenuItem>
+                    <MenuItem value="2">Não pesquisados</MenuItem>
+                    <MenuItem value="3">Trypanosoma sp.</MenuItem>
+                    <MenuItem value="4">Trypanosoma sp..+ Microfilária</MenuItem>
+                  </Select>
+                </FormControl>
+              </div>
+
+              <div className="formButtons">
+                <Button variant="contained">OBTER CLASSIFICAÇÃO</Button>
+                <Button variant="text">CANCELAR</Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
+
+export default Classificacao;
