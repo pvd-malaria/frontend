@@ -10648,7 +10648,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -10948,13 +10948,6 @@ react-router-dom@^6.3.0:
     history "^5.2.0"
     react-router "6.3.0"
 
-react-router@6.2.2:
-  version "6.2.2"
-  resolved "https://registry.npmjs.org/react-router/-/react-router-6.2.2.tgz"
-  integrity sha512-/MbxyLzd7Q7amp4gDOGaYvXwhEojkJD5BtExkuKmj39VEE0m3l/zipf6h2WIB2jyAO0lI6NGETh4RDcktRm4AQ==
-  dependencies:
-    history "^5.2.0"
-
 react-router@6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.3.0.tgz#3970cc64b4cb4eae0c1ea5203a80334fdd175557"
@@ -11016,6 +11009,13 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-text-collapse@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/react-text-collapse/-/react-text-collapse-0.6.1.tgz#69d39b2a94dcbe3fc7f812187543b0f946945939"
+  integrity sha512-v1xCCs78Os+XXk3MPVLVkdd+Wbrq0RPi5vv71gZsHyXWJ14p6UW4MFyB9nbL8TBOr8WyAlONfhD16B+6mjIIlA==
+  dependencies:
+    prop-types "^15.5.10"
 
 react-transition-group@^4.4.2:
   version "4.4.2"
