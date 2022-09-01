@@ -1,28 +1,23 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import CircularProgress from '@mui/material/CircularProgress';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import {
-  FilledInput,
+  Button,
+  CircularProgress,
   FormControl,
   InputAdornment,
   InputLabel,
+  MenuItem,
   OutlinedInput,
   Select,
-  SelectChangeEvent 
 } from '@mui/material';
 
 import Layout from '../../components/Layout';
-
-import Fullscreen from '../../components/Fullscreen';
-
 import './styles.css';
 
 
 interface IFormData {
-  idade: string;
-  idadeTipo: string;
+  idade?: string;
+  idadeTipo?: string;
   sexo: string;
   cor: string;
   escolaridade: string;
@@ -41,6 +36,7 @@ interface IFormData {
 
 function Classificacao() {
 
+  const [formSubmited, setFormSubmited] = useState<boolean>(false);
   const [formData, setFormData] = useState<IFormData>({
     idade: '',
     idadeTipo: 'anos',
@@ -59,9 +55,6 @@ function Classificacao() {
     presencaDeHemoparasitas: '',
   });
 
-  // TEMP
-  console.log('formData', formData);
-
 
   const formChangeHandle = useCallback((prop: keyof IFormData, value: string) => {
       setFormData({ 
@@ -79,8 +72,35 @@ function Classificacao() {
   }, [formData]);
 
 
+  const formIsValid = useCallback((): Boolean => {
+    let valid = true;
+
+    for (const [key, value] of Object.entries(formData)) {
+      if (value === '')
+        valid = false;
+    }
+
+    return valid;
+  }, [formData]);
+
+
+  const formSubmitHandle = useCallback(() => {
+    setFormSubmited(true);
+    
+    // Request body
+    if (formIsValid()) {
+    }
+  }, [formIsValid]);
+
+
+  const formResetHandle = useCallback(() => {
+    setFormSubmited(false);
+    // TODO: clear formData.
+  }, [setFormSubmited]);
+
+
   useEffect(() => {
-    console.log('init -> Classificacao.useEffect');
+    
   }, []);
 
 
@@ -138,8 +158,10 @@ function Classificacao() {
                   <InputLabel htmlFor="input-idade">Idade</InputLabel>
                   <OutlinedInput
                     id="input-idade"
-                    type="text"
+                    type="number"
+                    autoComplete="off"
                     value={formData.idade}
+                    error={formSubmited && formData.idade === ''}
                     label="Idade"
                     onChange={(event) => formChangeHandle('idade', event.target.value)}
                     endAdornment={
@@ -157,6 +179,7 @@ function Classificacao() {
                   <Select
                     labelId="input-sexo"
                     value={formData.sexo}
+                    error={formSubmited && formData.sexo === ''}
                     label="Sexo"
                     onChange={(event) => formChangeHandle('sexo', event.target.value)}
                   >
@@ -170,6 +193,7 @@ function Classificacao() {
                   <Select
                     labelId="input-cor"
                     value={formData.cor}
+                    error={formSubmited && formData.cor === ''}
                     label="Raça/Cor"
                     onChange={(event) => formChangeHandle('cor', event.target.value)}
                   >
@@ -186,6 +210,7 @@ function Classificacao() {
                   <Select
                     labelId="input-escolaridade"
                     value={formData.escolaridade}
+                    error={formSubmited && formData.escolaridade === ''}
                     label="Escolaridade"
                     onChange={(event) => formChangeHandle('escolaridade', event.target.value)}
                   >
@@ -207,6 +232,7 @@ function Classificacao() {
                   <Select
                     labelId="input-ocupacaoProfissional"
                     value={formData.ocupacaoProfissional}
+                    error={formSubmited && formData.ocupacaoProfissional === ''}
                     label="Tipo de ocupação profissional"
                     onChange={(event) => formChangeHandle('ocupacaoProfissional', event.target.value)}
                   >
@@ -230,6 +256,7 @@ function Classificacao() {
                   <Select
                     labelId="input-gestante"
                     value={formData.gestante}
+                    error={formSubmited && formData.gestante === ''}
                     label="Está gestante"
                     onChange={(event) => formChangeHandle('gestante', event.target.value)}
                   >
@@ -251,6 +278,7 @@ function Classificacao() {
                   <Select
                     labelId="input-sintomas"
                     value={formData.sintomas}
+                    error={formSubmited && formData.sintomas === ''}
                     label="Paciente com ou sem sintomas"
                     onChange={(event) => formChangeHandle('sintomas', event.target.value)}
                   >
@@ -264,6 +292,7 @@ function Classificacao() {
                   <Select
                     labelId="input-tratamentoVivax"
                     value={formData.tratamentoVivax}
+                    error={formSubmited && formData.tratamentoVivax === ''}
                     label="Realizou tratamento para vivax"
                     onChange={(event) => formChangeHandle('tratamentoVivax', event.target.value)}
                   >
@@ -277,6 +306,7 @@ function Classificacao() {
                   <Select
                     labelId="input-tratamentoFalciparum"
                     value={formData.tratamentoFalciparum}
+                    error={formSubmited && formData.tratamentoFalciparum === ''}
                     label="Realizou tratamento para falciparum"
                     onChange={(event) => formChangeHandle('tratamentoFalciparum', event.target.value)}
                   >
@@ -294,6 +324,7 @@ function Classificacao() {
                   <Select
                     labelId="input-tipoLamina"
                     value={formData.tipoLamina}
+                    error={formSubmited && formData.tipoLamina === ''}
                     label="Tipo de lâmina"
                     onChange={(event) => formChangeHandle('tipoLamina', event.target.value)}
                   >
@@ -308,6 +339,7 @@ function Classificacao() {
                   <Select
                     labelId="input-tipoExameRealizado"
                     value={formData.tipoExameRealizado}
+                    error={formSubmited && formData.tipoExameRealizado === ''}
                     label="Tipo do exame realizado"
                     onChange={(event) => formChangeHandle('tipoExameRealizado', event.target.value)}
                   >
@@ -321,6 +353,7 @@ function Classificacao() {
                   <Select
                     labelId="input-resultadoExame"
                     value={formData.resultadoExame}
+                    error={formSubmited && formData.resultadoExame === ''}
                     label="Resultado do exame"
                     onChange={(event) => formChangeHandle('resultadoExame', event.target.value)}
                   >
@@ -342,6 +375,7 @@ function Classificacao() {
                   <Select
                     labelId="input-quantidadeDeCruzesNoExame"
                     value={formData.quantidadeDeCruzesNoExame}
+                    error={formSubmited && formData.quantidadeDeCruzesNoExame === ''}
                     label="Quantidade de cruzes no exame"
                     onChange={(event) => formChangeHandle('quantidadeDeCruzesNoExame', event.target.value)}
                   >
@@ -359,6 +393,7 @@ function Classificacao() {
                   <Select
                     labelId="input-presencaDeHemoparasitas"
                     value={formData.presencaDeHemoparasitas}
+                    error={formSubmited && formData.presencaDeHemoparasitas === ''}
                     label="Quanto presença de Hemoparasitas"
                     onChange={(event) => formChangeHandle('presencaDeHemoparasitas', event.target.value)}
                   >
@@ -372,8 +407,17 @@ function Classificacao() {
               </div>
 
               <div className="formButtons">
-                <Button variant="contained">OBTER CLASSIFICAÇÃO</Button>
-                <Button variant="text">CANCELAR</Button>
+                <Button
+                  size="large"
+                  variant="contained"
+                  onClick={formSubmitHandle}>
+                  OBTER CLASSIFICAÇÃO
+                </Button>
+                <Button
+                  size="large"
+                  variant="text">
+                  CANCELAR
+                </Button>
               </div>
             </form>
           </div>
