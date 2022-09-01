@@ -465,14 +465,22 @@ function Classificacao() {
                     type: 'bar',
                     x: [0.26992828],
                     y: [' '],
-                    orientation: 'h'
+                    orientation: 'h',
+                    marker: {
+                      color: '#1674b9',
+                      width: 1
+                    }
                   },
                   {
                     name: '1',
                     type: 'bar',
                     x: [0.7300717],
                     y: [' '],
-                    orientation: 'h'
+                    orientation: 'h',
+                    marker: {
+                      color: '#f9b233',
+                      width: 1
+                    }
                   },
                 ]}
                 config={{
