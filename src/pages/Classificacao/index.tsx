@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
+import Plot from 'react-plotly.js';
 
 import {
   Button,
@@ -13,6 +14,7 @@ import {
 } from '@mui/material';
 
 import CONFIG from '../../core/config';
+
 import Layout from '../../components/Layout';
 import './styles.css';
 
@@ -452,6 +454,43 @@ function Classificacao() {
                   CANCELAR
                 </Button>
               </div>
+
+              <br /><br /><br />
+              <h4>Resultado:</h4>
+
+              <Plot
+                data={[
+                  {
+                    name: '0',
+                    type: 'bar',
+                    x: [0.26992828],
+                    y: [' '],
+                    orientation: 'h'
+                  },
+                  {
+                    name: '1',
+                    type: 'bar',
+                    x: [0.7300717],
+                    y: [' '],
+                    orientation: 'h'
+                  },
+                ]}
+                config={{
+                  responsive: true
+                }}
+                useResizeHandler={true}
+                layout={{ 
+                  title: 'Probabilidade de tratamento 11',  
+                  barmode: 'stack',
+                  extra: {
+                    autosize: true,
+                  }
+                }}
+                style={{
+                  width: '100%', 
+                  height: '300px'
+                }}
+              />
             </form>
           </div>
         </div>
