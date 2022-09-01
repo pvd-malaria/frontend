@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import axios from 'axios';
 
 import {
   Button,
@@ -11,6 +12,7 @@ import {
   Select,
 } from '@mui/material';
 
+import CONFIG from '../../core/config';
 import Layout from '../../components/Layout';
 import './styles.css';
 
@@ -89,6 +91,37 @@ function Classificacao() {
     
     // Request body
     if (formIsValid()) {
+      const requestBody = {
+        id_pacie: Number(formData.idade),
+        id_dimea: (formData.idade === 'anos' ? 0 : 1),
+        sexo: Number(formData.sexo),
+        raca: Number(formData.cor),
+        niv_esco: Number(formData.escolaridade),
+        cod_ocup: Number(formData.ocupacaoProfissional),
+        gestante: Number(formData.gestante),
+        sintomas: Number(formData.sintomas),
+        vivax: Number(formData.tratamentoVivax),
+        falciparum: Number(formData.tratamentoFalciparum),
+        tipo_lam: Number(formData.tipoLamina),
+        exame: Number(formData.tipoExameRealizado),
+        res_exam: Number(formData.resultadoExame),
+        qtd_cruz: Number(formData.quantidadeDeCruzesNoExame),
+        hemoparasi: Number(formData.presencaDeHemoparasitas),
+      };
+
+      axios.post(
+        CONFIG.API_CLASSIFIER, 
+        requestBody
+      )
+      .then(function (response) {
+        console.log(response);
+      })
+      .finally(() => {
+        console.log('---> axios.finally');
+        // TODO: remove loading.
+        // TODO: reset form.
+        // TODO: goto result graph.
+      });
     }
   }, [formIsValid]);
 
