@@ -143,8 +143,7 @@ function Classificacao() {
     <Layout id="pageClassificacao">
       <section className="wrapperInfo">
         <div className="container">
-          <h1>Classificação</h1>
-          <h3>Classificador de esquemas de tratamento malaria usando IA</h3>
+          <h1>Classificador de esquemas de tratamento malaria usando IA</h1>
           <h4>Esquemas de tratamento de malária</h4>
           <p>
             Em uma análise de dados realizadas no banco de dados SIVEP-Malária, foi identificado 
