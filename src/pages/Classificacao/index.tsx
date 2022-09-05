@@ -177,7 +177,7 @@ function Classificacao() {
       <section className="wrapperForm">
         <div className="container">
           <div className="form">
-            <h1>Classificação de esquema de tratamento de malaria</h1>
+            <h1>Simular cenário</h1>
             <p>
               Defina o perfil do paciente no formulário abaixo para obter recomendação se o Esquema 
               de "Tratamento 11" é recomendado, ou se é recomendado "Outros Esquemas".
