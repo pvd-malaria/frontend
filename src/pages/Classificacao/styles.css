@@ -8,6 +8,10 @@
   color: var(--primary-color-blue);
 }
 
+#pageClassificacao .container p {
+  text-align: justify;
+}
+
 /* --- Info --- */
 
 #pageClassificacao .wrapperInfo {
