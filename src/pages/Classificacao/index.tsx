@@ -138,53 +138,46 @@ function Classificacao() {
   }, [setActiveStep]);
 
 
-  const formSubmitHandle = useCallback(() => {    
+  const formSubmitHandle = useCallback(() => {
     setFormSubmited(true);
     setLoading(true);
 
     // Request body
     if (formIsValid('step1') && formIsValid('step2') && formIsValid('step3')) {
-      const requestBody = {
-        id_pacie: Number(formData.step1.idade),
-        id_dimea: (formData.step1.idade === 'anos' ? 0 : 1),
-        sexo: Number(formData.step1.sexo),
-        raca: Number(formData.step1.cor),
-        niv_esco: Number(formData.step1.escolaridade),
-        cod_ocup: Number(formData.step1.ocupacaoProfissional),
-        gestante: Number(formData.step1.gestante),
-        sintomas: Number(formData.step2.sintomas),
-        vivax: Number(formData.step2.tratamentoVivax),
-        falciparum: Number(formData.step2.tratamentoFalciparum),
-        tipo_lam: Number(formData.step3.tipoLamina),
-        exame: Number(formData.step3.tipoExameRealizado),
-        res_exam: Number(formData.step3.resultadoExame),
-        qtd_cruz: Number(formData.step3.quantidadeDeCruzesNoExame),
-        hemoparasi: Number(formData.step3.presencaDeHemoparasitas),
-      };
+      var bodyFormData = new FormData();
+      bodyFormData.append('id_pacie', String(formData.step1.idade));
+      bodyFormData.append('id_dimea', String(formData.step1.idade === 'anos' ? 0 : 1));
+      bodyFormData.append('sexo', String(formData.step1.sexo));
+      bodyFormData.append('raca', String(formData.step1.cor));
+      bodyFormData.append('niv_esco', String(formData.step1.escolaridade));
+      bodyFormData.append('cod_ocup', String(formData.step1.ocupacaoProfissional));
+      bodyFormData.append('gestante', String(formData.step1.gestante));
+      bodyFormData.append('sintomas', String(formData.step2.sintomas));
+      bodyFormData.append('vivax', String(formData.step2.tratamentoVivax));
+      bodyFormData.append('falciparum', String(formData.step2.tratamentoFalciparum));
+      bodyFormData.append('tipo_lam', String(formData.step3.tipoLamina));
+      bodyFormData.append('exame', String(formData.step3.tipoExameRealizado));
+      bodyFormData.append('res_exam', String(formData.step3.resultadoExame));
+      bodyFormData.append('qtd_cruz', String(formData.step3.quantidadeDeCruzesNoExame));
+      bodyFormData.append('hemoparasi', String(formData.step3.presencaDeHemoparasitas));
+      console.log(bodyFormData);
+      
 
       // Goto result step
       nextHandle('step3');
 
       // Submit form
       axios.post(
-        CONFIG.API_CLASSIFIER, 
-        requestBody,
-        { headers: CONFIG.headers }
+        CONFIG.API_CLASSIFIER,
+        bodyFormData,
+        { headers: { ...CONFIG.headers }}
       )
       .then(function (response) {
         console.log(response);
+        setApiResponse(response.data);
       })
       .finally(() => {
         setLoading(false);
-        formResetHandle();
-
-        // TODO: sample to remove.
-        setApiResponse({
-          0: "0.26992828",
-          1: "0.7300717",
-          img: "static/imgs/31_Aug_2022_23_05_52.png"
-        });
-        // ------
       });
     }
     
@@ -248,6 +241,12 @@ function Classificacao() {
               variant="contained"
               onClick={resetHandle}>
               NOVA SIMULAÇÃO
+            </Button>
+            <Button
+              size="large"
+              variant="text"
+              onClick={() => setActiveStep(0)}>
+              VOLTAR
             </Button>
           </div>
         </>
