@@ -52,6 +52,24 @@
   background-color: #fff;
 }
 
+#pageClassificacao .wrapperForm .container .form .stepLabel h4 {
+  opacity: 0.5;
+}
+
+#pageClassificacao .wrapperForm .container .form .stepLabel svg {
+  width: 40px;
+  height: 50px;
+}
+
+#pageClassificacao .wrapperForm .container .form .stepLabel .Mui-completed h4,
+#pageClassificacao .wrapperForm .container .form .stepLabel .Mui-active h4 {
+  opacity: 0.9;
+}
+
+#pageClassificacao .wrapperForm .container .form  .Mui-completed .stepLabel svg {
+  fill: #6fd56f;
+}
+
 #pageClassificacao .wrapperForm .container .form label.MuiInputLabel-root {
   font-size: 1.2rem;
 }
@@ -60,23 +78,35 @@
   font-size: 1.1em;
 }
 
-#pageClassificacao .wrapperForm .container .form .MuiCircularProgress-root {
-  position: absolute;
+#pageClassificacao .wrapperForm .container .form .loading {
+  /* position: absolute;
   z-index: 0;
   top: 35%;
-  left: 50%;
+  left: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+#pageClassificacao .wrapperForm .container .form .MuiStepContent-root {
+  padding-left: 2rem;
 }
 
 #pageClassificacao .wrapperForm .container .form .formElements {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
-#pageClassificacao .wrapperForm .container .form .formButtons { }
+#pageClassificacao .wrapperForm .container .form .formButtons.center {
+  display: flex;
+  justify-content: center;
+}
 
-#pageClassificacao .wrapperForm .container .form .formButtons button {
+#pageClassificacao .wrapperForm .container .form .formButtons:not(.center) button {
   margin-right: 2rem;
 }
 
@@ -85,6 +115,14 @@
 @media screen and (max-width: 878px) {
   
   #pageClassificacao .wrapperDashboard .container { }
+
+  #pageClassificacao .wrapperForm .container {
+    padding: 0;
+  }
+
+  #pageClassificacao .wrapperForm .container .form .MuiStepContent-root {
+    padding-left: 20px;
+  }
 
   #pageClassificacao .wrapperForm .container .form .formElements {
     display: grid;
@@ -98,7 +136,7 @@
 
   #pageClassificacao .wrapperForm .container .form .formButtons button {
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
 }
