@@ -1,0 +1,40 @@
+#pageContato .container {
+  padding: 5rem 2rem;
+}
+
+#pageContato .container h1,
+#pageContato .container h2,
+#pageContato .container h3 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageContato .info p {
+  text-align: justify;
+}
+
+/* --- Conteudo --- */
+
+#pageContato .conteudo .container h1 {
+  margin-bottom: 3rem;
+}
+
+#pageContato .conteudo .container h2 {
+  margin-bottom: 1rem;
+  font-size: var(--h4-font-size);
+}
+
+#pageContato .conteudo .container h4 {
+  margin-top: 0;
+  font-size: var(--h5-font-size);
+}
+
+#pageContato .conteudo .container address {
+  font-style: normal;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 768px) {
+  #pageContato .equipe .container .conteudo { }
+}

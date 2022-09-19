@@ -7,6 +7,7 @@ import ArtigosLista from '../pages/Producoes/Artigos/Lista';
 import BoletinsDetalhes from '../pages/Producoes/Boletins/Detalhes';
 import BoletinsLista from '../pages/Producoes/Boletins/Lista';
 import CursosLista from '../pages/Producoes/Cursos/Lista';
+import Contato from '../pages/Contato';
 import Classificacao from '../pages/Classificacao';
 import Dashboards from '../pages/Dashboards';
 import Inicial from '../pages/Inicial';
@@ -28,6 +29,7 @@ function Router() {
       <Routes >
         <Route path="/" element={<Inicial/>} />
         <Route path="/sobre" element={<Sobre/>} />
+        <Route path="/contato" element={<Contato/>} />
         <Route path="/dashboards" element={<Layout><h1>Dashboard</h1></Layout>} />
         <Route path="/dashboards/:id" element={<Dashboards/>} />
         <Route path="/modelos" element={<Layout><h1>Modelos</h1></Layout>} />
