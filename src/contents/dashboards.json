@@ -15,7 +15,7 @@
       ],
       "file": "",
       "height": 800,
-      "url": "http://laddem.nepo.unicamp.br:3838/src/importadosdash"
+      "url": "https://vinicius-maia.shinyapps.io/importadosdash"
     },
     {
       "id": "indicadores",
@@ -27,7 +27,7 @@
       ],
       "file": "",
       "height": 920,
-      "url": "http://laddem.nepo.unicamp.br:3838/src/IndicadoresProcess/Eng"
+      "url": "https://arrudanat.shinyapps.io/IndicadoresProcesso_eng"
     },
     {
       "id": "pca",
@@ -39,7 +39,7 @@
       ],
       "file": "",
       "height": 865,
-      "url": "http://laddem.nepo.unicamp.br:3838/src/PCA_Dashboard"
+      "url": "http://promalaria.nepo.unicamp.br:8008/PCA_Dashboard"
     },
     {
       "id": "qualidade",
@@ -62,7 +62,7 @@
       ],
       "file": "",
       "height": 800,
-      "url": "http://laddem.nepo.unicamp.br:3838/src/taxasMalaria"
+      "url": "https://arrudanat.shinyapps.io/taxasMalaria"
     }
   ]
 }
