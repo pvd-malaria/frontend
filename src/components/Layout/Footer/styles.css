@@ -36,11 +36,11 @@
 }
 
 #footer section img {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   margin: 0 1rem 1rem;
   max-width: 10rem;
   max-height: 4.5rem;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: all 0.3s ease-in-out;
 }
 
