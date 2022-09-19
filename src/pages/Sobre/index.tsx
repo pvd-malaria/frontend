@@ -44,7 +44,7 @@ function Sobre() {
             <div className="membro">
               <p className="nome">Profa. Dra. Luciana Correia Alves</p>
               <p className="email">lcalves@unicamp.br</p>
-              <p className="bio">PI. Chefe do Departamento de Demografia/IFCH - Universidade Estadual de Campinas.</p>
+              <p className="bio">Pesquisador Principal<br>Chefe do Departamento de Demografia/IFCH - Universidade Estadual de Campinas.</p>
             </div>
             <div className="membro">
               <p className="nome">Prof. Me. Carlos Eduardo Beluzo</p>
