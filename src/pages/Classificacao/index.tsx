@@ -285,12 +285,12 @@ function Classificacao() {
             ser observados nos dados utilizados. A Figura 1 abaixo mostra a importância de cada 
             variável para o modelo, ou seja, as variáveis mais relevantes utilizadas pelo modelo 
             para a recomendação são nesta ordem: 1) "Resultado do Exame", 2) "Idade do paciente", 
-            e assim sucessivamente. A Figua 2 apresenta métricas de avaliação do modelo.
+            e assim sucessivamente. A Figura 2 apresenta métricas de avaliação do modelo.
           </p>
         </div>
       </section>      
 
-      <section className="wrapperForm">
+      <section className="wrapperForm" style={{ display: 'none' }}>
         <div className="container">
           <div className="form">
             <h1>Simular cenário</h1>
