@@ -64,16 +64,6 @@
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/paa_2021.pdf",
       "urlExternal": "paa_2021"
-    },
-    {
-      "id": "artigo_fail",
-      "url": "/producoes/artigos/artigo_not_found",
-      "date": "4 de abril de 2022",
-      "title": "Artigo sem Arquivo de Conteúdo",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam.",
-      "file": "/artigos/artigo_not_found.html",
-      "urlPdf": "",
-      "urlExternal": ""
     }
   ]
 }
