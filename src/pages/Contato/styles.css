@@ -15,8 +15,8 @@
 
 /* --- Conteudo --- */
 
-#pageContato .conteudo .container h1 {
-  margin-bottom: 3rem;
+#pageContato .conteudo .container h3 {
+  margin-bottom: 0;
 }
 
 #pageContato .conteudo .container h2 {
@@ -24,13 +24,12 @@
   font-size: var(--h4-font-size);
 }
 
-#pageContato .conteudo .container h4 {
-  margin-top: 0;
-  font-size: var(--h5-font-size);
-}
-
 #pageContato .conteudo .container address {
   font-style: normal;
+}
+
+#pageContato .conteudo .container #frameMapa {
+  margin-top: 2.5rem;
 }
 
 /* --- Mobile --- */
