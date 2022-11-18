@@ -1,0 +1,28 @@
+#pageReferencias .container {
+  padding: 5rem 2rem;
+}
+
+#pageReferencias .container h1 {
+  margin-top: 0;
+  color: var(--primary-color-blue);
+}
+
+#pageReferencias .container p {
+  text-align: justify;
+}
+
+/* --- Conteudo --- */
+
+#pageReferencias .conteudo .container article {
+  margin-bottom: 1.5rem;
+}
+
+#pageReferencias .conteudo .container article span {
+  margin-right: 5px;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 768px) {
+  #pageReferencias .equipe .container .conteudo { }
+}

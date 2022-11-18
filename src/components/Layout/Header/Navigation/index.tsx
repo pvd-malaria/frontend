@@ -87,6 +87,11 @@ function Navigation() {
                   Cursos
                 </CustomLink>
               </li>
+              <li>
+                <CustomLink activeClassName="active" to="/producoes/referencias">
+                  Referências
+                </CustomLink>
+              </li>
             </ul>
         </li>
         <li>

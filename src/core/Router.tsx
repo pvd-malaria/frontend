@@ -12,6 +12,7 @@ import Classificacao from '../pages/Classificacao';
 import Dashboards from '../pages/Dashboards';
 import Inicial from '../pages/Inicial';
 import Preditivos from '../pages/Preditivos';
+import Referencias from '../pages/Producoes/Referencias';
 import Sobre from '../pages/Sobre';
 import UiGuide from '../pages/UiGuide';
 import VisualizacoesDetalhes from '../pages/Visualizacoes/Detalhes';
@@ -43,6 +44,7 @@ function Router() {
         <Route path="/producoes/cursos" element={<CursosLista/>} />
         <Route path="/producoes/cientificas/:id" element={<ArtigosDetalhes/>} />
         <Route path="/producoes/cientificas" element={<ArtigosLista/>} />
+        <Route path="/producoes/referencias" element={<Referencias/>} />
         <Route path="/ui-guide" element={<UiGuide/>} />
         <Route path="*" element={<Layout><h1>Page not found</h1></Layout>} />
       </Routes>
