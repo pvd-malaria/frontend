@@ -4,8 +4,17 @@ import { Interweave } from 'interweave';
 import { AccordionDetails, AccordionSummary, Accordion, AccordionActions } from '@mui/material';
 
 import jsonSobre from '../../contents/sobre.json';
-
 import Layout from '../../components/Layout';
+
+import EquipeLuciana from './images/luciana.jpg';
+import EquipeCarlos from './images/carlos.png';
+import EquipeBianca from './images/bianca.jpg';
+import EquipeJayme from './images/jayme.jpeg';
+import EquipeAlvaro from './images/alvaro.jpg';
+import EquipeEverton from './images/everton.jpeg';
+import EquipeTiago from './images/tiago.jpeg';
+import EquipeNatalia from './images/natalia.jpg';
+import EquipeVinícius from './images/vinicius.jpg';
 
 import './styles.css';
 
@@ -42,25 +51,28 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
+              <figure><img src={EquipeLuciana} alt="Foto Luciana" /></figure>
               <p className="nome">Profa. Dra. Luciana Correia Alves</p>
-              <p className="email">lcalves@unicamp.br</p>
-              <p className="bio">Pesquisador Principal. Chefe do Departamento de Demografia/IFCH - Universidade Estadual de Campinas.</p>
+              <a className="email" href="mailto:lcalves@unicamp.br">lcalves@unicamp.br</a>
+              <p className="bio">IFCH - NEPO - Unicamp</p>
             </div>
             <div className="membro">
-              <p className="nome">Prof. Me. Carlos Eduardo Beluzo</p>
-              <p className="email">beluzo@ifsp.edu.br</p>
-              <p className="bio">Co-PI. Professor no Instituto Federal de São Paulo na área de Informática e Ciência de Dados.</p>
+              <figure><img src={EquipeCarlos} alt="Foto Carlos" /></figure>
+              <p className="nome">Prof. Me. Carlos Beluzo</p>
+              <a className="email" href="mailto:beluzo@ifsp.edu.br">beluzo@ifsp.edu.br</a>
+              <p className="bio">IFSP Campinas</p>
             </div>
             <div className="membro">
-              <p className="nome">Dra. Bianca Cechetto Carlos</p>
-              <p className="email">bc.carlos@unesp.br</p>
-              <p className="bio">Co-PI. Pesquisadora Visitante da UNESP. Bacharelado e Mestrado em Ciências Biológicas, Doutora em Ciências na área Biologia da Relação 
-                Patógeno-Hospedeiro, e Pós-doc atuando com malária.</p>
+              <figure><img src={EquipeBianca} alt="Foto Bianca" /></figure>
+              <p className="nome">Bianca Cechetto Carlos</p>
+              <a className="email" href="mailto:bc.carlos@unesp.br">bc.carlos@unesp.br</a>
+              <p className="bio">NEPO - UNICAMP</p>
             </div>
             <div className="membro">
+              <figure><img src={EquipeJayme} alt="Foto Jayme" /></figure>
               <p className="nome">Prof. Dr. Jayme Augusto de Souza-Neto</p>
-              <p className="email">jaysneto@gmail.com</p>
-              <p className="bio">Co-PI. Professor Assistente de Genômica Funcional da UNESP. Geneticista e Virologista atuando com Saúde e Bióloga Molecular. Atualmente é Cientista Sênior na CEEZAD/K-State University.</p>
+              <a className="email" href="mailto:jayme.souza-neto@unesp.br">jayme.souza-neto@unesp.br</a>
+              <p className="bio">UNESP</p>
             </div>
           </div>
         </div>
@@ -70,30 +82,34 @@ function Sobre() {
 
           <div className="listMembros">
             <div className="membro">
+              <figure><img src={EquipeAlvaro} alt="Foto Alvaro" /></figure>
               <p className="nome">Prof. Dr. Álvaro de Oliveira D'Antona</p>
-              <p className="email">alvaro.dantona@fca.unicamp.br</p>
-              <p className="bio">Professor e Diretor Associado da Faculdade de Ciências Aplicadas da Unicamp. 
-                Formação em Ciências Humanas, Ciências Sociais Aplicadas, Economia, Antropologia, e, População e Ambiente.</p>
+              <a className="email" href="mailto:adantona@unicamp.br">adantona@unicamp.br</a>
+              <p className="bio">FCA - UNICAMP</p>
             </div>
             <div className="membro">
-              <p className="nome">Everton Josué da Silva</p>
-              <p className="email">evertonjsilva31@gmail.com</p>
-              <p className="bio">Pesquisadora Associada e Cientista de Dados. Professor no Instituto Federal de São Paulo na área de Informática e Ciência de Dados.</p>
+              <figure><img src={EquipeEverton} alt="Foto Everton" /></figure>
+              <p className="nome">Prof. Me. Everton Silva</p>
+              <a className="email" href="mailto:everton.silva@ifsp.edu.br">everton.silva@ifsp.edu.br</a>
+              <p className="bio">IFSP Campinas</p>
             </div>
             <div className="membro">
+              <figure><img src={EquipeTiago} alt="Foto Tiago" /></figure>
               <p className="nome">Prof. Dr. Tiago José de Carvalho</p>
-              <p className="email">tiagojc@gmail.com</p>
-              <p className="bio">Professor no Instituto Federal de São Paulo na área de Informática e Ciência de Dados.</p>
+              <a className="email" href="mailto:tiago.carvalho@inoviacorp.com">tiago.carvalho@inoviacorp.com</a>
+              <p className="bio">Inovia</p>
             </div>
             <div className="membro">
+              <figure><img src={EquipeNatalia} alt="Foto Natalia" /></figure>
               <p className="nome">Natália Martins Arruda</p>
-              <p className="email">natimarruda@gmail.com</p>
-              <p className="bio">Pesquisadora Associada e Cientista de Dados. Bacharel em Economia e Mestre em Demografia pela UNICAMP.</p>
+              <a className="email" href="mailto:natimarruda@gmail.com">natimarruda@gmail.com</a>
+              <p className="bio">NEPO - UNICAMP</p>
             </div>
             <div className="membro">
+              <figure><img src={EquipeVinícius} alt="Foto Vinícius" /></figure>
               <p className="nome">Vinícius de Souza Maia</p>
-              <p className="email">viniciusmaia108@gmail.com</p>
-              <p className="bio">Pesquisador Associado. Bacharel em Ciências Sociais e Mestre em Demografia pela UNICAMP.</p>
+              <a className="email" href="mailto:vinicius.de_souza_maia@ekh.lu.se">vinicius.de_souza_maia@ekh.lu.se</a>
+              <p className="bio">NEPO - UNICAMP</p>
             </div>
           </div>
         </div>
@@ -102,15 +118,15 @@ function Sobre() {
           <h4>Equipe técnica</h4>
 
           <div className="listMembros">
-            <div className="membro">
+            <div className="membro sem-foto">
               <p className="nome">Adriano Souza</p>
-              <p className="email">silva.souza.adriano@gmail.com</p>
-              <p className="bio">Analista de Desenvolvimento Web</p>
+              <a className="email" href="mailto:silva.souza.adriano@gmail.com">silva.souza.adriano@gmail.com</a>
+              {/* <p className="bio">Analista de Desenvolvimento Web</p> */}
             </div>
-            <div className="membro">
+            <div className="membro sem-foto">
               <p className="nome">Willianson Araújo</p>
-              <p className="email">contato@willianson.com.br</p>
-              <p className="bio">Analista de Desenvolvimento Web</p>
+              <a className="email" target="_blank" href="https://github.com/willianson" rel="noreferrer">@willianson</a>
+              {/* <p className="bio">Cientista da Computação</p> */}
             </div>
           </div>
         </div>
