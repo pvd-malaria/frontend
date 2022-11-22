@@ -5,7 +5,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 COPY . ./
 RUN yarn && yarn build
-COPY ./dist ./
 
 # nginx
 FROM nginx:stable-alpine as run
