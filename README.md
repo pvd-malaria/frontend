@@ -60,3 +60,4 @@ Basta baixar o projeto, instalar as dependências e executar o projeto usando ya
   $ yarn
   $ yarn start
 ```
+
