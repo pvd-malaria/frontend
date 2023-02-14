@@ -98,27 +98,6 @@ function Inicial() {
           </div>
         </div>
       </section>
-
-      <section className="publications">
-        <div className="container">
-          <h4>{jsonInicial.publicacoes.title}</h4>
-          <div className="items">
-            <article>
-              <Link to={jsonInicial.publicacoes.items[1].url}>
-                <h2>{jsonInicial.publicacoes.items[1].title}</h2>
-                <p>{jsonInicial.publicacoes.items[1].short}</p>
-              </Link>
-            </article>
-            <article>
-              <Link to={jsonInicial.publicacoes.items[2].url}>
-                <h2>{jsonInicial.publicacoes.items[2].title}</h2>
-                <p>{jsonInicial.publicacoes.items[2].short}</p>
-              </Link>
-            </article>
-          </div>
-          <LinkButton to={jsonInicial.publicacoes.url}>Veja todas publicações</LinkButton>
-        </div>
-      </section>
     </Layout>
   );
 }
