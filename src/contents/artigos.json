@@ -1,24 +1,63 @@
 {
   "page": {
     "title": "Produção Científica",
-    "description": "Encontram-se abaixo as principais contribuições científicas produzidas no âmbito do Projeto Malária, como artigos científicos, Preprint,  Apresentações em Congressos, divulgação científica e banco de dados vetores com acesso aberto."
+    "description": "Encontram-se abaixo as principais contribuições científicas produzidas no âmbito do Projeto Malária, como artigos científicos, Preprint,  Apresentações em Congressos, divulgação científica e banco de dados vetores com acesso aberto.",
   },
-
   "list": [
+    {
+      "id": "congresso_eniac_2022",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Novembro de 2022",
+      "title": "Modelos de Previsão para Avaliação de Casos de Malária na Amazônia Legal Brasileira",
+      "short":"Trabalho apresentado no Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) na sessão &quot;Inteligência Artificial e Computacional Aplicada à Saúde&quot;.",
+      "file": "/artigos/congresso_eniac_2022_PPT.pdf",
+      "urlPdf":"/artigos/congresso_eniac_2022.pdf",
+      "urlExternal":"https://sol.sbc.org.br/index.php/eniac/article/view/22822/22645"
+    },
     {
       "id": "congresso_acuns_2022",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "25 de junho de 2022",
+      "date": "Junho de 2022",
       "title": "Avanços, Perspectivas e Limitações da Vigilância Epidemiológica da Malária na Amazônia Brasileira.",
-      "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi 'Soluções baseadas em evidências para intensificar os desafios globais'",
-      "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon.pdf",
+      "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;",
+      "file": "/artigos/congresso_acuns_2022.html",
+      "urlPdf": "/artigos/congresso_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
+    },
+    {
+      "id": "paper_ml_acuns_2022",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Junho de 2022",
+      "title": "Malaria treatment scheme model recommendation using Machine Learning and routine surveillance data.",
+      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;.",
+      "file": "/artigos/paper_ml_acuns_2022_PPT.pdf",
+      "urlPdf": "/artigos/paper_ml_acuns_2022.pdf",
+      "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
+    },
+    {
+      "id": "paper_pca_acuns_2022",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Junho de 2022",
+      "title": "Malaria profiles in high risk incidence municipalities in the Brazilian Amazon using PCA",
+      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;.",
+      "file": "/artigos/paper_pca_acuns_2022_PPT.pdf",
+      "urlPdf": "/artigos/paper_pca_acuns_2022.pdf",
+      "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
+},
+    {
+      "id": "apresentacao_laddem_semana_demo",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Setembro de 2022",
+      "title": "Apresentação do Grupo de Pesquisa LADDEM na I Semana da Demografia da Unicamp.",
+      "short": "Apresentação realizada pela Profa. Dra. Luciana Correia Alves e pelo pesquisador Prof. Me. Carlos Eduardo Beluzo do Grupo de Pesquisa LADDEM na I Semana da Demografia da Unicamp.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/apresentacao_laddem_semana_demo.pdf",
+      "urlExternal": "https://www.youtube.com/watch?v=XnHkP3mshbk"
     },
     {
       "id": "artigo_data_viz_malaria",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "14 de setembro de 2021",
+      "date": "Setembro de 2021",
       "title": "Painéis de dados Epidemiológicos e Demográficos para Vigilância da Malária na Amazônia Brasileira, 2007-2019",
       "short": "O objetivo deste trabalho é propor visualizações interativas de dados relacionados à Vigilância da Malária na Amazônia brasileira, entre os anos de 2007-2019. Os dados são oriundos SIVEP-Malária. Usamos técnicas de visualização de dados para explorar aspectos epidemiológicos e demográficos da Vigilância da Malária. Esperamos que ferramentas desse tipo possam reduzir a carga de extração e análise de dados sobre a equipe de saúde e os formuladores de políticas locais.",
       "file": "/artigos/artigo_modelo.html",
@@ -28,9 +67,9 @@
     {
       "id": "artigo_fatores_tempo_tratamento",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "19 de abril de 2021",
+      "date": "Abril de 2021",
       "title": "Fatores no tempo para o tratamento da malária na Amazônia brasileira: uma análise de sobrevivência",
-      "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de P. vivax e metas de eliminação de P. falciparum, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
+      "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de <i>P. vivax</i> e metas de eliminação de <i>P. falciparum</i>, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/osf-preprint-bmc-factors-time-to-treatment.pdf",
       "urlExternal": "https://osf.io/zec7y/"
@@ -38,9 +77,9 @@
     {
       "id": "congresso_ipc_2021_ml",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "10 de dezembro 2021",
-      "title": "Machine Learning para recomendação de esquema de tratamento da malária usando dados de vigilância epdemiológica.",
-      "short": "Trabalho apresentado no IPC 2021 (International Population Conference) na sessão 'Uso e uso indevido de tratamentos preventivos e curativos: o papel dos fatores socioeconômicos.'",
+      "date": "Dezembro 2021",
+      "title": "Machine Learning for malaria treatment schema recommendation using routine surveillance data.",
+      "short": "Trabalho apresentado no International Population Conference 2021 na sessão &quot;Use and Misuse of Preventive and Curative Treatments: The Role of Socioeconomic Factors&quot;.",
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/IPC-2021-machine-learning-malaria-treatmente.pdf",
       "urlExternal": "https://ipc2021.popconf.org/sessions/130"
@@ -49,21 +88,81 @@
       "id": "congresso_ipc_2021_estrutura_etaria",
       "url": "/producoes/artigos/artigo_modelo",
       "date": "10 de dezembro 2021",
-      "title": "Estrutura etária e taxas de malária na Amazônia Legal: uma perspectiva demográfica.",
-      "short": "Trabalho apresentado no IPC 2021 (International Population Conference) na sessão 'Communicable Diseases in the Americas.'",
+      "title": "Age structure and malaria rates in the Legal Amazon: a demographic perspective.",
+      "short": "Trabalho apresentado no International Population Conference 2021 na sessão &quot;Communicable Diseases in the Americas.&quot;",
       "file": "/artigos/artigo_modelo.html",
       "urlPdf": "/artigos/Age-structure-and-malaria-rates-in-the-Legal-Amazon-a-demographic-perspective.pdf",
       "urlExternal": "https://ipc2021.popconf.org/sessions/87"
     },
     {
+      "id": "congresso_epi_perfis_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Novembro 2021",
+      "title": "Perfis De Malária Por Risco Do Município Utilizando Análise De Componentes Principais.",
+      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão &quot;Métodos e técnicas em estudos epidemiológicos&quot;.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/congresso_epi_perfis_2021.pdf",
+      "urlExternal": "https://proceedings.science/epi-2021/trabalhos/perfis-de-malaria-por-risco-do-municipio-utilizando-analise-de-componentes-princ"
+    },
+    {
+      "id": "congresso_epi_perfis_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Novembro 2021",
+      "title": "Fatores Associados Ao Tempo-Ao-Tratamento Da Malária Na Amazônia Brasileira. 2021.",
+      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão &quot;Métodos e técnicas em estudos epidemiológicos&quot;.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/congresso_epi_perfis_2021.pdf",
+      "urlExternal": "https://proceedings.science/epi-2021/trabalhos/fatores-associados-ao-tempo-ao-tratamento-da-malaria-na-amazonia-brasileira"
+    },
+    {
       "id": "congresso_paa_2021",
       "url": "/producoes/artigos/artigo_modelo",
-      "date": "10 de dezembro 2021",
-      "title": "PAA 2021",
-      "short": "PAA 2021",
+      "date": "Dezembro 2021",
+      "title": "Data Visualization for Epidemiological and Demographic Data for Malaria Surveillance in the Brazilian Amazon, 2007-2019.",
+      "short": "Trabalho apresentado no congresso Population Association of America Annual Meeting, 2021 na sessão &quot;Advances in Visualization of Demographic Data&quot;.",
       "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/paa_2021.pdf",
-      "urlExternal": "paa_2021"
+      "urlPdf": "/artigos/congresso_paa_2021.pdf",
+      "urlExternal": "https://submissions2.mirasmart.com/PAA2021/Itinerary/SearchHome.aspx"
+    },
+    {
+      "id": "congresso_malaria_day_pca_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Abril 2021",
+      "title": "Analysis of malaria profiles by risk of the municipality in the Brazilian Amazon Using Principal Component Analysis in 2011-2013 and 2016-2019",
+      "short": "Trabalho apresentado na World Malaria Day 2021 realizado pelo Johns Hopkins Malaria Research Institute.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/congresso_malaria_day_pca_2021.pdf",
+      "urlExternal": "https://malaria.jhsph.edu/_docs/events/2021-events/4-malaria-epidemiology.pdf"
+    },
+    {
+      "id": "congresso_malaria_day_tratment_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Abril 2021",
+      "title": "Factors in time to malaria treatment in the Brazilian Amazon: a survival analysis.",
+      "short": "Trabalho apresentado na World Malaria Day 2021 realizado pelo Johns Hopkins Malaria Research Institute.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/congresso_malaria_day_tratment_2021.pdf",
+      "urlExternal": "https://malaria.jhsph.edu/_docs/events/2021-events/4-malaria-epidemiology.pdf"
+    },
+    {
+      "id": "apresentacao_projeto_malaria_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Abril 2021",
+      "title": "Ciência de Dados como ferramenta de Vigilância Epidemiológica para Malária",
+      "short": "Apresentação do Projeto Malaria na VI Semana da Informática - Ciência de Dados como ferramenta de Vigilância Epidemiológica para Malária.",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/apresentacao_projeto_malaria_2021.pdf",
+      "urlExternal": "https://www.youtube.com/watch?v=WFBCotrhMVE"
+    },
+    {
+      "id": "apresentacao_projeto_malaria_alap_2021",
+      "url": "/producoes/artigos/artigo_modelo",
+      "date": "Abril 2021",
+      "title": "Apresentação do Projeto Malária em Evento Internacional.",
+      "short": "O Projeto integrou o Stand do Núcleo de Estudos de População (NEPO) da Unicamp no IX Congress of the Latin American Population Association (ALAP 2020).",
+      "file": "/artigos/artigo_modelo.html",
+      "urlPdf": "/artigos/apresentacao_projeto_malaria_alap_2021.pdf",
+      "urlExternal": "https://www.nepo.unicamp.br/alap/"
     }
   ]
 }
