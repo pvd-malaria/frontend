@@ -51,23 +51,6 @@ function Navigation() {
           </CustomLink>
         </li>
         <li className="hasSubmenu">
-          <CustomLink activeClassName="active" to="/modelos">
-            Modelos <KeyboardArrowDownIcon/>
-          </CustomLink>
-          <ul className="submenu">
-            <li>
-              <CustomLink activeClassName="active" to="/modelos/classificacao">
-                Classificação
-              </CustomLink>
-            </li>
-            <li>
-              <CustomLink activeClassName="active" to="/modelos/preditivos">
-                Preditivos
-              </CustomLink>
-            </li>
-          </ul>
-        </li>
-        <li className="hasSubmenu">
           <CustomLink activeClassName="active" to="/producoes">
             Produções <KeyboardArrowDownIcon/>
           </CustomLink>
