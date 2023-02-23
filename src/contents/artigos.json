@@ -1,18 +1,18 @@
 {
   "page": {
     "title": "Produção Científica",
-    "description": "Encontram-se abaixo as principais contribuições científicas produzidas no âmbito do Projeto Malária, como artigos científicos, Preprint,  Apresentações em Congressos, divulgação científica e banco de dados vetores com acesso aberto.",
+    "description": "Encontram-se abaixo as principais contribuições científicas produzidas no âmbito do Projeto Malária, como artigos científicos, Preprint,  Apresentações em Congressos, divulgação científica e banco de dados vetores com acesso aberto."
   },
   "list": [
     {
       "id": "congresso_eniac_2022",
-      "url": "/producoes/artigos/artigo_modelo",
+      "url": "/producoes/artigos/congresso_eniac_2022",
       "date": "Novembro de 2022",
       "title": "Modelos de Previsão para Avaliação de Casos de Malária na Amazônia Legal Brasileira",
-      "short":"Trabalho apresentado no Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) na sessão &quot;Inteligência Artificial e Computacional Aplicada à Saúde&quot;.",
+      "short": "Trabalho apresentado no Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) na sessão &quot;Inteligência Artificial e Computacional Aplicada à Saúde&quot;.",
       "file": "/artigos/congresso_eniac_2022_PPT.pdf",
-      "urlPdf":"/artigos/congresso_eniac_2022.pdf",
-      "urlExternal":"https://sol.sbc.org.br/index.php/eniac/article/view/22822/22645"
+      "urlPdf": "/artigos/congresso_eniac_2022.pdf",
+      "urlExternal": "https://sol.sbc.org.br/index.php/eniac/article/view/22822/22645"
     },
     {
       "id": "congresso_acuns_2022",
@@ -43,7 +43,7 @@
       "file": "/artigos/paper_pca_acuns_2022_PPT.pdf",
       "urlPdf": "/artigos/paper_pca_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
-},
+    },
     {
       "id": "apresentacao_laddem_semana_demo",
       "url": "/producoes/artigos/artigo_modelo",
