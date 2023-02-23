@@ -42,6 +42,17 @@
       "url": "https://arrudanat.shinyapps.io/PCA_dasboard/"
     },
     {
+      "id": "preditivos",
+      "title": "Predição de Casos de Malária",
+      "navigation_label": "Predição",
+      "description": [
+        "<p>Utilizamos modelos autoregressão integrada a média móvel (ARIMA) e rede neural com autoregressão (NNETAR) nos dados do SIVEP para estimar o número de casos em um determinado horizonte futuro em uma Unidade da Federação (UF), escolhidos pelo usuário. No teste ao lado, os modelos são treinados em anos anteriores (-2018) e os modelos com a melhor performance são utilizados para prever o número médio de casos e os intervalos de confiança de 95% para o ano de 2019. A principal diferença entre os modelos neste caso, é que o modelo ARIMA prediz melhor séries mais estáveis (menor variância), enquanto o NNETAR se ajusta melhor as séries mais instáveis. Por outro lado, o NNETAR é mais intensivo computacionalmente e produz intervalos de confiança menos plausíveis, razão pelo qual ele é menos recomendado em séries com variância menor (ex. Amapá). Ambos os modelos tem melhor performance preditiva nos horizontes de 1 e 12 meses, nos quais eles conseguem captar regularidades. Nenhum modelo é capaz de antecipar grandes variações ano-a-ano e as estimativas devem ser utilizadas como medidas da tendência observada em anos anteriores.</p>"
+      ],
+      "file": "",
+      "height": 800,
+      "url": "https://vinicius-maia.shinyapps.io/forecasts/"
+    }
+    {
       "id": "qualidade",
       "title": "Qualidade de Dados",
       "navigation_label": "Qualidade",
@@ -63,17 +74,6 @@
       "file": "",
       "height": 800,
       "url": "https://arrudanat.shinyapps.io/taxasMalaria"
-    },
-    {
-      "id": "preditivos",
-      "title": "Predição de Casos de Malária",
-      "navigation_label": "Predição",
-      "description": [
-        "<p>Utilizamos modelos autoregressão integrada a média móvel (ARIMA) e rede neural com autoregressão (NNETAR) nos dados do SIVEP para estimar o número de casos em um determinado horizonte futuro em uma Unidade da Federação (UF), escolhidos pelo usuário. No teste ao lado, os modelos são treinados em anos anteriores (-2018) e os modelos com a melhor performance são utilizados para prever o número médio de casos e os intervalos de confiança de 95% para o ano de 2019. A principal diferença entre os modelos neste caso, é que o modelo ARIMA prediz melhor séries mais estáveis (menor variância), enquanto o NNETAR se ajusta melhor as séries mais instáveis. Por outro lado, o NNETAR é mais intensivo computacionalmente e produz intervalos de confiança menos plausíveis, razão pelo qual ele é menos recomendado em séries com variância menor (ex. Amapá). Ambos os modelos tem melhor performance preditiva nos horizontes de 1 e 12 meses, nos quais eles conseguem captar regularidades. Nenhum modelo é capaz de antecipar grandes variações ano-a-ano e as estimativas devem ser utilizadas como medidas da tendência observada em anos anteriores.</p>"
-      ],
-      "file": "",
-      "height": 800,
-      "url": "https://vinicius-maia.shinyapps.io/forecasts/"
     }
   ]
 }
