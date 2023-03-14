@@ -4,6 +4,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CircularProgress from '@mui/material/CircularProgress';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import Download from '@mui/icons-material/Download';
 import Button from '@mui/material/Button';
 import { Interweave } from 'interweave';
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
@@ -16,13 +17,12 @@ import Fullscreen from '../../components/Fullscreen';
 
 import './styles.css';
 
-
 interface IDashboard {
   id: string,
   title: string,
   description: string[],
   height: number;
-  file: string,
+  file: any,
   url: string,
 }
 
@@ -87,32 +87,46 @@ function Dashboards() {
 
         <section className="wrapperDashboard">
           <div className="container">
-            <div className="dashboard">
-              <CircularProgress />
+            {dashboard.url && 
+              <>
+                <div className="dashboard">
+                  <CircularProgress />
 
-              <iframe 
-                id="iframeDashboard"
-                title={dashboard.title}
-                src={dashboard.url}
-                // TODO: src={`/visualizacoes/${dashboard.file}`}
-                width="100%"  
-                height={dashboard.height}
-                style={{ opacity: showIframe ? 1 : 0 }}
-                onLoad={onLoadDashboardFrame}
-                frameBorder="0"
-                scrolling="no"
-                sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
-              >
-              </iframe>
-            </div>
+                  
+                  <iframe 
+                    id="iframeDashboard"
+                    title={dashboard.title}
+                    src={dashboard.url}
+                    // TODO: src={`/visualizacoes/${dashboard.file}`}
+                    width="100%"  
+                    height={dashboard.height}
+                    style={{ opacity: showIframe ? 1 : 0 }}
+                    onLoad={onLoadDashboardFrame}
+                    frameBorder="0"
+                    scrolling="no"
+                    sandbox="allow-forms allow-scripts allow-downloads allow-same-origin allow-forms"
+                  >
+                  </iframe>
+                </div>
 
-            <Button variant="contained" onClick={fullscreenHandle}>
-              <FullscreenIcon/> &nbsp; 
-              Exibir em tela cheia
-            </Button>
-            <p><i>Em modo tela cheira, pressione ESC para voltar.</i></p>
+                <Button variant="contained" onClick={fullscreenHandle}>
+                  <FullscreenIcon/> &nbsp; 
+                  Exibir em tela cheia
+                </Button>
+
+                <p><i>Em modo tela cheira, pressione ESC para voltar.</i></p>
+              </>
+            }
+            
+            {dashboard.file && 
+              <Button className="LinkButton contained" variant="contained" onClick={fullscreenHandle} href={dashboard.file.url} download>
+                <Download/> &nbsp; 
+                {dashboard.file.label}
+              </Button>
+            }
           </div>
         </section>
+
       </Layout>
     );
   } else {
