@@ -63,26 +63,25 @@
   border-bottom-color: transparent !important;
 }
 
-#navigation ul li.hasSubmenu:active ul.submenu,
-#navigation ul li.hasSubmenu:hover ul.submenu {
-  display: block;
-}
-
 #navigation ul li.hasSubmenu:hover > a {
   pointer-events: none;
 }
 
 #navigation ul.submenu {
-  display: none;
+  opacity: 0;
   flex-direction: column;
   position: absolute;
   z-index: 11;
   top: calc(100% - 4px);
   padding: 0;
   min-width: 200px;
+  height: 0;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1rem);
+  transition: all 500ms;
+  overflow: hidden;
 }
 
 #navigation ul.submenu::before {
@@ -95,6 +94,14 @@
   border-style: solid;
   border-width: 0 7px 7px 7px;
   border-color: transparent transparent #fff transparent;
+}
+
+#navigation ul li.hasSubmenu:active ul.submenu,
+#navigation ul li.hasSubmenu:hover ul.submenu {
+  opacity: 1;
+  height: fit-content;
+  transform: translateY(0);
+  overflow: initial;
 }
 
 #navigation ul.submenu li {
