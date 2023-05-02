@@ -114,7 +114,7 @@ function Dashboards() {
                   Exibir em tela cheia
                 </Button>
 
-                <p><i>Em modo tela cheira, pressione ESC para voltar.</i></p>
+                <p><i>Em modo tela cheia, pressione ESC para voltar.</i></p>
               </>
             }
             
