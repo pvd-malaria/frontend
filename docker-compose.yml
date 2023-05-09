@@ -2,11 +2,9 @@ version: '3.7'
 
 services:
   frontend:
-    container_name: pvd-malaria
+    container_name: malaria-gninx
     build:
       context: .
     restart: always
     env_file:
       - .env
-    ports:
-      - '80:80'
