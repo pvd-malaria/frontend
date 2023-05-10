@@ -11,7 +11,7 @@ import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 
 import Layout from '../../components/Layout';
 
-import jsonDashboards from '../../contents/dashboards.json';
+import jsonDashboards from '../../contents/dashboards.json'; //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
 import LinkButton from '../../components/LinkButton';
 import Fullscreen from '../../components/Fullscreen';
 
@@ -23,7 +23,7 @@ interface IDashboard {
   description: string[],
   height: number;
   file: any,
-  url: string,
+  url: string, //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
 }
 
 
@@ -32,7 +32,7 @@ function Dashboards() {
   const { id } = useParams<"id">();
   const location = useLocation();
 
-  const [ dashboard, setDashboard ] = useState<IDashboard | undefined>();
+  const [ dashboard, setDashboard ] = useState<IDashboard | undefined>(); //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
   const [ open, setOpen ] = useState<boolean>(false);
   const [ showIframe, setShowIframe ] = useState<boolean>(false);
 
