@@ -15,7 +15,7 @@
       ],
       "file": "",
       "height": 800,
-      "url": "promalaria-shiny/shiny/importadosDash/"
+      "url": "https://malariainovia.hopto.org/shiny/importadosDash/"
     },
     {
       "id": "indicadores",
@@ -27,7 +27,7 @@
       ],
       "file": "",
       "height": 920,
-      "url": "promalaria-shiny/shiny/IndicadoresProcess/Eng/"
+      "url": "https://malariainovia.hopto.org/shiny/IndicadoresProcess/Eng/"
     },
     {
       "id": "pca",
@@ -39,7 +39,7 @@
       ],
       "file": "",
       "height": 865,
-      "url": "promalaria-shiny/shiny/PCA_Dashboard/"
+      "url": "https://malariainovia.hopto.org/shiny/PCA_Dashboard/"
     },
     {
       "id": "preditivos",
@@ -50,7 +50,7 @@
       ],
       "file": "",
       "height": 800,
-      "url": "promalaria-shiny/shiny/forecasts/"
+      "url": "https://malariainovia.hopto.org/shiny/forecasts/"
     },
     {
       "id": "qualidade",
@@ -61,7 +61,7 @@
       ],
       "file": "",
       "height": 550,
-      "url": "promalaria-shiny/shiny/qualidade/"
+      "url": "https://malariainovia.hopto.org/shiny/qualidade/"
     },
     {
       "id": "taxas",
@@ -73,7 +73,7 @@
       ],
       "file": "",
       "height": 800,
-      "url": "promalaria-shiny/shiny/MalariaRatesDash/"
+      "url": "https://malariainovia.hopto.org/shiny/MalariaRatesDash/"
     },
     {
       "id": "vetores-malaria",
