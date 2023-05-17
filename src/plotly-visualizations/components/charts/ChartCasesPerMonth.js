@@ -23,7 +23,7 @@ import { makeSvgObject, makePlotLayout } from '../../utils/utils';
 
 import data from '../../datasets/cases-per-month.json';
 
-const ChartCasesPerMonth = React.memo(({ hasLines }) => {
+const ChartCasesPerMonth = React.memo(({ hasLines, hasLogs }) => {
 	const [play, setPlay] = useState(false);
 	const [ww, setWw] = useState(null);
 
@@ -69,7 +69,7 @@ const ChartCasesPerMonth = React.memo(({ hasLines }) => {
 					row => row.uf === uf && row.year_notif === year && row.month === month
 				);
 				if(traceData[month].length !== 0) {
-					traceData[month] = traceData[month][0].n;
+					hasLogs ? traceData[month] = Math.log10(traceData[month][0].n): traceData[month] = traceData[month][0].n
 				}
 			}
 			
@@ -113,11 +113,11 @@ const ChartCasesPerMonth = React.memo(({ hasLines }) => {
 		}
 	}
 
-	const divId = 'chart-cases-per-month' + (hasLines ? '-lines' : '');
+	const divId = 'chart-cases-per-month' + (hasLines ? '-lines' : '') + (hasLogs ? '-log' : '');
 
 	const layout = makePlotLayout({
 		xtitle: 'Mês de notificação',
-		ytitle: 'Número de casos positivos',
+		ytitle: 'Número de casos positivos' + (hasLogs? ' (log)' : ''),
 		extra: {
 			'yaxis.range': [0, parseInt(maxValue * 1.15)],
 			autosize: true,
