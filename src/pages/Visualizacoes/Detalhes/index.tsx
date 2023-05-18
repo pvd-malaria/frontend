@@ -49,7 +49,7 @@ function VisualizacoesDetalhes() {
           <div className="container">
             {/* <Link to="/visualizacoes">Galeria de visualizações</Link> */}
             <h1>{visualization.title}</h1>
-            <p>{visualization.description}</p>
+            <p className='description'>{visualization.description}</p>
           </div>
         </section>      
 
