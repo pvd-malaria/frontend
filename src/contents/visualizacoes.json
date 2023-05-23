@@ -135,8 +135,8 @@
       "files": [
         {
           "title": "Proporção de Casos Positivos",
-          "file": "https://malariainovia.hopto.org/shiny/GGRidges/",
-          "height": 1000
+          "file": "Proporcao/proporcao-de-casos-positivos.html",
+          "height": 900
         }
       ]
     },
