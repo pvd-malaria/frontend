@@ -28,3 +28,8 @@ TODO.md
 .vscode/launch.json
 
 src/plotly-visualizations/node_modules
+
+src/bokeh-visualizations/node_modules
+src/bokeh-visualizations/.parcel-cache
+src/bokeh-visualizations/dist
+
