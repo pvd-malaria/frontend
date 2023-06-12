@@ -20,7 +20,7 @@
       "date": "Junho de 2022",
       "title": "Avanços, Perspectivas e Limitações da Vigilância Epidemiológica da Malária na Amazônia Brasileira.",
       "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;",
-      "file": "/artigos/congresso_acuns_2022.html",
+      "file": "/artigos/congresso_acuns_2022_PPT.pdf",
       "urlPdf": "/artigos/congresso_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
     },
@@ -50,7 +50,7 @@
       "date": "Setembro de 2022",
       "title": "Apresentação do Grupo de Pesquisa LADDEM na I Semana da Demografia da Unicamp.",
       "short": "Apresentação realizada pela Profa. Dra. Luciana Correia Alves e pelo pesquisador Prof. Me. Carlos Eduardo Beluzo do Grupo de Pesquisa LADDEM na I Semana da Demografia da Unicamp.",
-      "file": "/artigos/artigo_modelo.html",
+      "file": "/artigos/apresentacao_laddem_semana_demo_PPT.pdf",
       "urlPdf": "/artigos/apresentacao_laddem_semana_demo.pdf",
       "urlExternal": "https://www.youtube.com/watch?v=XnHkP3mshbk"
     },
@@ -60,8 +60,8 @@
       "date": "Setembro de 2021",
       "title": "Painéis de dados Epidemiológicos e Demográficos para Vigilância da Malária na Amazônia Brasileira, 2007-2019",
       "short": "O objetivo deste trabalho é propor visualizações interativas de dados relacionados à Vigilância da Malária na Amazônia brasileira, entre os anos de 2007-2019. Os dados são oriundos SIVEP-Malária. Usamos técnicas de visualização de dados para explorar aspectos epidemiológicos e demográficos da Vigilância da Malária. Esperamos que ferramentas desse tipo possam reduzir a carga de extração e análise de dados sobre a equipe de saúde e os formuladores de políticas locais.",
-      "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019.pdf",
+      "file": "/artigos/malaria_dataviz_paper_PPT.pdf",
+      "urlPdf": "/artigos/malaria_dataviz_paper.pdf",
       "urlExternal": "https://www.longdom.org/abstract/data-visualization-for-epidemiological-and-demographic-data-for-malaria-surveillance-in-the-brazilian-amazon-20072019-90332.html"
     },
     {
@@ -70,8 +70,8 @@
       "date": "Abril de 2021",
       "title": "Fatores no tempo para o tratamento da malária na Amazônia brasileira: uma análise de sobrevivência",
       "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de <i>P. vivax</i> e metas de eliminação de <i>P. falciparum</i>, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
-      "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/osf-preprint-bmc-factors-time-to-treatment.pdf",
+      "file": "/artigos/malaria_fatores_tempo_tratamento_PPT.pdf",
+      "urlPdf": "/artigos/malaria_fatores_tempo_tratamento.pdf",
       "urlExternal": "https://osf.io/zec7y/"
     },
     {
@@ -80,8 +80,8 @@
       "date": "Dezembro 2021",
       "title": "Machine Learning for malaria treatment schema recommendation using routine surveillance data.",
       "short": "Trabalho apresentado no International Population Conference 2021 na sessão &quot;Use and Misuse of Preventive and Curative Treatments: The Role of Socioeconomic Factors&quot;.",
-      "file": "/artigos/artigo_modelo.html",
-      "urlPdf": "/artigos/IPC-2021-machine-learning-malaria-treatmente.pdf",
+      "file": "/artigos/congresso_ipc_2021_ml_PPT.pdf",
+      "urlPdf": "/artigos/congresso_ipc_2021_ml.pdf",
       "urlExternal": "https://ipc2021.popconf.org/sessions/130"
     },
     {
