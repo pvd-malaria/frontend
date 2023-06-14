@@ -19,7 +19,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Junho de 2022",
       "title": "Avanços, Perspectivas e Limitações da Vigilância Epidemiológica da Malária na Amazônia Brasileira.",
-      "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;",
+      "short": "Painel apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi \"Soluções baseadas em evidências para intensificar os desafios globais\".",
       "file": "/artigos/congresso_acuns_2022.pdf",
       "urlPdf": "/artigos/congresso_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
@@ -29,7 +29,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Junho de 2022",
       "title": "Malaria treatment scheme model recommendation using Machine Learning and routine surveillance data.",
-      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;.",
+      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi \"Soluções baseadas em evidências para intensificar os desafios globais\".",
       "file": "/artigos/paper_ml_acuns_2022_PPT.pdf",
       "urlPdf": "/artigos/paper_ml_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
@@ -39,7 +39,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Junho de 2022",
       "title": "Malaria profiles in high risk incidence municipalities in the Brazilian Amazon using PCA",
-      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi &quot;Soluções baseadas em evidências para intensificar os desafios globais&quot;.",
+      "short": "Artigo apresentado no Encontro Anual do Conselho Acadêmico da ONU em Genebra na Suiça (ACUNS Annual Meeting 2022). A temática do congresso para o ano de 2022 foi \"Soluções baseadas em evidências para intensificar os desafios globais\".",
       "file": "/artigos/paper_pca_acuns_2022_PPT.pdf",
       "urlPdf": "/artigos/paper_pca_acuns_2022.pdf",
       "urlExternal": "https://2022am.acuns.org/session/advances-perspectives-and-limitations-for-malaria-epidemiological-surveillance-in-the-brazilian-amazon/"
@@ -69,7 +69,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Abril de 2021",
       "title": "Fatores no tempo para o tratamento da malária na Amazônia brasileira: uma análise de sobrevivência",
-      "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de <i>P. vivax</i> e metas de eliminação de <i>P. falciparum</i>, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
+      "short": "A malária continua sendo uma das doenças infecciosas mais relevantes no Brasil e no mundo. Devido à alta prevalência de <em>P. vivax</em> e metas de eliminação de <em>P. falciparum</em>, o Programa Brasileiro de Eliminação da Malária deu alta prioridade ao tratamento oportuno. Os casos no país estão concentrados na região da Amazônia Legal, com diagnóstico e tratamento fornecidos gratuitamente pelo governo por meio de seu sistema público de saúde, mas permanecem muitas questões relevantes sobre heterogeneidade de risco e acesso ao tratamento.",
       "file": "/artigos/malaria_fatores_tempo_tratamento.pdf",
       "urlPdf": "/artigos/malaria_fatores_tempo_tratamento.pdf",
       "urlExternal": "https://osf.io/zec7y/"
@@ -79,7 +79,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Dezembro 2021",
       "title": "Machine Learning for malaria treatment schema recommendation using routine surveillance data.",
-      "short": "Trabalho apresentado no International Population Conference 2021 na sessão &quot;Use and Misuse of Preventive and Curative Treatments: The Role of Socioeconomic Factors&quot;.",
+      "short": "Trabalho apresentado no International Population Conference 2021 na sessão \"Use and Misuse of Preventive and Curative Treatments: The Role of Socioeconomic Factors\".",
       "file": "/artigos/congresso_ipc_2021_ml_PPT.pdf",
       "urlPdf": "/artigos/congresso_ipc_2021_ml.pdf",
       "urlExternal": "https://ipc2021.popconf.org/sessions/130"
@@ -89,7 +89,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "10 de dezembro 2021",
       "title": "Age structure and malaria rates in the Legal Amazon: a demographic perspective.",
-      "short": "Trabalho apresentado no International Population Conference 2021 na sessão &quot;Communicable Diseases in the Americas.&quot;",
+      "short": "Trabalho apresentado no International Population Conference 2021 na sessão \"Communicable Diseases in the Americas\".",
       "file": "/artigos/congresso_ipc_2021_age_strc_ppt.html",
       "urlPdf": "/artigos/congresso_ipc_2021_age_strc.pdf",
       "urlExternal": "https://ipc2021.popconf.org/sessions/87"
@@ -99,7 +99,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Novembro 2021",
       "title": "Perfis De Malária Por Risco Do Município Utilizando Análise De Componentes Principais.",
-      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão &quot;Métodos e técnicas em estudos epidemiológicos&quot;.",
+      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão \"Métodos e técnicas em estudos epidemiológicos\".",
       "file": "/artigos/congresso_epi_perfis_2021.pdf",
       "urlPdf": "/artigos/paper_pca_acuns_2022.pdf",
       "urlExternal": "https://proceedings.science/epi-2021/trabalhos/perfis-de-malaria-por-risco-do-municipio-utilizando-analise-de-componentes-princ"
@@ -109,7 +109,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Novembro 2021",
       "title": "Fatores Associados Ao Tempo-Ao-Tratamento Da Malária Na Amazônia Brasileira. 2021.",
-      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão &quot;Métodos e técnicas em estudos epidemiológicos&quot;.",
+      "short": "Trabalho apresentado no 11&#186; Congresso Brasileiro de Epidemiologia - EPI 2021 na sessão \"Métodos e técnicas em estudos epidemiológicos\".",
       "file": "/artigos/congresso_epi_fatores_2021.pdf",
       "urlPdf": "/artigos/malaria_fatores_tempo_tratamento.pdf",
       "urlExternal": "https://proceedings.science/epi-2021/trabalhos/fatores-associados-ao-tempo-ao-tratamento-da-malaria-na-amazonia-brasileira"
@@ -119,7 +119,7 @@
       "url": "/producoes/artigos/artigo_modelo",
       "date": "Dezembro 2021",
       "title": "Data Visualization for Epidemiological and Demographic Data for Malaria Surveillance in the Brazilian Amazon, 2007-2019.",
-      "short": "Trabalho apresentado no congresso Population Association of America Annual Meeting, 2021 na sessão &quot;Advances in Visualization of Demographic Data&quot;.",
+      "short": "Trabalho apresentado no congresso Population Association of America Annual Meeting, 2021 na sessão \"Advances in Visualization of Demographic Data\".",
       "file": "/artigos/congresso_paa_2021_ppt.pdf",
       "urlPdf": "/artigos/congresso_paa_2021.pdf",
       "urlExternal": "https://submissions2.mirasmart.com/PAA2021/Itinerary/SearchHome.aspx"
