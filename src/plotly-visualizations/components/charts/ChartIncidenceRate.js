@@ -18,7 +18,7 @@ import { makeSvgObject, makePlotLayout, ColorWay } from '../../utils/utils';
 
 import data from '../../datasets/incidence.json';
 
-const ChartIncidenceRate = React.memo(() => {
+const ChartIncidenceRate = React.memo(({hasLogs}) => {
 	const [ww, setWw] = useState(null);
 
 	if(ww === null) setWw(window.innerWidth);
@@ -62,7 +62,10 @@ const ChartIncidenceRate = React.memo(() => {
 				else {
 					k = k[year];
 					if(k == null) k = 0;
-					else yax.push(k);
+					else{
+						hasLogs ? k = Math.log10(k): k
+						yax.push(k)
+					}
 				}
 				texts.push(municipio);
 			}
@@ -92,13 +95,13 @@ const ChartIncidenceRate = React.memo(() => {
 		maxValue = Math.max(traceMax, maxValue);
 	}
 
-	const divId = 'chart-rates';
+	const divId = 'chart-rates' + (hasLogs ? '-log' : '');
 
 	let layout = makePlotLayout({
 		xtitle: 'Ano',
-		ytitle: 'Taxa de Incidência' + (ww <= 500 ? '<br>' : ' ') + 'por mil habitantes',
+		ytitle: 'Taxa de Incidência' + (ww <= 500 ? '<br>' : ' ') + 'por mil habitantes' + (hasLogs ? ' (log)' : ''),
 		extra: {
-			'yaxis.range': [0, parseInt(maxValue * 1.15)],
+			'yaxis.range': [hasLogs? -(parseInt(maxValue * 1.15)) : 0 , parseInt(maxValue * 1.15)],
 			'xaxis.dtick': 1,
 			'xaxis.range': [minYear - 0.5, maxYear + 0.5],
 			'xaxis.tickangle': -45,
@@ -114,7 +117,7 @@ const ChartIncidenceRate = React.memo(() => {
 
 	return (
 		<>
-			<div style={{width: '100%', height: 550, display: 'flex'}}>
+			<div style={{width: '100%', height: 530, display: 'flex'}}>
 				<Plot
 					divId={divId}
 					data={traces}

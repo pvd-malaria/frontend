@@ -27,6 +27,10 @@ function ArtigosLista() {
                   linkTo={item.url}
                   short={item.short}
                   title={item.title}
+                  pdf={item.file}
+                  urlPdf={item.urlPdf}
+                  urlExternal={item.urlExternal}
+                  id={item.id}
                 />
               )
           }

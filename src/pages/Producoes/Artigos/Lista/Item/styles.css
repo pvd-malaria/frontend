@@ -42,6 +42,21 @@
   color: var(--color-black-light);
 }
 
+#pageArtigosLista p.short{
+  padding-bottom: 5rem;
+}
+
+#pageArtigosLista div.buttonsContainer {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 1rem;
+}
+
+#pageArtigosLista Button {
+  
+}
+
 /* --- MouseOver --- */
 
 #pageArtigosLista article.listItem > a:hover {

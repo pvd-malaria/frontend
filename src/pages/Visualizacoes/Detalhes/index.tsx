@@ -6,15 +6,15 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 import Layout from '../../../components/Layout';
 
-import jsonVisualizacoes from '../../../contents/visualizacoes.json';
+import jsonVisualizacoes from '../../../contents/visualizacoes.json'; //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
 import LinkButton from '../../../components/LinkButton';
 
 import './styles.css';
 
 interface IFile {
   title: string;
-  file: string;
-  height: number;
+  file: string; //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
+  height: number; 
 }
 
 interface IVisualization {
@@ -30,7 +30,7 @@ interface IVisualization {
 
 function VisualizacoesDetalhes() {
 
-  const [ visualization, setVisualization ] = useState<IVisualization>();
+  const [ visualization, setVisualization ] = useState<IVisualization>(); //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
   const { id } = useParams<"id">();
 
 
@@ -49,7 +49,7 @@ function VisualizacoesDetalhes() {
           <div className="container">
             {/* <Link to="/visualizacoes">Galeria de visualizações</Link> */}
             <h1>{visualization.title}</h1>
-            <p>{visualization.description}</p>
+            <p className='description'>{visualization.description}</p>
           </div>
         </section>      
 

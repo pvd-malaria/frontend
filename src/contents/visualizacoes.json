@@ -135,7 +135,7 @@
       "files": [
         {
           "title": "Proporção de Casos Positivos",
-          "file": "http://promalaria.nepo.unicamp.br:8008/GGRidges",
+          "file": "Proporcao/proporcao-de-casos-positivos.html",
           "height": 1000
         }
       ]

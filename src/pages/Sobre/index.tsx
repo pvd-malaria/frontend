@@ -15,6 +15,8 @@ import EquipeEverton from './images/everton.jpeg';
 import EquipeTiago from './images/tiago.jpeg';
 import EquipeNatalia from './images/natalia.jpg';
 import EquipeVinícius from './images/vinicius.jpg';
+import EquipeAdriano from './images/adriano.jpeg';
+import EquipeWillianson from './images/willianson.jpg';
 
 import './styles.css';
 
@@ -118,15 +120,17 @@ function Sobre() {
           <h4>Equipe técnica</h4>
 
           <div className="listMembros">
-            <div className="membro sem-foto">
+            <div className="membro">
+              <figure><img src={EquipeAdriano} alt="Foto Adriano" /></figure>
               <p className="nome">Adriano Souza</p>
               <a className="email" href="mailto:silva.souza.adriano@gmail.com">silva.souza.adriano@gmail.com</a>
-              {/* <p className="bio">Analista de Desenvolvimento Web</p> */}
+              <p className="bio">Analista de Desenvolvimento Web</p>
             </div>
-            <div className="membro sem-foto">
+            <div className="membro">
+              <figure><img src={EquipeWillianson} alt="Foto Willianson" /></figure>
               <p className="nome">Willianson Araújo</p>
               <a className="email" target="_blank" href="https://github.com/willianson" rel="noreferrer">@willianson</a>
-              {/* <p className="bio">Cientista da Computação</p> */}
+              <p className="bio">Cientista da Computação</p>
             </div>
           </div>
         </div>
