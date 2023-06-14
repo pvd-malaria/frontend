@@ -1,5 +1,6 @@
 # build
 FROM node:18-alpine as build
+RUN apk install --no-cache --virtual .builds-deps build-base python3 make g++
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
