@@ -28,6 +28,8 @@ Novas versões são definidas quando:
 
 ## Deploy
 
+**IMPORTANTE**: COLOQUE OS CERTIFICADOS SSL (cert.pem E key.pem, AMBOS COM chmod 0600) DENTRO DO DIRETÓRIO `certs` OU O DEPLOY VAI FALHAR.
+
 Automático através do Git Actions que monitora branchs: develop e master.
 
 A cada novo commit o projeto é compilado e publicado no Firebase Hosting (GCP) e seu respectivo destino.
@@ -60,4 +62,3 @@ Basta baixar o projeto, instalar as dependências e executar o projeto usando ya
   $ yarn
   $ yarn start
 ```
-
