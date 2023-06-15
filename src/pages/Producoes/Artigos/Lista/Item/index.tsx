@@ -45,7 +45,7 @@ function Item(props: ItemProps) {
       <Link to={props.linkTo} style={{ position: "relative" }} onClick={(e) => { e.preventDefault() }}>
         <h2>{props.title}</h2>
         <p className="date">{props.date}</p>
-        <p className="short">{props.short}</p>
+        <p className="short" dangerouslySetInnerHTML={{ __html: props.short }}></p>
         <div className="buttonsContainer">
           <Button
             variant="contained"
