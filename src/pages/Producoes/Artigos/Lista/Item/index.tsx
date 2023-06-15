@@ -74,7 +74,7 @@ function Item(props: ItemProps) {
             }}
             disableElevation
             onClick={() => {
-              window.open(props.linkTo, '_blank');
+              window.open(props.pdf, '_blank');
             }}
           >
             Apresentação
