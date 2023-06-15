@@ -14,7 +14,7 @@ jobs:
     - name: Create private key and certificates
       run:
        echo "$SERVER_PRIVATE_KEY" > private_key && chmod 0600 private_key;
-       echo "$SSL_CERTIFICATE_PEM" > cert.pem;
+       echo "$SSL_CERT_PEM" > cert.pem;
        echo "$SSL_KEY_PEM" > key.pem;
     - name: Set up deploy script
       run: |
