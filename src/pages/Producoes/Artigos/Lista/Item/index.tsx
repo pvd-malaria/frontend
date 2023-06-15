@@ -58,7 +58,7 @@ function Item(props: ItemProps) {
             }}
             disableElevation
             onClick={() => {
-              console.log(props.pdf)
+              downloadFile(props.urlPdf);
             }}
           >
             PDF
@@ -74,7 +74,7 @@ function Item(props: ItemProps) {
             }}
             disableElevation
             onClick={() => {
-              downloadFile(props.urlPdf)
+              window.open(props.pdf, '_blank');
             }}
           >
             Apresentação
