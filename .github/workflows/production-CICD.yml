@@ -14,6 +14,8 @@ jobs:
     - name: Create private key and certificates
       run:
        echo "$SERVER_PRIVATE_KEY" > private_key && chmod 0600 private_key;
+       echo "$SSL_CERTIFICATE_PEM" > cert.pem;
+       echo "$SSL_KEY_PEM" > key.pem;
     - name: Set up deploy script
       run: |
         cat << EOF > deploy_script
@@ -21,13 +23,13 @@ jobs:
           cmd1="rm -rf /home/ubuntu/pvd-malaria";
           cmd2="GIT_SSH_COMMAND=\"ssh -i /home/ubuntu/.ssh/deploy\" git clone -b production --single-branch git@github.com:pvd-malaria/frontend.git /home/ubuntu/pvd-malaria";
           cmd3="mkdir /home/ubuntu/pvd-malaria/certs";
+          ssh -o StrictHostKeyChecking=no -i private_key ubuntu@54.144.250.164 "\$cmd1; \$cmd2; \$cmd3;"
+          scp -o StrictHostKeyChecking=no -i private_key cert.pem ubuntu@54.144.250.164:/home/ubuntu/pvd-malaria/certs/cert.pem
+          scp -o StrictHostKeyChecking=no -i private_key key.pem ubuntu@54.144.250.164:/home/ubuntu/pvd-malaria/certs/key.pem
           cmd4="cd /home/ubuntu/pvd-malaria";
           cmd5="chmod 0600 certs/*.pem";
           cmd6="docker-compose rm -sfv frontend";
           cmd7="docker-compose up -d --build";
-          ssh -o StrictHostKeyChecking=no -i private_key ubuntu@54.144.250.164 "\$cmd1; \$cmd2; \$cmd3;"
-          scp -o StrictHostKeyChecking=no -i private_key cert.pem ubuntu@54.144.250.164:/home/ubuntu/pvd-malaria/certs/cert.pem
-          scp -o StrictHostKeyChecking=no -i private_key key.pem ubuntu@54.144.250.164:/home/ubuntu/pvd-malaria/certs/key.pem
           ssh -o StrictHostKeyChecking=no -i private_key ubuntu@54.144.250.164 "\$cmd4; \$cmd5; \$cmd6; \$cmd7;"
         EOF
         chmod +x ./deploy_script
