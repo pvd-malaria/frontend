@@ -3,11 +3,138 @@
     "title": "Referências",
     "description": ""
   },
-
   "list": [
     {
       "short": "Freire, F. H. M. de A., Gonzaga, M. R., & Gomes, M. M. F. (2020). Projeções populacionais por sexo e idade para pequenas áreas no Brasil. Revista Latinoamericana De Población, 14(26), 124-149.",
       "url": "http://revistarelap.org/index.php/relap/article/view/231"
+    },
+    {
+      "short": "Barbosa S, Gozze AB, Lima NF, Batista CL, Bastos MS, Nicolete VC, Fontoura PS, Gonçalves RM, Viana SAS, Menezes MJ, Scopel KKG, Cavasini CE, Malafronte RS, Silva-Nunes M, Vinetz JM, Castro MC, Ferreira MU. Epidemiology of Disappearing Plasmodium vivax Malaria: A Case Study in Rural Amazonia. PLOS Neglected Tropical Diseases 2014, 8(8): e3109. doi:10.1371/journal.pntd.0003109.",
+      "url": "https://doi.org/10.1371/journal.pntd.0003109"
+    },
+    {
+      "short": "Andrews K. Information Visualisation. [S.l.]: Graz University of Technology, 2011. 88 p.",
+      "url": ""
+    },
+    {
+      "short": "Bishop C. M. Pattern Recognition and Machine Learning. Secaucus, NJ, USA: Springer-Verlag New York, Inc., 2006. ISBN 0387310738.",
+      "url": ""
+    },
+    {
+      "short": "Breiman L.: Random forests.  Machine learning 45 (1), 5–32. 2001.",
+      "url": ""
+    },
+    {
+      "short": "Carlos BC, Rona LDP, Christophides GK, Souza-Neto JA. A comprehensive analysis of malaria transmission in Brazil. Pathog Glob Health. 2019;113(1):1–13. doi:10.1080/20477724.2019.1581463.",
+      "url": "https://doi.org/10.1080/20477724.2019.1581463"
+    },
+    {
+      "short": "Castro MC, Maheu-Giroux M, Chiyaka C, Singer BH. Malaria Incidence Rates from Time Series of 2-wave Panel Surveys. PLoS Computational Biology. 2016. 12(8): e1005065. doi:10.1371/journal.pcbi.1005065. PMID: 27509368.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1005065"
+    },
+    {
+      "short": "Chen T., Guestrin C.: Xgboost: A scalable tree boosting system.  In: Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, pp. 785–794. ACM. 2016.",
+      "url": ""
+    },
+    {
+      "short": "Cortes C., Vapnik V.: Support-vector networks. Machine learning 20 (3), 273–297 (1995).",
+      "url": ""
+    },
+    {
+      "short": "Datasus. Departamento de Informática do SUS. Ministério da Saúde. Disponível em: http://datasus.saude.gov.br/. Acesso em 14 de outubro de 2019.",
+      "url": "http://datasus.saude.gov.br/"
+    },
+    {
+      "short": "Deane LM. Malaria studies and control in Brazil. Am J Trop Med Hyg. 1988 Mar;38(2):223–230. PubMed PMID: 3281486.",
+      "url": ""
+    },
+    {
+      "short": "Ester M. et al. A density-based algorithm for discovering clusters a density-based algorithm for discovering clusters in large spatial databases with noise. In: Proceedings of the Second International Conference on Knowledge Discovery and Data Mining. AAAI Press, 1996. (KDD’96), p. 226–231. Disponível em: http://dl.acm.org/citation.cfm?id=3001460.3001507.",
+      "url": "http://dl.acm.org/citation.cfm?id=3001460.3001507"
+    },
+    {
+      "short": "Fearnside PM. Deforestation in Brazilian amazonia: history, rates, and consequences. Conserv Biol. 2005;19(3):680–688.",
+      "url": ""
+    },
+    {
+      "short": "Ferreira MU, Castro MC. Challenges for malaria elimination in Brazil. Malaria Journal. 2016; 15:284. doi: 10.1186/s12936-016-1335-1. PMCID: PMC4875681.",
+      "url": "https://doi.org/10.1186/s12936-016-1335-1"
+    },
+    {
+      "short": "Ferreira MU, Castro MC. Challenges for malaria elimination in Brazil. MalariaJournal. 2016; 15:284. doi: 10.1186/s12936-016-1335-1. PMCID:PMC4875681.",
+      "url": "https://doi.org/10.1186/s12936-016-1335-1"
+    },
+    {
+      "short": "Fontoura PS, Finco BF, Lima NF, Carvalho Jr. JF, Vinetz JM, Castro MC, Ferreira MU. Reactive Case Detection for Plasmodium vivax Malaria Elimination in Rural Amazonia. PLoS Neglected Tropical Diseases. 2016;10(12):e0005221. doi:10.1371/journal.pntd.0005221. PMID: 27941968.",
+      "url": "https://doi.org/10.1371/journal.pntd.0005221"
+    },
+    {
+      "short": "Hosmer Jr DW, Lemeshow, S, Sturdivant RX: Applied logistic regression, vol. 398. John Wiley & Sons, 2013.",
+      "url": ""
+    },
+    {
+      "short": "Hsieh MH, Hsieh MJ, Chen CM, Hsieh, CC, Chao CM, Lai CC: Comparison of  machine  learning  models  for  the  prediction  of  mortality  of  patients  with  unplanned extubation in intensive care units.  Scientific Reports 8 (1), 2045–2322. 2018.",
+      "url": ""
+    },
+    {
+      "short": "Jimenez-Munoz JC, Mattar C, Barichivich J, et al. Recordbreaking warming and extreme drought in the Amazon rainforest during the course of El Nino 2015-2016. Sci Rep. 2016 Sep 8;6:33130. PubMed PMID: 27604976; PubMed Central PMCID: PMCPMC5015046.",
+      "url": ""
+    },
+    {
+      "short": "Lundberg SM, Lee SI. “A Unified Approach to Interpreting Model Predictions”, Neural Information Processing Systems (NIPS). 2017.",
+      "url": ""
+    },
+    {
+      "short": "Marques AC. Human migration and the spread of malaria in Brazil. Parasitol Today. 1987;3. DOI:10.1016/0169-4758(87)90170-0.",
+      "url": ""
+    },
+    {
+      "short": "Oliveira-Ferreira J, Lacerda MV, Brasil P, et al. Malaria in Brazil: an overview. Malar J. 2010 Apr 30;9(1):115. PubMed PMID: 20433744; PubMed Central PMCID: PMCPMC2891813.",
+      "url": "https://doi.org/10.1186/1475-2875-9-115"
+    },
+    {
+      "short": "Oliveira-Ferreira J, Lacerda MV, Brasil P, et al. Malaria in Brazil: an overview.Malar J. 2010 Apr 30;9(1):115. PubMed PMID: 20433744; PubMed Central PMCID: PMCPMC2891813.",
+      "url": "https://doi.org/10.1186/1475-2875-9-115"
+    },
+    {
+      "short": "ONU. OMS: Brasil e Venezuela respondem por mais da metade dos casos de malária nas Américas. Disponível em: https://nacoesunidas.org/oms-brasil-e-venezuela-respondem-por-mais-da-metade-dos-casos-de-malaria-nas-americas/. Acesso em 14 de outubro de 2017.",
+      "url": "https://nacoesunidas.org/oms-brasil-e-venezuela-respondem-por-mais-da-metade-dos-casos-de-malaria-nas-americas/"
+    },
+    {
+      "short": "Podda M, Bacciu D, Micheli A, Bellu R, Placidi G, Gagliardi L: A machine learning approach to estimating preterm infants survival: development of the preterm infants survival assessment (pisa) predictor.  Scientific Reports 8 (1), 2045–2322. 2018.",
+      "url": ""
+    },
+    {
+      "short": "Ribeiro MT, Sameer S, and Carlos G. \"Why should i trust you?: Explaining the predictions of any classifier.\" Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 2016.",
+      "url": ""
+    },
+    {
+      "short": "Rokach, Lior, and Oded Maimon. \"Clustering methods.\" Data mining and knowledge discovery handbook. Springer US, 2005. 321-352.",
+      "url": ""
+    },
+    {
+      "short": "Silva LHP, Oliveira VEG. O desafio da malária: o caso brasileiro e o que se pode esperar dos progressos da era genômica. Ciênc. Saúde Coletiva, Rio de Janeiro, v. 9, n. 2, 2004. p. 363-379.",
+      "url": ""
+    },
+    {
+      "short": "Silva NS, da Silva-Nunes M, Malafronte RS, et al. Epidemiology and control of frontier malaria in Brazil: lessons from community-based studies in rural Amazonia. Trans R Soc Trop Med Hyg. 2010 Nov;104(11):343–350. PubMed PMID: 20691530.",
+      "url": "https://doi.org/10.1016/j.trstmh.2010.05.013"
+    },
+    {
+      "short": "Silva NS, Silva-Nunes M, Malafronte RS, et al. Epidemiology and control of frontier malaria in Brazil: lessons from community-based studies in rural Amazonia. Trans R Soc Trop Med Hyg. 2010 Nov;104(11):343–350. PubMed PMID: 20691530.",
+      "url": "https://doi.org/10.1016/j.trstmh.2010.05.013"
+    },
+    {
+      "short": "Souza-Santos R, Oliveira MR, Escobar AL, Coelho GE. Healthcare-associated infections among malaria patients in Brazil, 2010-2015. PLoS One. 2017 Jun 15;12(6):e0178819. PubMed PMID: 28617712; PubMed Central PMCID: PMCPMC5470829.",
+      "url": "https://doi.org/10.1371/journal.pone.0178819"
+    },
+    {
+      "short": "Tan P.-N., Steinbach M., Kumar V.: Introduction to data mining. Pearson Addison Wesley, Boston 2005.",
+      "url": ""
+    },
+    {
+      "short": "World Health Organization. World malaria report 2019. Geneva: World Health Organization; 2019. Licence: CC BY-NC-SA 3.0 IGO.",
+      "url": "https://www.who.int/publications/i/item/world-malaria-report-2019"
     }
   ]
 }
