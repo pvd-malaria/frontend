@@ -133,6 +133,13 @@
   }
 
   @media (max-width: 1000px) {
+    #navigation ul li.hasSubmenu ul.submenu {
+      opacity: 1;
+      height: fit-content;
+      transform: translateY(0);
+      overflow: initial;
+    }
+
     #navigation {
       display: none;
       position: fixed;
