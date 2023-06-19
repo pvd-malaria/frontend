@@ -150,7 +150,7 @@
       "files": [
         {
           "title": "Mobilidade",
-          "file": "http://promalaria.nepo.unicamp.br:8079/static/website/img/Mobilidade/fluxos_infeccao_residencia.html",
+          "file": "Mobilidade/mapa-fluxos/fluxos_infeccao_residencia.html",
           "height": 650
         }
       ]
