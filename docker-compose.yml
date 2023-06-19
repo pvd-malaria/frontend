@@ -1,10 +1,18 @@
 version: '3.7'
-
+networks:
+  pvdnet:
+    name: pvdnet
+    driver: bridge
 services:
   frontend:
     container_name: malaria-nginx
     build:
       context: .
     restart: always
+    ports:
+      - 80:80
+      - 443:443
     env_file:
       - .env
+    networks:
+      - pvdnet

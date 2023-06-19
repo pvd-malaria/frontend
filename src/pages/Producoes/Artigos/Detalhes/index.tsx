@@ -79,7 +79,7 @@ function ArtigosDetalhes() {
         <section className="wrapperArtigo">
           <div className="container">
             <div className="artigo">
-              <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(htmlContent)}}></div>
+              <div dangerouslySetInnerHTML={{__html: htmlContent /* DOMPurify.sanitize(htmlContent, { ALLOWED_TAGS: ['b', 'i', 'bold', 'strong', 'italic', 's'] }) */ }}></div>
             </div>
 
             <LinkButton

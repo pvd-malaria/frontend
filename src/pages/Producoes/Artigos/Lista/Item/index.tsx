@@ -45,7 +45,7 @@ function Item(props: ItemProps) {
       <Link to={props.linkTo} style={{ position: "relative" }} onClick={(e) => { e.preventDefault() }}>
         <h2>{props.title}</h2>
         <p className="date">{props.date}</p>
-        <p className="short">{props.short}</p>
+        <p className="short" dangerouslySetInnerHTML={{ __html: props.short }}></p>
         <div className="buttonsContainer">
           <Button
             variant="contained"
@@ -58,7 +58,7 @@ function Item(props: ItemProps) {
             }}
             disableElevation
             onClick={() => {
-              console.log(props.pdf)
+              downloadFile(props.urlPdf);
             }}
           >
             PDF
@@ -74,7 +74,7 @@ function Item(props: ItemProps) {
             }}
             disableElevation
             onClick={() => {
-              downloadFile(props.urlPdf)
+              window.open(props.pdf, '_blank');
             }}
           >
             Apresentação
