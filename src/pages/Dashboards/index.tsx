@@ -72,16 +72,6 @@ function Dashboards() {
           <div className="container">
             <h1>{dashboard.title}</h1>
             <Interweave noWrap content={dashboard.description[0]} />
-            {
-              dashboard.description.length > 1
-              &&
-                <Accordion expanded={open}>
-                  <AccordionSummary onClick={() => setOpen(true)}>Ler mais</AccordionSummary>
-                  <AccordionDetails>
-                      <Interweave noWrap content={dashboard.description[1]} />
-                  </AccordionDetails>
-                </Accordion>
-            }
           </div>
         </section>      
 
@@ -123,6 +113,21 @@ function Dashboards() {
                 <Download/> &nbsp; 
                 {dashboard.file.label}
               </Button>
+            }
+
+            {
+              dashboard.description.length > 1
+              &&
+              
+              <>
+                <h2>Referências</h2>
+                <Accordion expanded={open}>
+                  <AccordionSummary onClick={() => setOpen(true)}>Ler mais</AccordionSummary>
+                  <AccordionDetails>
+                      <Interweave noWrap content={dashboard.description[1]} />
+                  </AccordionDetails>
+                </Accordion>
+              </>
             }
           </div>
         </section>
