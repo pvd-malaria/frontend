@@ -135,7 +135,7 @@
       "files": [
         {
           "title": "Proporção de Casos Positivos",
-          "file": "http://localhost:3838/GGRidges/",
+          "file": "https://malaria.laddem.nepo.unicamp.br/shiny/GGRidges/",
           "height": 1000
         }
       ]
