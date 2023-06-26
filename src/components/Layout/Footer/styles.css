@@ -17,7 +17,7 @@
 #footer section .info span {
   display: inline-block;
   flex: 3;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   width: 30vw;
   max-width: 200px;
   text-align: right;

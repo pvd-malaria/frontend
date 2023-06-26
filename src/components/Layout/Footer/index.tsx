@@ -10,6 +10,7 @@ import LogoFiotec from './../../../images/logo-fiotec.svg';
 import LogoBilleMelindaGates from './../../../images/logo-bill-melinda-gates-foundation.svg';
 import LogoCNPq from './../../../images/logo-cnpq.svg';
 import LogoSUS from './../../../images/logo-sus-ministerio-da-saude.svg';
+import LogoInovia from './../../../images/logo-inovia.png';
 
 import './styles.css';
 
@@ -28,6 +29,7 @@ function Footer() {
             <Link to="/"><img src={LogoUnesp} alt="Unesp" /></Link>
             <Link to="/"><img src={LogoLaddem} alt="Laddem" /></Link>
             <Link to="/"><img src={LogoNepo} alt="Nepo" /></Link>
+            <a href='https://www.inoviacorp.com/'><img src={LogoInovia} alt="Inovia" /></a>
           </div>
         </section>
 
