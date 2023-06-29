@@ -36,6 +36,7 @@ function Dashboards() {
   const [ open, setOpen ] = useState<boolean>(false);
   const [ showIframe, setShowIframe ] = useState<boolean>(false);
 
+  const subtitle = dashboard?.title === "Vetores da Malária" ? "Referências" : "Interpretando Gráfico"
 
   const fullscreenHandle = useCallback(() => {
     const elementToOpen = document.querySelector('#iframeDashboard');
@@ -120,7 +121,7 @@ function Dashboards() {
               &&
               
               <>
-                <h2>Referências</h2>
+                <h2>{subtitle}</h2>
                 <Accordion expanded={open}>
                   <AccordionSummary onClick={() => setOpen(true)}>Ler mais</AccordionSummary>
                   <AccordionDetails>
