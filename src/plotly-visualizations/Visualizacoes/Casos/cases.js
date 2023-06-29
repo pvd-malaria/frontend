@@ -22,10 +22,10 @@ const VisCasesPerMonth = () => {
 				alignItems: 'center'
 			}}>
 				<Tabs value={tab} onChange={(e, nv) => setTab(nv)} aria-label="casos tabs">
-					<Tab label="Lines" {...a11yProps(0)} />
-					<Tab label="Bubbles" {...a11yProps(1)} />
-					<Tab label="Lines (Logs)" {...a11yProps(2)} />
-					<Tab label="Bubbles (Logs)" {...a11yProps(3)} />
+					<Tab label="Linhas" {...a11yProps(0)} />
+					<Tab label="Bolhas" {...a11yProps(1)} />
+					<Tab label="Linhas (Logs)" {...a11yProps(2)} />
+					<Tab label="Bolhas (Logs)" {...a11yProps(3)} />
 				</Tabs>
 			</Box>
 			<ChartCasesPerMonth hasLines={tab === 0 || tab === 2} hasLogs={tab === 2 || tab === 3}/>
