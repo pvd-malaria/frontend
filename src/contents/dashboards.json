@@ -26,7 +26,7 @@
         "<p style='text-align: justify'>No primeiro grupo de visualizações (tratamento), nota-se um mapa (à esquerda) que foi colorido pela proporção de casos positivos que iniciaram o tratamento em até 48 horas dos primeiros sintomas por município e por ano selecionado na barra lateral e um gráfico de linhas (à direita) que mostra a proporção de casos que começaram o tratamento dentro de 48 horas dos sintomas em relação ao total de casos por ano e estado da Amazônia legal. O segundo grupo de visualizações (proporção de malária por <i>P. Falciparum</i>) mostra à esquerda um mapa de municípios coloridos por porcentagem de infecções por <i>P. Falciparum</i> (responsável pelos mais graves e letais formas da doença) e um gráfico de linhas à direita que compara a porcentagem de casos por <i>P. Falciparum</i>, segundo ano de notificação e estado. O terceiro grupo de visualizações é um mapa à esquerda de municípios coloridos por porcentagem de infecções por <i>P. Vivax</i> (é a causa mais comum e generalizada de malária recorrente) e um gráfico de linha à direita, que compara  a porcentagem de casos por <i>P. Vivax</i>, segundo ano de notificação e estado da Amazônia legal brasileira. O banco de dados usado nesta visualização foi um subconjunto de casos positivos agrupados por ano de notificação, estado, municípios, categoria <i>P. Falciparum</i> no resultado do exame, categoria de <i>P. Vivax</i> no resultado do exame, data do início dos sintomas e do tratamento, extraídos do Sistema de Vigilância Epidemiológica da Malária (SIVEP - Malária).</p>"
       ],
       "file": "",
-      "height": 920,
+      "height": 1300,
       "url": "https://laddem.nepo.unicamp.br/shiny/IndicadoresProcess/Eng/"
     },
     {
