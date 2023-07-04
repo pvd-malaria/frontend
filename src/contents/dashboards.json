@@ -72,7 +72,7 @@
         "<p style='text-align: justify'>Aplicamos as taxas específicas de mortalidade por idade de cada estado a uma população padrão selecionada. Essa taxa padronizada permite comparações entre os estados e ao longo do tempo, controlando os efeitos de possíveis mudanças na distribuição etária que as populações experimentam ao longo do tempo e espaço nas respectivas taxas. Essa visualização nos ajuda a verificar quais são as faixas etárias com maior risco de mortalidade em uma determinada região (estado) e possibilita comparar o risco de morte entre os estados. Para calcular as taxas de incidência e mortalidade também foram utilizados os dados do Instituto Brasileiro de Geografia e Estatística (Instituto Brasileiro de Geografia e Estatística - IBGE) e as projeções da população por ano, estado e idade (IBGE, 2020). As duas visualizações nos auxiliam na identificação das faixas etárias com maior risco de infecção e morte por malária em uma determinada região, facilitando as comparações de ambas as taxas de forma simultânea.</p>"
       ],
       "file": "",
-      "height": 800,
+      "height": 1300,
       "url": "https://malaria.laddem.nepo.unicamp.br/shiny/MalariaRatesDash/"
     },
     {
