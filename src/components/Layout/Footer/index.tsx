@@ -24,12 +24,12 @@ function Footer() {
             <span className="title">Execução</span>
           </div>
           <div className="items">
-            <Link to="/"><img src={LogoUnicamp} alt="Unicamp" /></Link>
+            <Link to="/"><img src={LogoLaddem} alt="Laddem" /></Link>
+            <a href='https://www.inoviacorp.com/'><img src={LogoInovia} alt="Inovia" /></a>
+            <Link to="/"><img src={LogoNepo} alt="Nepo" /></Link>
             <Link to="/"><img src={LogoInstitutoFederal} alt="Instituto Federal" /></Link>
             <Link to="/"><img src={LogoUnesp} alt="Unesp" /></Link>
-            <Link to="/"><img src={LogoLaddem} alt="Laddem" /></Link>
-            <Link to="/"><img src={LogoNepo} alt="Nepo" /></Link>
-            <a href='https://www.inoviacorp.com/'><img src={LogoInovia} alt="Inovia" /></a>
+            <Link to="/"><img src={LogoUnicamp} alt="Unicamp" /></Link>
           </div>
         </section>
 
