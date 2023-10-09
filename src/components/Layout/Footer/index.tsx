@@ -9,7 +9,7 @@ import LogoFuncamp from './../../../images/logo-funcamp.svg';
 import LogoFiotec from './../../../images/logo-fiotec.svg';
 import LogoBilleMelindaGates from './../../../images/logo-bill-melinda-gates-foundation.svg';
 import LogoCNPq from './../../../images/logo-cnpq.svg';
-import LogoSUS from './../../../images/logo-sus-ministerio-da-saude.svg';
+import LogoSUS from '../../../images/logo-sus-ministerio-da-saude_OLD.svg';
 
 import './styles.css';
 
