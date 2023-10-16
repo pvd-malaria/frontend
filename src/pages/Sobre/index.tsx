@@ -73,8 +73,8 @@ function Sobre() {
             <div className="membro">
               <figure><img src={EquipeJayme} alt="Foto Jayme" /></figure>
               <p className="nome">Prof. Dr. Jayme Augusto de Souza-Neto</p>
-              <a className="email" href="mailto:jayme.souza-neto@unesp.br">jayme.souza-neto@unesp.br</a>
-              <p className="bio">UNESP</p>
+              <a className="email" href="mailto:jsouzaneto@vet.k-state.edu">jsouzaneto@vet.k-state.edu</a>
+              <p className="bio">Kansas State University</p>
             </div>
           </div>
         </div>
@@ -83,12 +83,6 @@ function Sobre() {
           <h4>Pesquisadores</h4>
 
           <div className="listMembros">
-            <div className="membro">
-              <figure><img src={EquipeAlvaro} alt="Foto Alvaro" /></figure>
-              <p className="nome">Prof. Dr. Álvaro de Oliveira D'Antona</p>
-              <a className="email" href="mailto:adantona@unicamp.br">adantona@unicamp.br</a>
-              <p className="bio">FCA - UNICAMP</p>
-            </div>
             <div className="membro">
               <figure><img src={EquipeEverton} alt="Foto Everton" /></figure>
               <p className="nome">Prof. Me. Everton Silva</p>
