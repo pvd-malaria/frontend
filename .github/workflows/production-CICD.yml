@@ -1,0 +1,39 @@
+name: PVD Malaria Deploy
+on:
+  push:
+    branches: [ production ]
+env:
+  SSL_CERT_PEM: ${{ secrets.SSL_CERTIFICATE_PEM }}
+  SSL_KEY_PEM: ${{ secrets.SSL_KEY_PEM }}
+  SSHPASS: ${{ secrets.SSH_PASSWORD }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install sshpass
+      run:
+        sudo apt -y install sshpass;
+    - name: Create certificates
+      run:
+       echo "$SSL_CERT_PEM" > cert.pem;
+       echo "$SSL_KEY_PEM" > key.pem;
+    - name: Set up deploy script
+      run: |
+        cat << EOF > deploy_script
+          #!/bin/bash
+          cmd1="rm -rf /home/inovia/pvd-malaria";
+          cmd2="GIT_SSH_COMMAND=\"ssh -o StrictHostKeyChecking=no -i /home/inovia/deploy_keys/deploy_frontend\" git clone -b production --single-branch git@github.com:pvd-malaria/frontend.git /home/inovia/pvd-malaria";
+          cmd3="mkdir /home/inovia/pvd-malaria/certs";
+          sshpass -e ssh -o StrictHostKeyChecking=no inovia@laddem.nepo.unicamp.br "\$cmd1; \$cmd2; \$cmd3;"
+          sshpass -e scp -o StrictHostKeyChecking=no cert.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/cert.pem
+          sshpass -e scp -o StrictHostKeyChecking=no key.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/key.pem
+          cmd4="cd /home/inovia/pvd-malaria";
+          cmd5="chmod 0600 certs/*.pem";
+          cmd6="docker-compose rm -sfv frontend";
+          cmd7="docker-compose up -d --build";
+          sshpass -e ssh -o StrictHostKeyChecking=no inovia@laddem.nepo.unicamp.br "\$cmd4; \$cmd5; \$cmd6; \$cmd7;"
+        EOF
+        chmod +x ./deploy_script
+    - name: Run deploy script
+      run: ./deploy_script

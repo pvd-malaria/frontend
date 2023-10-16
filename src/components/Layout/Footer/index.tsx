@@ -9,7 +9,8 @@ import LogoFuncamp from './../../../images/logo-funcamp.svg';
 import LogoFiotec from './../../../images/logo-fiotec.svg';
 import LogoBilleMelindaGates from './../../../images/logo-bill-melinda-gates-foundation.svg';
 import LogoCNPq from './../../../images/logo-cnpq.svg';
-import LogoSUS from '../../../images/logo-sus-ministerio-da-saude_OLD.svg';
+import LogoSUS from './../../../images/logo-sus-ministerio-da-saude.svg';
+import LogoInovia from './../../../images/logo-inovia.png';
 
 import './styles.css';
 
@@ -23,11 +24,12 @@ function Footer() {
             <span className="title">Execução</span>
           </div>
           <div className="items">
-            <Link to="/"><img src={LogoUnicamp} alt="Unicamp" /></Link>
+            <Link to="/"><img src={LogoLaddem} alt="Laddem" /></Link>
+            <a href='https://www.inoviacorp.com/'><img src={LogoInovia} alt="Inovia" /></a>
+            <Link to="/"><img src={LogoNepo} alt="Nepo" /></Link>
             <Link to="/"><img src={LogoInstitutoFederal} alt="Instituto Federal" /></Link>
             <Link to="/"><img src={LogoUnesp} alt="Unesp" /></Link>
-            <Link to="/"><img src={LogoLaddem} alt="Laddem" /></Link>
-            <Link to="/"><img src={LogoNepo} alt="Nepo" /></Link>
+            <Link to="/"><img src={LogoUnicamp} alt="Unicamp" /></Link>
           </div>
         </section>
 

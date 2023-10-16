@@ -22,8 +22,8 @@ const VisIncidence = () => {
 				alignItems: 'center'
 			}}>
 				<Tabs value={tab} onChange={(e, nv) => setTab(nv)} aria-label="incidencia tabs">
-					<Tab label="Incidence Rate" {...a11yProps(0)} />
-					<Tab label="Incidence Rate (Logs)" {...a11yProps(1)} />
+					<Tab label="Taxa de Incidência" {...a11yProps(0)} />
+					<Tab label="Taxa de Incidência (Logs)" {...a11yProps(1)} />
 				</Tabs>
 			</Box>
 			<ChartIncidenceRate hasLogs={tab === 1}/>

@@ -135,7 +135,7 @@
       "files": [
         {
           "title": "Proporção de Casos Positivos",
-          "file": "Proporcao/proporcao-de-casos-positivos.html",
+          "file": "https://malaria.laddem.nepo.unicamp.br/shiny/GGRidges/",
           "height": 1000
         }
       ]
@@ -150,8 +150,8 @@
       "files": [
         {
           "title": "Mobilidade",
-          "file": "http://promalaria.nepo.unicamp.br:8079/static/website/img/Mobilidade/fluxos_infeccao_residencia.html",
-          "height": 650
+          "file": "Mobilidade/mapa-fluxos/fluxos_infeccao_residencia.html",
+          "height": 800
         }
       ]
     }
