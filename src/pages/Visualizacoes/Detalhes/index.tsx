@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CircularProgress from '@mui/material/CircularProgress';
 
 import Layout from '../../../components/Layout';
 
-import jsonVisualizacoes from '../../../contents/visualizacoes.json'; //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
 import LinkButton from '../../../components/LinkButton';
+import jsonVisualizacoes from '../../../contents/visualizacoes.json'; //ALTERAR O DOMINIO NA url DENTRO DO JSON QUANDO O PROJETO MUDAR DE INFRAESTRUTURA
 
 import './styles.css';
 

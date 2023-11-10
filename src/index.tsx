@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 
-import Router from './core/Router';
 import { AppContextProvider } from './contexts/AppContext';
+import Router from './core/Router';
 import './styles/_global.scss';
 
 
