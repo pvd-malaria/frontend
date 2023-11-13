@@ -20,7 +20,7 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
         style={{
           fontSize: "1.1rem",
           fontWeight: "600",
-          color: "#ccc",
+          color: "RGBA(0, 0, 0, 0.65)",
         }}
       >
         Ano:{" "}
@@ -34,9 +34,16 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
           borderRadius: "0.5rem",
           border: "1px solid #ccc",
           cursor: "pointer",
+          //center
+          textAlign: "center",
+          //custom font
+          fontFamily: "Roboto, sans-serif",
+          fontSize: "1rem",
+          fontWeight: "400",
+          color: "RGBA(0, 0, 0, 0.65)",
         }}
       >
-        <option value="">Selecione um ano</option>
+        <option value="">Selecione</option>
         {years.map((year) => (
           <option key={year} value={year}>
             {year}

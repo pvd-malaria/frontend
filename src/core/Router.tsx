@@ -42,9 +42,7 @@ function Router() {
         <Route path="/visualizacoes/:id" element={<VisualizacoesDetalhes/>} />
         <Route path="/visualizacoes" element={<VisualizacoesLista/>} />
         <Route path="/estatisticas" element={<Estatisticas/>} />
-        <Route path="/carregar/dados" element={<LoginGuard/>} >
-          <Route element={<CarregarDados />}>  </Route> 
-        </Route>
+        <Route path="/carregar/dados" element={<LoginGuard/>} />  
 
         <Route path="/producoes/boletins/:id" element={<BoletinsDetalhes/>} />
         <Route path="/producoes/boletins" element={<BoletinsLista/>} />

@@ -33,9 +33,7 @@ const InputArea = ({
         setCsvData(result);
         setSelectedCSV(file);
       };
-
-      console.log(file);
-      console.log(reader);
+ 
 
       reader.readAsText(file);
 
@@ -59,7 +57,7 @@ const InputArea = ({
         <div
           {...getRootProps()}
           style={{
-            border: "2px dashed #ccc",
+            border: "3px dashed rgba(0, 0, 0, 0.5)",
             borderRadius: "4px",
             padding: "20px",
             textAlign: "center",
@@ -74,7 +72,7 @@ const InputArea = ({
               margin: "1rem",
               fontSize: "1.2rem",
               fontWeight: "bold",
-              color: "#ccc",
+              color: "rgba(0, 0, 0, 0.6)",
             }}
           >
             Arraste e solte um arquivo CSV aqui ou clique para selecionar um
@@ -86,7 +84,7 @@ const InputArea = ({
         <div
           {...getRootProps()}
           style={{
-            border: "2px dashed rgba(0, 255, 0, 0.5)",
+            border: "3px dashed rgba(0, 180, 0, 0.5)",
             borderRadius: "4px",
             padding: "20px",
             textAlign: "center",
@@ -97,11 +95,11 @@ const InputArea = ({
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = "rgba(255, 0, 0, 0.05)";
-            e.currentTarget.style.border = "2px dashed rgba(255, 0, 0, 0.5)";
+            e.currentTarget.style.border = "3px dashed rgba(200, 0, 0, 1.0)";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.backgroundColor = "rgba(255, 0, 0, 0.0)";
-            e.currentTarget.style.border = "2px dashed rgba(0, 255, 0, 0.5)";
+            e.currentTarget.style.border = "3px dashed rgba(0, 180, 0, 1.0)";
           }}
         >
           <input {...getInputProps()} accept=".csv" />
@@ -112,7 +110,7 @@ const InputArea = ({
               right: "10px",
               cursor: "pointer",
               zIndex: 1,
-              color: "#FFF",
+              color: "rgba(0, 180, 0, 1.0)",
             }}/>
           }
           <p
@@ -120,7 +118,7 @@ const InputArea = ({
               margin: "1rem",
               fontSize: "1.2rem",
               fontWeight: "bold",
-              color: "#ccc",
+              color: "rgba(0, 180, 0, 1.0)",
             }}
           >
             Arquivo CSV carregado com sucesso!

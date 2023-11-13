@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import CarregarDados from "../..";
 import Layout from "../../../../../components/Layout";
 import { requestApi } from "../../components/@api/fetch";
 import Login from "../login";
@@ -28,7 +28,7 @@ function LoginGuard (): JSX.Element {
         return  <Layout id="pageLogin"> Carregando...</Layout>;
     }
     if (isLogged) {
-        return <Outlet/>;
+        return <CarregarDados/>;
     }
     //if is not logged, redirect to login page
     return <Login/>;

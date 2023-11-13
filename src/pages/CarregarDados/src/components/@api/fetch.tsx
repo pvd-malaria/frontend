@@ -5,11 +5,12 @@
 export const requestApi = async (route: string, method: string, body?: any, multipart?: boolean) => {
 
     const token =await localStorage.getItem('token');
-    const response = await fetch('/api' + route, 
+    const response = await fetch(  route, 
     {
         method: method,
         headers: multipart ?{ "Authorization": token ? `Bearer ${token}` : "",  }:
          {
+            mode: 'cors', // no-cors, cors, *same-origin
             "Content-Type":  
              "application/json", 
             "Authorization": token ? `Bearer ${token}` : "",  
@@ -37,8 +38,7 @@ export const requestApi = async (route: string, method: string, body?: any, mult
         }
         return error;
     } 
-      
-    console.log("json",jsonParse);
+       
     const data = {data: jsonParse,  statusCode: response.status};
     return data;
 }

@@ -24,7 +24,7 @@
   "include": [
     "src",
   ],
-  "exclude": ["src/setupProxy.js", "src/setupTests.ts"]
+  
   
 
 
