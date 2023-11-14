@@ -18,8 +18,6 @@ const Login: React.FC = () => {
 
     if (response!["statusCode"] === 200) {
       localStorage.setItem("token", response.data ? response.data : "");
-
-      console.log(response);
       window.location.reload();
     } else if (
       response!["statusCode"] === 404 ||
