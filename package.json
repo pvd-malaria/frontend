@@ -29,7 +29,6 @@
   },
   "proxy": "http://72.44.53.85:9000",
   "scripts": {
-    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
