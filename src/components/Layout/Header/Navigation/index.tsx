@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 
-import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import IconButton from '@mui/material/IconButton';
 
+import jsonDashboards from '../../../../contents/dashboards.json';
 import { AppContext } from '../../../../contexts/AppContext';
 import CustomLink from './CustomLink';
-import jsonDashboards from '../../../../contents/dashboards.json';
 
 import './styles.css';
 
@@ -46,9 +46,29 @@ function Navigation() {
           </ul>
         </li>
         <li>
-          <CustomLink activeClassName="active" to="/visualizacoes">
-            Visualizações
+        <li className="hasSubmenu">
+          <CustomLink activeClassName="active" to="/dashboards">
+          Visualizações <KeyboardArrowDownIcon/>
           </CustomLink>
+          <ul className="submenu">
+          <li>
+                
+                <CustomLink activeClassName="active" to="/visualizacoes">
+                Estáticas
+                </CustomLink>
+                        </li>
+                  <li>
+                
+          <CustomLink activeClassName="active" to="/estatisticas">
+          Séries
+          </CustomLink>
+          <CustomLink activeClassName="active" to="/carregar/dados">
+          Carregar Dados
+          </CustomLink>
+                  </li>
+                
+          </ul>
+        </li>
         </li>
         <li className="hasSubmenu">
           <CustomLink activeClassName="active" to="/producoes">

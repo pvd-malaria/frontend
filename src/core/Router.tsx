@@ -1,17 +1,16 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Pages
+import Classificacao from '../pages/Classificacao';
+import Contato from '../pages/Contato';
+import Dashboards from '../pages/Dashboards';
+import Inicial from '../pages/Inicial';
+import Preditivos from '../pages/Preditivos';
 import ArtigosDetalhes from '../pages/Producoes/Artigos/Detalhes';
 import ArtigosLista from '../pages/Producoes/Artigos/Lista';
 import BoletinsDetalhes from '../pages/Producoes/Boletins/Detalhes';
 import BoletinsLista from '../pages/Producoes/Boletins/Lista';
 import CursosLista from '../pages/Producoes/Cursos/Lista';
-import Contato from '../pages/Contato';
-import Classificacao from '../pages/Classificacao';
-import Dashboards from '../pages/Dashboards';
-import Inicial from '../pages/Inicial';
-import Preditivos from '../pages/Preditivos';
 import Referencias from '../pages/Producoes/Referencias';
 import Sobre from '../pages/Sobre';
 import UiGuide from '../pages/UiGuide';
@@ -21,6 +20,9 @@ import VisualizacoesLista from '../pages/Visualizacoes/Lista';
 // import layout temporary
 import Layout from '../components/Layout';
 import ScrollToTop from '../components/ScrollToTop';
+import CarregarDados from '../pages/CarregarDados/src';
+import LoginGuard from '../pages/CarregarDados/src/loginPage/LoginGuard';
+import Estatisticas from '../pages/Estatisticas';
 
 
 function Router() {
@@ -39,6 +41,9 @@ function Router() {
         <Route path="/producoes" element={<Layout><h1>Producoes</h1></Layout>} />
         <Route path="/visualizacoes/:id" element={<VisualizacoesDetalhes/>} />
         <Route path="/visualizacoes" element={<VisualizacoesLista/>} />
+        <Route path="/estatisticas" element={<Estatisticas/>} />
+        <Route path="/carregar/dados" element={<LoginGuard/>} />  
+
         <Route path="/producoes/boletins/:id" element={<BoletinsDetalhes/>} />
         <Route path="/producoes/boletins" element={<BoletinsLista/>} />
         <Route path="/producoes/cursos" element={<CursosLista/>} />
