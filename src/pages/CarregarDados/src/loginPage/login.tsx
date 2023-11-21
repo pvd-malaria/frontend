@@ -14,6 +14,7 @@ const Login: React.FC = () => {
       username: userEmail,
       password: userPassword,
     };
+
     const response = await requestApi("/api-poc/auth/login", "POST", userData);
 
     if (response!["statusCode"] === 200) {

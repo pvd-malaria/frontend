@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+import { requestApi } from "../@api/fetch";
 
 interface InputAreaProps {
   csvData: string | null;
@@ -37,12 +38,13 @@ const InputArea = ({
 
       reader.readAsText(file);
 
-      if (
-        file.name.includes("_") && //check if is number try parse
-        !isNaN(Number(file.name.split("_")[1].replace(".csv", "")))
-      ) {
-        setSelectedYear(Number(file.name.split("_")[1].replace(".csv", "")));
-      }
+      // if (
+      //   file.name.includes("_") && //check if is number try parse
+      //   !isNaN(Number(file.name.split("_")[1].replace(".csv", "")))
+      // ) {
+      //   setSelectedYear(Number(file.name.split("_")[1].replace(".csv", "")));
+      // }
+      setSelectedYear(undefined);
     },
     [setCsvData, setSelectedYear, setSelectedCSV]
   );
@@ -62,7 +64,7 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "30rem",
+            width: "40rem",
           }}
         >
           <input {...getInputProps()} type="file" accept=".csv, text/csv" />
@@ -89,7 +91,7 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "30rem",
+            width: "40rem",
             position: "relative",
             transition: "all 0.2s ease-in-out",
           }}
@@ -125,6 +127,7 @@ const InputArea = ({
           </p>
         </div>
       )}
+
     </>
   );
 };

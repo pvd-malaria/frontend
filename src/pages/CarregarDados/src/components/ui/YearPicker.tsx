@@ -1,3 +1,6 @@
+import React, { forwardRef } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 interface YearPickerProps {
   setSelectedYear: React.Dispatch<React.SetStateAction<number | undefined>>;
   selectedYear?: number;
@@ -12,7 +15,7 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
     const year = parseInt(event.target.value, 10);
     setSelectedYear(year);
   };
-
+ 
   return (
     <div>
       <label
@@ -23,9 +26,47 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
           color: "RGBA(0, 0, 0, 0.65)",
         }}
       >
-        Ano:{" "}
+        {/* Ano:{" "} */}
       </label>
-      <select
+      <DatePicker
+        selected={ selectedYear ? new Date(selectedYear, 0, 1) : undefined}
+        onChange={(Date) =>
+          Date === null ? undefined :
+          setSelectedYear(  parseInt(Date.getFullYear().toString(), 10)
+            )
+        }
+        customInput={ <button 
+          style={{
+            //custom input
+            
+            backgroundColor: //check if is selected
+            selectedYear ? "#2754a8" : //error
+            "#f5f5f5",
+            color:  //check if is selected
+            selectedYear ? "#f5f5f5" : //error
+            "#333",
+            
+          
+  padding: "10px 20px",
+  border: "2px solid #ccc",
+  borderRadius: "4px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  cursor: "pointer",
+  transition: "all 0.2s ease-in-out",
+            
+          }}
+          type="button"
+          className="btn btn-outline-primary"
+        >
+          {selectedYear ? selectedYear : "Selecione um ano"}
+        </button>}
+        showYearPicker
+        dateFormat="yyyy"
+        yearItemNumber={9}
+      />
+      {/* <select
         id="yearSelect"
         value={selectedYear || ""}
         onChange={handleYearChange}
@@ -49,7 +90,7 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
             {year}
           </option>
         ))}
-      </select>
+      </select> */}
     </div>
   );
 };

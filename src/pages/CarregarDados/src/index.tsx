@@ -37,9 +37,10 @@ const CarregarDados: React.FC = () => {
 
   return (
     <Layout id="loadCsv">
-      <div style={{
-        padding: "20px",
-          }}
+      <div
+        style={{
+          padding: "20px",
+        }}
       >
         <div
           style={{
@@ -55,42 +56,44 @@ const CarregarDados: React.FC = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              
+
               gap: "1rem",
               //space between
             }}
           >
-            <div style={{ display: "flex", flexDirection: "row", gap: "1rem",
-            justifyContent: "space-between",
-          
-          }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "1rem",
+                justifyContent: "space-between",
+              }}
+            >
               <YearPicker
                 setSelectedYear={setSelectedYear}
                 selectedYear={selectedYear}
               />
-              <div style={{ 
-              //align in right
-              display: "flex",
-              gap: "1rem",
-              
-
-            
-            }}>
-              <button
+              <div
                 style={{
-                  ...styledButton,
-                  background: "rgba(200, 0, 0, 1.0)",
-                  color: "#fff", 
-                  alignItems: "center",
-                }}
-                onClick={() => {
-                  localStorage.removeItem("token");
-                  window.location.reload();
+                  //align in right
+                  display: "flex",
+                  gap: "1rem",
                 }}
               >
-                Sair
-
-              </button>
+                <button
+                  style={{
+                    ...styledButton,
+                    background: "rgba(200, 0, 0, 1.0)",
+                    color: "#fff",
+                    alignItems: "center",
+                  }}
+                  onClick={() => {
+                    localStorage.removeItem("token");
+                    window.location.reload();
+                  }}
+                >
+                  Sair
+                </button>
               </div>
             </div>
             <InputArea
@@ -103,13 +106,46 @@ const CarregarDados: React.FC = () => {
               style={{
                 display: "flex",
                 gap: "1rem",
-                alignItems: "center", 
-                justifyContent: "flex-end",
-                width: "100%", 
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "100%",
               }}
             >
-              {csvData && (
-                <div style={{ display: "flex", gap: "1rem" }}>
+              <div style={{ display: "flex", gap: "1rem" }}>
+              <button
+                  style={{
+                    ...styledButton,
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+
+                    border: "2px solid #ccc",
+                    borderRadius: "4px",
+                    color: "#333",
+                    //align left
+                    justifyContent: "flex-start",
+                  }}
+                  type="button"
+                  onClick={() => {
+                    if (
+                      window.confirm(
+                        "Tem certeza que deseja limpar o banco de dados?"
+                      )
+                    ) {
+                      requestApi("/clear", "DELETE", null);
+                      setCsvData(null);
+                      setSelectedCSV(null);
+                      setSelectedYear(undefined);
+                    }
+                  }}
+                >
+                  Limpar banco de dados
+                </button>
+              </div>
+
+<div style={{ display: "flex", gap: "1rem" }}>
+               
+              {csvData && [
                   <button
                     style={{
                       ...styledButton,
@@ -119,7 +155,7 @@ const CarregarDados: React.FC = () => {
                     onClick={() => setViewCsv(!viewCsv)}
                   >
                     {viewCsv ? "Ocultar CSV" : "Visualizar CSV"}
-                  </button>
+                  </button>,
 
                   <button
                     disabled={
@@ -176,9 +212,11 @@ const CarregarDados: React.FC = () => {
                     }}
                   >
                     Enviar CSV
-                  </button>
+                  </button>].map((button) => button as JSX.Element | null )
+                  
+                  }
                 </div>
-              )}
+              
             </div>
             {csvCompleted ? (
               <p
@@ -246,12 +284,12 @@ const CarregarDados: React.FC = () => {
                 >
                   Remover CSV
                 </button>
+              
               </div>
             </div>
           ) : null}
         </div>
       </div>
-
     </Layout>
   );
 };
