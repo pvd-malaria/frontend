@@ -211,7 +211,7 @@ const CarregarDados: React.FC = () => {
                             alert("O CSV enviado possui dados inválidos");
                           }
                           if (
- yy                           response["message"]?.includes(
+                            response["message"]?.includes(
                               "is violated by some row"
                             )
                           ) {
