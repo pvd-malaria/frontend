@@ -12,7 +12,7 @@ function LoginGuard(): JSX.Element {
 
   const authGuard = async () => {
     try {
-      const response = await requestApi("/api-poc/auth", "GET", null);
+      const response = await requestApi("/auth", "GET", null);
       if (typeof response.data === "string") {
         const json = JSON.parse(response.data);
         if (json?.valid) {
