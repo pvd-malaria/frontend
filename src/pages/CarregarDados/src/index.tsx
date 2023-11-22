@@ -112,7 +112,7 @@ const CarregarDados: React.FC = () => {
               }}
             >
               <div style={{ display: "flex", gap: "1rem" }}>
-              <button
+                <button
                   style={{
                     ...styledButton,
                     display: "flex",
@@ -143,80 +143,93 @@ const CarregarDados: React.FC = () => {
                 </button>
               </div>
 
-<div style={{ display: "flex", gap: "1rem" }}>
-               
-              {csvData && [
-                  <button
-                    style={{
-                      ...styledButton,
-                      background: "rgba(200, 0, 0, 1.0)",
-                      color: "#fff",
-                    }}
-                    onClick={() => setViewCsv(!viewCsv)}
-                  >
-                    {viewCsv ? "Ocultar CSV" : "Visualizar CSV"}
-                  </button>,
+              <div style={{ display: "flex", gap: "1rem" }}>
+                {csvData &&
+                  [
+                    <button
+                      style={{
+                        ...styledButton,
+                        background: "rgba(200, 0, 0, 1.0)",
+                        color: "#fff",
+                      }}
+                      onClick={() => setViewCsv(!viewCsv)}
+                    >
+                      {viewCsv ? "Ocultar CSV" : "Visualizar CSV"}
+                    </button>,
 
-                  <button
-                    disabled={
-                      !selectedYear ||
-                      //check if csvdata include (Columns) as <string>[]
-                      !columnsArray.some((column) => csvData.includes(column))
-                    }
-                    style={{
-                      ...styledButton,
-                      background:
-                        !selectedYear ||
-                        !columnsArray.some((column) => csvData.includes(column))
-                          ? "#ccc"
+                    <button
+                      disabled={
+                        !selectedYear
+                        //check if csvdata include (Columns) as <string>[]
+                        // !columnsArray.some((column) => csvData.includes(column))
+                      }
+                      style={{
+                        ...styledButton,
+                        background: !selectedYear
+                          ? // !columnsArray.some((column) => csvData.includes(column))
+                            "#ccc"
                           : "#2754a8",
 
-                      color: "#fff",
-                      cursor:
-                        !selectedYear ||
-                        !columnsArray.some((column) => csvData.includes(column))
-                          ? "not-allowed"
+                        color: "#fff",
+                        cursor: !selectedYear
+                          ? // !columnsArray.some((column) => csvData.includes(column))
+                            "not-allowed"
                           : "pointer",
-                    }}
-                    onClick={async () => {
-                      //send as multipart/form-data file * string($binary)
-                      const formData = new FormData();
+                      }}
+                      onClick={async () => {
+                        //send as multipart/form-data file * string($binary)
+                        const formData = new FormData();
 
-                      formData.append("file", selectedCSV as File);
+                        formData.append("file", selectedCSV as File);
 
-                      const response = await requestApi(
-                        "/upload/" + selectedYear,
-                        "POST",
-                        formData,
-                        true
-                      );
-
-                      if (response.statusCode === 200) {
-                        setCsvCompleted(true);
-                        //wait for 3 seconds
-                        setTimeout(() => {
-                          setCsvCompleted(false);
-                        }, 3000);
-                        setViewCsv(false);
-                        setSelectedYear(undefined);
-                        setCsvData(null);
-
-                        setSelectedCSV(null);
-                      } else if (response.statusCode >= 500) {
-                        alert("Revise seu arquivo CSV e tente novamente");
-                      } else {
-                        alert(
-                          "Ocorreu um erro inesperado, tente novamente mais tarde"
+                        const response = await requestApi(
+                          "/upload/" + selectedYear,
+                          "POST",
+                          formData,
+                          true
                         );
-                      }
-                    }}
-                  >
-                    Enviar CSV
-                  </button>].map((button) => button as JSX.Element | null )
-                  
-                  }
-                </div>
-              
+
+                        if (response.statusCode === 200) {
+                          setCsvCompleted(true);
+                          //wait for 3 seconds
+                          setTimeout(() => {
+                            setCsvCompleted(false);
+                          }, 3000);
+                          setViewCsv(false);
+                          setSelectedYear(undefined);
+                          setCsvData(null);
+
+                          setSelectedCSV(null);
+                        } else if (response.statusCode >= 500) {
+                          console.log(response);
+
+                          if (
+                            response["message"]?.includes(
+                              "invalid input syntax for type"
+                            )
+                          ) {
+                            alert("O CSV enviado possui dados inválidos");
+                          }
+                          if (
+                            response["message"]?.includes(
+                              "is violated by some row"
+                            )
+                          ) {
+                            alert("Revise o ano selecionado e tente novamente");
+                          } else {
+                            alert("Revise seu arquivo CSV e tente novamente");
+                          }
+                        } else {
+                          alert(
+                            "Ocorreu um erro inesperado, tente novamente mais tarde"
+                          );
+                        }
+                      }}
+                    >
+                      Enviar CSV
+                    </button>,
+                  ].map((button) => button as JSX.Element | null)}
+              </div>
             </div>
             {csvCompleted ? (
               <p
@@ -284,7 +297,6 @@ const CarregarDados: React.FC = () => {
                 >
                   Remover CSV
                 </button>
-              
               </div>
             </div>
           ) : null}

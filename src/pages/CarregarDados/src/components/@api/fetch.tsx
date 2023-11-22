@@ -36,11 +36,13 @@ export const requestApi = async (
     const error = {
       data: null,
       statusCode: response.status,
-      message: response.statusText,
+      message: jsonParse, 
     };
     return error;
   }
 
-  const data = { data: jsonParse, statusCode: response.status };
+  const data = { data: jsonParse, statusCode: response.status,
+  message: response.statusText,
+  };
   return data;
 };
