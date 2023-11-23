@@ -8,11 +8,13 @@ interface InputAreaProps {
 
   setSelectedYear: React.Dispatch<React.SetStateAction<number | undefined>>;
   setSelectedCSV: React.Dispatch<React.SetStateAction<File | null>>;
+  disabled: boolean;
 }
 
 const InputArea = ({
   setSelectedYear,
   csvData,
+  disabled,
   setCsvData,
   setSelectedCSV,
 }: InputAreaProps) => {
@@ -64,10 +66,14 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "40rem",
+            width: //check screen size
+            window.innerWidth < 600 ? "100%" :
+            "40rem",
           }}
         >
-          <input {...getInputProps()} type="file" accept=".csv, text/csv" />
+          
+          <input  disabled={disabled}
+           {...getInputProps()} type="file" accept=".csv, text/csv" />
 
           <p
             style={{
@@ -91,7 +97,8 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "40rem",
+            width: window.innerWidth < 600 ? "100%" :
+            "40rem",
             position: "relative",
             transition: "all 0.2s ease-in-out",
           }}
@@ -104,7 +111,7 @@ const InputArea = ({
             e.currentTarget.style.border = "3px dashed rgba(0, 180, 0, 1.0)";
           }}
         >
-          <input {...getInputProps()} accept=".csv" />
+          <input disabled={disabled} {...getInputProps()} accept=".csv" />
           {
              <h2 style={{
               position: "absolute",

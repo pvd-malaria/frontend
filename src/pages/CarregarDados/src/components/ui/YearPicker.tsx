@@ -4,9 +4,10 @@ import "react-datepicker/dist/react-datepicker.css";
 interface YearPickerProps {
   setSelectedYear: React.Dispatch<React.SetStateAction<number | undefined>>;
   selectedYear?: number;
+  disabled: boolean;
 }
 
-const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
+const YearPicker = ({ setSelectedYear, selectedYear, disabled }: YearPickerProps) => {
   const currentYear = new Date().getFullYear();
   const startYear = currentYear - 30;
   const years = Array.from({ length: 31 }, (_, index) => startYear + index);
@@ -29,6 +30,7 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
         {/* Ano:{" "} */}
       </label>
       <DatePicker
+      disabled={disabled}
         selected={ selectedYear ? new Date(selectedYear, 0, 1) : undefined}
         onChange={(Date) =>
           Date === null ? undefined :
@@ -40,15 +42,17 @@ const YearPicker = ({ setSelectedYear, selectedYear }: YearPickerProps) => {
             //custom input
             
             backgroundColor: //check if is selected
-            selectedYear ? "#2754a8" : //error
+            selectedYear && !disabled
+             ? "#2754a8" : //error
             "#f5f5f5",
             color:  //check if is selected
-            selectedYear ? "#f5f5f5" : //error
+            selectedYear && !disabled ? "#f5f5f5" : //error
             "#333",
             
           
   padding: "10px 20px",
-  border: "2px solid #ccc",
+  border: selectedYear && !disabled ? "none" :
+   "2px solid #ccc",
   borderRadius: "4px",
   display: "flex",
   alignItems: "center",

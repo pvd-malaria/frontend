@@ -4,6 +4,7 @@ import { requestApi } from "./components/@api/fetch";
 import InputArea from "./components/ui/InputArea";
 import YearPicker from "./components/ui/YearPicker";
 import { readAndSplitColumns } from "./helpers/readColumns";
+import "./components/ui/loadingProgressBar.css";
 
 const styledButton = {
   padding: "10px 20px",
@@ -20,6 +21,7 @@ const CarregarDados: React.FC = () => {
   const [csvData, setCsvData] = useState<string | null>(null);
   const [selectedCSV, setSelectedCSV] = useState<File | null>(null);
   const [columnsArray, setColumnsArray] = useState<string[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
   console.log("columnsArray", columnsArray);
 
   useEffect(() => {
@@ -70,6 +72,7 @@ const CarregarDados: React.FC = () => {
               }}
             >
               <YearPicker
+              disabled={loading}
                 setSelectedYear={setSelectedYear}
                 selectedYear={selectedYear}
               />
@@ -97,6 +100,7 @@ const CarregarDados: React.FC = () => {
               </div>
             </div>
             <InputArea
+              disabled={loading}
               setSelectedYear={setSelectedYear}
               csvData={csvData}
               setCsvData={setCsvData}
@@ -108,6 +112,7 @@ const CarregarDados: React.FC = () => {
                 gap: "1rem",
                 alignItems: "center",
                 justifyContent: "space-between",
+                flexWrap: "wrap",
                 width: "100%",
               }}
             >
@@ -118,6 +123,7 @@ const CarregarDados: React.FC = () => {
                     display: "flex",
                     gap: "10px",
                     alignItems: "center",
+                    //break line 
 
                     border: "2px solid #ccc",
                     borderRadius: "4px",
@@ -138,13 +144,14 @@ const CarregarDados: React.FC = () => {
                       setSelectedYear(undefined);
                     }
                   }}
+                  disabled={loading}
                 >
                   Limpar banco de dados
                 </button>
               </div>
 
               <div style={{ display: "flex", gap: "1rem" }}>
-                {csvData &&
+                {csvData && 
                   [
                     <button
                       style={{
@@ -159,13 +166,13 @@ const CarregarDados: React.FC = () => {
 
                     <button
                       disabled={
-                        !selectedYear
+                        !selectedYear ||  loading
                         //check if csvdata include (Columns) as <string>[]
                         // !columnsArray.some((column) => csvData.includes(column))
                       }
                       style={{
                         ...styledButton,
-                        background: !selectedYear
+                        background: !selectedYear || loading
                           ? // !columnsArray.some((column) => csvData.includes(column))
                             "#ccc"
                           : "#2754a8",
@@ -181,6 +188,7 @@ const CarregarDados: React.FC = () => {
                         const formData = new FormData();
 
                         formData.append("file", selectedCSV as File);
+                        setLoading(true);
 
                         const response = await requestApi(
                           "/upload/" + selectedYear,
@@ -188,6 +196,7 @@ const CarregarDados: React.FC = () => {
                           formData,
                           true
                         );
+                        setLoading(false);
 
                         if (response.statusCode === 200) {
                           setCsvCompleted(true);
@@ -238,9 +247,34 @@ const CarregarDados: React.FC = () => {
                         }
                       }}
                     >
-                      Enviar CSV
+                      {loading ? (
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "10px",
+                            color: "#333",
+                          }}
+                        >
+                          
+                  <progress  className="pure-material-progress-circular"  /> 
+                          Enviando
+                        </div>
+                      ) : (
+                        "Enviar CSV"
+                      )} 
                     </button>,
-                  ].map((button) => button as JSX.Element | null)}
+                  ].map((button) => button as JSX.Element | null)
+                   //make a circular progressbar
+                  // <div style={{  gap: '10px', 
+                  // display: 'flex',
+                  // alignItems: 'center',
+                  // }}>
+                  // </div>
+
+
+                }
               </div>
             </div>
             {csvCompleted ? (
