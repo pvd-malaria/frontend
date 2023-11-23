@@ -220,29 +220,21 @@ const CarregarDados: React.FC = () => {
                             alert("Revise seu arquivo CSV e tente novamente");
                           }
                         } else {
-                          if (
-                            response["message"]?.includes(
-                              "Empty CSV file"
-                            )
-                          ) {
-                            alert( "O CSV enviado está vazio");
+                          if (response["message"]?.includes("Empty CSV file")) {
+                            alert("O CSV enviado está vazio");
                           } else if (
-                            response["message"]?.includes(
-                              "Invalid CSV file"
-                            )
+                            response["message"]?.includes("Invalid CSV file")
                           ) {
                             alert("O CSV enviado possui dados inválidos");
                           } else if (
-                            response["message"]?.includes(
-                              "Not a CSV file"
-                            )
+                            response["message"]?.includes("Not a CSV file")
                           ) {
                             alert("O arquivo enviado não é um CSV");
-                          }else{
-
-                          alert(
-                            "Ocorreu um erro inesperado, tente novamente mais tarde"
-                          );}
+                          } else {
+                            alert(
+                              "Ocorreu um erro inesperado, tente novamente mais tarde"
+                            );
+                          }
                         }
                       }}
                     >
