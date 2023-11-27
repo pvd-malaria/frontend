@@ -22,13 +22,26 @@ const InputArea = ({
     (acceptedFiles: File[]) => {
       const file = acceptedFiles[0];
       // check if filename is .csv
-      if (!file.name.includes(".csv") || file.type !== "text/csv") {
-        alert("O arquivo selecionado não é um arquivo CSV válido!");
+      if (
+        !file.name.includes(".csv") ||
+        file.type !== "text/csv" ||
+        file.size > //256mbs
+          268435456
+      ) {
+        if (
+          file.size > //256mbs
+          268435456
+        ) {
+          alert("O arquivo selecionado é muito grande! (Máximo 256MB)");
+        } else {
+          alert("O arquivo selecionado não é um arquivo CSV válido!");
+        }
         setCsvData(null);
         setSelectedCSV(null);
 
         return;
       }
+
       const reader = new FileReader();
 
       reader.onload = () => {
@@ -36,7 +49,6 @@ const InputArea = ({
         setCsvData(result);
         setSelectedCSV(file);
       };
- 
 
       reader.readAsText(file);
 
@@ -66,14 +78,16 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: //check screen size
-            window.innerWidth < 600 ? "100%" :
-            "40rem",
+            //check screen size
+            width: window.innerWidth < 600 ? "100%" : "40rem",
           }}
         >
-          
-          <input  disabled={disabled}
-           {...getInputProps()} type="file" accept=".csv, text/csv" />
+          <input
+            disabled={disabled}
+            {...getInputProps()}
+            type="file"
+            accept=".csv, text/csv"
+          />
 
           <p
             style={{
@@ -86,7 +100,6 @@ const InputArea = ({
             Arraste e solte um arquivo CSV aqui ou clique para selecionar um
             arquivo
           </p>
-
         </div>
       ) : (
         <div
@@ -97,8 +110,7 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: window.innerWidth < 600 ? "100%" :
-            "40rem",
+            width: window.innerWidth < 600 ? "100%" : "40rem",
             position: "relative",
             transition: "all 0.2s ease-in-out",
           }}
@@ -113,14 +125,16 @@ const InputArea = ({
         >
           <input disabled={disabled} {...getInputProps()} accept=".csv" />
           {
-             <h2 style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-              cursor: "pointer",
-              zIndex: 1,
-              color: "rgba(0, 180, 0, 1.0)",
-            }}/>
+            <h2
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "10px",
+                cursor: "pointer",
+                zIndex: 1,
+                color: "rgba(0, 180, 0, 1.0)",
+              }}
+            />
           }
           <p
             style={{
@@ -134,7 +148,6 @@ const InputArea = ({
           </p>
         </div>
       )}
-
     </>
   );
 };
