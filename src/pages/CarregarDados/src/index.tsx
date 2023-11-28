@@ -5,6 +5,7 @@ import InputArea from "./components/ui/InputArea";
 import YearPicker from "./components/ui/YearPicker";
 import { readAndSplitColumns } from "./helpers/readColumns";
 import "./components/ui/loadingProgressBar.css";
+import { Modal, Step, StepLabel, Stepper } from "@mui/material";
 
 const styledButton = {
   padding: "10px 20px",
@@ -37,11 +38,16 @@ const CarregarDados: React.FC = () => {
 
   return (
     <Layout id="loadCsv">
+      
       <div
         style={{
           padding: "20px",
         }}
       >
+                {
+          //colocar instruções step by step  "Instruções: 1) Subir arquivo; 2) Selecionar ano; 3) Confira o cabeçalho do arquivo; "
+        }
+      
         <div
           style={{
             display: "flex",
@@ -52,6 +58,35 @@ const CarregarDados: React.FC = () => {
             flexDirection: "column",
           }}
         >
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '20px',
+                width: window.innerWidth < 600 ? "100%" : "50rem",
+                
+                backgroundColor: "#f0f0f0",
+                padding: "10px 20px",
+                border: "2px solid #ccc",
+                borderRadius: "10px",
+
+    }}>
+        <Stepper
+          alternativeLabel 
+          activeStep={!selectedCSV  || selectedCSV === null
+            ? 0 : !selectedYear ? 1 : loading || viewCsv ? 3 : 2} 
+        >
+          <Step>
+            <StepLabel>Upload do arquivo</StepLabel>
+          </Step>
+          <Step>
+            <StepLabel>Selecionar ano</StepLabel>
+          </Step>
+          <Step>
+            <StepLabel>Confira o cabeçalho do arquivo </StepLabel>
+          </Step>
+
+          <Step>
+            <StepLabel> Clique em "Enviar", e aguarde o processamento </StepLabel> 
+          </Step>
+        </Stepper>
+        </div>
           <div
             style={{
               display: "flex",
@@ -118,22 +153,15 @@ const CarregarDados: React.FC = () => {
                 <button
                   style={{
                     ...styledButton,
-                    display: "flex",
-                    gap: "10px",
-                    alignItems: "center",
-                    //break line
-
-                    border: "2px solid #ccc",
-                    borderRadius: "4px",
-                    color: "#333",
-                    //align left
-                    justifyContent: "flex-start",
+                    
+                    background: "rgba(200, 0, 0, 1.0)",
+                    color: "#fff",
                   }}
                   type="button"
                   onClick={() => {
                     if (
                       window.confirm(
-                        "Tem certeza que deseja limpar o banco de dados?"
+                        "Tem certeza que deseja excluir todos os dados?"
                       )
                     ) {
                       requestApi("/clear", "DELETE", null);
@@ -144,7 +172,7 @@ const CarregarDados: React.FC = () => {
                   }}
                   disabled={loading}
                 >
-                  Limpar banco de dados
+                  Excluir todos os dados
                 </button>
               </div>
 
@@ -155,8 +183,17 @@ const CarregarDados: React.FC = () => {
                       <button
                         style={{
                           ...styledButton,
-                          background: "rgba(200, 0, 0, 1.0)",
-                          color: "#fff",
+
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                    //break line
+
+                    border: "2px solid #ccc",
+                    borderRadius: "4px",
+                    color: "#333",
+                    //align left
+                    justifyContent: "flex-start",
                         }}
                         onClick={() => setViewCsv(!viewCsv)}
                       >
@@ -313,7 +350,14 @@ const CarregarDados: React.FC = () => {
                   overflowY: "auto",
                 }}
               >
-                {csvData}
+                {
+                  //show csv data first 1000 characters & last 1000 characters
+                  csvData.length > 1600
+                    ? csvData.substring(0, 800) +
+                      "\n\n...\n\n" +
+                      csvData.substring(csvData.length - 800, csvData.length)
+                    : csvData
+                }
               </pre>
 
               <div
@@ -346,6 +390,36 @@ const CarregarDados: React.FC = () => {
             </div>
           ) : null}
         </div>
+              <Modal
+              
+              open={loading} 
+              sx={{
+                background: "rgba(0, 0, 0, 0.5)",
+              }}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  flexDirection: "column",
+                  padding: "20px", 
+                  color: "#fff",
+                  borderRadius: "4px",
+                  border: "none",
+                  outline: "none",
+                  height: "100vh",
+                }}
+              >
+                <progress className="pure-material-progress-circular" />
+                <h2>Enviando CSV...</h2>
+                </div>
+ </Modal>
+
+
       </div>
     </Layout>
   );

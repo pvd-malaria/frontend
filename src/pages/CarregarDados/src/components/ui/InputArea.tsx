@@ -58,7 +58,7 @@ const InputArea = ({
       // ) {
       //   setSelectedYear(Number(file.name.split("_")[1].replace(".csv", "")));
       // }
-      setSelectedYear(undefined);
+      //setSelectedYear(undefined);
     },
     [setCsvData, setSelectedYear, setSelectedCSV]
   );
