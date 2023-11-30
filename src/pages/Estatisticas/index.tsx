@@ -24,7 +24,7 @@ function Estatisticas() {
         <div className="visualization">
           <iframe
           title="Séries Temporais"
-            src="/dash"
+            src="https://malaria.laddem.nepo.unicamp.br:9009"
             style={{
               //center
               justifyContent: "center",
