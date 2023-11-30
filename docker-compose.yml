@@ -12,6 +12,7 @@ services:
     ports:
       - 80:80
       - 443:443
+      - 9009:9009
     env_file:
       - .env
     networks:
