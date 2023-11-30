@@ -24,7 +24,7 @@ function Estatisticas() {
         <div className="visualization">
           <iframe
           title="Séries Temporais"
-            src="http://52.206.171.26:9009/"
+            src="/dash"
             style={{
               //center
               justifyContent: "center",
