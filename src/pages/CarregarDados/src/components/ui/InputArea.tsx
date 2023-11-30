@@ -8,11 +8,13 @@ interface InputAreaProps {
 
   setSelectedYear: React.Dispatch<React.SetStateAction<number | undefined>>;
   setSelectedCSV: React.Dispatch<React.SetStateAction<File | null>>;
+  disabled: boolean;
 }
 
 const InputArea = ({
   setSelectedYear,
   csvData,
+  disabled,
   setCsvData,
   setSelectedCSV,
 }: InputAreaProps) => {
@@ -20,13 +22,26 @@ const InputArea = ({
     (acceptedFiles: File[]) => {
       const file = acceptedFiles[0];
       // check if filename is .csv
-      if (!file.name.includes(".csv") || file.type !== "text/csv") {
-        alert("O arquivo selecionado não é um arquivo CSV válido!");
+      if (
+        !file.name.includes(".csv") ||
+        file.type !== "text/csv" ||
+        file.size > //256mbs
+          268435456
+      ) {
+        if (
+          file.size > //256mbs
+          268435456
+        ) {
+          alert("O arquivo selecionado é muito grande! (Máximo 256MB)");
+        } else {
+          alert("O arquivo selecionado não é um arquivo CSV válido!");
+        }
         setCsvData(null);
         setSelectedCSV(null);
 
         return;
       }
+
       const reader = new FileReader();
 
       reader.onload = () => {
@@ -34,7 +49,6 @@ const InputArea = ({
         setCsvData(result);
         setSelectedCSV(file);
       };
- 
 
       reader.readAsText(file);
 
@@ -44,7 +58,7 @@ const InputArea = ({
       // ) {
       //   setSelectedYear(Number(file.name.split("_")[1].replace(".csv", "")));
       // }
-      setSelectedYear(undefined);
+      //setSelectedYear(undefined);
     },
     [setCsvData, setSelectedYear, setSelectedCSV]
   );
@@ -64,10 +78,16 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "40rem",
+            //check screen size
+            width: window.innerWidth < 600 ? "100%" : "40rem",
           }}
         >
-          <input {...getInputProps()} type="file" accept=".csv, text/csv" />
+          <input
+            disabled={disabled}
+            {...getInputProps()}
+            type="file"
+            accept=".csv, text/csv"
+          />
 
           <p
             style={{
@@ -80,7 +100,6 @@ const InputArea = ({
             Arraste e solte um arquivo CSV aqui ou clique para selecionar um
             arquivo
           </p>
-
         </div>
       ) : (
         <div
@@ -91,7 +110,7 @@ const InputArea = ({
             padding: "20px",
             textAlign: "center",
             cursor: "pointer",
-            width: "40rem",
+            width: window.innerWidth < 600 ? "100%" : "40rem",
             position: "relative",
             transition: "all 0.2s ease-in-out",
           }}
@@ -104,16 +123,18 @@ const InputArea = ({
             e.currentTarget.style.border = "3px dashed rgba(0, 180, 0, 1.0)";
           }}
         >
-          <input {...getInputProps()} accept=".csv" />
+          <input disabled={disabled} {...getInputProps()} accept=".csv" />
           {
-             <h2 style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-              cursor: "pointer",
-              zIndex: 1,
-              color: "rgba(0, 180, 0, 1.0)",
-            }}/>
+            <h2
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "10px",
+                cursor: "pointer",
+                zIndex: 1,
+                color: "rgba(0, 180, 0, 1.0)",
+              }}
+            />
           }
           <p
             style={{
@@ -127,7 +148,6 @@ const InputArea = ({
           </p>
         </div>
       )}
-
     </>
   );
 };

@@ -4,6 +4,8 @@ import { requestApi } from "./components/@api/fetch";
 import InputArea from "./components/ui/InputArea";
 import YearPicker from "./components/ui/YearPicker";
 import { readAndSplitColumns } from "./helpers/readColumns";
+import "./components/ui/loadingProgressBar.css";
+import { Modal, Step, StepLabel, Stepper } from "@mui/material";
 
 const styledButton = {
   padding: "10px 20px",
@@ -20,10 +22,9 @@ const CarregarDados: React.FC = () => {
   const [csvData, setCsvData] = useState<string | null>(null);
   const [selectedCSV, setSelectedCSV] = useState<File | null>(null);
   const [columnsArray, setColumnsArray] = useState<string[]>([]);
-  console.log("columnsArray", columnsArray);
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log("fetching columns");
     const fetchCol = async () => {
       setColumnsArray(await readAndSplitColumns());
     };
@@ -37,11 +38,16 @@ const CarregarDados: React.FC = () => {
 
   return (
     <Layout id="loadCsv">
+      
       <div
         style={{
           padding: "20px",
         }}
       >
+                {
+          //colocar instruções step by step  "Instruções: 1) Subir arquivo; 2) Selecionar ano; 3) Confira o cabeçalho do arquivo; "
+        }
+      
         <div
           style={{
             display: "flex",
@@ -52,6 +58,35 @@ const CarregarDados: React.FC = () => {
             flexDirection: "column",
           }}
         >
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '20px',
+                width: window.innerWidth < 600 ? "100%" : "50rem",
+                
+                backgroundColor: "#f0f0f0",
+                padding: "10px 20px",
+                border: "2px solid #ccc",
+                borderRadius: "10px",
+
+    }}>
+        <Stepper
+          alternativeLabel 
+          activeStep={!selectedCSV  || selectedCSV === null
+            ? 0 : !selectedYear ? 1 : loading || viewCsv ? 3 : 2} 
+        >
+          <Step>
+            <StepLabel>Upload do arquivo</StepLabel>
+          </Step>
+          <Step>
+            <StepLabel>Selecionar ano</StepLabel>
+          </Step>
+          <Step>
+            <StepLabel>Confira o cabeçalho do arquivo </StepLabel>
+          </Step>
+
+          <Step>
+            <StepLabel> Clique em "Enviar", e aguarde o processamento </StepLabel> 
+          </Step>
+        </Stepper>
+        </div>
           <div
             style={{
               display: "flex",
@@ -70,6 +105,7 @@ const CarregarDados: React.FC = () => {
               }}
             >
               <YearPicker
+                disabled={loading}
                 setSelectedYear={setSelectedYear}
                 selectedYear={selectedYear}
               />
@@ -97,6 +133,7 @@ const CarregarDados: React.FC = () => {
               </div>
             </div>
             <InputArea
+              disabled={loading}
               setSelectedYear={setSelectedYear}
               csvData={csvData}
               setCsvData={setCsvData}
@@ -108,28 +145,23 @@ const CarregarDados: React.FC = () => {
                 gap: "1rem",
                 alignItems: "center",
                 justifyContent: "space-between",
+                flexWrap: "wrap",
                 width: "100%",
               }}
             >
               <div style={{ display: "flex", gap: "1rem" }}>
-              <button
+                <button
                   style={{
                     ...styledButton,
-                    display: "flex",
-                    gap: "10px",
-                    alignItems: "center",
-
-                    border: "2px solid #ccc",
-                    borderRadius: "4px",
-                    color: "#333",
-                    //align left
-                    justifyContent: "flex-start",
+                    
+                    background: "rgba(200, 0, 0, 1.0)",
+                    color: "#fff",
                   }}
                   type="button"
                   onClick={() => {
                     if (
                       window.confirm(
-                        "Tem certeza que deseja limpar o banco de dados?"
+                        "Tem certeza que deseja excluir todos os dados?"
                       )
                     ) {
                       requestApi("/clear", "DELETE", null);
@@ -138,85 +170,148 @@ const CarregarDados: React.FC = () => {
                       setSelectedYear(undefined);
                     }
                   }}
+                  disabled={loading}
                 >
-                  Limpar banco de dados
+                  Excluir todos os dados
                 </button>
               </div>
 
-<div style={{ display: "flex", gap: "1rem" }}>
-               
-              {csvData && [
-                  <button
-                    style={{
-                      ...styledButton,
-                      background: "rgba(200, 0, 0, 1.0)",
-                      color: "#fff",
-                    }}
-                    onClick={() => setViewCsv(!viewCsv)}
-                  >
-                    {viewCsv ? "Ocultar CSV" : "Visualizar CSV"}
-                  </button>,
+              <div style={{ display: "flex", gap: "1rem" }}>
+                {
+                  csvData &&
+                    [
+                      <button
+                        style={{
+                          ...styledButton,
 
-                  <button
-                    disabled={
-                      !selectedYear ||
-                      //check if csvdata include (Columns) as <string>[]
-                      !columnsArray.some((column) => csvData.includes(column))
-                    }
-                    style={{
-                      ...styledButton,
-                      background:
-                        !selectedYear ||
-                        !columnsArray.some((column) => csvData.includes(column))
-                          ? "#ccc"
-                          : "#2754a8",
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                    //break line
 
-                      color: "#fff",
-                      cursor:
-                        !selectedYear ||
-                        !columnsArray.some((column) => csvData.includes(column))
-                          ? "not-allowed"
-                          : "pointer",
-                    }}
-                    onClick={async () => {
-                      //send as multipart/form-data file * string($binary)
-                      const formData = new FormData();
+                    border: "2px solid #ccc",
+                    borderRadius: "4px",
+                    color: "#333",
+                    //align left
+                    justifyContent: "flex-start",
+                        }}
+                        onClick={() => setViewCsv(!viewCsv)}
+                      >
+                        {viewCsv ? "Ocultar CSV" : "Visualizar CSV"}
+                      </button>,
 
-                      formData.append("file", selectedCSV as File);
+                      <button
+                        disabled={
+                          !selectedYear || loading
+                          //check if csvdata include (Columns) as <string>[]
+                          // !columnsArray.some((column) => csvData.includes(column))
+                        }
+                        style={{
+                          ...styledButton,
+                          background:
+                            !selectedYear || loading
+                              ? // !columnsArray.some((column) => csvData.includes(column))
+                                "#ccc"
+                              : "#2754a8",
 
-                      const response = await requestApi(
-                        "/upload/" + selectedYear,
-                        "POST",
-                        formData,
-                        true
-                      );
+                          color: "#fff",
+                          cursor: !selectedYear
+                            ? // !columnsArray.some((column) => csvData.includes(column))
+                              "not-allowed"
+                            : "pointer",
+                        }}
+                        onClick={async () => {
+                          //send as multipart/form-data file * string($binary)
+                          const formData = new FormData();
 
-                      if (response.statusCode === 200) {
-                        setCsvCompleted(true);
-                        //wait for 3 seconds
-                        setTimeout(() => {
-                          setCsvCompleted(false);
-                        }, 3000);
-                        setViewCsv(false);
-                        setSelectedYear(undefined);
-                        setCsvData(null);
+                          formData.append("file", selectedCSV as File);
+                          setLoading(true);
 
-                        setSelectedCSV(null);
-                      } else if (response.statusCode >= 500) {
-                        alert("Revise seu arquivo CSV e tente novamente");
-                      } else {
-                        alert(
-                          "Ocorreu um erro inesperado, tente novamente mais tarde"
-                        );
-                      }
-                    }}
-                  >
-                    Enviar CSV
-                  </button>].map((button) => button as JSX.Element | null )
-                  
-                  }
-                </div>
-              
+                          const response = await requestApi(
+                            "/upload/" + selectedYear,
+                            "POST",
+                            formData,
+                            true
+                          );
+                          setLoading(false);
+
+                          if (response.statusCode === 200) {
+                            setCsvCompleted(true);
+                            //wait for 3 seconds
+                            setTimeout(() => {
+                              setCsvCompleted(false);
+                            }, 3000);
+                            setViewCsv(false);
+                            setSelectedYear(undefined);
+                            setCsvData(null);
+
+                            setSelectedCSV(null);
+                          } else if (response.statusCode >= 500) {
+                            if (
+                              response["message"]?.includes(
+                                "invalid input syntax for type"
+                              )
+                            ) {
+                              alert("O CSV enviado possui dados inválidos");
+                            }
+                            if (
+                              response["message"]?.includes(
+                                "is violated by some row"
+                              )
+                            ) {
+                              alert(
+                                "Revise o ano selecionado e tente novamente"
+                              );
+                            } else {
+                              alert("Revise seu arquivo CSV e tente novamente");
+                            }
+                          } else {
+                            if (
+                              response["message"]?.includes("Empty CSV file")
+                            ) {
+                              alert("O CSV enviado está vazio");
+                            } else if (
+                              response["message"]?.includes("Invalid CSV file")
+                            ) {
+                              alert("O CSV enviado possui dados inválidos");
+                            } else if (
+                              response["message"]?.includes("Not a CSV file")
+                            ) {
+                              alert("O arquivo enviado não é um CSV");
+                            } else {
+                              alert(
+                                "Ocorreu um erro inesperado, tente novamente mais tarde"
+                              );
+                            }
+                          }
+                        }}
+                      >
+                        {loading ? (
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              gap: "10px",
+                              color: "#333",
+                            }}
+                          >
+                            <progress className="pure-material-progress-circular" />
+                            Enviando
+                          </div>
+                        ) : (
+                          "Enviar CSV"
+                        )}
+                      </button>,
+                    ].map((button) => button as JSX.Element | null)
+                  //make a circular progressbar
+                  // <div style={{  gap: '10px',
+                  // display: 'flex',
+                  // alignItems: 'center',
+                  // }}>
+                  // </div>
+                }
+              </div>
             </div>
             {csvCompleted ? (
               <p
@@ -255,7 +350,14 @@ const CarregarDados: React.FC = () => {
                   overflowY: "auto",
                 }}
               >
-                {csvData}
+                {
+                  //show csv data first 1000 characters & last 1000 characters
+                  csvData.length > 1600
+                    ? csvData.substring(0, 800) +
+                      "\n\n...\n\n" +
+                      csvData.substring(csvData.length - 800, csvData.length)
+                    : csvData
+                }
               </pre>
 
               <div
@@ -284,11 +386,40 @@ const CarregarDados: React.FC = () => {
                 >
                   Remover CSV
                 </button>
-              
               </div>
             </div>
           ) : null}
         </div>
+              <Modal
+              
+              open={loading} 
+              sx={{
+                background: "rgba(0, 0, 0, 0.5)",
+              }}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  flexDirection: "column",
+                  padding: "20px", 
+                  color: "#fff",
+                  borderRadius: "4px",
+                  border: "none",
+                  outline: "none",
+                  height: "100vh",
+                }}
+              >
+                <progress className="pure-material-progress-circular" />
+                <h2>Enviando CSV...</h2>
+                </div>
+ </Modal>
+
+
       </div>
     </Layout>
   );
