@@ -7,7 +7,7 @@ export const requestApi = async (
   multipart?: boolean
 ) => {
   const token = await localStorage.getItem("token");
-  const response = await fetch("/api-poc" + route, {
+  const response = await fetch("/views-api" + route, {
     method: method,
     headers: multipart
       ? { Authorization: token ? `Bearer ${token}` : "" }
