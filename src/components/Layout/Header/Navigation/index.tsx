@@ -1,18 +1,16 @@
-import { useContext } from 'react';
+import { useContext } from "react";
 
-import CloseIcon from '@mui/icons-material/Close';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import IconButton from '@mui/material/IconButton';
+import CloseIcon from "@mui/icons-material/Close";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import IconButton from "@mui/material/IconButton";
 
-import jsonDashboards from '../../../../contents/dashboards.json';
-import { AppContext } from '../../../../contexts/AppContext';
-import CustomLink from './CustomLink';
+import jsonDashboards from "../../../../contents/dashboards.json";
+import { AppContext } from "../../../../contexts/AppContext";
+import CustomLink from "./CustomLink";
 
-import './styles.css';
-
+import "./styles.css";
 
 function Navigation() {
-
   const appContext = useContext(AppContext);
 
   return (
@@ -30,77 +28,79 @@ function Navigation() {
         </li>
         <li className="hasSubmenu">
           <CustomLink activeClassName="active" to="/dashboards">
-            Dashboards <KeyboardArrowDownIcon/>
+            Dashboards <KeyboardArrowDownIcon />
           </CustomLink>
           <ul className="submenu">
-            {
-              jsonDashboards.gallery.length > 0 
-                && jsonDashboards.gallery.map((item) => (
-                  <li>
-                  <CustomLink activeClassName="active" to={'/dashboards/'+item.id}>
+            {jsonDashboards.gallery.length > 0 &&
+              jsonDashboards.gallery.map((item) => (
+                <li>
+                  <CustomLink
+                    activeClassName="active"
+                    to={"/dashboards/" + item.id}
+                  >
                     {item.navigation_label}
                   </CustomLink>
-                  </li>
-                ))
-            }
+                </li>
+              ))}
           </ul>
         </li>
         <li>
-        <li className="hasSubmenu">
-          <CustomLink activeClassName="active" to="/dashboards">
-          Visualizações <KeyboardArrowDownIcon/>
-          </CustomLink>
-          <ul className="submenu">
-          <li>
-                
+          <li className="hasSubmenu">
+            <CustomLink activeClassName="active" to="/dashboards">
+              Visualizações <KeyboardArrowDownIcon />
+            </CustomLink>
+            <ul className="submenu">
+              <li>
                 <CustomLink activeClassName="active" to="/visualizacoes">
-                Estáticas
+                  Estáticas
                 </CustomLink>
-                        </li>
-                  <li>
-                
-          <CustomLink activeClassName="active" to="/estatisticas">
-          Séries
-          </CustomLink>
-          <CustomLink activeClassName="active" to="/carregar/dados">
-          Carregar Dados
-          </CustomLink>
-                  </li>
-                
-          </ul>
-        </li>
+              </li>
+              <li>
+                <CustomLink activeClassName="active" to="/estatisticas">
+                  Séries
+                </CustomLink>
+                <CustomLink activeClassName="active" to="/carregar/dados">
+                  Carregar Dados
+                </CustomLink>
+              </li>
+            </ul>
+          </li>
         </li>
         <li className="hasSubmenu">
           <CustomLink activeClassName="active" to="/producoes">
-            Produções <KeyboardArrowDownIcon/>
+            Produções <KeyboardArrowDownIcon />
           </CustomLink>
           <ul className="submenu">
-              <li>
-                <CustomLink activeClassName="active" to="/producoes/cientificas">
-                  Científicas
-                </CustomLink>
-              </li>
-              <li>
-                <CustomLink activeClassName="active" to="/producoes/boletins">
-                  Boletins
-                </CustomLink>
-              </li>
-              <li>
-                <CustomLink activeClassName="active" to="/producoes/cursos">
-                  Cursos
-                </CustomLink>
-              </li>
-              <li>
-                <CustomLink activeClassName="active" to="/producoes/referencias">
-                  Referências
-                </CustomLink>
-              </li>
-			  <li>
-			  	<CustomLink activeClassName="active" to={{ pathname: "https://www.youtube.com/watch?v=XnHkP3mshbk&t=8010s" }} target="_blank">
-				  Tutorial
-				</CustomLink>
-			  </li>
-            </ul>
+            <li>
+              <CustomLink activeClassName="active" to="/producoes/cientificas">
+                Científicas
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink activeClassName="active" to="/producoes/boletins">
+                Boletins
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink activeClassName="active" to="/producoes/cursos">
+                Cursos
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink activeClassName="active" to="/producoes/referencias">
+                Referências
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink
+                activeClassName="active"
+                to="https://www.youtube.com/watch?v=XnHkP3mshbk&t=8010s"
+                target="_blank"
+              >
+                Tutorial
+              </CustomLink>
+            </li>
+          </ul>
         </li>
         <li>
           <CustomLink activeClassName="active" to="/contato">
@@ -108,9 +108,9 @@ function Navigation() {
           </CustomLink>
         </li>
       </ul>
-      
+
       <IconButton id="closeIconButton" onClick={appContext.navigationClose}>
-        <CloseIcon fontSize="large"/>
+        <CloseIcon fontSize="large" />
       </IconButton>
     </nav>
   );

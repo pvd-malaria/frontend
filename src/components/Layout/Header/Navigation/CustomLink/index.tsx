@@ -6,7 +6,7 @@ import { AppContext } from '../../../../../contexts/AppContext';
 
 interface CustomLinkProps {
   children: React.ReactNode;
-  to: string | { pathname: string };
+  to: string;
   activeClassName?: string;
   target?: string;
 }
