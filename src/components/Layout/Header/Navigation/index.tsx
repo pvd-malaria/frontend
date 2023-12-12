@@ -95,6 +95,11 @@ function Navigation() {
                   Referências
                 </CustomLink>
               </li>
+			  <li>
+			  	<CustomLink activeClassName="active" to={{ pathname: "https://www.youtube.com/watch?v=XnHkP3mshbk&t=8010s" }} target="_blank">
+				  Tutorial
+				</CustomLink>
+			  </li>
             </ul>
         </li>
         <li>

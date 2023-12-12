@@ -6,8 +6,9 @@ import { AppContext } from '../../../../../contexts/AppContext';
 
 interface CustomLinkProps {
   children: React.ReactNode;
-  to: string;
+  to: string | { pathname: string };
   activeClassName?: string;
+  target?: string;
 }
 
 
@@ -23,7 +24,8 @@ function CustomLink(props: CustomLinkProps) {
     <NavLink
       className={isActiveClass}
       to={props.to}
-      onClick={appContext.navigationClose}>
+      onClick={appContext.navigationClose}
+	  target={props.target}>
       {props.children}
     </NavLink>
   );
