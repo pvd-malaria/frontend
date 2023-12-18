@@ -94,7 +94,7 @@ function Navigation() {
             <li>
               <CustomLink
                 activeClassName="active"
-                to="https://www.youtube.com/watch?v=XnHkP3mshbk&t=8010s"
+                to="https://www.youtube.com/watch?v=OaXGlHzJ30c"
                 target="_blank"
               >
                 Tutorial
