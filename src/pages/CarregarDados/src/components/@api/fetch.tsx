@@ -7,17 +7,22 @@ export const requestApi = async (
   multipart?: boolean
 ) => {
   const token = await localStorage.getItem("token");
-  const response = await fetch("/views-api" + route, {
-    method: method,
-    headers: multipart
-      ? { Authorization: token ? `Bearer ${token}` : "" }
-      : {
-          mode: "cors", // no-cors, cors, *same-origin
-          "Content-Type": "application/json",
-          Authorization: token ? `Bearer ${token}` : "",
-        },
-    body: multipart ? body : body ? JSON.stringify(body) : null,
-  });
+  //views-api
+  const response = await fetch(
+    window.location.origin == "http://localhost:3000"
+      ? route
+      : `views-api${route}`,
+    {
+      method: method,
+      headers: multipart
+        ? { Authorization: token ? `Bearer ${token}` : "" }
+        : {
+            "Content-Type": "application/json",
+            Authorization: token ? `Bearer ${token}` : "",
+          },
+      body: multipart ? body : body ? JSON.stringify(body) : null,
+    }
+  );
   const jsonParse = await response.body
     ?.getReader()
     .read()
