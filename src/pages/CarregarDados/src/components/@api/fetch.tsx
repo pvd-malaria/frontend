@@ -11,7 +11,7 @@ export const requestApi = async (
   const response = await fetch(
     window.location.origin == "http://localhost:3000"
       ? route
-      : `views-api${route}`,
+      : `/views-api${route}`,
     {
       method: method,
       headers: multipart
