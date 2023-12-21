@@ -394,7 +394,7 @@ const CarregarDados: React.FC = () => {
                     }}
                     disabled={loading}
                   >
-                    Baixar Dicionario de Dados
+                    Baixar Dicionário de Dados
                   </button>
                 </div>
               </div>
