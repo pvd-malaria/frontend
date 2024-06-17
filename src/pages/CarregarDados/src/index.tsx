@@ -387,7 +387,7 @@ const CarregarDados: React.FC = () => {
                           let url = window.URL.createObjectURL(blob);
                           let a = document.createElement("a");
                           a.href = url;
-                          a.download = "template.csv";
+                          a.download = "template.pdf";
                           a.click();
                         });
                       });
