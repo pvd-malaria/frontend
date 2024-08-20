@@ -24,10 +24,11 @@ jobs:
           #!/bin/bash
           cmd1="rm -rf /home/inovia/pvd-malaria";
           cmd2="GIT_SSH_COMMAND=\"ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -i /home/inovia/deploy_keys/deploy_frontend\" git clone -b production --single-branch git@github.com:pvd-malaria/frontend.git /home/inovia/pvd-malaria";
-          cmd3="mkdir /home/inovia/pvd-malaria/certs";
-          sshpass -e ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 inovia@laddem.nepo.unicamp.br "\$cmd1; \$cmd2; \$cmd3;"
-          sshpass -e scp -o StrictHostKeyChecking=no -o ServerAliveInterval=60 cert.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/cert.pem
-          sshpass -e scp -o StrictHostKeyChecking=no -o ServerAliveInterval=60 key.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/key.pem
+          cmd3="mkdir -p /home/inovia/pvd-malaria/certs";
+          cmd4="cp /home/inovia/pvd-malaria-certs/*.pem /home/inovia/pvd-malaria/certs/.";
+          sshpass -e ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 inovia@laddem.nepo.unicamp.br "\$cmd1; \$cmd2; \$cmd3; \$cmd4;"
+          #sshpass -e scp -o StrictHostKeyChecking=no -o ServerAliveInterval=60 cert.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/cert.pem
+          #sshpass -e scp -o StrictHostKeyChecking=no -o ServerAliveInterval=60 key.pem inovia@laddem.nepo.unicamp.br:/home/inovia/pvd-malaria/certs/key.pem
           cmd4="cd /home/inovia/pvd-malaria";
           cmd5="chmod 0600 certs/*.pem";
           cmd6="docker-compose rm -sfv frontend";
